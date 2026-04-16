@@ -1,0 +1,170 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+/* ============================================================
+   shadcn/ui semantic tokens
+   ============================================================ */
+:root {
+  --background: oklch(0.975 0.005 85);
+  --foreground: oklch(0.12 0 0);
+  --card: oklch(0.975 0.005 85);
+  --card-foreground: oklch(0.12 0 0);
+  --popover: oklch(0.975 0.005 85);
+  --popover-foreground: oklch(0.12 0 0);
+  --primary: oklch(0.12 0 0);
+  --primary-foreground: oklch(0.975 0.005 85);
+  --secondary: oklch(0.945 0.01 85);
+  --secondary-foreground: oklch(0.12 0 0);
+  --muted: oklch(0.945 0.01 85);
+  --muted-foreground: oklch(0.56 0.005 85);
+  --accent: oklch(0.945 0.01 85);
+  --accent-foreground: oklch(0.12 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: oklch(0.88 0.008 85);
+  --input: oklch(0.88 0.008 85);
+  --ring: oklch(0.68 0.09 75);
+  --radius: 0px;
+  --sidebar: oklch(0.975 0.005 85);
+  --sidebar-foreground: oklch(0.12 0 0);
+  --sidebar-primary: oklch(0.12 0 0);
+  --sidebar-primary-foreground: oklch(0.975 0.005 85);
+  --sidebar-accent: oklch(0.945 0.01 85);
+  --sidebar-accent-foreground: oklch(0.12 0 0);
+  --sidebar-border: oklch(0.88 0.008 85);
+  --sidebar-ring: oklch(0.68 0.09 75);
+}
+
+.dark {
+  --background: oklch(0.12 0 0);
+  --foreground: oklch(0.975 0.005 85);
+  --card: oklch(0.12 0 0);
+  --card-foreground: oklch(0.975 0.005 85);
+  --popover: oklch(0.12 0 0);
+  --popover-foreground: oklch(0.975 0.005 85);
+  --primary: oklch(0.975 0.005 85);
+  --primary-foreground: oklch(0.12 0 0);
+  --secondary: oklch(0.22 0 0);
+  --secondary-foreground: oklch(0.975 0.005 85);
+  --muted: oklch(0.22 0 0);
+  --muted-foreground: oklch(0.65 0 0);
+  --accent: oklch(0.22 0 0);
+  --accent-foreground: oklch(0.975 0.005 85);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.22 0 0);
+  --input: oklch(0.22 0 0);
+  --ring: oklch(0.68 0.09 75);
+}
+
+/* ============================================================
+   Tailwind v4 theme — brand design tokens (hardcoded values)
+   ============================================================ */
+@theme inline {
+  /* shadcn semantic mappings */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* ── Brand colours (direct values, no var() indirection) ── */
+  /* Cream: warm off-white */
+  --color-cream: oklch(0.975 0.005 85);
+  /* Ink: near-black */
+  --color-ink: oklch(0.12 0 0);
+  /* Gold: warm champagne gold */
+  --color-gold: oklch(0.68 0.09 75);
+  /* Gold-soft: lighter gold hover state */
+  --color-gold-soft: oklch(0.73 0.08 75);
+  /* Stone: mid-gray, muted labels */
+  --color-stone: oklch(0.56 0.005 85);
+  /* Graphite: darker body gray */
+  --color-graphite: oklch(0.40 0.004 85);
+  /* Bone: very light warm gray, subtle backgrounds */
+  --color-bone: oklch(0.945 0.01 85);
+  /* Line: thin border gray */
+  --color-line: oklch(0.88 0.008 85);
+
+  /* ── Radii ── */
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+
+  /* ── Typography ── */
+  --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-sans: Inter, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: ui-monospace, 'Cascadia Code', 'Source Code Pro', monospace;
+}
+
+/* ============================================================
+   Base styles
+   ============================================================ */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream text-ink antialiased;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  }
+
+  ::selection {
+    background-color: oklch(0.68 0.09 75 / 0.22);
+  }
+
+  :focus-visible {
+    outline: 1.5px solid oklch(0.68 0.09 75);
+    outline-offset: 3px;
+  }
+}
+
+/* ============================================================
+   Utilities
+   ============================================================ */
+
+/* Glass morphism — used in scrolled header */
+.glass {
+  background-color: oklch(0.975 0.005 85 / 0.90);
+  backdrop-filter: blur(20px) saturate(1.6);
+  -webkit-backdrop-filter: blur(20px) saturate(1.6);
+}
+
+/* Hide scrollbar (Webkit + Firefox) */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
