@@ -91,7 +91,7 @@ export function ServicesSection() {
               viewport={{ once: true }}
               className="border-b border-line/60"
             >
-              <Link href={service.link} className="group flex items-start py-9 lg:py-11 gap-0">
+              <Link href={service.link} className="group flex items-start py-11 lg:py-14 gap-0">
                 <div className="grid lg:grid-cols-12 gap-6 lg:gap-8 items-center w-full">
 
                   {/* Number */}

@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { Plus } from "lucide-react"
 
 const faqs = [
   {
@@ -85,21 +84,26 @@ export function FaqSection() {
                 <div key={index} className="border-b border-line">
                   <button
                     onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
-                    className="w-full flex items-start justify-between gap-6 py-7 text-left group"
+                    className="w-full flex items-start justify-between gap-8 py-8 lg:py-9 text-left group"
                   >
-                    <span className={`font-serif text-[17px] lg:text-[19px] leading-snug transition-colors duration-200 pr-4 ${
-                      openIndex === index ? "text-ink" : "text-ink/80 group-hover:text-ink"
+                    <span className={`font-serif text-[17px] lg:text-[20px] leading-snug transition-colors duration-300 pr-4 ${
+                      openIndex === index ? "text-ink" : "text-ink/65 group-hover:text-ink"
                     }`}>
                       {faq.question}
                     </span>
-                    <div className={`shrink-0 w-7 h-7 border flex items-center justify-center transition-all duration-300 mt-0.5 ${
-                      openIndex === index
-                        ? "border-gold bg-gold"
-                        : "border-line group-hover:border-gold/50"
-                    }`}>
-                      <Plus className={`w-3.5 h-3.5 transition-all duration-300 ${
-                        openIndex === index ? "rotate-45 text-ink" : "text-graphite"
-                      }`} />
+                    <div className="shrink-0 mt-1.5 flex items-center justify-center w-5 h-5">
+                      <span className={`block transition-all duration-400 ${
+                        openIndex === index
+                          ? "w-4 h-px bg-gold"
+                          : "relative w-4 h-4"
+                      }`}>
+                        {openIndex === index ? null : (
+                          <>
+                            <span className="absolute top-1/2 left-0 w-full h-px bg-stone/40 group-hover:bg-stone/70 transition-colors -translate-y-1/2" />
+                            <span className="absolute left-1/2 top-0 w-px h-full bg-stone/40 group-hover:bg-stone/70 transition-colors -translate-x-1/2" />
+                          </>
+                        )}
+                      </span>
                     </div>
                   </button>
 
@@ -109,10 +113,10 @@ export function FaqSection() {
                         initial={{ height: 0, opacity: 0 }}
                         animate={{ height: "auto", opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.28, ease: "easeInOut" }}
+                        transition={{ duration: 0.32, ease: [0.22, 1, 0.36, 1] }}
                         className="overflow-hidden"
                       >
-                        <p className="pb-8 text-[15px] text-graphite leading-[1.75] max-w-[580px]">
+                        <p className="pb-10 text-[15px] text-graphite leading-[1.85] max-w-[560px]">
                           {faq.answer}
                         </p>
                       </motion.div>

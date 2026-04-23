@@ -42,7 +42,7 @@ export function HeroSection() {
           >
             <div className="w-8 h-px bg-gold/80" />
             <span className="text-gold/90 text-[10px] uppercase tracking-[0.30em] font-medium">
-              Inhabergeführt seit 1999 · 7 Standorte in Deutschland
+              Seit 1999 · 7 Standorte
             </span>
           </motion.div>
 
