@@ -5,12 +5,11 @@ import { useState } from "react"
 import { Linkedin, Instagram, ArrowRight } from "lucide-react"
 
 const leistungen = [
-  { label: "Verkaufen", href: "/verkaufen" },
-  { label: "Kaufen", href: "/kaufen" },
+  { label: "Immobilie verkaufen", href: "/verkaufen" },
+  { label: "Immobilie kaufen", href: "/kaufen" },
   { label: "Bewertung", href: "/bewertung" },
-  { label: "Off-Market", href: "/off-market" },
-  { label: "Mieten", href: "/mieten" },
-  { label: "Vermieten", href: "/vermieten" },
+  { label: "Off-Market Verkauf", href: "/off-market" },
+  { label: "Tippgeber", href: "/tippgeber" },
 ]
 
 const standorte = [
@@ -34,24 +33,23 @@ const ratgeber = [
 
 const unternehmen = [
   { label: "Über uns", href: "/ueber-uns" },
-  { label: "Team", href: "/team" },
-  { label: "Tippgeber", href: "/tippgeber" },
   { label: "Karriere", href: "/karriere" },
   { label: "Presse", href: "/presse" },
+  { label: "Kontakt", href: "/kontakt" },
 ]
 
 function FooterCol({ title, links }: { title: string; links: { label: string; href: string }[] }) {
   return (
     <div>
-      <h4 className="text-[10px] uppercase tracking-[0.22em] text-cream/35 mb-5 font-medium">
+      <h4 className="text-[9.5px] uppercase tracking-[0.26em] text-cream/30 mb-6 font-medium">
         {title}
       </h4>
-      <ul className="space-y-3">
+      <ul className="space-y-3.5">
         {links.map((item) => (
           <li key={item.href}>
             <Link
               href={item.href}
-              className="text-[13px] text-cream/55 hover:text-cream transition-colors duration-200"
+              className="text-[13px] text-cream/50 hover:text-cream/85 transition-colors duration-200 leading-snug"
             >
               {item.label}
             </Link>
@@ -77,79 +75,88 @@ export function Footer() {
   return (
     <footer className="bg-ink text-cream">
 
-      {/* Main footer content */}
-      <div className="max-w-[1440px] mx-auto px-6 lg:px-20 py-16 lg:py-20">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 lg:gap-8">
+      {/* Brand statement band */}
+      <div className="border-b border-cream/8">
+        <div className="max-w-[1440px] mx-auto px-6 lg:px-20 py-16 lg:py-20">
+          <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-end">
 
-          {/* Brand column */}
-          <div className="col-span-2 md:col-span-3 lg:col-span-2">
-            {/* Logo */}
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-px h-6 bg-gold/50" />
-              <div>
-                <span className="block font-serif text-[22px] tracking-[0.06em] text-cream leading-none">
-                  ABELS
-                </span>
-                <span className="block text-[9px] uppercase tracking-[0.22em] text-cream/35 mt-1 leading-none">
-                  Immobilien
-                </span>
+            {/* Left: Brand statement */}
+            <div className="lg:col-span-6">
+              <div className="flex items-center gap-3 mb-7">
+                <div className="w-px h-6 bg-gold/50" />
+                <div>
+                  <span className="block font-serif text-[24px] tracking-[0.06em] text-cream leading-none">
+                    ABELS
+                  </span>
+                  <span className="block text-[9px] uppercase tracking-[0.24em] text-cream/35 mt-[5px] leading-none">
+                    Immobilien
+                  </span>
+                </div>
               </div>
+              <p className="font-serif text-[clamp(1.4rem,2.5vw,2rem)] text-cream/75 leading-[1.3] tracking-[-0.01em] max-w-[460px]">
+                Diskretion, Marktkenntnis und persönliche Verantwortung — seit 1999.
+              </p>
             </div>
 
-            <p className="text-[13px] text-cream/50 leading-[1.7] mb-6 max-w-[260px]">
-              Inhabergeführter Premium-Makler mit Standorten in 7 deutschen Metropolregionen. Diskret, präzise und persönlich seit 1999.
-            </p>
+            {/* Right: Contact */}
+            <div className="lg:col-span-5 lg:col-start-8">
+              <address className="not-italic">
+                <p className="text-[9.5px] uppercase tracking-[0.26em] text-cream/30 mb-5">Hauptsitz Düsseldorf</p>
+                <p className="text-[14px] text-cream/55 leading-relaxed mb-4">
+                  Abels Immobilien GmbH<br />
+                  Alt Niederkassel 124 · 40547 Düsseldorf
+                </p>
+                <div className="flex flex-col gap-1.5">
+                  <a href="tel:+492115591751" className="text-[14px] text-cream/55 hover:text-cream/85 transition-colors">
+                    +49 211 5591751
+                  </a>
+                  <a href="mailto:info@abels-immobilien.de" className="text-[14px] text-cream/55 hover:text-cream/85 transition-colors">
+                    info@abels-immobilien.de
+                  </a>
+                </div>
+              </address>
+            </div>
 
-            <address className="not-italic text-[13px] text-cream/40 space-y-1.5">
-              <p>Abels Immobilien GmbH</p>
-              <p>Alt Niederkassel 124</p>
-              <p>40547 Düsseldorf</p>
-              <p className="mt-3">
-                <a href="tel:+492115591751" className="hover:text-cream/70 transition-colors">
-                  +49 211 5591751
-                </a>
-              </p>
-              <p>
-                <a href="mailto:info@abels-immobilien.de" className="hover:text-cream/70 transition-colors">
-                  info@abels-immobilien.de
-                </a>
-              </p>
-            </address>
           </div>
-
-          {/* Navigation columns */}
-          <FooterCol title="Leistungen" links={leistungen} />
-          <FooterCol title="Standorte" links={standorte} />
-          <FooterCol title="Ratgeber" links={ratgeber} />
-          <FooterCol title="Unternehmen" links={unternehmen} />
-
         </div>
+      </div>
 
-        {/* Newsletter */}
-        <div className="mt-16 pt-12 border-t border-cream/8">
+      {/* Link columns */}
+      <div className="border-b border-cream/8">
+        <div className="max-w-[1440px] mx-auto px-6 lg:px-20 py-14 lg:py-16">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-10 lg:gap-8">
+            <FooterCol title="Leistungen" links={leistungen} />
+            <FooterCol title="Standorte" links={standorte} />
+            <FooterCol title="Ratgeber" links={ratgeber} />
+            <FooterCol title="Unternehmen" links={unternehmen} />
+          </div>
+        </div>
+      </div>
+
+      {/* Newsletter */}
+      <div className="border-b border-cream/8">
+        <div className="max-w-[1440px] mx-auto px-6 lg:px-20 py-10 lg:py-12">
           <div className="grid lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-4">
-              <h4 className="text-[10px] uppercase tracking-[0.22em] text-cream/35 mb-2 font-medium">
-                Newsletter
-              </h4>
-              <p className="text-[13px] text-cream/45">
-                Marktberichte, Lagen-Analysen und Neuigkeiten aus den Premium-Standorten.
+              <p className="text-[9.5px] uppercase tracking-[0.26em] text-cream/30 mb-2">Newsletter</p>
+              <p className="text-[13px] text-cream/45 leading-relaxed">
+                Marktberichte und Neuigkeiten aus den Premium-Standorten.
               </p>
             </div>
             <div className="lg:col-span-5 lg:col-start-6">
               {!submitted ? (
-                <form onSubmit={handleSubmit} className="flex gap-0 border-b border-cream/20 focus-within:border-gold/50 transition-colors">
+                <form onSubmit={handleSubmit} className="flex gap-0 border-b border-cream/18 focus-within:border-gold/50 transition-colors">
                   <input
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Ihre E-Mail-Adresse"
-                    className="flex-1 bg-transparent pb-3 pt-1 text-[14px] text-cream placeholder:text-cream/25 focus:outline-none"
+                    className="flex-1 bg-transparent pb-3 pt-1 text-[14px] text-cream placeholder:text-cream/22 focus:outline-none"
                     required
                   />
                   <button
                     type="submit"
-                    className="pb-3 pt-1 text-[10px] uppercase tracking-[0.18em] text-cream/40 hover:text-gold transition-colors flex items-center gap-1.5 shrink-0"
+                    className="pb-3 pt-1 text-[9.5px] uppercase tracking-[0.22em] text-cream/38 hover:text-gold transition-colors flex items-center gap-1.5 shrink-0"
                   >
                     Anmelden
                     <ArrowRight className="w-3 h-3" />
@@ -166,53 +173,51 @@ export function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-cream/8">
-        <div className="max-w-[1440px] mx-auto px-6 lg:px-20 py-6">
-          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5">
+      <div className="max-w-[1440px] mx-auto px-6 lg:px-20 py-6">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
 
-            <p className="text-[12px] text-cream/28">
-              © 2026 Abels Immobilien GmbH · IHK-Mitglied · §34c GewO
-            </p>
+          <p className="text-[11.5px] text-cream/25 tracking-[0.02em]">
+            © 2026 Abels Immobilien GmbH · IHK-Mitglied · §34c GewO
+          </p>
 
-            <div className="flex flex-wrap items-center gap-6">
-              {[
-                { label: "Impressum", href: "/impressum" },
-                { label: "Datenschutz", href: "/datenschutz" },
-                { label: "AGB", href: "/agb" },
-                { label: "Widerrufsrecht", href: "/widerrufsrecht" },
-              ].map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="text-[12px] text-cream/28 hover:text-cream/55 transition-colors"
-                >
-                  {item.label}
-                </Link>
-              ))}
+          <div className="flex flex-wrap items-center gap-5">
+            {[
+              { label: "Impressum", href: "/impressum" },
+              { label: "Datenschutz", href: "/datenschutz" },
+              { label: "AGB", href: "/agb" },
+              { label: "Widerrufsrecht", href: "/widerrufsrecht" },
+            ].map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="text-[11.5px] text-cream/25 hover:text-cream/55 transition-colors"
+              >
+                {item.label}
+              </Link>
+            ))}
 
-              <div className="flex items-center gap-4 lg:ml-2 border-l border-cream/12 lg:pl-6">
-                <a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-cream/28 hover:text-cream/60 transition-colors"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin className="w-4 h-4" />
-                </a>
-                <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-cream/28 hover:text-cream/60 transition-colors"
-                  aria-label="Instagram"
-                >
-                  <Instagram className="w-4 h-4" />
-                </a>
-              </div>
+            <div className="flex items-center gap-4 border-l border-cream/10 pl-5">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cream/25 hover:text-cream/60 transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-3.5 h-3.5" />
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cream/25 hover:text-cream/60 transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-3.5 h-3.5" />
+              </a>
             </div>
-
           </div>
+
         </div>
       </div>
 
