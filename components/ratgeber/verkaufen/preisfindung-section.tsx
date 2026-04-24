@@ -50,39 +50,39 @@ export function RatgeberVerkaufenPreisfindungSection() {
             viewport={{ once: true }}
             className="lg:col-span-5"
           >
-            <div className="bg-ink text-cream p-8 lg:p-10 sticky top-32">
-              <h3 className="font-serif text-2xl text-cream mb-4">Kostenlose Bewertung</h3>
-              <p className="text-cream/70 leading-relaxed mb-8">
+            <div className="bg-bone border border-line/50 p-8 lg:p-10 sticky top-32">
+              <h3 className="font-serif text-2xl text-ink mb-4">Kostenlose Bewertung</h3>
+              <p className="text-graphite leading-relaxed mb-8">
                 Erfahren Sie, was Ihre Immobilie wirklich wert ist. Unsere Experten bewerten Ihr Objekt vor Ort — fundiert, marktgerecht und vollkommen unverbindlich.
               </p>
 
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-gold shrink-0 mt-2" />
-                  <span className="text-cream/80">Persönliche Vor-Ort-Besichtigung</span>
+                  <span className="text-graphite">Persönliche Vor-Ort-Besichtigung</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-gold shrink-0 mt-2" />
-                  <span className="text-cream/80">Analyse vergleichbarer Verkäufe</span>
+                  <span className="text-graphite">Analyse vergleichbarer Verkäufe</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-gold shrink-0 mt-2" />
-                  <span className="text-cream/80">Schriftliches Wertgutachten</span>
+                  <span className="text-graphite">Schriftliches Wertgutachten</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-gold shrink-0 mt-2" />
-                  <span className="text-cream/80">Innerhalb von 72 Stunden</span>
+                  <span className="text-graphite">Innerhalb von 72 Stunden</span>
                 </li>
               </ul>
 
               <Link
                 href="/bewertung"
-                className="block w-full text-center bg-cream text-ink px-8 py-4 text-xs uppercase tracking-[0.15em] font-medium hover:bg-white transition-all duration-300"
+                className="block w-full text-center bg-ink text-cream px-8 py-4 text-xs uppercase tracking-[0.15em] font-medium hover:bg-ink/90 transition-all duration-300"
               >
                 Jetzt Bewertung anfordern
               </Link>
 
-              <p className="text-cream/50 text-xs text-center mt-4">
+              <p className="text-stone text-xs text-center mt-4">
                 100 % kostenfrei und unverbindlich
               </p>
             </div>

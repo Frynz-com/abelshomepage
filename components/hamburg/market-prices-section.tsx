@@ -89,7 +89,7 @@ function TrendIcon({ trend }: { trend: string }) {
 
 export function HamburgMarketPricesSection() {
   return (
-    <section className="py-24 lg:py-32 bg-ink text-cream">
+    <section className="py-24 lg:py-32 bg-bone border-t border-line/40">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-20">
         {/* Header */}
         <motion.div
@@ -102,10 +102,10 @@ export function HamburgMarketPricesSection() {
           <p className="text-gold text-xs uppercase tracking-[0.25em] mb-4">
             Marktpreise Q1 2026
           </p>
-          <h2 className="font-serif text-3xl lg:text-4xl xl:text-5xl text-cream leading-[1.1] max-w-[700px] mb-6">
+          <h2 className="font-serif text-3xl lg:text-4xl xl:text-5xl text-ink leading-[1.1] max-w-[700px] mb-6">
             Was Immobilien in Hamburg wert sind
           </h2>
-          <p className="text-cream/70 max-w-[600px]">
+          <p className="text-graphite max-w-[600px]">
             Aktuelle Durchschnittspreise pro Quadratmeter in Hamburgs gefragtesten Lagen. Die Werte basieren auf unseren Vermittlungen und Marktbeobachtungen.
           </p>
         </motion.div>
@@ -122,28 +122,28 @@ export function HamburgMarketPricesSection() {
             >
               <Link
                 href={`/standorte/hamburg/${item.slug}`}
-                className="group block bg-white/5 border border-white/10 p-8 hover:bg-white/10 hover:border-gold/30 transition-all duration-500"
+                className="group block bg-cream border border-line/40 p-8 hover:bg-white hover:border-gold/30 transition-all duration-500"
               >
                 <div className="flex items-start justify-between mb-6">
-                  <h3 className="font-serif text-2xl text-cream group-hover:text-gold transition-colors">
+                  <h3 className="font-serif text-2xl text-ink group-hover:text-gold transition-colors">
                     {item.name}
                   </h3>
                   <div className="flex items-center gap-2">
                     <TrendIcon trend={item.trend} />
-                    <span className={`text-sm ${item.trend === "up" ? "text-emerald-400" : item.trend === "down" ? "text-red-400" : "text-cream/60"}`}>
+                    <span className={`text-sm ${item.trend === "up" ? "text-emerald-600" : item.trend === "down" ? "text-red-500" : "text-graphite"}`}>
                       {item.trendPercent}
                     </span>
                   </div>
                 </div>
-                
+
                 <div className="mb-4">
-                  <span className="font-serif text-4xl lg:text-5xl text-cream">
+                  <span className="font-serif text-4xl lg:text-5xl text-ink">
                     <CountUpNumber target={item.pricePerSqm} />
                   </span>
-                  <span className="text-cream/60 text-sm ml-2">EUR/m2</span>
+                  <span className="text-graphite text-sm ml-2">EUR/m2</span>
                 </div>
-                
-                <p className="text-cream/60 text-sm leading-relaxed">
+
+                <p className="text-graphite text-sm leading-relaxed">
                   {item.description}
                 </p>
               </Link>
@@ -152,7 +152,7 @@ export function HamburgMarketPricesSection() {
         </div>
 
         {/* Disclaimer */}
-        <p className="mt-12 text-cream/40 text-xs text-center">
+        <p className="mt-12 text-graphite text-xs text-center">
           Durchschnittswerte basierend auf Abels-Vermittlungen und Marktanalysen. Individuelle Bewertung auf Anfrage.
         </p>
       </div>

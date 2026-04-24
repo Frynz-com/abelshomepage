@@ -55,17 +55,18 @@ export default function KaufenPage() {
       <Header />
 
       {/* Hero */}
-      <section className="relative bg-ink text-cream overflow-hidden">
+      <section className="relative overflow-hidden border-b border-line/40">
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/wohnen.jpg"
             alt="Immobilie kaufen mit Abels Immobilien"
             fill
             priority
-            className="object-cover opacity-20"
+            className="object-cover"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/95 to-ink/70" />
+          <div className="absolute inset-0 bg-ink/18" />
+          <div className="absolute inset-0 bg-gradient-to-r from-ink/55 via-ink/15 to-transparent" />
         </div>
         <div className="relative z-10 max-w-[1440px] mx-auto px-6 lg:px-20 pt-44 pb-28 lg:pt-52 lg:pb-36">
           <motion.div
@@ -77,11 +78,11 @@ export default function KaufenPage() {
               <div className="w-8 h-px bg-gold/60" />
               <span className="text-[11px] uppercase tracking-[0.28em] text-gold">Immobilie kaufen</span>
             </div>
-            <h1 className="font-serif text-[clamp(2.8rem,6vw,5.5rem)] text-cream leading-[0.96] tracking-[-0.02em] max-w-[780px] mb-8">
+            <h1 className="font-serif text-[clamp(2.8rem,6vw,5.5rem)] text-white leading-[0.96] tracking-[-0.02em] max-w-[780px] mb-8">
               Die richtige Immobilie<br />
-              <span className="text-cream/55">verdient die richtige Begleitung.</span>
+              <span className="text-white/60">verdient die richtige Begleitung.</span>
             </h1>
-            <p className="text-[17px] text-cream/60 leading-[1.75] max-w-[520px] mb-10">
+            <p className="text-[17px] text-white/65 leading-[1.75] max-w-[520px] mb-10">
               Als Käufer navigieren Sie durch einen komplexen Markt. Wir helfen Ihnen, die Immobilie zu finden, die nicht nur zu Ihrem Budget, sondern zu Ihrem Leben passt.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
@@ -94,7 +95,7 @@ export default function KaufenPage() {
               </button>
               <Link
                 href="/objekte"
-                className="inline-flex items-center justify-center gap-2 border border-cream/20 text-cream px-8 py-4 text-[11px] uppercase tracking-[0.16em] font-medium hover:bg-cream/8 hover:border-cream/35 transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 border border-white/25 text-white px-8 py-4 text-[11px] uppercase tracking-[0.16em] font-medium hover:bg-white/8 hover:border-white/40 transition-all duration-300"
               >
                 Aktuelle Objekte
               </Link>
@@ -194,14 +195,14 @@ export default function KaufenPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-ink text-cream py-20 lg:py-28">
+      <section className="bg-bone border-t border-line/40 py-20 lg:py-28">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-20">
           <div className="grid lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-7">
-              <h2 className="font-serif text-[clamp(2rem,4vw,3.6rem)] text-cream leading-[0.97] tracking-[-0.02em] mb-4">
+              <h2 className="font-serif text-[clamp(2rem,4vw,3.6rem)] text-ink leading-[0.97] tracking-[-0.02em] mb-4">
                 Sie suchen etwas Besonderes?
               </h2>
-              <p className="text-[16px] text-cream/55 leading-[1.75]">
+              <p className="text-[16px] text-graphite leading-[1.75]">
                 Registrieren Sie sich als Kaufinteressent und erhalten Sie als Erstes Zugang zu neuen Objekten — auch vor der öffentlichen Vermarktung.
               </p>
             </div>
@@ -215,7 +216,7 @@ export default function KaufenPage() {
               </button>
               <Link
                 href="/objekte"
-                className="inline-flex items-center justify-center gap-2 border border-cream/20 text-cream px-8 py-4 text-[11px] uppercase tracking-[0.16em] font-medium hover:bg-cream/8 hover:border-cream/35 transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 border border-line text-ink/70 px-8 py-4 text-[11px] uppercase tracking-[0.16em] font-medium hover:bg-cream hover:border-line/80 transition-all duration-300"
               >
                 Aktuelle Objekte ansehen
               </Link>

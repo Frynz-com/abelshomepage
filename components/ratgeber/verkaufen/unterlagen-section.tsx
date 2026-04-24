@@ -117,10 +117,10 @@ export function RatgeberVerkaufenUnterlagenSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="mt-12 bg-ink text-cream p-8 lg:p-10"
+          className="mt-12 bg-cream border border-line/50 p-8 lg:p-10"
         >
-          <h4 className="font-serif text-xl text-cream mb-4">Unser Tipp</h4>
-          <p className="text-cream/80 leading-relaxed">
+          <h4 className="font-serif text-xl text-ink mb-4">Unser Tipp</h4>
+          <p className="text-graphite leading-relaxed">
             Beginnen Sie frühzeitig mit dem Zusammenstellen der Unterlagen. Manche Dokumente (z.B. Grundbuchauszug, Energieausweis) können mehrere Tage oder Wochen dauern. Eine vollständige Dokumentation beim ersten Interessentenkontakt signalisiert Professionalität und beschleunigt den gesamten Prozess.
           </p>
         </motion.div>

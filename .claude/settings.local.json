@@ -24,7 +24,9 @@
       "Bash(git commit:*)",
       "Bash(git branch:*)",
       "Bash(git remote:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(sed -i '' 's/className=\"absolute inset-0 bg-ink\\\\/52\"/className=\"absolute inset-0 bg-ink\\\\/22\"/g' components/essen/hero-section.tsx components/duesseldorf/hero-section.tsx components/hamburg/hero-section.tsx components/frankfurt/hero-section.tsx components/munich/hero-section.tsx)",
+      "Bash(sed -i '' 's/className=\"absolute inset-0 z-10 bg-ink\\\\/40\"/className=\"absolute inset-0 z-10 bg-ink\\\\/22\"/g' components/gruenwald/hero-section.tsx)"
     ]
   }
 }

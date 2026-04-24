@@ -51,7 +51,7 @@ export default function KontaktPage() {
     <main className="bg-cream min-h-screen">
 
       {/* Hero */}
-      <section className="relative bg-ink pt-[120px] pb-24 lg:pb-32 overflow-hidden">
+      <section className="relative bg-bone pt-[120px] pb-24 lg:pb-32 overflow-hidden border-b border-line/40">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(180,145,80,0.07),transparent_60%)]" />
         <div className="absolute bottom-0 left-0 right-0 h-px bg-gold/20" />
 
@@ -64,11 +64,11 @@ export default function KontaktPage() {
             <p className="text-gold text-[11px] uppercase tracking-[0.28em] mb-6">
               Kontakt
             </p>
-            <h1 className="font-serif text-[clamp(2.8rem,6vw,5.5rem)] text-white leading-[1.02] mb-6 max-w-[700px]">
+            <h1 className="font-serif text-[clamp(2.8rem,6vw,5.5rem)] text-ink leading-[1.02] mb-6 max-w-[700px]">
               Sprechen Sie mit<br />
-              <span className="text-white/75">unseren Experten.</span>
+              <span className="text-ink/60">unseren Experten.</span>
             </h1>
-            <p className="text-white/55 text-[16px] lg:text-[17px] leading-relaxed max-w-[500px]">
+            <p className="text-graphite text-[16px] lg:text-[17px] leading-relaxed max-w-[500px]">
               Wir beraten Sie diskret und unverbindlich — ob Verkauf, Kauf oder Wertermittlung.
             </p>
           </motion.div>
@@ -345,7 +345,7 @@ export default function KontaktPage() {
       </section>
 
       {/* Bottom editorial strip */}
-      <section className="bg-ink py-16 lg:py-20">
+      <section className="bg-bone border-t border-line/40 py-16 lg:py-20">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-20">
           <div className="grid sm:grid-cols-3 gap-10 lg:gap-16">
             {[
@@ -367,7 +367,7 @@ export default function KontaktPage() {
                 <p className="text-[11px] uppercase tracking-[0.22em] text-gold mb-3">
                   {item.label}
                 </p>
-                <p className="text-white/55 text-[14px] leading-relaxed">{item.text}</p>
+                <p className="text-graphite text-[14px] leading-relaxed">{item.text}</p>
               </div>
             ))}
           </div>

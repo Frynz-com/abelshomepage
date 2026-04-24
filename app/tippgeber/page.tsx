@@ -40,17 +40,19 @@ export default function TippgeberPage() {
       <Header />
 
       {/* Hero */}
-      <section className="relative bg-ink text-cream overflow-hidden">
+      <section className="relative overflow-hidden border-b border-line/40">
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/tippgeber.jpg"
             alt="Tippgeber Programm Abels Immobilien"
             fill
             priority
-            className="object-cover opacity-20"
+            className="object-cover object-center"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/95 to-ink/60" />
+          <div className="absolute inset-0 bg-ink/20" />
+          <div className="absolute inset-0 bg-gradient-to-r from-ink/60 via-ink/20 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-ink/60 via-ink/10 to-transparent" />
         </div>
         <div className="relative z-10 max-w-[1440px] mx-auto px-6 lg:px-20 pt-44 pb-28 lg:pt-52 lg:pb-36">
           <motion.div
@@ -59,14 +61,14 @@ export default function TippgeberPage() {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
             <div className="flex items-center gap-3 mb-10">
-              <div className="w-8 h-px bg-gold/60" />
-              <span className="text-[11px] uppercase tracking-[0.28em] text-gold">Tippgeber</span>
+              <div className="w-8 h-px bg-gold/80" />
+              <span className="text-[11px] uppercase tracking-[0.28em] text-gold/90">Tippgeber</span>
             </div>
-            <h1 className="font-serif text-[clamp(2.8rem,6vw,5.5rem)] text-cream leading-[0.96] tracking-[-0.02em] max-w-[780px] mb-8">
+            <h1 className="font-serif text-[clamp(2.8rem,6vw,5.5rem)] text-white leading-[0.96] tracking-[-0.02em] max-w-[780px] mb-8">
               Sie kennen eine<br />
-              <span className="text-cream/55">verkaufswillige Immobilie?</span>
+              <span className="text-white/60">verkaufswillige Immobilie?</span>
             </h1>
-            <p className="text-[17px] text-cream/60 leading-[1.75] max-w-[520px]">
+            <p className="text-[17px] text-white/65 leading-[1.75] max-w-[520px]">
               Geben Sie uns einen Hinweis — diskret, einfach und ohne Aufwand. Wenn es zum Abschluss kommt, belohnen wir Ihre Empfehlung mit einer attraktiven Tippgeberprovision.
             </p>
           </motion.div>

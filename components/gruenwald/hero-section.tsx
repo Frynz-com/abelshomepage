@@ -22,7 +22,7 @@ export function GruenwaldHeroSection() {
         />
       </div>
 
-      <div className="absolute inset-0 z-10 bg-ink/40" />
+      <div className="absolute inset-0 z-10 bg-ink/22" />
       <div className="absolute inset-0 z-10 bg-gradient-to-t from-ink/90 via-ink/20 to-ink/30" />
 
       <div className="relative z-20 max-w-[1440px] mx-auto px-6 lg:px-20 w-full pt-32 pb-24">

@@ -76,39 +76,39 @@ export function ArtenSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
-            className="bg-ink text-cream p-8 lg:p-10"
+            className="bg-cream border border-line/50 p-8 lg:p-10"
           >
             <div className="flex items-center gap-4 mb-6">
               <span className="text-gold text-sm tracking-[0.1em]">Option B</span>
-              <div className="flex-1 h-px bg-cream/20" />
+              <div className="flex-1 h-px bg-line" />
             </div>
-            <h3 className="font-serif text-2xl mb-4">Bedarfsausweis</h3>
-            <p className="text-cream/80 leading-relaxed mb-6">
+            <h3 className="font-serif text-2xl text-ink mb-4">Bedarfsausweis</h3>
+            <p className="text-graphite leading-relaxed mb-6">
               Basiert auf einer technischen Analyse des Gebaudes (Bausubstanz, Heizung, Dammung). Unabhangig vom Nutzerverhalten und daher aussagekraftiger.
             </p>
-            
+
             <div className="space-y-4 mb-8">
               <div className="flex items-start gap-3">
-                <span className="text-green-400 text-sm mt-0.5">+</span>
-                <span className="text-cream/80 text-sm">Objektive, nutzerunabhangige Bewertung</span>
+                <span className="text-green-600 text-sm mt-0.5">+</span>
+                <span className="text-graphite text-sm">Objektive, nutzerunabhangige Bewertung</span>
               </div>
               <div className="flex items-start gap-3">
-                <span className="text-green-400 text-sm mt-0.5">+</span>
-                <span className="text-cream/80 text-sm">Enthalt Modernisierungsempfehlungen</span>
+                <span className="text-green-600 text-sm mt-0.5">+</span>
+                <span className="text-graphite text-sm">Enthalt Modernisierungsempfehlungen</span>
               </div>
               <div className="flex items-start gap-3">
-                <span className="text-red-400 text-sm mt-0.5">-</span>
-                <span className="text-cream/80 text-sm">Teurer (ca. 300-500 Euro)</span>
+                <span className="text-red-600 text-sm mt-0.5">-</span>
+                <span className="text-graphite text-sm">Teurer (ca. 300-500 Euro)</span>
               </div>
               <div className="flex items-start gap-3">
-                <span className="text-red-400 text-sm mt-0.5">-</span>
-                <span className="text-cream/80 text-sm">Vor-Ort-Begehung erforderlich</span>
+                <span className="text-red-600 text-sm mt-0.5">-</span>
+                <span className="text-graphite text-sm">Vor-Ort-Begehung erforderlich</span>
               </div>
             </div>
 
-            <div className="pt-6 border-t border-cream/20">
-              <p className="text-cream/60 text-sm">
-                <strong className="text-cream">Pflicht fur:</strong> Gebaude mit weniger als 5 Wohneinheiten und Baujahr vor 1977, sofern nicht bereits modernisiert.
+            <div className="pt-6 border-t border-line">
+              <p className="text-stone text-sm">
+                <strong className="text-ink">Pflicht fur:</strong> Gebaude mit weniger als 5 Wohneinheiten und Baujahr vor 1977, sofern nicht bereits modernisiert.
               </p>
             </div>
           </motion.div>

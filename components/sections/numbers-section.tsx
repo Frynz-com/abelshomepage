@@ -47,14 +47,14 @@ const stats = [
 
 export function NumbersSection() {
   return (
-    <section className="py-32 lg:py-40 bg-ink">
+    <section className="py-32 lg:py-40 bg-bone border-t border-line/40">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
         {/* Header */}
         <div className="mb-24 lg:mb-32">
           <p className="text-gold text-xs uppercase tracking-[0.2em] mb-4">
             Unser Fundament
           </p>
-          <h2 className="font-serif text-3xl lg:text-5xl text-cream tracking-[-0.015em] leading-[1.1] max-w-[720px]">
+          <h2 className="font-serif text-3xl lg:text-5xl text-ink tracking-[-0.015em] leading-[1.1] max-w-[720px]">
             Erfahrung, die Sie spüren.
           </h2>
         </div>
@@ -69,19 +69,19 @@ export function NumbersSection() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <span className="block font-serif text-5xl lg:text-6xl text-cream mb-6">
+              <span className="block font-serif text-5xl lg:text-6xl text-ink mb-6">
                 {stat.isStatic && stat.staticText ? (
                   stat.staticText
                 ) : (
-                  <AnimatedNumber 
-                    value={stat.value} 
+                  <AnimatedNumber
+                    value={stat.value}
                     suffix={stat.suffix}
                     prefix={stat.prefix}
                     duration={2000}
                   />
                 )}
               </span>
-              <span className="text-cream/70 text-sm leading-relaxed">
+              <span className="text-graphite text-sm leading-relaxed">
                 {stat.label}
               </span>
             </motion.div>

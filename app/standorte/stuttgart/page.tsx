@@ -439,7 +439,7 @@ export default function StuttgartPage() {
       </section>
 
       {/* ─── 5. FÜR WELCHE IMMOBILIEN ─── */}
-      <section className="py-28 lg:py-40 bg-ink text-cream">
+      <section className="py-28 lg:py-40 bg-bone border-t border-line/40">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-20">
 
           <motion.div
@@ -454,13 +454,13 @@ export default function StuttgartPage() {
                 <div className="w-8 h-px bg-gold/60" />
                 <span className="text-[11px] uppercase tracking-[0.24em] text-gold">Unsere Objekte</span>
               </div>
-              <h2 className="font-serif text-[clamp(2rem,3.8vw,3.2rem)] text-cream leading-[1.06] tracking-[-0.01em]">
+              <h2 className="font-serif text-[clamp(2rem,3.8vw,3.2rem)] text-ink leading-[1.06] tracking-[-0.01em]">
                 Welche Immobilien wir in Stuttgart begleiten
               </h2>
             </div>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border border-cream/10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border border-line/40">
             {propertyTypes.map((pt, i) => (
               <motion.div
                 key={pt.title}
@@ -468,17 +468,17 @@ export default function StuttgartPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: i * 0.07 }}
                 viewport={{ once: true }}
-                className={`p-8 lg:p-10 border-b border-cream/10 group hover:bg-cream/[0.04] transition-colors duration-300 ${
-                  i % 3 !== 2 ? "lg:border-r border-cream/10" : ""
-                } ${i % 2 === 0 ? "md:border-r border-cream/10 lg:border-r-0" : "md:border-r-0"} ${
-                  i === 0 || i === 1 || i === 3 || i === 4 ? "lg:border-r border-cream/10" : ""
+                className={`p-8 lg:p-10 border-b border-line/40 group hover:bg-cream transition-colors duration-300 ${
+                  i % 3 !== 2 ? "lg:border-r border-line/40" : ""
+                } ${i % 2 === 0 ? "md:border-r border-line/40 lg:border-r-0" : "md:border-r-0"} ${
+                  i === 0 || i === 1 || i === 3 || i === 4 ? "lg:border-r border-line/40" : ""
                 }`}
               >
                 <div className="w-6 h-px bg-gold/50 mb-5" />
-                <h3 className="font-serif text-[20px] text-cream mb-3 leading-tight group-hover:text-gold transition-colors duration-300">
+                <h3 className="font-serif text-[20px] text-ink mb-3 leading-tight group-hover:text-gold transition-colors duration-300">
                   {pt.title}
                 </h3>
-                <p className="text-[14px] text-cream/55 leading-[1.7]">
+                <p className="text-[14px] text-graphite leading-[1.7]">
                   {pt.text}
                 </p>
               </motion.div>
@@ -599,9 +599,9 @@ export default function StuttgartPage() {
       </section>
 
       {/* ─── 8. CTA ─── */}
-      <section className="bg-ink text-cream">
+      <section className="bg-bone border-t border-line/40">
         {/* Statement */}
-        <div className="border-b border-cream/8">
+        <div className="border-b border-line/40">
           <div className="max-w-[1440px] mx-auto px-6 lg:px-20 py-20 lg:py-28">
             <motion.div
               initial={{ opacity: 0, y: 28 }}
@@ -613,10 +613,10 @@ export default function StuttgartPage() {
                 <div className="w-8 h-px bg-gold/60" />
                 <span className="text-[11px] uppercase tracking-[0.24em] text-gold">Ihr nächster Schritt</span>
               </div>
-              <h2 className="font-serif text-[clamp(2.4rem,5.5vw,5rem)] text-cream leading-[0.97] tracking-[-0.02em] max-w-[820px]">
+              <h2 className="font-serif text-[clamp(2.4rem,5.5vw,5rem)] text-ink leading-[0.97] tracking-[-0.02em] max-w-[820px]">
                 Sie möchten Ihre Immobilie<br />
                 in Stuttgart professionell<br />
-                <span className="text-cream/55">verkaufen?</span>
+                <span className="text-graphite">verkaufen?</span>
               </h2>
             </motion.div>
           </div>
@@ -630,9 +630,9 @@ export default function StuttgartPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="lg:col-span-6 py-16 lg:py-20 lg:pr-20 lg:border-r border-cream/8"
+              className="lg:col-span-6 py-16 lg:py-20 lg:pr-20 lg:border-r border-line/40"
             >
-              <p className="text-[16px] text-cream/60 leading-[1.75] mb-10 max-w-[460px]">
+              <p className="text-[16px] text-graphite leading-[1.75] mb-10 max-w-[460px]">
                 Lassen Sie Ihre Immobilie in Stuttgart fundiert einschätzen — kostenfrei, unverbindlich und durch einen erfahrenen Makler, der den Markt kennt. Oder vereinbaren Sie direkt ein persönliches Gespräch.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
@@ -645,7 +645,7 @@ export default function StuttgartPage() {
                 </Link>
                 <button
                   onClick={() => setModalOpen(true)}
-                  className="inline-flex items-center justify-center border border-cream/20 text-cream px-8 py-4 text-[11px] uppercase tracking-[0.16em] font-medium hover:bg-cream/8 hover:border-cream/35 transition-all"
+                  className="inline-flex items-center justify-center border border-line text-ink/70 px-8 py-4 text-[11px] uppercase tracking-[0.16em] font-medium hover:bg-cream transition-all"
                 >
                   Persönliches Gespräch
                 </button>
@@ -659,29 +659,29 @@ export default function StuttgartPage() {
               viewport={{ once: true }}
               className="lg:col-span-5 lg:col-start-8 py-16 lg:py-20 lg:pl-16"
             >
-              <h3 className="text-[11px] uppercase tracking-[0.22em] text-cream/38 mb-8">Direkter Kontakt</h3>
+              <h3 className="text-[11px] uppercase tracking-[0.22em] text-graphite mb-8">Direkter Kontakt</h3>
               <div className="space-y-5">
                 <a href="tel:+492115591751" className="flex items-center gap-4 group">
-                  <div className="w-10 h-10 border border-cream/12 flex items-center justify-center group-hover:border-gold/40 transition-colors shrink-0">
+                  <div className="w-10 h-10 border border-line/40 flex items-center justify-center group-hover:border-gold/40 transition-colors shrink-0">
                     <Phone className="w-4 h-4 text-gold/70 group-hover:text-gold transition-colors" />
                   </div>
                   <div>
-                    <span className="block text-[10px] uppercase tracking-[0.18em] text-cream/35 mb-0.5">Telefon</span>
-                    <span className="block text-[15px] text-cream group-hover:text-gold transition-colors">+49 211 5591751</span>
+                    <span className="block text-[10px] uppercase tracking-[0.18em] text-graphite mb-0.5">Telefon</span>
+                    <span className="block text-[15px] text-ink group-hover:text-gold transition-colors">+49 211 5591751</span>
                   </div>
                 </a>
                 <a href="mailto:info@abels-immobilien.de" className="flex items-center gap-4 group">
-                  <div className="w-10 h-10 border border-cream/12 flex items-center justify-center group-hover:border-gold/40 transition-colors shrink-0">
+                  <div className="w-10 h-10 border border-line/40 flex items-center justify-center group-hover:border-gold/40 transition-colors shrink-0">
                     <Mail className="w-4 h-4 text-gold/70 group-hover:text-gold transition-colors" />
                   </div>
                   <div>
-                    <span className="block text-[10px] uppercase tracking-[0.18em] text-cream/35 mb-0.5">E-Mail</span>
-                    <span className="block text-[15px] text-cream group-hover:text-gold transition-colors">info@abels-immobilien.de</span>
+                    <span className="block text-[10px] uppercase tracking-[0.18em] text-graphite mb-0.5">E-Mail</span>
+                    <span className="block text-[15px] text-ink group-hover:text-gold transition-colors">info@abels-immobilien.de</span>
                   </div>
                 </a>
               </div>
-              <div className="mt-10 pt-8 border-t border-cream/10">
-                <p className="text-[13px] text-cream/38 leading-relaxed">
+              <div className="mt-10 pt-8 border-t border-line/40">
+                <p className="text-[13px] text-graphite leading-relaxed">
                   Erstgespräch kostenfrei · Bewertung in 72 Stunden · Keine Vorauszahlung
                 </p>
               </div>

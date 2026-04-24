@@ -23,10 +23,10 @@ export function HeroSection() {
           className="object-cover object-center"
           sizes="100vw"
         />
-        {/* Cleaner, lighter overlays — image breathes more */}
-        <div className="absolute inset-0 bg-ink/38" />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink/72 via-ink/25 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-transparent" />
+        {/* Light, airy overlays — image breathes */}
+        <div className="absolute inset-0 bg-ink/18" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink/55 via-ink/15 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/8 to-transparent" />
       </div>
 
       {/* Content — bottom-anchored editorial layout */}

@@ -50,7 +50,7 @@ const steps = [
 
 export function RatgeberVerkaufenAblaufSection() {
   return (
-    <section id="ablauf" className="py-24 lg:py-32 bg-ink text-cream">
+    <section id="ablauf" className="py-24 lg:py-32 bg-bone border-t border-line/40">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-20">
         {/* Header */}
         <motion.div
@@ -63,10 +63,10 @@ export function RatgeberVerkaufenAblaufSection() {
           <p className="text-gold text-xs uppercase tracking-[0.25em] mb-4">
             Der Prozess
           </p>
-          <h2 className="font-serif text-4xl lg:text-5xl text-cream leading-[1.1] max-w-[700px] mb-6">
+          <h2 className="font-serif text-4xl lg:text-5xl text-ink leading-[1.1] max-w-[700px] mb-6">
             Immobilie verkaufen: Der komplette Ablauf in 6 Schritten
           </h2>
-          <p className="text-cream/70 text-lg max-w-[600px]">
+          <p className="text-graphite text-lg max-w-[600px]">
             Von der ersten Überlegung bis zur Schlüsselübergabe vergehen typischerweise 3–6 Monate. So läuft der Prozess ab.
           </p>
         </motion.div>
@@ -80,19 +80,19 @@ export function RatgeberVerkaufenAblaufSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.08 }}
               viewport={{ once: true }}
-              className="border border-white/10 p-8 lg:p-10"
+              className="border border-line/40 p-8 lg:p-10"
             >
               <div className="flex items-start justify-between mb-6">
                 <span className="font-serif text-5xl lg:text-6xl text-gold/30">{step.number}</span>
-                <span className="text-xs uppercase tracking-[0.1em] text-cream/50 bg-white/5 px-3 py-1.5">{step.duration}</span>
+                <span className="text-xs uppercase tracking-[0.1em] text-graphite bg-line/20 px-3 py-1.5">{step.duration}</span>
               </div>
-              <h3 className="font-serif text-2xl text-cream mb-4">{step.title}</h3>
-              <p className="text-cream/70 leading-relaxed mb-6">{step.description}</p>
-              <div className="pt-6 border-t border-white/10">
-                <p className="text-xs uppercase tracking-[0.1em] text-cream/50 mb-3">Kernaufgaben</p>
+              <h3 className="font-serif text-2xl text-ink mb-4">{step.title}</h3>
+              <p className="text-graphite leading-relaxed mb-6">{step.description}</p>
+              <div className="pt-6 border-t border-line/40">
+                <p className="text-xs uppercase tracking-[0.1em] text-graphite mb-3">Kernaufgaben</p>
                 <ul className="flex flex-wrap gap-2">
                   {step.tasks.map((task) => (
-                    <li key={task} className="text-sm text-cream/80 bg-white/5 px-3 py-1">{task}</li>
+                    <li key={task} className="text-sm text-ink bg-line/20 px-3 py-1">{task}</li>
                   ))}
                 </ul>
               </div>
@@ -108,7 +108,7 @@ export function RatgeberVerkaufenAblaufSection() {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <p className="text-cream/70 mb-6">Sie möchten den Prozess starten?</p>
+          <p className="text-graphite mb-6">Sie möchten den Prozess starten?</p>
           <Link
             href="/bewertung"
             className="inline-flex items-center justify-center bg-cream text-ink px-10 py-5 text-xs uppercase tracking-[0.15em] font-medium hover:bg-white transition-all duration-300"

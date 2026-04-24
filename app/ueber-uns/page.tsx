@@ -84,17 +84,18 @@ export default function UeberUnsPage() {
       <Header />
 
       {/* Hero */}
-      <section className="relative bg-ink text-cream overflow-hidden">
+      <section className="relative overflow-hidden border-b border-line/40">
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/team-meeting.jpg"
             alt="Abels Immobilien Team"
             fill
             priority
-            className="object-cover opacity-20"
+            className="object-cover"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/90 to-ink/70" />
+          <div className="absolute inset-0 bg-ink/18" />
+          <div className="absolute inset-0 bg-gradient-to-r from-ink/55 via-ink/15 to-transparent" />
         </div>
         <div className="relative z-10 max-w-[1440px] mx-auto px-6 lg:px-20 pt-44 pb-28 lg:pt-52 lg:pb-36">
           <motion.div
@@ -106,11 +107,11 @@ export default function UeberUnsPage() {
               <div className="w-8 h-px bg-gold/60" />
               <span className="text-[11px] uppercase tracking-[0.28em] text-gold">Über Abels Immobilien</span>
             </div>
-            <h1 className="font-serif text-[clamp(2.8rem,6vw,5.5rem)] text-cream leading-[0.96] tracking-[-0.02em] max-w-[820px] mb-8">
+            <h1 className="font-serif text-[clamp(2.8rem,6vw,5.5rem)] text-white leading-[0.96] tracking-[-0.02em] max-w-[820px] mb-8">
               Inhabergeführt.<br />
-              <span className="text-cream/55">Seit 1999.</span>
+              <span className="text-white/60">Seit 1999.</span>
             </h1>
-            <p className="text-[17px] text-cream/60 leading-[1.75] max-w-[560px]">
+            <p className="text-[17px] text-white/65 leading-[1.75] max-w-[560px]">
               Abels Immobilien ist kein Franchise-Unternehmen und kein Massenanbieter. Wir sind ein inhabergeführtes Maklerhaus mit dem Anspruch, jeden Verkauf so zu begleiten, als wäre es der einzige.
             </p>
           </motion.div>
@@ -363,7 +364,7 @@ export default function UeberUnsPage() {
       </section>
 
       {/* ─── REFERENZEN ─── */}
-      <section className="bg-ink text-cream py-24 lg:py-36">
+      <section className="bg-bone border-t border-line/40 py-24 lg:py-36">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-20">
 
           {/* Section header */}
@@ -379,10 +380,10 @@ export default function UeberUnsPage() {
               <span className="text-[11px] uppercase tracking-[0.24em] text-gold">Referenzen</span>
             </div>
             <div className="grid lg:grid-cols-12 gap-10 items-end">
-              <h2 className="font-serif text-[clamp(2.2rem,4.5vw,4rem)] text-cream leading-[0.97] tracking-[-0.02em] lg:col-span-6">
+              <h2 className="font-serif text-[clamp(2.2rem,4.5vw,4rem)] text-ink leading-[0.97] tracking-[-0.02em] lg:col-span-6">
                 Was unsere Mandanten sagen.
               </h2>
-              <p className="text-[15px] text-cream/50 leading-[1.75] lg:col-span-5 lg:col-start-8">
+              <p className="text-[15px] text-graphite leading-[1.75] lg:col-span-5 lg:col-start-8">
                 Unsere stärksten Argumente kommen nicht von uns. Sie kommen von Menschen, die uns mit einer ihrer bedeutendsten Entscheidungen vertraut haben.
               </p>
             </div>
@@ -394,7 +395,7 @@ export default function UeberUnsPage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
-            className="border border-cream/10 p-10 lg:p-16 mb-6 relative"
+            className="border border-line/50 p-10 lg:p-16 mb-6 relative bg-cream"
           >
             <Quote className="absolute top-8 right-8 w-10 h-10 text-gold/20" />
             <div className="flex gap-1 mb-8">
@@ -402,20 +403,20 @@ export default function UeberUnsPage() {
                 <Star key={i} className="w-4 h-4 fill-gold text-gold" />
               ))}
             </div>
-            <blockquote className="font-serif italic text-[clamp(1.3rem,2.5vw,2rem)] text-cream leading-[1.4] max-w-[780px] mb-10">
+            <blockquote className="font-serif italic text-[clamp(1.3rem,2.5vw,2rem)] text-ink leading-[1.4] max-w-[780px] mb-10">
               „{testimonials[0].quote}"
             </blockquote>
             <div className="flex items-center gap-4">
               <div className="w-px h-8 bg-gold/40" />
               <div>
-                <span className="block text-[14px] text-cream/80 font-medium">{testimonials[0].author}</span>
-                <span className="block text-[12px] text-cream/40 uppercase tracking-[0.14em]">{testimonials[0].location} · {testimonials[0].type}</span>
+                <span className="block text-[14px] text-ink/80 font-medium">{testimonials[0].author}</span>
+                <span className="block text-[12px] text-graphite uppercase tracking-[0.14em]">{testimonials[0].location} · {testimonials[0].type}</span>
               </div>
             </div>
           </motion.div>
 
           {/* Grid of remaining testimonials */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-cream/8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-line/50">
             {testimonials.slice(1).map((t, i) => (
               <motion.div
                 key={i}
@@ -423,19 +424,19 @@ export default function UeberUnsPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: i * 0.08 }}
                 viewport={{ once: true }}
-                className="bg-ink p-8 lg:p-10 group hover:bg-ink/80 transition-colors duration-300"
+                className="bg-bone border border-line/50 p-8 lg:p-10 group hover:bg-cream/50 transition-colors duration-300"
               >
                 <div className="flex gap-0.5 mb-6">
                   {Array.from({ length: t.rating }).map((_, j) => (
                     <Star key={j} className="w-3.5 h-3.5 fill-gold text-gold" />
                   ))}
                 </div>
-                <blockquote className="text-[14px] text-cream/70 leading-[1.75] mb-8 italic font-serif">
+                <blockquote className="text-[14px] text-graphite leading-[1.75] mb-8 italic font-serif">
                   „{t.quote}"
                 </blockquote>
-                <div className="border-t border-cream/10 pt-6">
-                  <span className="block text-[13px] text-cream/80 font-medium mb-0.5">{t.author}</span>
-                  <span className="block text-[11px] text-cream/35 uppercase tracking-[0.14em]">{t.location}</span>
+                <div className="border-t border-line/50 pt-6">
+                  <span className="block text-[13px] text-ink font-medium mb-0.5">{t.author}</span>
+                  <span className="block text-[11px] text-stone uppercase tracking-[0.14em]">{t.location}</span>
                   <span className="block text-[11px] text-gold/60 uppercase tracking-[0.12em] mt-1">{t.type}</span>
                 </div>
               </motion.div>
@@ -448,16 +449,16 @@ export default function UeberUnsPage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="mt-12 pt-12 border-t border-cream/8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6"
+            className="mt-12 pt-12 border-t border-line/50 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6"
           >
-            <p className="text-[14px] text-cream/40">
+            <p className="text-[14px] text-graphite">
               Alle Bewertungen sind authentisch und stammen von verifizierten Mandanten.
             </p>
             <a
               href="https://g.page/r/abels-immobilien/review"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.16em] text-cream/50 hover:text-gold transition-colors group shrink-0"
+              className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.16em] text-stone hover:text-gold transition-colors group shrink-0"
             >
               Alle Google-Bewertungen lesen
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />

@@ -76,7 +76,7 @@ export function MarketSection() {
   const [active, setActive] = useState(markets[0])
 
   return (
-    <section className="py-28 lg:py-40 bg-ink text-cream">
+    <section className="py-28 lg:py-40 bg-bone border-t border-line/40">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-20">
 
         {/* Header */}
@@ -94,12 +94,12 @@ export function MarketSection() {
                 Unsere Märkte
               </span>
             </div>
-            <h2 className="font-serif text-[clamp(2.2rem,4vw,3.6rem)] text-cream leading-[1.04] tracking-[-0.015em]">
+            <h2 className="font-serif text-[clamp(2.2rem,4vw,3.6rem)] text-ink leading-[1.04] tracking-[-0.015em]">
               Premium-Lagen<br />in Deutschland
             </h2>
           </div>
           <div className="lg:col-span-4 lg:col-start-9 flex items-end">
-            <p className="text-[15px] text-cream/48 leading-[1.8]">
+            <p className="text-[15px] text-graphite leading-[1.8]">
               Ausgewählte Stadtteile, in denen wir aktiv tätig sind und den Markt aus erster Hand kennen.
             </p>
           </div>
@@ -109,7 +109,7 @@ export function MarketSection() {
         <div className="grid lg:grid-cols-12 gap-0">
 
           {/* Left: District list */}
-          <div className="lg:col-span-5 border-t border-cream/8">
+          <div className="lg:col-span-5 border-t border-line/50">
             {markets.map((market, i) => (
               <motion.button
                 key={market.name}
@@ -118,7 +118,7 @@ export function MarketSection() {
                 transition={{ duration: 0.4, delay: i * 0.04 }}
                 viewport={{ once: true }}
                 onClick={() => setActive(market)}
-                className={`w-full text-left flex items-center justify-between py-[18px] border-b border-cream/8 transition-all duration-250 group ${
+                className={`w-full text-left flex items-center justify-between py-[18px] border-b border-line/50 transition-all duration-250 group ${
                   active.name === market.name ? "pl-4" : "pl-0 hover:pl-2"
                 }`}
               >
@@ -129,12 +129,12 @@ export function MarketSection() {
                   <div>
                     <span className={`block font-serif text-[17px] leading-tight transition-colors duration-200 ${
                       active.name === market.name
-                        ? "text-cream"
-                        : "text-cream/38 group-hover:text-cream/65"
+                        ? "text-ink"
+                        : "text-ink/38 group-hover:text-ink/65"
                     }`}>
                       {market.name}
                     </span>
-                    <span className="block text-[9.5px] uppercase tracking-[0.2em] text-cream/22 mt-0.5">
+                    <span className="block text-[9.5px] uppercase tracking-[0.2em] text-stone/60 mt-0.5">
                       {market.city}
                     </span>
                   </div>
@@ -142,14 +142,14 @@ export function MarketSection() {
                 <ArrowRight className={`w-3.5 h-3.5 transition-all duration-200 shrink-0 mr-1 ${
                   active.name === market.name
                     ? "text-gold translate-x-0.5"
-                    : "text-cream/12 group-hover:text-cream/30"
+                    : "text-line group-hover:text-stone/50"
                 }`} />
               </motion.button>
             ))}
           </div>
 
           {/* Right: Editorial market description */}
-          <div className="lg:col-span-6 lg:col-start-7 lg:pl-20 lg:border-l border-cream/8 mt-14 lg:mt-0">
+          <div className="lg:col-span-6 lg:col-start-7 lg:pl-20 lg:border-l border-line/50 mt-14 lg:mt-0">
             <motion.div
               key={active.name}
               initial={{ opacity: 0, y: 10 }}
@@ -160,29 +160,29 @@ export function MarketSection() {
               <span className="block text-[9.5px] uppercase tracking-[0.3em] text-gold mb-5">
                 {active.city}
               </span>
-              <h3 className="font-serif text-[44px] lg:text-[56px] text-cream leading-none tracking-[-0.025em] mb-7">
+              <h3 className="font-serif text-[44px] lg:text-[56px] text-ink leading-none tracking-[-0.025em] mb-7">
                 {active.name}
               </h3>
-              <div className="w-8 h-px bg-gold/35 mb-9" />
+              <div className="w-8 h-px bg-gold/40 mb-9" />
 
-              <p className="text-[15px] text-cream/55 leading-[1.85] mb-11 max-w-[400px]">
+              <p className="text-[15px] text-graphite leading-[1.85] mb-11 max-w-[400px]">
                 {active.description}
               </p>
 
               <div className="space-y-7 mb-12">
                 <div>
-                  <span className="block text-[9px] uppercase tracking-[0.28em] text-cream/28 mb-2.5">
+                  <span className="block text-[9px] uppercase tracking-[0.28em] text-stone mb-2.5">
                     Lagen &amp; Adressen
                   </span>
-                  <span className="block text-[14px] text-cream/52 leading-relaxed">
+                  <span className="block text-[14px] text-graphite leading-relaxed">
                     {active.areas}
                   </span>
                 </div>
                 <div>
-                  <span className="block text-[9px] uppercase tracking-[0.28em] text-cream/28 mb-2.5">
+                  <span className="block text-[9px] uppercase tracking-[0.28em] text-stone mb-2.5">
                     Marktcharakter
                   </span>
-                  <span className="block text-[14px] text-cream/52">
+                  <span className="block text-[14px] text-graphite">
                     {active.character}
                   </span>
                 </div>
@@ -190,7 +190,7 @@ export function MarketSection() {
 
               <Link
                 href={`/standorte/${active.slug}`}
-                className="inline-flex items-center gap-2.5 text-[10px] uppercase tracking-[0.22em] text-cream/45 hover:text-gold transition-colors duration-200 group"
+                className="inline-flex items-center gap-2.5 text-[10px] uppercase tracking-[0.22em] text-graphite hover:text-gold transition-colors duration-200 group"
               >
                 {active.city} erkunden
                 <ArrowRight className="w-3.5 h-3.5 text-gold group-hover:translate-x-0.5 transition-transform" />
@@ -206,13 +206,13 @@ export function MarketSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.15 }}
           viewport={{ once: true }}
-          className="mt-24 pt-14 border-t border-cream/8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6"
+          className="mt-24 pt-14 border-t border-line/50 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6"
         >
           <div>
-            <p className="font-serif text-[19px] text-cream leading-snug mb-1.5">
+            <p className="font-serif text-[19px] text-ink leading-snug mb-1.5">
               Wissen Sie, was Ihre Immobilie wert ist?
             </p>
-            <p className="text-[14px] text-cream/38">
+            <p className="text-[14px] text-stone">
               Kostenfreie Bewertung — persönlich, diskret und marktgerecht.
             </p>
           </div>

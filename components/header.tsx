@@ -17,9 +17,9 @@ const cities = [
 const navItems = [
   { href: "/verkaufen", label: "Verkaufen" },
   { href: "/kaufen", label: "Kaufen" },
-  { href: "/bewertung", label: "Bewertung" },
   { href: "/standorte", label: "Standorte", hasDropdown: true },
-  { href: "/tippgeber", label: "Tippgeber" },
+  { href: "/ueber-uns", label: "Über uns" },
+  { href: "/ratgeber", label: "Ratgeber" },
 ]
 
 export function Header() {

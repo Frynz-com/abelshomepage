@@ -71,13 +71,13 @@ export default function RechnerPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 lg:py-24 bg-ink">
+      <section className="py-16 lg:py-24 bg-bone border-t border-line/40">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-12 text-center">
-          <h2 className="font-serif text-3xl md:text-4xl text-cream">
+          <h2 className="font-serif text-3xl md:text-4xl text-ink">
             Sie wünschen eine professionelle Bewertung?
           </h2>
-          <p className="mt-4 text-cream/70 max-w-2xl mx-auto">
-            Unsere Experten erstellen Ihnen eine fundierte Marktpreiseinschätzung, 
+          <p className="mt-4 text-graphite max-w-2xl mx-auto">
+            Unsere Experten erstellen Ihnen eine fundierte Marktpreiseinschätzung,
             persönlich und kostenlos.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
@@ -89,7 +89,7 @@ export default function RechnerPage() {
             </a>
             <a
               href="tel:+4921112345678"
-              className="inline-block border border-cream/30 text-cream px-8 py-4 text-xs uppercase tracking-[0.15em] hover:bg-cream/10 transition-colors"
+              className="inline-block border border-line text-graphite px-8 py-4 text-xs uppercase tracking-[0.15em] hover:bg-cream transition-colors"
             >
               0211 123 456 78
             </a>

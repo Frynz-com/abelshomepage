@@ -84,10 +84,10 @@ export function WoraufAchtenSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
-          className="mt-16 p-8 bg-ink text-cream"
+          className="mt-16 p-8 bg-cream border border-line/50"
         >
-          <h4 className="font-serif text-lg text-cream mb-4">Warnsignale erkennen</h4>
-          <div className="grid md:grid-cols-2 gap-6 text-cream/80">
+          <h4 className="font-serif text-lg text-ink mb-4">Warnsignale erkennen</h4>
+          <div className="grid md:grid-cols-2 gap-6 text-graphite">
             <ul className="space-y-2">
               <li className="flex items-start gap-2">
                 <span className="text-gold">×</span>
