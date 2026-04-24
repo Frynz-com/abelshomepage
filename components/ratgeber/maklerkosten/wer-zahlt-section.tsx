@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 export function WerZahltSection() {
   return (
-    <section className="py-24 lg:py-32 bg-ink text-cream">
+    <section className="py-24 lg:py-32 bg-bone border-t border-line/40">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-20">
         <div className="grid lg:grid-cols-12 gap-16 lg:gap-24">
           {/* Left Column - Main Content */}
@@ -18,20 +18,20 @@ export function WerZahltSection() {
             <span className="text-gold text-sm tracking-[0.15em] uppercase mb-4 block">
               Gesetzliche Regelung seit 2020
             </span>
-            <h2 className="font-serif text-3xl lg:text-4xl text-cream leading-snug mb-8">
+            <h2 className="font-serif text-3xl lg:text-4xl text-ink leading-snug mb-8">
               Wer trägt die Maklerkosten?
             </h2>
-            
-            <div className="space-y-6 text-cream/80 leading-relaxed">
+
+            <div className="space-y-6 text-graphite leading-relaxed">
               <p>
-                Seit dem 23. Dezember 2020 gilt das „Gesetz über die Verteilung 
-                der Maklerkosten bei der Vermittlung von Kaufverträgen über 
-                Wohnungen und Einfamilienhäuser". Es regelt die Provisionsaufteilung 
+                Seit dem 23. Dezember 2020 gilt das „Gesetz über die Verteilung
+                der Maklerkosten bei der Vermittlung von Kaufverträgen über
+                Wohnungen und Einfamilienhäuser". Es regelt die Provisionsaufteilung
                 zwischen Käufer und Verkäufer grundlegend neu.
               </p>
-              
-              <div className="py-6 border-y border-cream/20">
-                <h3 className="font-serif text-xl text-cream mb-4">Die wichtigsten Regeln:</h3>
+
+              <div className="py-6 border-y border-line/40">
+                <h3 className="font-serif text-xl text-ink mb-4">Die wichtigsten Regeln:</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <span className="text-gold mt-1">→</span>
@@ -49,8 +49,8 @@ export function WerZahltSection() {
               </div>
 
               <p>
-                In der Praxis bedeutet das: Bei einem üblichen Provisionssatz von 
-                7,14% (brutto) zahlen Verkäufer und Käufer jeweils 3,57%. Diese 
+                In der Praxis bedeutet das: Bei einem üblichen Provisionssatz von
+                7,14% (brutto) zahlen Verkäufer und Käufer jeweils 3,57%. Diese
                 hälftige Teilung ist heute der Standard im Wohnimmobilienmarkt.
               </p>
             </div>
@@ -64,30 +64,30 @@ export function WerZahltSection() {
             viewport={{ once: true }}
             className="lg:col-span-5"
           >
-            <div className="bg-cream/5 p-8 lg:p-10 border border-cream/10">
-              <h3 className="font-serif text-xl text-cream mb-6">Beispielrechnung</h3>
-              
+            <div className="bg-cream p-8 lg:p-10 border border-line/40">
+              <h3 className="font-serif text-xl text-ink mb-6">Beispielrechnung</h3>
+
               <div className="space-y-4 mb-8">
-                <div className="flex justify-between py-3 border-b border-cream/10">
-                  <span className="text-cream/70">Kaufpreis</span>
-                  <span className="text-cream font-medium">750.000 EUR</span>
+                <div className="flex justify-between py-3 border-b border-line/40">
+                  <span className="text-graphite">Kaufpreis</span>
+                  <span className="text-ink font-medium">750.000 EUR</span>
                 </div>
-                <div className="flex justify-between py-3 border-b border-cream/10">
-                  <span className="text-cream/70">Provision gesamt (7,14%)</span>
-                  <span className="text-cream font-medium">53.550 EUR</span>
+                <div className="flex justify-between py-3 border-b border-line/40">
+                  <span className="text-graphite">Provision gesamt (7,14%)</span>
+                  <span className="text-ink font-medium">53.550 EUR</span>
                 </div>
-                <div className="flex justify-between py-3 border-b border-cream/10">
-                  <span className="text-cream/70">Anteil Verkäufer (3,57%)</span>
+                <div className="flex justify-between py-3 border-b border-line/40">
+                  <span className="text-graphite">Anteil Verkäufer (3,57%)</span>
                   <span className="text-gold font-medium">26.775 EUR</span>
                 </div>
                 <div className="flex justify-between py-3">
-                  <span className="text-cream/70">Anteil Käufer (3,57%)</span>
-                  <span className="text-cream font-medium">26.775 EUR</span>
+                  <span className="text-graphite">Anteil Käufer (3,57%)</span>
+                  <span className="text-ink font-medium">26.775 EUR</span>
                 </div>
               </div>
 
-              <p className="text-cream/60 text-sm leading-relaxed">
-                Die Provision wird auf den Netto-Kaufpreis berechnet. Die 3,57% 
+              <p className="text-graphite text-sm leading-relaxed">
+                Die Provision wird auf den Netto-Kaufpreis berechnet. Die 3,57%
                 entsprechen 3% netto zzgl. 19% MwSt.
               </p>
             </div>

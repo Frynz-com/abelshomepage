@@ -49,28 +49,28 @@ export function NotarkostenClosingCtaSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="bg-ink text-cream p-10 lg:p-12"
+            className="bg-cream border border-line/50 p-10 lg:p-12"
           >
-            <h3 className="font-serif text-2xl mb-6">Direkter Kontakt</h3>
-            
+            <h3 className="font-serif text-2xl text-ink mb-6">Direkter Kontakt</h3>
+
             <div className="space-y-6">
               <div>
-                <span className="text-cream/60 text-sm block mb-1">Telefon</span>
-                <a href="tel:+4921154068030" className="text-xl hover:text-gold transition-colors">
+                <span className="text-graphite text-sm block mb-1">Telefon</span>
+                <a href="tel:+4921154068030" className="text-xl text-ink hover:text-gold transition-colors">
                   +49 211 540 680 30
                 </a>
               </div>
-              
+
               <div>
-                <span className="text-cream/60 text-sm block mb-1">E-Mail</span>
-                <a href="mailto:info@abels-immobilien.de" className="text-xl hover:text-gold transition-colors">
+                <span className="text-graphite text-sm block mb-1">E-Mail</span>
+                <a href="mailto:info@abels-immobilien.de" className="text-xl text-ink hover:text-gold transition-colors">
                   info@abels-immobilien.de
                 </a>
               </div>
-              
+
               <div>
-                <span className="text-cream/60 text-sm block mb-1">Adresse</span>
-                <p className="text-cream/80">
+                <span className="text-graphite text-sm block mb-1">Adresse</span>
+                <p className="text-graphite">
                   Abels Immobilien<br />
                   Dusseldorf | Munchen | Hamburg<br />
                   Frankfurt | Essen
@@ -78,8 +78,8 @@ export function NotarkostenClosingCtaSection() {
               </div>
             </div>
 
-            <div className="mt-8 pt-8 border-t border-cream/20">
-              <p className="text-cream/60 text-sm">
+            <div className="mt-8 pt-8 border-t border-line/40">
+              <p className="text-graphite text-sm">
                 Kostenfreie Erstberatung. Unverbindlich und diskret.
               </p>
             </div>

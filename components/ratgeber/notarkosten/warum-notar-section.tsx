@@ -22,7 +22,7 @@ const reasons = [
 
 export function NotarkostenWarumNotarSection() {
   return (
-    <section className="py-24 lg:py-32 bg-ink text-cream">
+    <section className="py-24 lg:py-32 bg-bone border-t border-line/40">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-20">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-20">
           {/* Left Column - Heading */}
@@ -36,13 +36,13 @@ export function NotarkostenWarumNotarSection() {
             <span className="text-gold text-sm tracking-[0.15em] uppercase mb-6 block">
               Hintergrund
             </span>
-            <h2 className="font-serif text-3xl lg:text-4xl leading-tight mb-6">
+            <h2 className="font-serif text-3xl lg:text-4xl text-ink leading-tight mb-6">
               Warum braucht man uberhaupt einen Notar?
             </h2>
-            <p className="text-cream/70 leading-relaxed">
-              In Deutschland ist die notarielle Beurkundung bei 
-              Immobilienverkaufen gesetzlich vorgeschrieben. Das mag 
-              zunachst wie ein burokratischer Aufwand erscheinen - 
+            <p className="text-graphite leading-relaxed">
+              In Deutschland ist die notarielle Beurkundung bei
+              Immobilienverkaufen gesetzlich vorgeschrieben. Das mag
+              zunachst wie ein burokratischer Aufwand erscheinen -
               dient aber dem Schutz aller Beteiligten.
             </p>
           </motion.div>
@@ -60,8 +60,8 @@ export function NotarkostenWarumNotarSection() {
               >
                 <span className="text-gold/60 font-serif text-2xl">{reason.number}</span>
                 <div>
-                  <h3 className="font-serif text-xl text-cream mb-3">{reason.title}</h3>
-                  <p className="text-cream/70 leading-relaxed">{reason.description}</p>
+                  <h3 className="font-serif text-xl text-ink mb-3">{reason.title}</h3>
+                  <p className="text-graphite leading-relaxed">{reason.description}</p>
                 </div>
               </motion.div>
             ))}

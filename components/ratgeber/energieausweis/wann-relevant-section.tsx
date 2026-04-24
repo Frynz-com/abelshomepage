@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export function WannRelevantSection() {
   return (
-    <section className="py-24 lg:py-32 bg-ink text-cream">
+    <section className="py-24 lg:py-32 bg-bone border-t border-line/40">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-20">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
           {/* Left Column */}
@@ -18,10 +18,10 @@ export function WannRelevantSection() {
             <span className="text-gold text-sm tracking-[0.15em] uppercase mb-4 block">
               Gesetzliche Pflicht
             </span>
-            <h2 className="font-serif text-3xl lg:text-4xl mb-8 leading-tight">
+            <h2 className="font-serif text-3xl lg:text-4xl text-ink mb-8 leading-tight">
               Wann ist der Energieausweis vorgeschrieben?
             </h2>
-            <div className="space-y-6 text-cream/80 leading-relaxed">
+            <div className="space-y-6 text-graphite leading-relaxed">
               <p>
                 Das Gebaude-Energie-Gesetz (GEG) schreibt vor, dass bei jedem Verkauf, jeder Neuvermietung und jeder Verpachtung ein gultiger Energieausweis vorliegen muss. Diese Pflicht gilt fur alle Wohngebaude und die meisten Nichtwohngebaude.
               </p>
@@ -40,29 +40,29 @@ export function WannRelevantSection() {
             className="space-y-8"
           >
             <div className="border-l-2 border-gold pl-6">
-              <h3 className="font-serif text-xl mb-3">Bei Verkauf</h3>
-              <p className="text-cream/70 leading-relaxed">
+              <h3 className="font-serif text-xl text-ink mb-3">Bei Verkauf</h3>
+              <p className="text-graphite leading-relaxed">
                 Spatestens bei der ersten Besichtigung muss der Energieausweis vorgelegt werden. Die Angaben mussen auch im <Link href="/immobilie-verkaufen" className="text-gold hover:underline">Immobilieninserat</Link> erscheinen.
               </p>
             </div>
-            
+
             <div className="border-l-2 border-gold pl-6">
-              <h3 className="font-serif text-xl mb-3">Bei Vermietung</h3>
-              <p className="text-cream/70 leading-relaxed">
+              <h3 className="font-serif text-xl text-ink mb-3">Bei Vermietung</h3>
+              <p className="text-graphite leading-relaxed">
                 Auch bei Neuvermietung oder Verpachtung ist der Energieausweis Pflicht — unabhangig davon, ob es sich um eine Wohnung oder ein ganzes Haus handelt.
               </p>
             </div>
-            
+
             <div className="border-l-2 border-gold pl-6">
-              <h3 className="font-serif text-xl mb-3">In Immobilienanzeigen</h3>
-              <p className="text-cream/70 leading-relaxed">
+              <h3 className="font-serif text-xl text-ink mb-3">In Immobilienanzeigen</h3>
+              <p className="text-graphite leading-relaxed">
                 Energiekennwert, Energieeffizienzklasse, Baujahr und Heizungsart mussen in kommerziellen Anzeigen (Print und Online) verpflichtend angegeben werden.
               </p>
             </div>
 
-            <div className="border-l-2 border-cream/30 pl-6">
-              <h3 className="font-serif text-xl mb-3 text-cream/60">Ausnahmen</h3>
-              <p className="text-cream/50 leading-relaxed">
+            <div className="border-l-2 border-line/40 pl-6">
+              <h3 className="font-serif text-xl text-ink/60 mb-3">Ausnahmen</h3>
+              <p className="text-graphite leading-relaxed">
                 Denkmalgeschutzte Gebaude, kleine Gebaude unter 50 m2 Nutzflache und Gebaude, die nicht regelmaig beheizt werden, sind von der Ausweispflicht befreit.
               </p>
             </div>
