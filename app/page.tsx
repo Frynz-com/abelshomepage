@@ -5,6 +5,7 @@ import { PositioningSection } from "@/components/sections/positioning-section"
 import { ServicesSection } from "@/components/sections/services-section"
 import { MarketSection } from "@/components/sections/market-section"
 import { CitiesSection } from "@/components/sections/cities-section"
+import { TestimonialsSection } from "@/components/sections/testimonials-section"
 import { ProcessSection } from "@/components/sections/process-section"
 import { FaqSection } from "@/components/sections/faq-section"
 import { FinalCtaSection } from "@/components/sections/final-cta-section"
@@ -40,6 +41,7 @@ export default function Home() {
       <ServicesSection />
       <MarketSection />
       <CitiesSection />
+      <TestimonialsSection />
       <ProcessSection />
       <FaqSection />
       <FinalCtaSection />

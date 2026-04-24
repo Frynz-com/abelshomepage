@@ -3,10 +3,10 @@
 import { motion } from "framer-motion"
 
 const stats = [
-  { value: "1999", label: "Gegründet", detail: "Inhabergeführt" },
-  { value: "7", label: "Standorte", detail: "Deutschlandweit" },
-  { value: "IHK", label: "Zertifiziert", detail: "§34c GewO" },
-  { value: "100%", label: "Persönlich", detail: "Kein Franchise" },
+  { value: "25+", label: "Jahre Erfahrung", detail: "Inhabergeführt seit 1999" },
+  { value: "7", label: "Standorte", detail: "Deutschlandweit aktiv" },
+  { value: "500+", label: "Vermittlungen", detail: "Erfolgreich abgeschlossen" },
+  { value: "100%", label: "Erfolgsbasiert", detail: "Keine Vorauszahlung" },
 ]
 
 export function TrustSection() {

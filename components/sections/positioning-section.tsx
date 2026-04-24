@@ -7,15 +7,15 @@ import { ArrowRight } from "lucide-react"
 const differentiators = [
   {
     title: "Kein Massengeschäft",
-    text: "Wir betreuen eine überschaubare Anzahl ausgewählter Objekte — mit voller Aufmerksamkeit für jedes einzelne Mandat.",
+    text: "Wir betreuen eine bewusst überschaubare Anzahl ausgewählter Objekte gleichzeitig — damit jedes Mandat die Aufmerksamkeit bekommt, die es verdient.",
   },
   {
-    title: "Echte Marktkenntnis",
-    text: "Unsere Berater leben und arbeiten vor Ort. Sie kennen Käufergruppen, Mikrolagen und verborgene Potenziale.",
+    title: "Marktkenntnis, die zählt",
+    text: "Unsere Berater leben und arbeiten vor Ort seit über 25 Jahren. Sie kennen Käufergruppen, Mikro­lagen, Preis­korridore — und was wirklich verkauft.",
   },
   {
-    title: "Persönliche Verantwortung",
-    text: "Ein fester Ansprechpartner begleitet Sie vom ersten Gespräch bis zur Schlüsselübergabe — verlässlich und diskret.",
+    title: "Ein Ansprechpartner. Von Anfang bis Ende.",
+    text: "Bei uns gibt es kein Callcenter, keine Weitergabe. Ein erfahrener Berater begleitet Sie persönlich von der Bewertung bis zur Schlüsselübergabe.",
   },
 ]
 
@@ -54,17 +54,24 @@ export function PositioningSection() {
                 Abels Immobilien ist kein Franchise, kein Konzern. Wir sind ein inhabergeführtes Maklerunternehmen mit Hauptsitz in Düsseldorf — mit persönlicher Verantwortung für jeden Verkauf.
               </p>
               <p>
-                Seit 1999 vermitteln wir hochwertige Wohnimmobilien für Eigentümer, die Diskretion, Marktkenntnis und messbare Ergebnisse erwarten.
+                Seit 1999 haben wir über 500 Immobilien erfolgreich vermittelt — für Eigentümer, die Diskretion, Marktkenntnis und einen nachweislich guten Preis erwarten.
               </p>
             </div>
 
-            <div className="mt-12">
+            <div className="mt-12 flex flex-col sm:flex-row gap-4">
+              <Link
+                href="/bewertung"
+                className="inline-flex items-center gap-2.5 bg-gold text-ink px-7 py-3.5 text-[10px] uppercase tracking-[0.20em] font-semibold hover:bg-gold/90 transition-colors group"
+              >
+                Kostenlose Bewertung starten
+                <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+              </Link>
               <Link
                 href="/ueber-uns"
-                className="inline-flex items-center gap-2.5 text-[11px] uppercase tracking-[0.22em] text-ink font-medium hover:text-gold transition-colors duration-200 group"
+                className="inline-flex items-center gap-2.5 text-[10px] uppercase tracking-[0.20em] text-stone hover:text-ink transition-colors duration-200 group pt-3.5"
               >
-                Mehr über uns
-                <ArrowRight className="w-3.5 h-3.5 text-gold group-hover:translate-x-0.5 transition-transform" />
+                Unser Profil ansehen
+                <ArrowRight className="w-3 h-3 text-gold group-hover:translate-x-0.5 transition-transform" />
               </Link>
             </div>
           </motion.div>

@@ -70,7 +70,7 @@ export function ServicesSection() {
               </span>
             </div>
             <h2 className="font-serif text-[clamp(2.2rem,4vw,3.6rem)] text-ink leading-[1.04] tracking-[-0.015em]">
-              Vom ersten Gespräch<br />bis zur Übergabe
+              Alles aus einer Hand —<br />persönlich begleitet
             </h2>
           </div>
           <div className="lg:col-span-4 lg:col-start-9 flex items-end">
@@ -128,6 +128,31 @@ export function ServicesSection() {
             </motion.div>
           ))}
         </div>
+
+        {/* Bottom CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          viewport={{ once: true }}
+          className="mt-16 lg:mt-20 pt-12 border-t border-line/50 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6"
+        >
+          <div>
+            <p className="font-serif text-[18px] text-ink leading-snug mb-1">
+              Bereit für den ersten Schritt?
+            </p>
+            <p className="text-[14px] text-stone">
+              Kostenfrei · Unverbindlich · Innerhalb 72 Stunden
+            </p>
+          </div>
+          <Link
+            href="/bewertung"
+            className="inline-flex items-center gap-2.5 bg-gold text-ink px-8 py-4 text-[10px] uppercase tracking-[0.22em] font-semibold hover:bg-gold/90 transition-colors shrink-0 group"
+          >
+            Jetzt Immobilie bewerten lassen
+            <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+          </Link>
+        </motion.div>
 
       </div>
     </section>

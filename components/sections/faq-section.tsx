@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
+import { ArrowRight } from "lucide-react"
 
 const faqs = [
   {
@@ -65,9 +66,21 @@ export function FaqSection() {
               <h2 className="font-serif text-[clamp(2rem,3.5vw,2.8rem)] text-ink leading-[1.1] tracking-[-0.01em] mb-6">
                 Transparent<br />beantwortet.
               </h2>
-              <p className="text-[14px] text-graphite leading-[1.7] max-w-[280px]">
+              <p className="text-[14px] text-graphite leading-[1.7] max-w-[280px] mb-10">
                 Antworten auf die wichtigsten Fragen rund um den Immobilienverkauf.
               </p>
+              <div className="border-t border-line/50 pt-8">
+                <p className="text-[13px] text-stone leading-relaxed mb-5">
+                  Ihre Frage ist nicht dabei? Wir antworten persönlich — meist am selben Tag.
+                </p>
+                <a
+                  href="/kontakt"
+                  className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.20em] text-ink font-medium hover:text-gold transition-colors duration-200 group"
+                >
+                  Direkt anfragen
+                  <ArrowRight className="w-3.5 h-3.5 text-gold group-hover:translate-x-0.5 transition-transform" />
+                </a>
+              </div>
             </div>
           </motion.div>
 

@@ -42,7 +42,7 @@ export function HeroSection() {
           >
             <div className="w-8 h-px bg-gold/80" />
             <span className="text-gold/90 text-[10px] uppercase tracking-[0.30em] font-medium">
-              Seit 1999 · 7 Standorte
+              Seit 1999 · 500+ Vermittlungen · 7 Standorte
             </span>
           </motion.div>
 
@@ -61,15 +61,20 @@ export function HeroSection() {
           <div className="flex flex-col lg:flex-row lg:items-end gap-8 lg:gap-24">
 
             {/* Lead text */}
-            <motion.p
+            <motion.div
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.38, ease: [0.22, 1, 0.36, 1] }}
-              className="text-white/52 text-[15px] lg:text-[16px] leading-[1.8] max-w-[400px]"
+              className="max-w-[400px]"
             >
-              Persönliche Begleitung beim Verkauf hochwertiger Wohnimmobilien —
-              diskret, präzise und mit echter Marktkenntnis.
-            </motion.p>
+              <p className="text-white/58 text-[15px] lg:text-[16px] leading-[1.8] mb-5">
+                Inhabergeführter Premium-Makler für den Verkauf hochwertiger Wohnimmobilien —
+                persönlich begleitet, diskret vermarktet, zum bestmöglichen Preis.
+              </p>
+              <p className="text-white/35 text-[12px] tracking-[0.04em]">
+                Kostenfreie Erstberatung · Kein Risiko · Kein Vorkasse
+              </p>
+            </motion.div>
 
             {/* CTAs */}
             <motion.div
@@ -82,14 +87,14 @@ export function HeroSection() {
                 href="/bewertung"
                 className="inline-flex items-center justify-center gap-2.5 bg-gold text-ink px-8 py-4 text-[10px] uppercase tracking-[0.22em] font-semibold hover:bg-gold/90 transition-all duration-300 group"
               >
-                Bewertung anfordern
+                Jetzt Immobilie bewerten lassen
                 <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
               </Link>
               <button
                 onClick={() => setModalOpen(true)}
                 className="inline-flex items-center justify-center gap-2 border border-white/22 text-white/80 px-8 py-4 text-[10px] uppercase tracking-[0.22em] font-medium hover:border-white/45 hover:text-white transition-all duration-300 backdrop-blur-sm"
               >
-                Erstgespräch vereinbaren
+                Unverbindlich beraten lassen
               </button>
             </motion.div>
 
