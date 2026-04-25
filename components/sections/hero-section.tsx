@@ -23,10 +23,10 @@ export function HeroSection() {
           className="object-cover object-center"
           sizes="100vw"
         />
-        {/* Light, airy overlays — image breathes */}
-        <div className="absolute inset-0 bg-ink/18" />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink/55 via-ink/15 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/8 to-transparent" />
+        {/* Overlays — kräftig genug für lesbaren Text, Bild bleibt sichtbar */}
+        <div className="absolute inset-0 bg-ink/28" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink/70 via-ink/25 to-ink/5" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/20 to-transparent" />
       </div>
 
       {/* Content — bottom-anchored editorial layout */}
@@ -40,8 +40,8 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             className="flex items-center gap-4 mb-7 lg:mb-9"
           >
-            <div className="w-8 h-px bg-gold/80" />
-            <span className="text-gold/90 text-[10px] uppercase tracking-[0.30em] font-medium">
+            <div className="w-8 h-px bg-gold/90" />
+            <span className="text-gold text-[12px] uppercase tracking-[0.24em] font-medium">
               Seit 1999 · 500+ Vermittlungen · 7 Standorte
             </span>
           </motion.div>
@@ -54,25 +54,25 @@ export function HeroSection() {
             className="font-serif text-[clamp(3rem,7.5vw,7.5rem)] text-white leading-[0.93] tracking-[-0.02em] mb-10 lg:mb-14"
           >
             Ihre Immobilie.<br />
-            <span className="text-white/62">Diskret verkauft.</span>
+            <span className="text-white/75">Diskret verkauft.</span>
           </motion.h1>
 
           {/* Bottom row: lead text + CTAs */}
-          <div className="flex flex-col lg:flex-row lg:items-end gap-8 lg:gap-24">
+          <div className="flex flex-col lg:flex-row lg:items-end gap-10 lg:gap-24">
 
             {/* Lead text */}
             <motion.div
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.38, ease: [0.22, 1, 0.36, 1] }}
-              className="max-w-[400px]"
+              className="max-w-[420px]"
             >
-              <p className="text-white/58 text-[15px] lg:text-[16px] leading-[1.8] mb-5">
+              <p className="text-white/88 text-[16px] lg:text-[17px] leading-[1.8] mb-5">
                 Inhabergeführter Premium-Makler für den Verkauf hochwertiger Wohnimmobilien —
                 persönlich begleitet, diskret vermarktet, zum bestmöglichen Preis.
               </p>
-              <p className="text-white/35 text-[12px] tracking-[0.04em]">
-                Kostenfreie Erstberatung · Kein Risiko · Kein Vorkasse
+              <p className="text-white/65 text-[13px] tracking-[0.04em]">
+                Kostenfreie Erstberatung · Kein Risiko · Keine Vorauszahlung
               </p>
             </motion.div>
 
@@ -85,14 +85,14 @@ export function HeroSection() {
             >
               <Link
                 href="/bewertung"
-                className="inline-flex items-center justify-center gap-2.5 bg-gold text-ink px-8 py-4 text-[10px] uppercase tracking-[0.22em] font-semibold hover:bg-gold/90 transition-all duration-300 group"
+                className="inline-flex items-center justify-center gap-2.5 bg-gold text-ink px-8 py-4.5 text-[12px] uppercase tracking-[0.18em] font-semibold hover:bg-gold/90 transition-all duration-300 group whitespace-nowrap"
               >
-                Jetzt Immobilie bewerten lassen
-                <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+                Kostenlos bewerten lassen
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
               </Link>
               <button
                 onClick={() => setModalOpen(true)}
-                className="inline-flex items-center justify-center gap-2 border border-white/22 text-white/80 px-8 py-4 text-[10px] uppercase tracking-[0.22em] font-medium hover:border-white/45 hover:text-white transition-all duration-300 backdrop-blur-sm"
+                className="inline-flex items-center justify-center gap-2 border border-white/35 text-white px-8 py-4.5 text-[12px] uppercase tracking-[0.18em] font-medium hover:border-white/60 hover:bg-white/8 transition-all duration-300 backdrop-blur-sm whitespace-nowrap"
               >
                 Unverbindlich beraten lassen
               </button>
