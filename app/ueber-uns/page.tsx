@@ -439,12 +439,12 @@ export default function UeberUnsPage() {
               transition={{ duration: 0.7 }}
               viewport={{ once: true }}
             >
-              <div className="relative overflow-hidden bg-bone flex items-center justify-center" style={{ aspectRatio: "16/7" }}>
+              <div className="relative overflow-hidden -mx-6 lg:-mx-20" style={{ aspectRatio: "16/9" }}>
                 <Image
                   src="/images/team-group.jpg"
                   alt="Team von Abels Immobilien"
                   fill
-                  className="object-contain"
+                  className="object-cover object-center"
                   sizes="100vw"
                 />
               </div>
