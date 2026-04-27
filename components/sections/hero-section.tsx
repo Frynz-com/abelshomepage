@@ -33,19 +33,6 @@ export function HeroSection() {
       <div className="relative z-10 flex flex-col justify-end h-full pb-20 lg:pb-28">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-20 w-full">
 
-          {/* Eyebrow */}
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="flex items-center gap-4 mb-7 lg:mb-9"
-          >
-            <div className="w-8 h-px bg-gold/90" />
-            <span className="text-gold text-[12px] uppercase tracking-[0.24em] font-medium">
-              Seit 1999 · 500+ Vermittlungen · 7 Standorte
-            </span>
-          </motion.div>
-
           {/* Headline — large, editorial, confident */}
           <motion.h1
             initial={{ opacity: 0, y: 28 }}
