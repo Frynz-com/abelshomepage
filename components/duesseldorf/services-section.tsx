@@ -73,7 +73,7 @@ export function DuesseldorfServicesSection() {
               viewport={{ once: true }}
               className="flex gap-6"
             >
-              <span className="text-gold text-sm tracking-[0.1em] pt-1 shrink-0">
+              <span className="text-gold/50 font-serif text-4xl lg:text-5xl leading-none shrink-0 w-14">
                 {service.number}
               </span>
               <div>

@@ -430,83 +430,84 @@ export default function UeberUnsPage() {
             </h2>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+          <div className="space-y-10 lg:space-y-14">
 
-            {/* Peter Abels */}
+            {/* Row 1: Team group photo — full width, not cropped */}
             <motion.div
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
               viewport={{ once: true }}
             >
-              <div className="relative overflow-hidden aspect-[3/4] bg-bone">
-                <Image
-                  src="/images/team-peter-abels.jpg"
-                  alt="Peter Abels, Inhaber"
-                  fill
-                  className="object-cover object-top"
-                  sizes="(max-width: 640px) 100vw, 33vw"
-                />
-              </div>
-              <div className="mt-5 pb-5 border-b border-line/50">
-                <p className="font-serif text-[1.25rem] text-ink mb-1">Peter Abels</p>
-                <p className="text-[11px] uppercase tracking-[0.2em] text-stone">Inhaber & Gründer</p>
-              </div>
-              <p className="mt-4 text-[14px] text-graphite leading-[1.75]">
-                Seit 1999 führt Peter Abels das Unternehmen inhabergeführt und persönlich. Mit über 25 Jahren Markterfahrung begleitet er anspruchsvolle Verkaufsmandate von der Bewertung bis zur Beurkundung.
-              </p>
-            </motion.div>
-
-            {/* Josefine Mokrani */}
-            <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.1 }}
-              viewport={{ once: true }}
-            >
-              <div className="relative overflow-hidden aspect-[3/4] bg-bone">
-                <Image
-                  src="/images/team-josefine-mokrani.jpg"
-                  alt="Josefine Mokrani, Geschäftsführerin"
-                  fill
-                  className="object-cover object-center"
-                  sizes="(max-width: 640px) 100vw, 33vw"
-                />
-              </div>
-              <div className="mt-5 pb-5 border-b border-line/50">
-                <p className="font-serif text-[1.25rem] text-ink mb-1">Josefine Mokrani</p>
-                <p className="text-[11px] uppercase tracking-[0.2em] text-stone">Geschäftsführerin</p>
-              </div>
-              <p className="mt-4 text-[14px] text-graphite leading-[1.75]">
-                Josefine Mokrani verantwortet als Geschäftsführerin die strategische Entwicklung und das operative Management. Ihr Fokus liegt auf Qualitätssicherung, Kundenbeziehungen und der Weiterentwicklung des Beratungsstandards.
-              </p>
-            </motion.div>
-
-            {/* Team Group */}
-            <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              <div className="relative overflow-hidden aspect-[3/4] bg-bone">
+              <div className="relative overflow-hidden bg-bone flex items-center justify-center" style={{ aspectRatio: "16/7" }}>
                 <Image
                   src="/images/team-group.jpg"
                   alt="Team von Abels Immobilien"
                   fill
-                  className="object-cover object-center"
-                  sizes="(max-width: 640px) 100vw, 33vw"
+                  className="object-contain"
+                  sizes="100vw"
                 />
               </div>
-              <div className="mt-5 pb-5 border-b border-line/50">
+              <div className="mt-5 pb-5 border-b border-line/50 text-center">
                 <p className="font-serif text-[1.25rem] text-ink mb-1">Das Team</p>
                 <p className="text-[11px] uppercase tracking-[0.2em] text-stone">Abels Immobilien</p>
               </div>
-              <p className="mt-4 text-[14px] text-graphite leading-[1.75]">
-                Unsere Berater kennen ihre Standorte nicht aus Broschüren, sondern weil sie dort leben, netzwerken und täglich aktiv im Markt sind.
-              </p>
             </motion.div>
 
+            {/* Row 2: Josefine left, Peter right */}
+            <div className="grid sm:grid-cols-2 gap-8 lg:gap-10">
+
+              {/* Josefine Mokrani — left */}
+              <motion.div
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.1 }}
+                viewport={{ once: true }}
+              >
+                <div className="relative overflow-hidden aspect-[3/4] bg-bone">
+                  <Image
+                    src="/images/team-josefine-mokrani.jpg"
+                    alt="Josefine Mokrani, Geschäftsführerin"
+                    fill
+                    className="object-cover object-center"
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                  />
+                </div>
+                <div className="mt-5 pb-5 border-b border-line/50">
+                  <p className="font-serif text-[1.25rem] text-ink mb-1">Josefine Mokrani</p>
+                  <p className="text-[11px] uppercase tracking-[0.2em] text-stone">Geschäftsführerin</p>
+                </div>
+                <p className="mt-4 text-[14px] text-graphite leading-[1.75]">
+                  Josefine Mokrani verantwortet als Geschäftsführerin die strategische Entwicklung und das operative Management. Ihr Fokus liegt auf Qualitätssicherung, Kundenbeziehungen und der Weiterentwicklung des Beratungsstandards.
+                </p>
+              </motion.div>
+
+              {/* Peter Abels — right */}
+              <motion.div
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.2 }}
+                viewport={{ once: true }}
+              >
+                <div className="relative overflow-hidden aspect-[3/4] bg-bone">
+                  <Image
+                    src="/images/team-peter-abels.jpg"
+                    alt="Peter Abels, Inhaber"
+                    fill
+                    className="object-cover object-top"
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                  />
+                </div>
+                <div className="mt-5 pb-5 border-b border-line/50">
+                  <p className="font-serif text-[1.25rem] text-ink mb-1">Peter Abels</p>
+                  <p className="text-[11px] uppercase tracking-[0.2em] text-stone">Inhaber & Gründer</p>
+                </div>
+                <p className="mt-4 text-[14px] text-graphite leading-[1.75]">
+                  Seit 1999 führt Peter Abels das Unternehmen inhabergeführt und persönlich. Mit über 25 Jahren Markterfahrung begleitet er anspruchsvolle Verkaufsmandate von der Bewertung bis zur Beurkundung.
+                </p>
+              </motion.div>
+
+            </div>
           </div>
 
           <div className="mt-10">
