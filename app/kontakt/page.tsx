@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { MapPin, Mail, Clock, ArrowRight, CheckCircle } from "lucide-react"
+import { MapPin, Mail, Clock, Phone, ArrowRight, CheckCircle } from "lucide-react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 
@@ -40,9 +40,19 @@ export default function KontaktPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
-    await new Promise((r) => setTimeout(r, 1200))
-    setLoading(false)
-    setSubmitted(true)
+    try {
+      const formEl = e.target as HTMLFormElement
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(new FormData(formEl) as any).toString(),
+      })
+    } catch {
+      window.location.href = `mailto:info@abels-immobilien.de?subject=${encodeURIComponent("Kontaktanfrage: " + form.subject)}&body=${encodeURIComponent(form.message)}`
+    } finally {
+      setLoading(false)
+      setSubmitted(true)
+    }
   }
 
   return (
@@ -98,9 +108,25 @@ export default function KontaktPage() {
                 <div>
                   <p className="text-[13px] font-medium text-ink mb-1">Adresse</p>
                   <p className="text-[14px] text-graphite leading-relaxed">
-                    Königsallee 92a<br />
-                    40212 Düsseldorf
+                    Abels Immobilien GmbH<br />
+                    Alt Niederkassel 124<br />
+                    40547 Düsseldorf
                   </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="w-9 h-9 bg-bone border border-line flex items-center justify-center shrink-0 mt-0.5">
+                  <Phone className="w-4 h-4 text-gold" />
+                </div>
+                <div>
+                  <p className="text-[13px] font-medium text-ink mb-1">Telefon</p>
+                  <a
+                    href="tel:+492115591751"
+                    className="text-[14px] text-graphite hover:text-ink transition-colors"
+                  >
+                    +49 211 5591751
+                  </a>
                 </div>
               </div>
 
@@ -183,7 +209,16 @@ export default function KontaktPage() {
                 </Link>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-0">
+              <form
+                onSubmit={handleSubmit}
+                className="space-y-0"
+                name="kontakt"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+              >
+                <input type="hidden" name="form-name" value="kontakt" />
+                <input type="hidden" name="bot-field" className="hidden" />
 
                 <div className="grid sm:grid-cols-2 gap-0 border border-line">
 

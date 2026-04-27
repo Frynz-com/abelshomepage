@@ -27,9 +27,20 @@ export function ContactModal({ open, onClose }: ContactModalProps) {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     setLoading(true)
-    await new Promise((r) => setTimeout(r, 1000))
-    setLoading(false)
-    setSubmitted(true)
+    try {
+      const formEl = e.target as HTMLFormElement
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(new FormData(formEl) as any).toString(),
+      })
+    } catch {
+      // Fallback: form submitted via mailto
+      window.location.href = `mailto:info@abels-immobilien.de?subject=Anfrage von ${encodeURIComponent(form.name)}&body=${encodeURIComponent(form.message)}`
+    } finally {
+      setLoading(false)
+      setSubmitted(true)
+    }
   }
 
   function handleClose() {
@@ -90,7 +101,16 @@ export function ContactModal({ open, onClose }: ContactModalProps) {
                     Kostenfrei &middot; Unverbindlich &middot; Rückmeldung innerhalb 72 Stunden
                   </p>
 
-                  <form onSubmit={handleSubmit} className="space-y-5">
+                  <form
+                    onSubmit={handleSubmit}
+                    className="space-y-5"
+                    name="kontakt-modal"
+                    method="POST"
+                    data-netlify="true"
+                    netlify-honeypot="bot-field"
+                  >
+                    <input type="hidden" name="form-name" value="kontakt-modal" />
+                    <input type="hidden" name="bot-field" className="hidden" />
                     {/* Name */}
                     <div>
                       <label className="block text-xs uppercase tracking-[0.1em] text-cream/70 mb-1.5" htmlFor="name">

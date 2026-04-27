@@ -28,8 +28,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Immobilie verkaufen: Der vollständige Ratgeber für Eigentümer",
     description: "Von der Vorbereitung bis zum Notartermin — alles, was Sie wissen müssen, um Ihre Immobilie erfolgreich zu verkaufen.",
-    type: "article"
-  }
+    type: "article",
+    url: "https://abels-immobilien.de/immobilie-verkaufen",
+    locale: "de_DE",
+    siteName: "Abels Immobilien",
+  },
+  alternates: {
+    canonical: "https://abels-immobilien.de/immobilie-verkaufen",
+  },
 }
 
 export default function ImmobilieVerkaufenPage() {

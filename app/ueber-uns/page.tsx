@@ -30,7 +30,7 @@ const milestones = [
   { year: "2007", text: "Expansion nach München — Eintritt in einen der anspruchsvollsten Immobilienmärkte Deutschlands." },
   { year: "2012", text: "Eröffnung der Standorte Hamburg und Frankfurt. Wachstum durch Empfehlung statt durch Werbung." },
   { year: "2018", text: "Stuttgart, Essen und Grünwald komplettieren das Netzwerk. Sieben Standorte, ein Anspruch." },
-  { year: "2024", text: "Über 1.000 erfolgreich begleitete Transaktionen. Inhabergeführt, unabhängig, persönlich — wie am ersten Tag." },
+  { year: "2024", text: "Über 1.800 erfolgreich begleitete Transaktionen. Inhabergeführt, unabhängig, persönlich — wie am ersten Tag." },
 ]
 
 const testimonials = [
@@ -78,7 +78,91 @@ const testimonials = [
   },
 ]
 
+// Referenzen — editorial strip, no filters
+// Bilder unter /public/images/referenzen/ ablegen (ref-01.jpg … ref-20.jpg)
+const referenzen = [
+  { id: 1,  ort: "Düsseldorf",   typ: "Wohnanlage",            status: "Vermittelt",           image: "/images/referenzen/ref-01.jpg", pos: "center", size: "wide" },
+  { id: 2,  ort: "Essen",        typ: "Doppelhaus",             status: "Verkauft",             image: "/images/referenzen/ref-02.jpg", pos: "center", size: "tall" },
+  { id: 3,  ort: "Hamburg",      typ: "Mehrfamilienhaus",       status: "Vermittelt",           image: "/images/referenzen/ref-03.jpg", pos: "top",    size: "square" },
+  { id: 4,  ort: "Bergisches Land", typ: "Fachwerkhaus",        status: "Off-Market vermittelt",image: "/images/referenzen/ref-04.jpg", pos: "center", size: "wide" },
+  { id: 5,  ort: "Düsseldorf",   typ: "Bungalow",               status: "Verkauft",             image: "/images/referenzen/ref-05.jpg", pos: "top",    size: "tall" },
+  { id: 6,  ort: "Frankfurt",    typ: "Klassische Villa",        status: "Diskret vermittelt",  image: "/images/referenzen/ref-06.jpg", pos: "center", size: "square" },
+  { id: 7,  ort: "Bergisches Land", typ: "Fachwerkensemble",    status: "Vermittelt",           image: "/images/referenzen/ref-07.jpg", pos: "center", size: "wide" },
+  { id: 8,  ort: "Düsseldorf",   typ: "Architektenhaus",        status: "Verkauft",             image: "/images/referenzen/ref-08.jpg", pos: "top",    size: "tall" },
+  { id: 9,  ort: "Stuttgart",    typ: "Modernes Stadthaus",     status: "Vermittelt",           image: "/images/referenzen/ref-09.jpg", pos: "center", size: "square" },
+  { id: 10, ort: "Grünwald",     typ: "Landhausvilla",          status: "Off-Market vermittelt",image: "/images/referenzen/ref-10.jpg", pos: "center", size: "wide" },
+  { id: 11, ort: "Düsseldorf",   typ: "Doppelhaushälfte",       status: "Verkauft",             image: "/images/referenzen/ref-11.jpg", pos: "top",    size: "tall" },
+  { id: 12, ort: "Essen",        typ: "Mehrfamilienhaus",       status: "Vermittelt",           image: "/images/referenzen/ref-12.jpg", pos: "center", size: "square" },
+  { id: 13, ort: "Hamburg",      typ: "Klassisches Stadthaus",  status: "Diskret vermittelt",  image: "/images/referenzen/ref-13.jpg", pos: "center", size: "wide" },
+  { id: 14, ort: "Niederrhein",  typ: "Reetdachvilla",          status: "Off-Market vermittelt",image: "/images/referenzen/ref-14.jpg", pos: "center", size: "tall" },
+  { id: 15, ort: "Niederrhein",  typ: "Landhaus mit Scheune",   status: "Verkauft",             image: "/images/referenzen/ref-15.jpg", pos: "center", size: "wide" },
+  { id: 16, ort: "Stuttgart",    typ: "Modernes Hanghaus",      status: "Vermittelt",           image: "/images/referenzen/ref-16.jpg", pos: "center", size: "wide" },
+  { id: 17, ort: "Frankfurt",    typ: "Doppelhaushälfte",       status: "Verkauft",             image: "/images/referenzen/ref-17.jpg", pos: "top",    size: "tall" },
+  { id: 18, ort: "München",      typ: "Stadtvilla Neubau",      status: "Vermarktung abgeschl.",image: "/images/referenzen/ref-18.jpg", pos: "center", size: "square" },
+  { id: 19, ort: "Grünwald",     typ: "Landhaus im Grünen",     status: "Diskret vermittelt",  image: "/images/referenzen/ref-19.jpg", pos: "center", size: "wide" },
+  { id: 20, ort: "Essen",        typ: "Mehrfamilienhaus",       status: "Verkauft",             image: "/images/referenzen/ref-20.jpg", pos: "top",    size: "tall" },
+  { id: 21, ort: "Düsseldorf",   typ: "Gründerzeithaus",        status: "Vermittelt",           image: "/images/referenzen/ref-21.jpg", pos: "center", size: "square" },
+  { id: 22, ort: "Frankfurt",    typ: "Neubau-Wohnanlage",      status: "Vermarktung abgeschl.",image: "/images/referenzen/ref-22.jpg", pos: "center", size: "wide" },
+  { id: 23, ort: "München",      typ: "Luxuswohnanlage",        status: "Off-Market vermittelt",image: "/images/referenzen/ref-23.jpg", pos: "bottom", size: "wide" },
+  { id: 24, ort: "Niederrhein",  typ: "Herrschaftlicher Landsitz", status: "Diskret vermittelt",image: "/images/referenzen/ref-24.jpg", pos: "center", size: "tall" },
+  { id: 25, ort: "Düsseldorf",   typ: "Einfamilienhaus",        status: "Verkauft",             image: "/images/referenzen/ref-25.jpg", pos: "top",    size: "square" },
+]
+
+const sizeMap: Record<string, string> = {
+  wide:   "col-span-2 aspect-[16/7]",
+  tall:   "col-span-1 aspect-[3/4]",
+  square: "col-span-1 aspect-square",
+}
+
+// SVG Donut Chart
+function DonutChart() {
+  // Wohnen 56%, Gewerbe 13%, Anlage 31%
+  const segments = [
+    { label: "WOHNEN", pct: 56, color: "#2C3A2E" },
+    { label: "GEWERBE", pct: 13, color: "#9B9B8E" },
+    { label: "ANLAGE", pct: 31, color: "#C8C4B8" },
+  ]
+
+  const cx = 100
+  const cy = 100
+  const r = 72
+  const innerR = 42
+  const gap = 2
+
+  let cumulative = 0
+  const paths = segments.map((seg) => {
+    const startAngle = (cumulative / 100) * 360 - 90
+    const endAngle = ((cumulative + seg.pct) / 100) * 360 - 90 - gap
+    cumulative += seg.pct
+
+    const toRad = (deg: number) => (deg * Math.PI) / 180
+    const x1 = cx + r * Math.cos(toRad(startAngle))
+    const y1 = cy + r * Math.sin(toRad(startAngle))
+    const x2 = cx + r * Math.cos(toRad(endAngle))
+    const y2 = cy + r * Math.sin(toRad(endAngle))
+    const ix1 = cx + innerR * Math.cos(toRad(endAngle))
+    const iy1 = cy + innerR * Math.sin(toRad(endAngle))
+    const ix2 = cx + innerR * Math.cos(toRad(startAngle))
+    const iy2 = cy + innerR * Math.sin(toRad(startAngle))
+    const largeArc = seg.pct > 50 ? 1 : 0
+
+    return {
+      ...seg,
+      d: `M ${x1} ${y1} A ${r} ${r} 0 ${largeArc} 1 ${x2} ${y2} L ${ix1} ${iy1} A ${innerR} ${innerR} 0 ${largeArc} 0 ${ix2} ${iy2} Z`,
+    }
+  })
+
+  return (
+    <svg viewBox="0 0 200 200" className="w-full max-w-[200px]">
+      {paths.map((p) => (
+        <path key={p.label} d={p.d} fill={p.color} />
+      ))}
+    </svg>
+  )
+}
+
 export default function UeberUnsPage() {
+
   return (
     <main className="min-h-screen bg-cream text-ink">
       <Header />
@@ -94,8 +178,8 @@ export default function UeberUnsPage() {
             className="object-cover"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-ink/18" />
-          <div className="absolute inset-0 bg-gradient-to-r from-ink/55 via-ink/15 to-transparent" />
+          <div className="absolute inset-0 bg-ink/28" />
+          <div className="absolute inset-0 bg-gradient-to-r from-ink/70 via-ink/20 to-transparent" />
         </div>
         <div className="relative z-10 max-w-[1440px] mx-auto px-6 lg:px-20 pt-44 pb-28 lg:pt-52 lg:pb-36">
           <motion.div
@@ -111,45 +195,135 @@ export default function UeberUnsPage() {
               Inhabergeführt.<br />
               <span className="text-white/60">Seit 1999.</span>
             </h1>
-            <p className="text-[17px] text-white/65 leading-[1.75] max-w-[560px]">
+            <p className="text-[17px] text-white/75 leading-[1.75] max-w-[560px]">
               Abels Immobilien ist kein Franchise-Unternehmen und kein Massenanbieter. Wir sind ein inhabergeführtes Maklerhaus mit dem Anspruch, jeden Verkauf so zu begleiten, als wäre es der einzige.
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* Zahlen / Facts strip */}
-      <section className="border-b border-line/50 bg-bone">
-        <div className="max-w-[1440px] mx-auto px-6 lg:px-20">
-          <div className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-line/50">
+      {/* ── AUSZEICHNUNGEN ── */}
+      <section className="bg-bone border-b border-line/40">
+        <div className="max-w-[1440px] mx-auto px-6 lg:px-20 py-16 lg:py-24">
+          <p className="text-[10px] uppercase tracking-[0.28em] text-stone text-center mb-14">Auszeichnungen</p>
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: true }}
+            className="flex flex-wrap items-center justify-center gap-12 lg:gap-20"
+          >
             {[
-              { value: "Seit 1999", label: "Inhabergeführt" },
-              { value: "7 Standorte", label: "In deutschen Metropolen" },
-              { value: "IHK-zertifiziert", label: "§34c GewO" },
-              { value: "Diskret", label: "Off-Market auf Wunsch" },
-            ].map((item, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: i * 0.08 }}
-                viewport={{ once: true }}
-                className="py-10 px-6 lg:px-10"
-              >
-                <span className="block font-serif text-[32px] lg:text-[40px] text-ink leading-none mb-2 tracking-[-0.01em]">
-                  {item.value}
-                </span>
-                <span className="block text-[11px] uppercase tracking-[0.2em] text-stone">
-                  {item.label}
-                </span>
-              </motion.div>
+              { src: "/images/press/award-top-makler.jpg", alt: "Top Makler Auszeichnung" },
+              { src: "/images/press/award-fokus.png",      alt: "Focus Top Immobilienmakler Düsseldorf" },
+              { src: "/images/press/award-immo-profi.png", alt: "Immo Profi Award 2021" },
+              { src: "/images/press/award-top11.png",      alt: "Top 11 Award" },
+            ].map((award, i) => (
+              <div key={i} className="relative h-48 w-48">
+                <Image
+                  src={award.src}
+                  alt={award.alt}
+                  fill
+                  className="object-contain"
+                  sizes="200px"
+                />
+              </div>
             ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ── UNTERNEHMEN: Text + Donut Chart ── */}
+      <section className="bg-cream border-b border-line/40">
+        <div className="max-w-[1440px] mx-auto px-6 lg:px-20 py-20 lg:py-28">
+          <p className="text-[10px] uppercase tracking-[0.28em] text-stone text-center mb-14">
+            Unternehmen
+          </p>
+          <div className="grid lg:grid-cols-12 gap-16 lg:gap-24 items-center">
+
+            {/* Left: Text */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7 }}
+              viewport={{ once: true }}
+              className="lg:col-span-6 space-y-5"
+            >
+              <h2 className="font-serif text-[clamp(1.8rem,3vw,2.8rem)] text-ink leading-tight tracking-[-0.01em] mb-6">
+                ABELS Immobilien GmbH
+              </h2>
+              <p className="text-graphite text-[15px] leading-[1.8]">
+                ABELS Immobilien GmbH ist seit 1999 ein unabhängiges und international tätiges Beratungs- und Maklerunternehmen mit Sitz in Düsseldorf.
+              </p>
+              <p className="text-graphite text-[15px] leading-[1.8]">
+                Wir sind spezialisiert auf die erfolgreiche Vermittlung von Wohn-, Gewerbe- und Investmentimmobilien — mit einem klaren Fokus auf diskrete Vermarktung, maximale Kaufpreise und geprüfte Käufer.
+              </p>
+              <p className="text-graphite text-[15px] leading-[1.8]">
+                Unser Leistungsspektrum umfasst die professionelle Immobilienvermarktung, strategisches Asset-Management sowie die fundierte Beratung bei Investments und Projektentwicklungen.
+              </p>
+              <p className="text-graphite text-[15px] leading-[1.8]">
+                Zu unseren Kunden zählen Privatpersonen, Bauträger, Family Offices, Stiftungen sowie institutionelle Investoren, die auf Verlässlichkeit, Marktkenntnis und Geschwindigkeit setzen.
+              </p>
+              <p className="text-graphite text-[15px] leading-[1.8]">
+                Mit über 1.800 erfolgreich vermittelten Immobilien und einem Transaktionsvolumen von mehr als 340 Mio. Euro stehen wir für messbare Ergebnisse — und für eine Zusammenarbeit, die sich für Eigentümer auszahlt.
+              </p>
+            </motion.div>
+
+            {/* Right: Donut + Stats */}
+            <motion.div
+              initial={{ opacity: 0, x: 24 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="lg:col-span-5 lg:col-start-8 flex flex-col sm:flex-row lg:flex-row items-center gap-10 lg:gap-12"
+            >
+              {/* Donut */}
+              <div className="shrink-0">
+                <div className="relative">
+                  <DonutChart />
+                  {/* Legend inside */}
+                </div>
+                <div className="mt-4 space-y-2">
+                  {[
+                    { color: "#2C3A2E", label: "WOHNEN" },
+                    { color: "#9B9B8E", label: "GEWERBE" },
+                    { color: "#C8C4B8", label: "ANLAGE" },
+                  ].map((item) => (
+                    <div key={item.label} className="flex items-center gap-2">
+                      <span className="w-3 h-3 shrink-0" style={{ background: item.color }} />
+                      <span className="text-[10px] uppercase tracking-[0.18em] text-stone">{item.label}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Numbers */}
+              <div className="space-y-6">
+                <div className="border-b border-line/50 pb-6">
+                  <p className="font-serif text-[2.6rem] text-ink leading-none tracking-tight">1.800</p>
+                  <p className="text-[9px] uppercase tracking-[0.22em] text-stone mt-1.5">Objekte vermittelt</p>
+                </div>
+                <div className="border-b border-line/50 pb-6">
+                  <p className="font-serif text-[1.8rem] text-ink leading-none">629 <span className="text-stone text-[1rem]">/ 56 %</span></p>
+                  <p className="text-[9px] uppercase tracking-[0.22em] text-stone mt-1.5">Wohnen</p>
+                </div>
+                <div className="border-b border-line/50 pb-6">
+                  <p className="font-serif text-[1.8rem] text-ink leading-none">145 <span className="text-stone text-[1rem]">/ 13 %</span></p>
+                  <p className="text-[9px] uppercase tracking-[0.22em] text-stone mt-1.5">Gewerbe</p>
+                </div>
+                <div>
+                  <p className="font-serif text-[1.8rem] text-ink leading-none">357 <span className="text-stone text-[1rem]">/ 31 %</span></p>
+                  <p className="text-[9px] uppercase tracking-[0.22em] text-stone mt-1.5">Anlage</p>
+                </div>
+              </div>
+            </motion.div>
+
           </div>
         </div>
       </section>
 
       {/* Geschichte / Timeline */}
-      <section className="py-24 lg:py-36 bg-cream border-b border-line/50">
+      <section className="py-24 lg:py-36 bg-bone border-b border-line/50">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-20">
           <div className="grid lg:grid-cols-12 gap-16">
             <motion.div
@@ -195,7 +369,7 @@ export default function UeberUnsPage() {
       </section>
 
       {/* Werte */}
-      <section className="py-24 lg:py-36 bg-bone border-b border-line/50">
+      <section className="py-24 lg:py-36 bg-cream border-b border-line/50">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-20">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -221,7 +395,7 @@ export default function UeberUnsPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 viewport={{ once: true }}
-                className="grid lg:grid-cols-12 gap-8 py-10 border-b border-line/50 group hover:bg-cream/50 transition-colors duration-300 px-4 -mx-4"
+                className="grid lg:grid-cols-12 gap-8 py-10 border-b border-line/50 group hover:bg-bone/50 transition-colors duration-300 px-4 -mx-4"
               >
                 <span className="text-[11px] uppercase tracking-[0.2em] text-gold/70 lg:col-span-1 pt-1">{v.number}</span>
                 <h3 className="font-serif text-[22px] lg:text-[26px] text-ink lg:col-span-3 group-hover:text-gold transition-colors duration-300 leading-tight">
@@ -236,66 +410,239 @@ export default function UeberUnsPage() {
         </div>
       </section>
 
-      {/* Team — full-bleed */}
-      <section className="bg-cream border-b border-line/50">
-        <div className="max-w-[1440px] mx-auto px-6 lg:px-20 pt-24 lg:pt-36 pb-0">
+      {/* ── TEAM ── */}
+      <section className="bg-cream border-b border-line/40 py-20 lg:py-28">
+        <div className="max-w-[1440px] mx-auto px-6 lg:px-20">
+
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="grid lg:grid-cols-12 gap-10 items-end mb-12"
+            className="mb-16"
           >
-            <div className="lg:col-span-5">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-6 h-px bg-gold/60" />
-                <span className="text-[11px] uppercase tracking-[0.24em] text-gold">Das Team</span>
-              </div>
-              <h2 className="font-serif text-[clamp(2rem,3.5vw,3rem)] text-ink leading-[1.08] tracking-[-0.01em]">
-                Menschen, die zuhören.
-              </h2>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-6 h-px bg-gold/60" />
+              <span className="text-[11px] uppercase tracking-[0.24em] text-gold">Das Team</span>
             </div>
-            <div className="lg:col-span-6 lg:col-start-7">
-              <p className="text-[15px] text-graphite leading-[1.75] mb-4">
-                Kein Callcenter. Keine automatisierten Prozesse. Jedes Mandat wird von einem festen Ansprechpartner begleitet — von der ersten Besichtigung bis zur notariellen Beurkundung.
-              </p>
-              <p className="text-[15px] text-graphite leading-[1.75]">
-                Unsere Makler kennen ihre Standorte nicht aus Broschüren, sondern weil sie dort leben, netzwerken und täglich aktiv im Markt sind.
-              </p>
-            </div>
+            <h2 className="font-serif text-[clamp(2rem,3.5vw,3rem)] text-ink leading-[1.08] tracking-[-0.01em] max-w-[500px]">
+              Menschen, die zuhören.
+            </h2>
           </motion.div>
-        </div>
 
-        {/* Full-bleed team photo */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="relative w-full aspect-[16/7] overflow-hidden"
-        >
-          <Image
-            src="/images/team.jpg"
-            alt="Das Team von Abels Immobilien"
-            fill
-            className="object-cover object-top"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-ink/30 via-transparent to-transparent" />
-          <div className="absolute bottom-0 left-0 right-0 max-w-[1440px] mx-auto px-6 lg:px-20 pb-10">
-            <Link
-              href="/bewertung"
-              className="inline-flex items-center gap-2 bg-gold text-ink px-8 py-4 text-[11px] uppercase tracking-[0.16em] font-semibold hover:bg-gold-soft transition-colors group"
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+
+            {/* Peter Abels */}
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7 }}
+              viewport={{ once: true }}
             >
-              Jetzt Beratung anfragen
-              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+              <div className="relative overflow-hidden aspect-[3/4] bg-bone">
+                <Image
+                  src="/images/team-peter-abels.jpg"
+                  alt="Peter Abels, Inhaber"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 640px) 100vw, 33vw"
+                />
+              </div>
+              <div className="mt-5 pb-5 border-b border-line/50">
+                <p className="font-serif text-[1.25rem] text-ink mb-1">Peter Abels</p>
+                <p className="text-[11px] uppercase tracking-[0.2em] text-stone">Inhaber & Gründer</p>
+              </div>
+              <p className="mt-4 text-[14px] text-graphite leading-[1.75]">
+                Seit 1999 führt Peter Abels das Unternehmen inhabergeführt und persönlich. Mit über 25 Jahren Markterfahrung begleitet er anspruchsvolle Verkaufsmandate von der Bewertung bis zur Beurkundung.
+              </p>
+            </motion.div>
+
+            {/* Josefine Mokrani */}
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.1 }}
+              viewport={{ once: true }}
+            >
+              <div className="relative overflow-hidden aspect-[3/4] bg-bone">
+                <Image
+                  src="/images/team-josefine-mokrani.jpg"
+                  alt="Josefine Mokrani, Geschäftsführerin"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 640px) 100vw, 33vw"
+                />
+              </div>
+              <div className="mt-5 pb-5 border-b border-line/50">
+                <p className="font-serif text-[1.25rem] text-ink mb-1">Josefine Mokrani</p>
+                <p className="text-[11px] uppercase tracking-[0.2em] text-stone">Geschäftsführerin</p>
+              </div>
+              <p className="mt-4 text-[14px] text-graphite leading-[1.75]">
+                Josefine Mokrani verantwortet als Geschäftsführerin die strategische Entwicklung und das operative Management. Ihr Fokus liegt auf Qualitätssicherung, Kundenbeziehungen und der Weiterentwicklung des Beratungsstandards.
+              </p>
+            </motion.div>
+
+            {/* Team Group */}
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <div className="relative overflow-hidden aspect-[3/4] bg-bone">
+                <Image
+                  src="/images/team-group.jpg"
+                  alt="Team von Abels Immobilien"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 640px) 100vw, 33vw"
+                />
+              </div>
+              <div className="mt-5 pb-5 border-b border-line/50">
+                <p className="font-serif text-[1.25rem] text-ink mb-1">Das Team</p>
+                <p className="text-[11px] uppercase tracking-[0.2em] text-stone">Abels Immobilien</p>
+              </div>
+              <p className="mt-4 text-[14px] text-graphite leading-[1.75]">
+                Unsere Berater kennen ihre Standorte nicht aus Broschüren, sondern weil sie dort leben, netzwerken und täglich aktiv im Markt sind.
+              </p>
+            </motion.div>
+
+          </div>
+
+          <div className="mt-10">
+            <Link
+              href="/kontakt"
+              className="inline-flex items-center gap-1.5 text-[11px] uppercase tracking-[0.16em] text-stone hover:text-ink transition-colors"
+            >
+              Persönlichen Termin vereinbaren
+              <ArrowRight className="w-3 h-3" />
             </Link>
           </div>
-        </motion.div>
+
+        </div>
       </section>
 
-      {/* ─── BEKANNT AUS ─── */}
-      <section className="py-16 lg:py-20 bg-bone border-b border-line/50">
+      {/* ── REFERENZEN: Bildergalerie ── */}
+      <section className="bg-bone border-b border-line/40 py-20 lg:py-28">
+        <div className="max-w-[1440px] mx-auto px-6 lg:px-20">
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="mb-14"
+          >
+            <div className="flex items-center gap-3 mb-5">
+              <div className="w-6 h-px bg-gold/60" />
+              <span className="text-[11px] uppercase tracking-[0.24em] text-gold">Referenzen</span>
+            </div>
+            <h2 className="font-serif text-[clamp(2rem,4vw,3.2rem)] text-ink leading-tight mb-12">
+              Ein Auszug aus über 1.800<br />
+              <span className="text-ink/50">vermittelten Objekten.</span>
+            </h2>
+
+            {/* Kategorie-Icons — dekorativ */}
+            <div className="flex flex-wrap items-start justify-center gap-10 lg:gap-16 py-10">
+              {[
+                {
+                  label: "Wohnen",
+                  icon: (
+                    <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10 text-stone/90" stroke="currentColor" strokeWidth="1.4">
+                      <path d="M6 18L20 6l14 12v16H26v-8h-4v8H6V18Z" strokeLinejoin="round"/>
+                    </svg>
+                  ),
+                },
+                {
+                  label: "Gewerbe",
+                  icon: (
+                    <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10 text-stone/90" stroke="currentColor" strokeWidth="1.4">
+                      <rect x="6" y="10" width="28" height="24" rx="1"/>
+                      <path d="M13 34V22h6v12M21 22h6v6h-6z"/>
+                      <path d="M6 10l7-6h14l7 6"/>
+                    </svg>
+                  ),
+                },
+                {
+                  label: "Anlage",
+                  icon: (
+                    <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10 text-stone/90" stroke="currentColor" strokeWidth="1.4">
+                      <polyline points="6,30 14,20 21,25 34,10"/>
+                      <polyline points="28,10 34,10 34,16"/>
+                    </svg>
+                  ),
+                },
+                {
+                  label: "Entwicklung",
+                  icon: (
+                    <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10 text-stone/90" stroke="currentColor" strokeWidth="1.4">
+                      <rect x="4" y="28" width="8" height="6"/>
+                      <rect x="16" y="18" width="8" height="16"/>
+                      <rect x="28" y="8" width="8" height="26"/>
+                    </svg>
+                  ),
+                },
+                {
+                  label: "Zinshäuser",
+                  icon: (
+                    <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10 text-stone/90" stroke="currentColor" strokeWidth="1.4">
+                      <rect x="4" y="12" width="14" height="22"/>
+                      <rect x="22" y="6" width="14" height="28"/>
+                      <path d="M4 12l7-7 7 7M22 6l7-7 7 7"/>
+                      <rect x="8" y="20" width="4" height="4"/><rect x="16" y="20" width="4" height="4" className="hidden"/>
+                      <rect x="26" y="14" width="4" height="4"/><rect x="26" y="22" width="4" height="4"/>
+                    </svg>
+                  ),
+                },
+              ].map((cat) => (
+                <div key={cat.label} className="flex flex-col items-center gap-3 select-none">
+                  {cat.icon}
+                  <span className="text-[9px] uppercase tracking-[0.22em] text-stone">{cat.label}</span>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Image grid — 3 cols, uniform cards */}
+          <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
+            {referenzen.map((ref, i) => (
+              <motion.div
+                key={ref.id}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: i * 0.07 }}
+                viewport={{ once: true }}
+                className="break-inside-avoid"
+              >
+                <div className="relative overflow-hidden border border-line/50 bg-cream shadow-sm group">
+                  <div className={`relative w-full overflow-hidden ${
+                    ref.size === "wide"   ? "aspect-[16/10]" :
+                    ref.size === "tall"   ? "aspect-[3/4]"   :
+                                           "aspect-square"
+                  }`}>
+                    <Image
+                      src={ref.image}
+                      alt={`${ref.typ} ${ref.ort}`}
+                      fill
+                      className="object-cover group-hover:scale-[1.03] transition-transform duration-500"
+                      style={{ objectPosition: ref.pos }}
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+                  <div className="px-4 py-3 border-t border-line/40">
+                    <p className="text-[10px] uppercase tracking-[0.18em] text-stone mb-0.5">{ref.ort}</p>
+                    <p className="text-[13px] text-ink font-medium">{ref.typ}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
+      {/* ── BEKANNT AUS / PRESSE LOGOS ── */}
+      <section className="bg-cream border-b border-line/40 py-20 lg:py-24">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-20">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -303,71 +650,79 @@ export default function UeberUnsPage() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <p className="text-[10px] uppercase tracking-[0.28em] text-stone text-center mb-10">
+            <p className="text-[10px] uppercase tracking-[0.28em] text-stone text-center mb-14">
               Bekannt aus
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-10 lg:gap-20">
+
+            {/* Logo row */}
+            <div className="flex flex-wrap items-center justify-center gap-12 lg:gap-20">
+
               {/* FAZ */}
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.1 }}
-                viewport={{ once: true }}
-                className="relative h-10 w-48 grayscale opacity-55 hover:opacity-80 hover:grayscale-0 transition-all duration-300"
-              >
+              <div className="relative h-9 w-44 opacity-90 hover:opacity-100 transition-all duration-300">
                 <Image
                   src="/images/press/faz.png"
                   alt="Frankfurter Allgemeine Zeitung"
                   fill
                   className="object-contain"
                 />
-              </motion.div>
+              </div>
 
-              <div className="hidden sm:block w-px h-8 bg-line/70" />
+              <div className="w-px h-7 bg-line/60 hidden sm:block" />
 
-              {/* Stuttgarter Zeitung */}
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="relative h-10 w-52 grayscale opacity-55 hover:opacity-80 hover:grayscale-0 transition-all duration-300"
-              >
-                <Image
-                  src="/images/press/stuttgarter-zeitung.png"
-                  alt="Stuttgarter Zeitung"
-                  fill
-                  className="object-contain"
-                />
-              </motion.div>
-
-              <div className="hidden sm:block w-px h-8 bg-line/70" />
-
-              {/* Süddeutsche Zeitung */}
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-                viewport={{ once: true }}
-                className="relative h-10 w-52 grayscale opacity-55 hover:opacity-80 hover:grayscale-0 transition-all duration-300"
-              >
+              {/* Süddeutsche */}
+              <div className="relative h-9 w-52 opacity-90 hover:opacity-100 transition-all duration-300">
                 <Image
                   src="/images/press/sueddeutsche-zeitung.svg"
                   alt="Süddeutsche Zeitung"
                   fill
                   className="object-contain"
                 />
-              </motion.div>
+              </div>
+
+              <div className="w-px h-7 bg-line/60 hidden sm:block" />
+
+              {/* Stuttgarter Zeitung */}
+              <div className="relative h-9 w-52 opacity-90 hover:opacity-100 transition-all duration-300">
+                <Image
+                  src="/images/press/stuttgarter-zeitung.png"
+                  alt="Stuttgarter Zeitung"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+
+              <div className="w-px h-7 bg-line/60 hidden sm:block" />
+
+              {/* WAZ */}
+              <div className="relative h-9 w-28 opacity-90 hover:opacity-100 transition-all duration-300">
+                <Image
+                  src="/images/press/waz.png"
+                  alt="WAZ – Westdeutsche Allgemeine Zeitung"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+
+              <div className="w-px h-7 bg-line/60 hidden sm:block" />
+
+              {/* Rheinische Post */}
+              <div className="relative h-9 w-48 opacity-90 hover:opacity-100 transition-all duration-300">
+                <Image
+                  src="/images/press/rheinische-post.png"
+                  alt="Rheinische Post"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* ─── REFERENZEN ─── */}
-      <section className="bg-bone border-t border-line/40 py-24 lg:py-36">
+      {/* Testimonials */}
+      <section className="bg-bone border-b border-line/40 py-24 lg:py-32">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-20">
-
-          {/* Section header */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -415,7 +770,6 @@ export default function UeberUnsPage() {
             </div>
           </motion.div>
 
-          {/* Grid of remaining testimonials */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-line/50">
             {testimonials.slice(1).map((t, i) => (
               <motion.div
@@ -442,28 +796,6 @@ export default function UeberUnsPage() {
               </motion.div>
             ))}
           </div>
-
-          {/* Google CTA */}
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="mt-12 pt-12 border-t border-line/50 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6"
-          >
-            <p className="text-[14px] text-graphite">
-              Alle Bewertungen sind authentisch und stammen von verifizierten Mandanten.
-            </p>
-            <a
-              href="https://g.page/r/abels-immobilien/review"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.16em] text-stone hover:text-gold transition-colors group shrink-0"
-            >
-              Alle Google-Bewertungen lesen
-              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
-            </a>
-          </motion.div>
         </div>
       </section>
 
@@ -482,10 +814,10 @@ export default function UeberUnsPage() {
             <div className="lg:col-span-4 lg:col-start-9 flex flex-col gap-3">
               <Link
                 href="/bewertung"
-                className="inline-flex items-center justify-center gap-2 bg-gold text-ink px-8 py-4 text-[11px] uppercase tracking-[0.16em] font-semibold hover:bg-gold-soft transition-colors group"
+                className="inline-flex items-center justify-center gap-2 bg-gold text-ink px-8 py-4 text-[11px] uppercase tracking-[0.16em] font-semibold hover:bg-gold/80 transition-colors"
               >
                 Kostenlose Bewertung
-                <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+                <ArrowRight className="w-3.5 h-3.5" />
               </Link>
               <a
                 href="tel:+492115591751"

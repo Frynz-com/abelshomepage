@@ -21,7 +21,7 @@ export function TrustSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.55, delay: index * 0.09 }}
               viewport={{ once: true }}
-              className={`px-6 lg:px-12 py-10 lg:py-14 ${
+              className={`px-6 lg:px-12 py-8 lg:py-10 ${
                 index >= 2 ? "border-t border-line/40 lg:border-t-0" : ""
               }`}
             >

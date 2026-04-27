@@ -1,5 +1,4 @@
 1:"$Sreact.fragment"
 2:I[39756,["/_next/static/chunks/0iwz~d34oj_si.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
 3:I[37457,["/_next/static/chunks/0iwz~d34oj_si.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
-4:[]
-0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"sSgLdJuxYpuSlmtXGGbJq"}
+0:{"rsc":["$","$1","c",{"children":[null,[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"RealEstateAgent\",\"name\":\"Abels Immobilien Frankfurt\",\"url\":\"https://abels-immobilien.de/standorte/frankfurt\",\"description\":\"Premium-Immobilienmakler in Frankfurt am Main. Spezialisiert auf Westend, Sachsenhausen und Sachsenhausen Nord.\",\"areaServed\":{\"@type\":\"City\",\"name\":\"Frankfurt am Main\"},\"telephone\":\"+49-211-5597510\",\"parentOrganization\":{\"@type\":\"Organization\",\"name\":\"Abels Immobilien GmbH\"}}"}}],["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"cTSaV0RuYikqQcXPBqgsx"}

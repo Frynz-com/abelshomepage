@@ -90,9 +90,29 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ standort: string }> }) {
   const { standort: standortKey } = await params
   const standort = standorte[standortKey]
+  const url = `https://abels-immobilien.de/standorte/${standortKey}`
   return {
     title: standort?.metaTitle || 'Standort | Abels Immobilien',
     description: standort?.metaDesc || '',
+    keywords: [
+      `Immobilienmakler ${standort?.name}`,
+      `Immobilien ${standort?.name}`,
+      `Haus verkaufen ${standort?.name}`,
+      `Wohnung kaufen ${standort?.name}`,
+      `Premium Makler ${standort?.name}`,
+      'Abels Immobilien',
+    ],
+    openGraph: {
+      title: standort?.metaTitle || 'Standort | Abels Immobilien',
+      description: standort?.metaDesc || '',
+      url,
+      type: 'website' as const,
+      locale: 'de_DE',
+      siteName: 'Abels Immobilien',
+    },
+    alternates: {
+      canonical: url,
+    },
   }
 }
 
@@ -104,8 +124,30 @@ export default async function StandortDetailPage({ params }: { params: Promise<{
     return <div>Standort nicht gefunden</div>
   }
 
+  const faqSchema = standort.faqs ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: standort.faqs.map((faq: any) => ({
+      '@type': 'Question',
+      name: faq.q,
+      acceptedAnswer: { '@type': 'Answer', text: faq.a },
+    })),
+  } : null
+
+  const localBusinessSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'RealEstateAgent',
+    name: `Abels Immobilien ${standort.name}`,
+    url: `https://abels-immobilien.de/standorte/${standortKey}`,
+    description: standort.metaDesc,
+    areaServed: { '@type': 'City', name: standort.name },
+    parentOrganization: { '@type': 'Organization', name: 'Abels Immobilien GmbH' },
+  }
+
   return (
     <main className="bg-background text-foreground">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
       <Header />
 
       {/* Hero mit Bild */}

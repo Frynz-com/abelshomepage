@@ -1,9 +1,25 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { BewertungIframe } from "./bewertung-iframe"
 
 export const metadata = {
-  title: "Immobilienbewertung | Abels Immobilien",
-  description: "Kostenlose und unverbindliche Bewertung Ihrer Immobilie. Professionelle Marktanalyse durch Experten."
+  title: "Kostenlose Immobilienbewertung | In 72 Stunden | Abels Immobilien",
+  description: "Kostenfreie, unverbindliche Bewertung Ihrer Immobilie durch Experten. Professionelle Marktanalyse in 72 Stunden — für Wohnungen, Häuser und Villen in 7 deutschen Städten.",
+  keywords: [
+    "Immobilienbewertung kostenlos", "Immobilie bewerten lassen", "Hausbewertung kostenlos",
+    "Wohnungswert ermitteln", "Immobilienwert berechnen", "Marktwert Immobilie"
+  ],
+  openGraph: {
+    title: "Kostenlose Immobilienbewertung — In 72 Stunden",
+    description: "Was ist Ihre Immobilie wert? Professionelle Markteinschätzung kostenlos und unverbindlich.",
+    url: "https://abels-immobilien.de/bewertung",
+    type: "website",
+    locale: "de_DE",
+    siteName: "Abels Immobilien",
+  },
+  alternates: {
+    canonical: "https://abels-immobilien.de/bewertung",
+  },
 }
 
 export default function BewertungPage() {
@@ -28,13 +44,7 @@ export default function BewertungPage() {
       <section className="bg-bone py-16 lg:py-24">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
           <div className="bg-cream border border-line overflow-hidden">
-            <iframe
-              src="https://immorechnerabels.netlify.app"
-              title="Immobilienbewertung Tool"
-              className="w-full"
-              style={{ height: "900px", border: "none" }}
-              loading="lazy"
-            />
+            <BewertungIframe />
           </div>
         </div>
       </section>

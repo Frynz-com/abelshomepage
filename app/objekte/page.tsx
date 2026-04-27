@@ -33,8 +33,23 @@ const properties = [
 ]
 
 export const metadata = {
-  title: "Immobilien Katalog | Abels Immobilien",
-  description: "Entdecken Sie unsere exklusiven Immobilienangebote. Premium Properties in top Lagen."
+  title: "Exklusive Immobilien | Premium Objekte in Top-Lagen | Abels Immobilien",
+  description: "Exklusive Immobilienangebote in Düsseldorf, München, Hamburg und Frankfurt. Kuratierte Premium-Objekte — Penthouse, Villa, Luxuswohnungen — von Abels Immobilien.",
+  keywords: [
+    "Immobilien kaufen", "Luxusimmobilien kaufen", "Premium Wohnungen Deutschland",
+    "Penthouse kaufen Düsseldorf", "Villa kaufen München", "exklusive Immobilien"
+  ],
+  openGraph: {
+    title: "Exklusive Immobilien — Premium Objekte in Top-Lagen",
+    description: "Kuratierte Auswahl exklusiver Immobilien in den besten Lagen Deutschlands.",
+    url: "https://abels-immobilien.de/objekte",
+    type: "website",
+    locale: "de_DE",
+    siteName: "Abels Immobilien",
+  },
+  alternates: {
+    canonical: "https://abels-immobilien.de/objekte",
+  },
 }
 
 export default function ObjektePage() {

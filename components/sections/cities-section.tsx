@@ -93,10 +93,7 @@ function CityCard({
           <h3 className="font-serif text-[26px] lg:text-[32px] text-white leading-none tracking-[-0.01em] mb-2">
             {city.name}
           </h3>
-          <p className="text-[11.5px] text-white/45 leading-relaxed mb-5 hidden sm:block">
-            {city.tagline}
-          </p>
-          <div className="flex items-center gap-2 text-white/35 group-hover:text-gold/80 transition-colors duration-300">
+          <div className="flex items-center gap-2 text-white/70 group-hover:text-white transition-colors duration-300">
             <span className="text-[9.5px] uppercase tracking-[0.22em]">Standort ansehen</span>
             <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
           </div>
@@ -111,7 +108,7 @@ export function CitiesSection() {
   const trio = cities.slice(4, 7)
 
   return (
-    <section className="py-28 lg:py-40 bg-cream border-t border-line/40">
+    <section className="pt-20 lg:pt-28 pb-24 lg:pb-36 bg-cream border-t border-line/40">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-20">
 
         {/* Header */}

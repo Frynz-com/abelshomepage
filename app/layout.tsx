@@ -35,6 +35,28 @@ export const metadata: Metadata = {
   robots: 'index, follow',
 }
 
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'RealEstateAgent',
+  name: 'Abels Immobilien GmbH',
+  url: 'https://abels-immobilien.de',
+  logo: 'https://abels-immobilien.de/images/logo.png',
+  description: 'Inhabergeführter Premium-Immobilienmakler für den Verkauf hochwertiger Wohnimmobilien. Seit 1999. 7 Standorte.',
+  foundingDate: '1999',
+  telephone: '+49-211-5597510',
+  email: 'info@abels-immobilien.de',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Alt Niederkassel 124',
+    addressLocality: 'Düsseldorf',
+    postalCode: '40547',
+    addressCountry: 'DE',
+  },
+  areaServed: ['Düsseldorf', 'München', 'Grünwald', 'Hamburg', 'Frankfurt', 'Essen', 'Stuttgart'],
+  priceRange: '€€€€',
+  sameAs: ['https://abels-immobilien.de'],
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -43,6 +65,10 @@ export default function RootLayout({
   return (
     <html lang="de" className="bg-cream" data-scroll-behavior="smooth">
       <body className={`${playfair.variable} ${inter.variable} font-sans antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>

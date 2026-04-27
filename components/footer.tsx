@@ -8,7 +8,7 @@ const leistungen = [
   { label: "Immobilie verkaufen", href: "/verkaufen" },
   { label: "Immobilie kaufen", href: "/kaufen" },
   { label: "Bewertung", href: "/bewertung" },
-  { label: "Off-Market Verkauf", href: "/off-market" },
+  { label: "Off-Market Verkauf", href: "/off-market-immobilien-duesseldorf" },
   { label: "Tippgeber", href: "/tippgeber" },
 ]
 
@@ -23,10 +23,10 @@ const standorte = [
 ]
 
 const ratgeber = [
-  { label: "Immobilie verkaufen", href: "/ratgeber/immobilie-verkaufen" },
-  { label: "Immobilienbewertung", href: "/ratgeber/immobilienbewertung" },
+  { label: "Immobilie verkaufen", href: "/immobilie-verkaufen" },
+  { label: "Immobilienbewertung", href: "/immobilie-bewerten-duesseldorf" },
   { label: "Maklerkosten", href: "/ratgeber/maklerkosten" },
-  { label: "Off-Market Verkauf", href: "/ratgeber/off-market-verkauf" },
+  { label: "Off-Market Verkauf", href: "/off-market-immobilien-duesseldorf" },
   { label: "Energieausweis", href: "/ratgeber/energieausweis" },
   { label: "Notarkosten", href: "/ratgeber/notarkosten" },
 ]
@@ -34,7 +34,7 @@ const ratgeber = [
 const unternehmen = [
   { label: "Über uns", href: "/ueber-uns" },
   { label: "Karriere", href: "/karriere" },
-  { label: "Presse", href: "/presse" },
+  { label: "Presse & Medien", href: "/presse" },
   { label: "Kontakt", href: "/kontakt" },
 ]
 
@@ -198,20 +198,20 @@ export function Footer() {
 
             <div className="flex items-center gap-4 border-l border-line/50 pl-5">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/abels-immobilien"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-stone hover:text-ink transition-colors"
-                aria-label="LinkedIn"
+                aria-label="Abels Immobilien auf LinkedIn"
               >
                 <Linkedin className="w-3.5 h-3.5" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/abels.immobilien"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-stone hover:text-ink transition-colors"
-                aria-label="Instagram"
+                aria-label="Abels Immobilien auf Instagram"
               >
                 <Instagram className="w-3.5 h-3.5" />
               </a>

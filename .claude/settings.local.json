@@ -26,7 +26,13 @@
       "Bash(git remote:*)",
       "Bash(git push:*)",
       "Bash(sed -i '' 's/className=\"absolute inset-0 bg-ink\\\\/52\"/className=\"absolute inset-0 bg-ink\\\\/22\"/g' components/essen/hero-section.tsx components/duesseldorf/hero-section.tsx components/hamburg/hero-section.tsx components/frankfurt/hero-section.tsx components/munich/hero-section.tsx)",
-      "Bash(sed -i '' 's/className=\"absolute inset-0 z-10 bg-ink\\\\/40\"/className=\"absolute inset-0 z-10 bg-ink\\\\/22\"/g' components/gruenwald/hero-section.tsx)"
+      "Bash(sed -i '' 's/className=\"absolute inset-0 z-10 bg-ink\\\\/40\"/className=\"absolute inset-0 z-10 bg-ink\\\\/22\"/g' components/gruenwald/hero-section.tsx)",
+      "Bash(curl -L \"https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=2400&q=90&fm=jpg\" -o /Users/kaiazlack/Desktop/v0-abels-immobilien-clone-main/public/images/hero-luxury.jpg)",
+      "Bash(/usr/bin/git add *)",
+      "Bash(/usr/bin/git commit -m 'SEO-Komplett-Optimierung: Metadata, JSON-LD, Sitemap, Canonical URLs *)",
+      "Bash(awk '/const ratgeber/,/\\\\]/' /Users/kaiazlack/Desktop/v0-abels-immobilien-clone-main/components/footer.tsx)",
+      "Bash(gh --version)",
+      "Bash(/usr/bin/git --version)"
     ]
   }
 }

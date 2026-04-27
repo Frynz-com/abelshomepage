@@ -25,15 +25,35 @@ export const metadata: Metadata = {
     "Grundbuchkosten"
   ],
   openGraph: {
-    title: "Notarkosten beim Immobilienverkauf - Was Sie wissen muessen",
-    description: "Alle Informationen zu Notarkosten, Gebuehren und Ablauf beim Immobilienverkauf. Inkl. Beispielrechnung und Praxis-Tipps.",
-    type: "article"
-  }
+    title: "Notarkosten beim Immobilienverkauf — Was Sie wissen müssen",
+    description: "Alle Informationen zu Notarkosten, Gebühren und Ablauf beim Immobilienverkauf. Inkl. Beispielrechnung und Praxis-Tipps.",
+    type: "article",
+    url: "https://abels-immobilien.de/ratgeber/notarkosten",
+    locale: "de_DE",
+    siteName: "Abels Immobilien",
+  },
+  alternates: {
+    canonical: "https://abels-immobilien.de/ratgeber/notarkosten",
+  },
+}
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Notarkosten beim Immobilienverkauf',
+  description: 'Was kostet der Notar beim Hausverkauf? Gebühren, Leistungen und Ablauf.',
+  author: { '@type': 'Organization', name: 'Abels Immobilien GmbH', url: 'https://abels-immobilien.de' },
+  publisher: { '@type': 'Organization', name: 'Abels Immobilien GmbH', url: 'https://abels-immobilien.de' },
+  url: 'https://abels-immobilien.de/ratgeber/notarkosten',
+  datePublished: '2024-01-01',
+  dateModified: '2026-04-01',
+  inLanguage: 'de-DE',
 }
 
 export default function NotarkostenRatgeberPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <Header />
       <main>
         <NotarkostenHeroSection />

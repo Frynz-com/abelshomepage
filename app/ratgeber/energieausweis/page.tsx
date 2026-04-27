@@ -28,13 +28,33 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Energieausweis beim Immobilienverkauf | Abels Immobilien",
     description: "Was Eigentümer über den Energieausweis wissen müssen: Pflichten, Fristen und wie wir Sie dabei unterstützen.",
-    type: "article"
-  }
+    type: "article",
+    url: "https://abels-immobilien.de/ratgeber/energieausweis",
+    locale: "de_DE",
+    siteName: "Abels Immobilien",
+  },
+  alternates: {
+    canonical: "https://abels-immobilien.de/ratgeber/energieausweis",
+  },
+}
+
+const blogPostingSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Energieausweis beim Immobilienverkauf',
+  description: 'Alles zum Energieausweis beim Immobilienverkauf: Pflichten, Fristen, Kosten.',
+  author: { '@type': 'Organization', name: 'Abels Immobilien GmbH', url: 'https://abels-immobilien.de' },
+  publisher: { '@type': 'Organization', name: 'Abels Immobilien GmbH', url: 'https://abels-immobilien.de' },
+  url: 'https://abels-immobilien.de/ratgeber/energieausweis',
+  datePublished: '2024-01-01',
+  dateModified: '2026-04-01',
+  inLanguage: 'de-DE',
 }
 
 export default function EnergieausweisRatgeberPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }} />
       <Header />
       <main>
         <HeroSection />

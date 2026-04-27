@@ -91,7 +91,6 @@ function CityCard({ city, index }: { city: typeof cities[0]; index: number }) {
           <h2 className="font-serif text-[26px] lg:text-[34px] text-white leading-tight mb-1.5 tracking-[-0.01em]">
             {city.name}
           </h2>
-          <p className="text-[12px] text-white/55 mb-2 hidden sm:block">{city.tagline}</p>
           <p className="text-[13px] text-white/40 leading-relaxed hidden lg:block max-w-[380px]">
             {city.description}
           </p>

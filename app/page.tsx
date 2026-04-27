@@ -22,13 +22,21 @@ export const metadata = {
     "Wohnung verkaufen",
     "Villa verkaufen",
     "Luxusimmobilien verkaufen",
-    "Off-Market Immobilien"
+    "Off-Market Immobilien",
+    "Premium Makler",
+    "Abels Immobilien"
   ],
   openGraph: {
     title: "Immobilienmakler Düsseldorf | Abels Immobilien",
-    description: "Verkaufen Sie Ihre hochwertige Immobilie mit einem erfahrenen Makler. Seit 1999 inhabergefuhrt. Diskret. Persönlich. Professionell.",
+    description: "Verkaufen Sie Ihre hochwertige Immobilie mit einem erfahrenen Makler. Seit 1999 inhabergeführt. Diskret. Persönlich. Professionell.",
     url: "https://abels-immobilien.de",
-  }
+    type: "website",
+    locale: "de_DE",
+    siteName: "Abels Immobilien",
+  },
+  alternates: {
+    canonical: "https://abels-immobilien.de",
+  },
 }
 
 export default function Home() {
@@ -38,9 +46,9 @@ export default function Home() {
       <HeroSection />
       <TrustSection />
       <PositioningSection />
+      <CitiesSection />
       <ServicesSection />
       <MarketSection />
-      <CitiesSection />
       <TestimonialsSection />
       <ProcessSection />
       <FaqSection />
