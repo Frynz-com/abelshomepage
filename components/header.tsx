@@ -49,12 +49,12 @@ export function Header() {
             <Link href="/" className="relative z-10 shrink-0 flex items-center gap-3.5">
               <div className={`w-px h-6 transition-colors duration-500 ${isScrolled ? "bg-gold/50" : "bg-gold/65"}`} />
               <div>
-                <span className={`block font-serif text-[20px] lg:text-[22px] tracking-[0.08em] leading-none transition-colors duration-500 ${
+                <span className={`block font-serif text-[24px] lg:text-[27px] tracking-[0.08em] leading-none transition-colors duration-500 ${
                   isScrolled ? "text-ink" : "text-white"
                 }`}>
                   ABELS
                 </span>
-                <span className={`block text-[8.5px] uppercase tracking-[0.26em] leading-none mt-[5px] transition-colors duration-500 ${
+                <span className={`block text-[9.5px] uppercase tracking-[0.26em] leading-none mt-[5px] transition-colors duration-500 ${
                   isScrolled ? "text-stone" : "text-white/50"
                 }`}>
                   Immobilien

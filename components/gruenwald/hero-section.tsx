@@ -82,10 +82,6 @@ export function GruenwaldHeroSection() {
                 <span className="block font-serif text-2xl lg:text-3xl text-white mb-1">7 Standorte</span>
                 <span className="text-white/60 text-sm uppercase tracking-[0.1em]">In Deutschland</span>
               </div>
-              <div>
-                <span className="block font-serif text-2xl lg:text-3xl text-white mb-1">IHK-zertifiziert</span>
-                <span className="text-white/60 text-sm uppercase tracking-[0.1em]">Qualifizierte Beratung</span>
-              </div>
             </div>
           </motion.div>
         </div>

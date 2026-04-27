@@ -66,19 +66,17 @@ export function DuesseldorfProcessSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.08 }}
               viewport={{ once: true }}
-              className="relative"
+              className="flex flex-col"
             >
-              <span className="text-gold/30 font-serif text-6xl lg:text-7xl absolute -top-4 -left-2">
+              <span className="text-gold/40 font-serif text-5xl leading-none mb-4">
                 {step.number}
               </span>
-              <div className="pt-10">
-                <h3 className="font-serif text-xl text-ink mb-3">
-                  {step.title}
-                </h3>
-                <p className="text-graphite text-sm leading-relaxed">
-                  {step.description}
-                </p>
-              </div>
+              <h3 className="font-serif text-xl text-ink mb-3">
+                {step.title}
+              </h3>
+              <p className="text-graphite text-sm leading-relaxed">
+                {step.description}
+              </p>
             </motion.div>
           ))}
         </div>

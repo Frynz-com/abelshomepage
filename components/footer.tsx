@@ -41,15 +41,15 @@ const unternehmen = [
 function FooterCol({ title, links }: { title: string; links: { label: string; href: string }[] }) {
   return (
     <div>
-      <h4 className="text-[9.5px] uppercase tracking-[0.26em] text-stone mb-6 font-medium">
+      <h4 className="text-[11px] uppercase tracking-[0.26em] text-stone mb-6 font-medium">
         {title}
       </h4>
-      <ul className="space-y-3.5">
+      <ul className="space-y-4">
         {links.map((item) => (
           <li key={item.href}>
             <Link
               href={item.href}
-              className="text-[13px] text-graphite/70 hover:text-ink transition-colors duration-200 leading-snug"
+              className="text-[15px] text-graphite/80 hover:text-ink transition-colors duration-200 leading-snug"
             >
               {item.label}
             </Link>
@@ -176,7 +176,7 @@ export function Footer() {
       <div className="max-w-[1440px] mx-auto px-6 lg:px-20 py-6">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
 
-          <p className="text-[11.5px] text-stone tracking-[0.02em]">
+          <p className="text-[13px] text-stone tracking-[0.02em]">
             © 2026 Abels Immobilien GmbH · IHK-Mitglied · §34c GewO
           </p>
 
@@ -190,7 +190,7 @@ export function Footer() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-[11.5px] text-stone hover:text-ink transition-colors"
+                className="text-[13px] text-stone hover:text-ink transition-colors"
               >
                 {item.label}
               </Link>
