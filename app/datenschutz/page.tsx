@@ -112,6 +112,33 @@ export default function DatenschutzPage() {
           </section>
 
           <section>
+            <h2 className="font-serif text-2xl text-ink mb-4 mt-8">4. Immobilienbewertungs-Tool (Externer Dienst)</h2>
+
+            <h3 className="font-semibold text-ink mb-2">Hinweis zur externen Bewertungsplattform</h3>
+            <p>
+              Auf unserer Website bieten wir Ihnen die Möglichkeit, eine kostenlose Online-Immobilienbewertung durchzuführen. Wenn Sie auf die Schaltfläche „Kostenlose Bewertung" klicken, werden Sie auf eine externe Bewertungsplattform weitergeleitet, die im Auftrag von und für Abels Immobilien GmbH betrieben wird. Diese Seite ist organisatorisch und rechtlich Abels Immobilien GmbH zuzuordnen.
+            </p>
+
+            <h3 className="font-semibold text-ink mb-2 mt-4">Verantwortlichkeit und Datenweitergabe</h3>
+            <p>
+              Die auf der Bewertungsplattform eingegebenen Daten (z. B. Adresse, Wohnfläche, Objekttyp, Kontaktdaten) werden ausschließlich zum Zweck der Immobilienbewertung und der anschließenden Kontaktaufnahme durch Abels Immobilien GmbH verarbeitet. Es erfolgt keine Weitergabe an Dritte außerhalb des Unternehmens.
+            </p>
+
+            <h3 className="font-semibold text-ink mb-2 mt-4">Einwilligung nach DSGVO (Art. 6 Abs. 1 lit. a DSGVO)</h3>
+            <p>
+              Mit der Nutzung des Bewertungstools und der Eingabe Ihrer Daten willigen Sie gemäß Art. 6 Abs. 1 lit. a DSGVO in die Verarbeitung dieser Daten durch Abels Immobilien GmbH zum Zwecke der Erstellung einer Immobilienwerteinschätzung und der Kontaktaufnahme ein. Diese Einwilligung ist freiwillig und kann jederzeit mit Wirkung für die Zukunft widerrufen werden – ohne dass die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung berührt wird.
+            </p>
+            <p>
+              Für den Widerruf wenden Sie sich bitte per E-Mail an: <a href="mailto:info@abels-immobilien.de" className="text-gold hover:underline">info@abels-immobilien.de</a>
+            </p>
+
+            <h3 className="font-semibold text-ink mb-2 mt-4">Speicherdauer</h3>
+            <p>
+              Die im Bewertungstool eingegebenen Daten werden so lange gespeichert, wie dies für die Durchführung der Bewertung und eine mögliche Verkaufsbegleitung erforderlich ist, spätestens jedoch nach Ablauf der gesetzlichen Aufbewahrungsfristen gelöscht.
+            </p>
+          </section>
+
+          <section>
             <h3 className="font-semibold text-ink mb-2">Widerspruch gegen Werbe-E-Mails</h3>
             <p>
               Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen vor.

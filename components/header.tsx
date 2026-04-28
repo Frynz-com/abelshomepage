@@ -15,11 +15,11 @@ const cities = [
 ]
 
 const navItems = [
+  { href: "/ueber-uns", label: "Über uns" },
   { href: "/verkaufen", label: "Verkaufen" },
   { href: "/kaufen", label: "Kaufen" },
   { href: "/standorte", label: "Standorte", hasDropdown: true },
-  { href: "/ueber-uns", label: "Über uns" },
-  { href: "/ratgeber", label: "Ratgeber" },
+  { href: "/investieren", label: "Investieren" },
 ]
 
 export function Header() {

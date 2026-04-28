@@ -49,9 +49,23 @@ const guides = [
     excerpt: "Eine transparente Übersicht der anfallenden Notargebühren — und wer für was aufkommt.",
     readTime: "5 Min.",
   },
+  {
+    slug: "erbimmobilie",
+    category: "Erbschaft",
+    title: "Geerbt und jetzt? Was Erben über ihre Immobilie wissen müssen",
+    excerpt: "Halten, vermieten oder verkaufen? Erbschaftsteuer, Erbengemeinschaft, Spekulationssteuer und die richtige Strategie für Ihre Erbimmobilie.",
+    readTime: "10 Min.",
+  },
+  {
+    slug: "scheidungsimmobilie",
+    category: "Scheidung",
+    title: "Immobilie bei Scheidung: Was tun mit dem gemeinsamen Haus?",
+    excerpt: "Zugewinnausgleich, Auszahlung oder gemeinsamer Verkauf? Alle Optionen bei Trennung und Scheidung – rechtlich, steuerlich und finanziell erklärt.",
+    readTime: "12 Min.",
+  },
 ]
 
-const categories = ["Alle", "Verkaufen", "Bewertung", "Kosten", "Off-Market", "Rechtliches"]
+const categories = ["Alle", "Verkaufen", "Bewertung", "Kosten", "Off-Market", "Rechtliches", "Erbschaft", "Scheidung"]
 
 export default function RatgeberPage() {
   return (

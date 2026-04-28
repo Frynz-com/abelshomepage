@@ -8,6 +8,7 @@ const leistungen = [
   { label: "Immobilie verkaufen", href: "/verkaufen" },
   { label: "Immobilie kaufen", href: "/kaufen" },
   { label: "Bewertung", href: "/bewertung" },
+  { label: "Investieren", href: "/investieren" },
   { label: "Off-Market Verkauf", href: "/off-market-immobilien-duesseldorf" },
   { label: "Tippgeber", href: "/tippgeber" },
 ]
@@ -29,6 +30,8 @@ const ratgeber = [
   { label: "Off-Market Verkauf", href: "/off-market-immobilien-duesseldorf" },
   { label: "Energieausweis", href: "/ratgeber/energieausweis" },
   { label: "Notarkosten", href: "/ratgeber/notarkosten" },
+  { label: "Erbimmobilie", href: "/ratgeber/erbimmobilie" },
+  { label: "Scheidung & Immobilie", href: "/ratgeber/scheidungsimmobilie" },
 ]
 
 const unternehmen = [
