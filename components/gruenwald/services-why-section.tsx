@@ -42,7 +42,7 @@ export function GruenwaldServicesSection() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-line/40 border border-line/40">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
@@ -50,18 +50,17 @@ export function GruenwaldServicesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.06 }}
               viewport={{ once: true }}
+              className="bg-cream hover:bg-bone transition-colors duration-300 p-7 lg:p-9 group"
             >
-              <div className="h-full">
-                <span className="block text-sm font-serif text-gold mb-3">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                <h3 className="font-serif text-lg text-ink mb-3">
-                  {service.title}
-                </h3>
-                <p className="text-graphite text-sm leading-relaxed">
-                  {service.text}
-                </p>
-              </div>
+              <span className="font-serif text-5xl lg:text-6xl text-gold/40 block mb-6 leading-none font-bold">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <h3 className="font-serif text-lg text-ink mb-3 group-hover:text-gold transition-colors duration-300">
+                {service.title}
+              </h3>
+              <p className="text-graphite/70 text-sm leading-relaxed">
+                {service.text}
+              </p>
             </motion.div>
           ))}
         </div>

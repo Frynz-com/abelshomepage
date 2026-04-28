@@ -80,10 +80,6 @@ export default function VerkaufenPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
-            <div className="flex items-center gap-3 mb-10">
-              <div className="w-8 h-px bg-gold/60" />
-              <span className="text-[11px] uppercase tracking-[0.28em] text-gold">Immobilie verkaufen</span>
-            </div>
             <h1 className="font-serif text-[clamp(2.8rem,6vw,5.5rem)] text-white leading-[0.96] tracking-[-0.02em] max-w-[780px] mb-8">
               Verkaufen Sie Ihre<br />
               <span className="text-white/60">Immobilie mit Plan.</span>

@@ -39,10 +39,6 @@ export function EssenHeroSection() {
                   transition={{ duration: 0.7, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
                   className="flex items-center gap-3 mb-8"
                 >
-                  <div className="w-8 h-px bg-gold" />
-                  <span className="text-gold text-[11px] uppercase tracking-[0.28em]">
-                    Immobilienmakler Essen
-                  </span>
                 </motion.div>
 
                 <motion.h1

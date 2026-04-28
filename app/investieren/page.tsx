@@ -25,7 +25,7 @@ export default function InvestierenPage() {
       <section className="relative h-[90vh] min-h-[600px] overflow-hidden">
         <div className="absolute inset-0 hero-zoom">
           <Image
-            src="/images/hero-luxury.jpg"
+            src="/images/investieren.jpg"
             alt="Neubauwohnungen Investment"
             fill
             priority
@@ -41,10 +41,6 @@ export default function InvestierenPage() {
             variants={stagger}
             className="max-w-3xl"
           >
-            <motion.div variants={fadeUp} className="flex items-center gap-3 mb-6">
-              <div className="w-8 h-px bg-gold/80" />
-              <span className="text-[11px] uppercase tracking-[0.28em] text-gold/90">Kapitalanlage</span>
-            </motion.div>
             <motion.h1
               variants={fadeUp}
               className="font-serif text-[clamp(2.8rem,6vw,5.5rem)] text-white leading-[0.97] tracking-[-0.02em] mb-6"

@@ -189,10 +189,6 @@ export default function UeberUnsPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
-            <div className="flex items-center gap-3 mb-10">
-              <div className="w-8 h-px bg-gold/60" />
-              <span className="text-[11px] uppercase tracking-[0.28em] text-gold">Über Abels Immobilien</span>
-            </div>
             <h1 className="font-serif text-[clamp(2.8rem,6vw,5.5rem)] text-white leading-[0.96] tracking-[-0.02em] max-w-[820px] mb-8">
               Inhabergeführt.<br />
               <span className="text-white/60">Seit 1999.</span>
@@ -302,20 +298,20 @@ export default function UeberUnsPage() {
               {/* Numbers */}
               <div className="space-y-6">
                 <div className="border-b border-line/50 pb-6">
-                  <p className="font-serif text-[2.6rem] text-ink leading-none tracking-tight">1.800</p>
-                  <p className="text-[9px] uppercase tracking-[0.22em] text-stone mt-1.5">Objekte vermittelt</p>
+                  <p className="font-serif text-[3.4rem] text-ink leading-none tracking-tight font-bold">1.800</p>
+                  <p className="text-[10px] uppercase tracking-[0.22em] text-stone mt-2">Objekte vermittelt</p>
                 </div>
                 <div className="border-b border-line/50 pb-6">
-                  <p className="font-serif text-[1.8rem] text-ink leading-none">629 <span className="text-stone text-[1rem]">/ 56 %</span></p>
-                  <p className="text-[9px] uppercase tracking-[0.22em] text-stone mt-1.5">Wohnen</p>
+                  <p className="font-serif text-[2.4rem] text-ink leading-none font-bold">629 <span className="text-stone text-[1.2rem] font-normal">/ 56 %</span></p>
+                  <p className="text-[10px] uppercase tracking-[0.22em] text-stone mt-2">Wohnen</p>
                 </div>
                 <div className="border-b border-line/50 pb-6">
-                  <p className="font-serif text-[1.8rem] text-ink leading-none">145 <span className="text-stone text-[1rem]">/ 13 %</span></p>
-                  <p className="text-[9px] uppercase tracking-[0.22em] text-stone mt-1.5">Gewerbe</p>
+                  <p className="font-serif text-[2.4rem] text-ink leading-none font-bold">145 <span className="text-stone text-[1.2rem] font-normal">/ 13 %</span></p>
+                  <p className="text-[10px] uppercase tracking-[0.22em] text-stone mt-2">Gewerbe</p>
                 </div>
                 <div>
-                  <p className="font-serif text-[1.8rem] text-ink leading-none">357 <span className="text-stone text-[1rem]">/ 31 %</span></p>
-                  <p className="text-[9px] uppercase tracking-[0.22em] text-stone mt-1.5">Anlage</p>
+                  <p className="font-serif text-[2.4rem] text-ink leading-none font-bold">357 <span className="text-stone text-[1.2rem] font-normal">/ 31 %</span></p>
+                  <p className="text-[10px] uppercase tracking-[0.22em] text-stone mt-2">Anlage</p>
                 </div>
               </div>
             </motion.div>

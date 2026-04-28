@@ -35,14 +35,6 @@ export function GruenwaldHeroSection() {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="lg:col-span-8 xl:col-span-7"
           >
-            <motion.p 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-gold text-xs uppercase tracking-[0.25em] mb-8"
-            >
-              Immobilienmakler für exklusive Lagen
-            </motion.p>
 
             <h1 className="font-serif text-[clamp(2.5rem,6vw,5.5rem)] text-white leading-[1.02] mb-10 text-balance">
               Immobilienmakler Grünwald<br />
