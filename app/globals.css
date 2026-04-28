@@ -55,6 +55,15 @@
   --input: #3a3a38;
 }
 
+@keyframes hero-zoom {
+  from { transform: scale(1); }
+  to   { transform: scale(1.10); }
+}
+.hero-zoom {
+  animation: hero-zoom 10s ease-out forwards;
+  will-change: transform;
+}
+
 @theme inline {
   --font-sans: var(--font-sans), 'Inter', system-ui, -apple-system, sans-serif;
   --font-serif: var(--font-serif), 'Playfair Display', Georgia, serif;

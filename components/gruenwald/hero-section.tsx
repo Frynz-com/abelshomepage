@@ -13,13 +13,15 @@ export function GruenwaldHeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center">
       <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 hero-zoom">
         <Image
           src="/images/cities/gruenwald.jpg"
           alt="Immobilienmakler Grünwald - Premium Villen und hochwertige Wohnungen"
           fill
           priority
-          className="object-cover scale-105"
+          className="object-cover"
         />
+        </div>
       </div>
 
       <div className="absolute inset-0 z-10 bg-ink/22" />

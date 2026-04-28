@@ -15,6 +15,7 @@ export function HeroSection() {
 
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 hero-zoom">
         <Image
           src="/images/hero-luxury.jpg"
           alt="Luxuriöse Immobilie – Abels Immobilien"
@@ -23,6 +24,7 @@ export function HeroSection() {
           className="object-cover object-center"
           sizes="100vw"
         />
+        </div>
         {/* Overlays — kräftig genug für lesbaren Text, Bild bleibt sichtbar */}
         <div className="absolute inset-0 bg-ink/28" />
         <div className="absolute inset-0 bg-gradient-to-r from-ink/70 via-ink/25 to-ink/5" />

@@ -153,12 +153,14 @@ export default async function StandortDetailPage({ params }: { params: Promise<{
       {/* Hero mit Bild */}
       <section className="relative h-96 lg:h-[500px] flex items-end">
         <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 hero-zoom">
           <Image
             src={standort.image}
             alt={standort.name}
             fill
             className="object-cover"
           />
+          </div>
         </div>
         <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent via-ink/20 to-ink/80" />
         <div className="relative z-20 max-w-[1440px] mx-auto px-6 lg:px-12 pb-12 w-full">

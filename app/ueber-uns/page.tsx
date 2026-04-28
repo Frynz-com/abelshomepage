@@ -170,6 +170,7 @@ export default function UeberUnsPage() {
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-line/40">
         <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 hero-zoom">
           <Image
             src="/images/team-meeting.jpg"
             alt="Abels Immobilien Team"
@@ -178,6 +179,7 @@ export default function UeberUnsPage() {
             className="object-cover"
             sizes="100vw"
           />
+          </div>
           <div className="absolute inset-0 bg-ink/28" />
           <div className="absolute inset-0 bg-gradient-to-r from-ink/70 via-ink/20 to-transparent" />
         </div>

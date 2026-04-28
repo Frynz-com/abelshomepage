@@ -194,6 +194,7 @@ export default function StuttgartPage() {
       <section className="relative min-h-[92vh] flex flex-col overflow-hidden">
         {/* Background */}
         <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 hero-zoom">
           <Image
             src="/images/cities/stuttgart.jpg"
             alt="Stuttgart Killesberg – Abels Immobilien"
@@ -202,6 +203,7 @@ export default function StuttgartPage() {
             className="object-cover"
             sizes="100vw"
           />
+          </div>
           <div className="absolute inset-0 bg-ink/50" />
           <div className="absolute inset-0 bg-gradient-to-r from-ink/72 via-ink/30 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-t from-ink/75 via-transparent to-ink/20" />

@@ -42,6 +42,7 @@ export default function TippgeberPage() {
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-line/40">
         <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 hero-zoom">
           <Image
             src="/images/tippgeber.jpg"
             alt="Tippgeber Programm Abels Immobilien"
@@ -50,6 +51,7 @@ export default function TippgeberPage() {
             className="object-cover object-center"
             sizes="100vw"
           />
+          </div>
           <div className="absolute inset-0 bg-ink/20" />
           <div className="absolute inset-0 bg-gradient-to-r from-ink/60 via-ink/20 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-t from-ink/60 via-ink/10 to-transparent" />

@@ -61,6 +61,7 @@ export default function VerkaufenPage() {
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-line/40">
         <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 hero-zoom">
           <Image
             src="/images/cta-interior.jpg"
             alt="Immobilie verkaufen mit Abels Immobilien"
@@ -69,6 +70,7 @@ export default function VerkaufenPage() {
             className="object-cover"
             sizes="100vw"
           />
+          </div>
           <div className="absolute inset-0 bg-ink/18" />
           <div className="absolute inset-0 bg-gradient-to-r from-ink/55 via-ink/15 to-transparent" />
         </div>

@@ -57,6 +57,7 @@ export default function KaufenPage() {
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-line/40">
         <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 hero-zoom">
           <Image
             src="/images/wohnen.jpg"
             alt="Immobilie kaufen mit Abels Immobilien"
@@ -65,6 +66,7 @@ export default function KaufenPage() {
             className="object-cover"
             sizes="100vw"
           />
+          </div>
           <div className="absolute inset-0 bg-ink/18" />
           <div className="absolute inset-0 bg-gradient-to-r from-ink/55 via-ink/15 to-transparent" />
         </div>

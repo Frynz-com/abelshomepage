@@ -14,6 +14,7 @@ export function FrankfurtHeroSection() {
     <section className="relative h-screen min-h-[700px] flex flex-col overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 hero-zoom">
         <Image
           src="/images/cities/frankfurt.jpg"
           alt="Immobilienmakler Frankfurt – Abels Immobilien"
@@ -22,6 +23,7 @@ export function FrankfurtHeroSection() {
           className="object-cover"
           sizes="100vw"
         />
+        </div>
         <div className="absolute inset-0 bg-ink/22" />
         <div className="absolute inset-0 bg-gradient-to-r from-ink/70 via-ink/25 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-ink/25" />
