@@ -40,6 +40,7 @@ const unternehmen = [
   { label: "Karriere", href: "/karriere" },
   { label: "Presse & Medien", href: "/presse" },
   { label: "Kontakt", href: "/kontakt" },
+  { label: "Immobilien Gesuche in Deutschland", href: "http://dringende-immobilien-gesuche.de" },
 ]
 
 function FooterCol({ title, links }: { title: string; links: { label: string; href: string }[] }) {
@@ -252,7 +253,7 @@ export function Footer() {
                 <Linkedin className="w-3.5 h-3.5" />
               </a>
               <a
-                href="https://www.instagram.com/abels.immobilien"
+                href="https://www.instagram.com/abelsimmobiliengmbhduesseldorf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-stone hover:text-ink transition-colors"
