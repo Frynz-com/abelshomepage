@@ -2,13 +2,14 @@
 
 import Link from "next/link"
 import { useState } from "react"
-import { Linkedin, Instagram, ArrowRight } from "lucide-react"
+import { Linkedin, Instagram, ArrowRight, Shield, BarChart2, Landmark, FileText } from "lucide-react"
 
 const leistungen = [
   { label: "Immobilie verkaufen", href: "/verkaufen" },
   { label: "Immobilie kaufen", href: "/kaufen" },
   { label: "Bewertung", href: "/bewertung" },
   { label: "Investieren", href: "/investieren" },
+  { label: "Baufinanzierung", href: "/finanzierung" },
   { label: "Off-Market Verkauf", href: "/off-market-immobilien-duesseldorf" },
   { label: "Tippgeber", href: "/tippgeber" },
 ]
@@ -132,6 +133,47 @@ export function Footer() {
             <FooterCol title="Standorte" links={standorte} />
             <FooterCol title="Ratgeber" links={ratgeber} />
             <FooterCol title="Unternehmen" links={unternehmen} />
+          </div>
+        </div>
+      </div>
+
+      {/* Finanzierung highlight */}
+      <div className="border-b border-line/40">
+        <div className="max-w-[1440px] mx-auto px-6 lg:px-20 py-12 lg:py-14">
+          <div className="grid lg:grid-cols-12 gap-10 items-center">
+            <div className="lg:col-span-5">
+              <p className="text-[9.5px] uppercase tracking-[0.26em] text-stone mb-3">Baufinanzierung</p>
+              <h3 className="font-serif text-[20px] lg:text-[22px] text-ink leading-snug mb-3">
+                Immobilie sicher finanzieren
+              </h3>
+              <p className="text-[13px] text-graphite/70 leading-relaxed max-w-[400px]">
+                Abels Immobilien GmbH unterstützt Kaufinteressenten auf Wunsch auch bei der Planung einer passenden Baufinanzierung sowie bei der Vermittlung geeigneter Finanzierungspartner.
+              </p>
+            </div>
+            <div className="lg:col-span-4">
+              <div className="grid grid-cols-2 gap-3">
+                {[
+                  { icon: Shield, label: "Unabhängige Beratung" },
+                  { icon: BarChart2, label: "Bankenvergleich" },
+                  { icon: Landmark, label: "Förderungen" },
+                  { icon: FileText, label: "Individuelle Konzepte" },
+                ].map(({ icon: Icon, label }) => (
+                  <div key={label} className="flex items-center gap-2.5">
+                    <Icon size={13} className="text-gold shrink-0" />
+                    <span className="text-[12px] text-graphite/70">{label}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="lg:col-span-3 lg:col-start-10 lg:text-right">
+              <Link
+                href="/finanzierung"
+                className="inline-flex items-center gap-2 bg-ink text-cream text-[10px] uppercase tracking-[0.18em] px-6 py-3.5 hover:bg-graphite transition-colors"
+              >
+                Finanzierungsberatung anfragen
+                <ArrowRight className="w-3 h-3" />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
