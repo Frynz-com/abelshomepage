@@ -91,12 +91,9 @@ export default function KaufenPage() {
                 Suchanfrage stellen
                 <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
               </button>
-              <Link
-                href="/objekte"
-                className="inline-flex items-center justify-center gap-2 border border-white/25 text-white px-8 py-4 text-[11px] uppercase tracking-[0.16em] font-medium hover:bg-white/8 hover:border-white/40 transition-all duration-300"
-              >
-                Aktuelle Objekte
-              </Link>
+              <span className="inline-flex items-center justify-center gap-2 border border-white/25 text-white/60 px-8 py-4 text-[11px] uppercase tracking-[0.16em] font-medium cursor-default select-none">
+                Vielfältiges Angebot
+              </span>
             </div>
           </motion.div>
         </div>
@@ -212,12 +209,9 @@ export default function KaufenPage() {
                 Kaufprofil anlegen
                 <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
               </button>
-              <Link
-                href="/objekte"
-                className="inline-flex items-center justify-center gap-2 border border-line text-ink/70 px-8 py-4 text-[11px] uppercase tracking-[0.16em] font-medium hover:bg-cream hover:border-line/80 transition-all duration-300"
-              >
-                Aktuelle Objekte ansehen
-              </Link>
+              <span className="inline-flex items-center justify-center gap-2 border border-line text-ink/40 px-8 py-4 text-[11px] uppercase tracking-[0.16em] font-medium cursor-default select-none">
+                Vielfältiges Angebot
+              </span>
             </div>
           </div>
         </div>

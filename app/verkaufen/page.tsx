@@ -46,8 +46,8 @@ const advantages = [
   "Keine Massenanbieter — inhabergeführt seit 1999",
   "Lokale Marktkenntnis an 7 Standorten",
   "Diskrete Vermarktung auf ausdrücklichen Wunsch",
-  "Vorgemerkter Käuferpool für Off-Market-Abschlüsse",
-  "IHK-zertifiziert, §34c GewO",
+  "Vorgemerkter Käuferpool",
+  "Off-Market-Verkauf",
   "Persönlicher Ansprechpartner von Anfang bis Ende",
 ]
 

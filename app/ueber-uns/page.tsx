@@ -444,7 +444,7 @@ export default function UeberUnsPage() {
             >
               <div className="relative overflow-hidden -mx-6 lg:-mx-20" style={{ aspectRatio: "16/9" }}>
                 <Image
-                  src="/images/team-group.jpg"
+                  src="/images/team abels 2.PNG"
                   alt="Team von Abels Immobilien"
                   fill
                   className="object-cover object-center"
