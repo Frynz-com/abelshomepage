@@ -203,7 +203,7 @@ export default function ImmobilienbewertungPage() {
                     viewport={{ once: true }}
                     className="bg-cream border border-line p-7 flex flex-col"
                   >
-                    <span className="font-serif text-[2.2rem] text-gold/40 leading-none mb-4">{v.num}</span>
+                    <span className="font-serif text-[2.2rem] text-gold/60 leading-none mb-4">{v.num}</span>
                     <h3 className="font-medium text-ink text-[16px] mb-1">{v.title}</h3>
                     <p className="text-[10px] uppercase tracking-[0.18em] text-stone mb-4">{v.tag}</p>
                     <p className="text-[14px] text-graphite leading-[1.8] mb-4">{v.text}</p>
@@ -355,7 +355,7 @@ export default function ImmobilienbewertungPage() {
                   { step: "05", title: "Werteinschätzung & Strategie", text: "Das Ergebnis: eine fundierte Marktpreiseinschätzung mit konkreter Empfehlung für den Angebotspreis — und einer klaren Vermarktungsstrategie." },
                 ].map((item) => (
                   <div key={item.step} className="flex gap-6">
-                    <span className="font-serif text-[1.8rem] text-gold/40 leading-none shrink-0 w-10">{item.step}</span>
+                    <span className="font-serif text-[1.8rem] text-gold/60 leading-none shrink-0 w-10">{item.step}</span>
                     <div className="pt-1">
                       <p className="font-medium text-ink text-[15px] mb-2">{item.title}</p>
                       <p className="text-[14px] text-graphite leading-[1.8]">{item.text}</p>

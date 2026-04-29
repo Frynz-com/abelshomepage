@@ -206,7 +206,7 @@ export default function InvestierenPage() {
                 variants={fadeUp}
                 className="bg-bone px-8 py-10 lg:px-10 lg:py-12 group hover:bg-cream transition-colors duration-300"
               >
-                <span className="font-serif text-[3.2rem] lg:text-[4rem] text-gold/30 block mb-6 leading-none font-bold">{item.num}</span>
+                <span className="font-serif text-[3.2rem] lg:text-[4rem] text-gold/55 block mb-6 leading-none font-bold">{item.num}</span>
                 <h3 className="font-serif text-[19px] lg:text-[21px] text-ink mb-3 group-hover:text-gold transition-colors duration-300">{item.title}</h3>
                 <p className="text-[14px] text-graphite/75 leading-relaxed">{item.desc}</p>
               </motion.div>
@@ -389,7 +389,7 @@ export default function InvestierenPage() {
               { step: "04", title: "Kauf & Vermietung", desc: "Vom Notartermin bis zur Erstvermietung — wir begleiten Sie bis zum ersten Mieter." },
             ].map((s) => (
               <motion.div key={s.step} variants={fadeUp}>
-                <span className="font-serif text-[3.2rem] lg:text-[4rem] text-gold/30 block mb-6 leading-none font-bold">{s.step}</span>
+                <span className="font-serif text-[3.2rem] lg:text-[4rem] text-gold/55 block mb-6 leading-none font-bold">{s.step}</span>
                 <h3 className="font-serif text-[19px] text-ink mb-3">{s.title}</h3>
                 <p className="text-[14px] text-graphite/70 leading-relaxed">{s.desc}</p>
               </motion.div>

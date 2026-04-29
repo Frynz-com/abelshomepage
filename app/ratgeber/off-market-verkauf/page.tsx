@@ -288,7 +288,7 @@ export default function OffMarketVerkaufPage() {
                 { step: "05", title: "Kaufvertrag & Notartermin", text: "Nach der Einigung wird der Kaufvertrag notariell beurkundet. Der Ablauf entspricht dem eines regulären Verkaufs — nur diskret und ohne öffentliche Spuren." },
               ].map((item) => (
                 <div key={item.step} className="flex gap-6 bg-bone border border-line p-7">
-                  <span className="font-serif text-[2rem] text-gold/40 leading-none shrink-0">{item.step}</span>
+                  <span className="font-serif text-[2rem] text-gold/60 leading-none shrink-0">{item.step}</span>
                   <div>
                     <h3 className="font-medium text-ink text-[15px] mb-2">{item.title}</h3>
                     <p className="text-[14px] text-graphite leading-[1.75]">{item.text}</p>

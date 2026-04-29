@@ -69,12 +69,18 @@ export function Footer() {
   const [email, setEmail] = useState("")
   const [submitted, setSubmitted] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    if (email) {
-      setSubmitted(true)
-      setEmail("")
-    }
+    if (!email) return
+    try {
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({ "form-name": "newsletter", email }).toString(),
+      })
+    } catch { /* fails silently on local dev */ }
+    setSubmitted(true)
+    setEmail("")
   }
 
   return (
@@ -191,9 +197,12 @@ export function Footer() {
             </div>
             <div className="lg:col-span-5 lg:col-start-6">
               {!submitted ? (
-                <form onSubmit={handleSubmit} className="flex gap-0 border-b border-line/50 focus-within:border-gold/60 transition-colors">
+                <form onSubmit={handleSubmit} name="newsletter" data-netlify="true" netlify-honeypot="bot-field" className="flex gap-0 border-b border-line/50 focus-within:border-gold/60 transition-colors">
+                  <input type="hidden" name="form-name" value="newsletter" />
+                  <input type="hidden" name="bot-field" />
                   <input
                     type="email"
+                    name="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Ihre E-Mail-Adresse"

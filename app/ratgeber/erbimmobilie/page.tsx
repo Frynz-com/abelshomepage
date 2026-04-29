@@ -392,7 +392,7 @@ export default function ErbimmobiliePage() {
                     { nr: "06", title: "Ohne Makler verkaufen wollen", text: "Der Privatverkauf einer Erbimmobilie ist zeitaufwändig und fehleranfällig — besonders wenn gleichzeitig Bürokratie, Steuer und Erbengemeinschaft zu managen sind. Ein erfahrener Makler nimmt Ihnen den Großteil der Arbeit ab und erzielt in der Regel bessere Preise." },
                   ].map((item, i) => (
                     <div key={i} className="flex gap-5 py-5 border-b border-line/40">
-                      <span className="text-gold/40 font-serif text-3xl leading-none shrink-0 w-10">{item.nr}</span>
+                      <span className="text-gold/60 font-serif text-3xl leading-none shrink-0 w-10">{item.nr}</span>
                       <div>
                         <p className="font-serif text-[1.05rem] text-ink mb-1">{item.title}</p>
                         <p className="text-[14px] text-graphite leading-relaxed">{item.text}</p>

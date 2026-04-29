@@ -182,7 +182,7 @@ export default function ScheidungsimmobiliePage() {
                 className="mb-16"
               >
                 <div className="flex items-baseline gap-4 mb-8">
-                  <span className="font-serif text-5xl text-gold/20">01</span>
+                  <span className="font-serif text-5xl text-gold/55">01</span>
                   <h2 className="font-serif text-2xl lg:text-3xl text-ink">
                     Die vier Optionen für Ihre Immobilie
                   </h2>
@@ -270,7 +270,7 @@ export default function ScheidungsimmobiliePage() {
                 className="mb-16"
               >
                 <div className="flex items-baseline gap-4 mb-8">
-                  <span className="font-serif text-5xl text-gold/20">02</span>
+                  <span className="font-serif text-5xl text-gold/55">02</span>
                   <h2 className="font-serif text-2xl lg:text-3xl text-ink">
                     Rechtliche Grundlagen
                   </h2>
@@ -323,7 +323,7 @@ export default function ScheidungsimmobiliePage() {
                 className="mb-16"
               >
                 <div className="flex items-baseline gap-4 mb-8">
-                  <span className="font-serif text-5xl text-gold/20">03</span>
+                  <span className="font-serif text-5xl text-gold/55">03</span>
                   <h2 className="font-serif text-2xl lg:text-3xl text-ink">
                     Zugewinnausgleich: Wer bekommt was?
                   </h2>
@@ -412,7 +412,7 @@ export default function ScheidungsimmobiliePage() {
                 className="mb-16"
               >
                 <div className="flex items-baseline gap-4 mb-8">
-                  <span className="font-serif text-5xl text-gold/20">04</span>
+                  <span className="font-serif text-5xl text-gold/55">04</span>
                   <h2 className="font-serif text-2xl lg:text-3xl text-ink">
                     Kredit & Finanzierung: Die Bank als dritte Partei
                   </h2>
@@ -490,7 +490,7 @@ export default function ScheidungsimmobiliePage() {
                 className="mb-16"
               >
                 <div className="flex items-baseline gap-4 mb-8">
-                  <span className="font-serif text-5xl text-gold/20">05</span>
+                  <span className="font-serif text-5xl text-gold/55">05</span>
                   <h2 className="font-serif text-2xl lg:text-3xl text-ink">
                     Steuerliche Aspekte
                   </h2>
@@ -546,7 +546,7 @@ export default function ScheidungsimmobiliePage() {
                 className="mb-16"
               >
                 <div className="flex items-baseline gap-4 mb-8">
-                  <span className="font-serif text-5xl text-gold/20">06</span>
+                  <span className="font-serif text-5xl text-gold/55">06</span>
                   <h2 className="font-serif text-2xl lg:text-3xl text-ink">
                     7 häufige Fehler – und wie Sie sie vermeiden
                   </h2>
@@ -598,7 +598,7 @@ export default function ScheidungsimmobiliePage() {
                     },
                   ].map((item) => (
                     <div key={item.num} className="flex gap-5 p-5 border border-line/50">
-                      <span className="font-serif text-3xl text-gold/20 leading-none shrink-0 w-10">{item.num}</span>
+                      <span className="font-serif text-3xl text-gold/55 leading-none shrink-0 w-10">{item.num}</span>
                       <div>
                         <h3 className="font-serif text-base text-ink mb-1">Fehler: {item.fehler}</h3>
                         <p className="text-sm text-graphite/60 mb-2">

@@ -63,7 +63,7 @@ export function WoraufAchtenSection() {
               viewport={{ once: true }}
               className="flex gap-6"
             >
-              <span className="text-5xl lg:text-6xl font-serif text-gold/20 leading-none">
+              <span className="text-5xl lg:text-6xl font-serif text-gold/55 leading-none">
                 {punkt.number}
               </span>
               <div>

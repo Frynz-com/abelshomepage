@@ -83,7 +83,7 @@ export function RatgeberVerkaufenAblaufSection() {
               className="border border-line/40 p-8 lg:p-10"
             >
               <div className="flex items-start justify-between mb-6">
-                <span className="font-serif text-5xl lg:text-6xl text-gold/30">{step.number}</span>
+                <span className="font-serif text-5xl lg:text-6xl text-gold/55">{step.number}</span>
                 <span className="text-xs uppercase tracking-[0.1em] text-graphite bg-line/20 px-3 py-1.5">{step.duration}</span>
               </div>
               <h3 className="font-serif text-2xl text-ink mb-4">{step.title}</h3>

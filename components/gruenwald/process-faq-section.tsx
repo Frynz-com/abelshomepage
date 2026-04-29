@@ -54,7 +54,7 @@ export function GruenwaldProcessSection() {
               transition={{ duration: 0.5, delay: index * 0.08 }}
               viewport={{ once: true }}
             >
-              <span className="block text-5xl font-serif text-gold/30 mb-4">
+              <span className="block text-5xl font-serif text-gold/55 mb-4">
                 {String(index + 1).padStart(2, "0")}
               </span>
               <h3 className="font-serif text-lg text-ink mb-3">

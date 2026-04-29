@@ -24,13 +24,25 @@ export function FinanzierungModal({ open, onClose }: FinanzierungModalProps) {
     return () => { document.body.style.overflow = "" }
   }, [open])
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    const subject = encodeURIComponent("Finanzierungsanfrage über abels-immobilien.de")
-    const body = encodeURIComponent(
-      `Name: ${form.name}\nE-Mail: ${form.email}\nTelefon: ${form.phone || "–"}\n\nNachricht:\n${form.message || "–"}`
-    )
-    window.location.href = `mailto:info@abels-immobilien.de?subject=${subject}&body=${body}`
+    try {
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({
+          "form-name": "finanzierung",
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          message: form.message,
+        }).toString(),
+      })
+    } catch {
+      const subject = encodeURIComponent("Finanzierungsanfrage über abels-immobilien.de")
+      const body = encodeURIComponent(`Name: ${form.name}\nE-Mail: ${form.email}\nTelefon: ${form.phone || "–"}\n\nNachricht:\n${form.message || "–"}`)
+      window.location.href = `mailto:info@abels-immobilien.de?subject=${subject}&body=${body}`
+    }
     setSent(true)
   }
 
@@ -89,7 +101,9 @@ export function FinanzierungModal({ open, onClose }: FinanzierungModalProps) {
                   </button>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="px-8 py-7 space-y-5">
+                <form onSubmit={handleSubmit} name="finanzierung" data-netlify="true" netlify-honeypot="bot-field" className="px-8 py-7 space-y-5">
+                  <input type="hidden" name="form-name" value="finanzierung" />
+                  <input type="hidden" name="bot-field" />
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-[11px] uppercase tracking-[0.16em] text-stone mb-2">Name *</label>

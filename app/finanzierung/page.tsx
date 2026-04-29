@@ -210,7 +210,7 @@ export default function FinanzierungPage() {
                   variants={fadeUp}
                   className="bg-cream p-7 lg:p-9 group hover:bg-bone transition-colors duration-300"
                 >
-                  <span className="font-serif text-5xl text-gold/25 block mb-6 leading-none font-bold">{item.num}</span>
+                  <span className="font-serif text-5xl text-gold/55 block mb-6 leading-none font-bold">{item.num}</span>
                   <h3 className="font-serif text-[18px] text-ink mb-3 group-hover:text-gold transition-colors duration-300">{item.title}</h3>
                   <p className="text-[14px] text-graphite/70 leading-relaxed">{item.desc}</p>
                 </motion.div>

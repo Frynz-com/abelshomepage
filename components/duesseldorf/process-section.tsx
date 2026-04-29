@@ -68,7 +68,7 @@ export function DuesseldorfProcessSection() {
               viewport={{ once: true }}
               className="flex flex-col"
             >
-              <span className="text-gold/40 font-serif text-5xl leading-none mb-4">
+              <span className="text-gold/60 font-serif text-5xl leading-none mb-4">
                 {step.number}
               </span>
               <h3 className="font-serif text-xl text-ink mb-3">

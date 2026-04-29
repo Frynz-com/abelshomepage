@@ -52,7 +52,7 @@ export function GruenwaldServicesSection() {
               viewport={{ once: true }}
               className="bg-cream hover:bg-bone transition-colors duration-300 p-7 lg:p-9 group"
             >
-              <span className="font-serif text-5xl lg:text-6xl text-gold/40 block mb-6 leading-none font-bold">
+              <span className="font-serif text-5xl lg:text-6xl text-gold/60 block mb-6 leading-none font-bold">
                 {String(index + 1).padStart(2, "0")}
               </span>
               <h3 className="font-serif text-lg text-ink mb-3 group-hover:text-gold transition-colors duration-300">

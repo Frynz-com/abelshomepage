@@ -67,7 +67,7 @@ export function HamburgProcessSection() {
               transition={{ duration: 0.5, delay: index * 0.08 }}
               viewport={{ once: true }}
             >
-              <span className="font-serif text-6xl lg:text-7xl text-gold/20 block mb-4">
+              <span className="font-serif text-6xl lg:text-7xl text-gold/55 block mb-4">
                 {step.number}
               </span>
               <h3 className="font-serif text-xl text-ink mb-3">

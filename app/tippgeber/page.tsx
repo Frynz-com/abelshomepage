@@ -30,8 +30,17 @@ export default function TippgeberPage() {
   const [submitted, setSubmitted] = useState(false)
   const [form, setForm] = useState({ name: "", email: "", telefon: "", details: "" })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    try {
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(new FormData(e.target as HTMLFormElement) as unknown as Record<string, string>).toString(),
+      })
+    } catch {
+      window.location.href = `mailto:info@abels-immobilien.de?subject=${encodeURIComponent("Tippgeber-Hinweis")}&body=${encodeURIComponent("Name: " + form.name + "\nEmail: " + form.email + "\n\n" + form.details)}`
+    }
     setSubmitted(true)
   }
 
@@ -189,7 +198,9 @@ export default function TippgeberPage() {
                   </p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-0 border-t border-line/50">
+                <form onSubmit={handleSubmit} name="tippgeber" data-netlify="true" netlify-honeypot="bot-field" className="space-y-0 border-t border-line/50">
+                  <input type="hidden" name="form-name" value="tippgeber" />
+                  <input type="hidden" name="bot-field" />
                   {[
                     { id: "name", label: "Ihr Name", type: "text", placeholder: "Max Mustermann" },
                     { id: "email", label: "E-Mail-Adresse", type: "email", placeholder: "max@beispiel.de" },

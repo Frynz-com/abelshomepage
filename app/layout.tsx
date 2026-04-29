@@ -16,6 +16,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://abels-immobilien.de'),
   title: {
     default: 'Abels Immobilien | Premium-Makler in 7 deutschen Städten',
     template: '%s | Abels Immobilien'
@@ -29,10 +30,25 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'de_DE',
     siteName: 'Abels Immobilien GmbH',
+    url: 'https://abels-immobilien.de',
     title: 'Abels Immobilien | Premium-Makler in 7 deutschen Städten',
     description: 'Diskrete Vermittlung von Luxusimmobilien in Düsseldorf, München, Grünwald, Hamburg, Frankfurt, Essen und Stuttgart. Kostenfreie Bewertung in 72 Stunden.',
+    images: [{ url: '/images/hero-luxury.jpg', width: 1200, height: 630, alt: 'Abels Immobilien – Premium Makler' }],
   },
-  robots: 'index, follow',
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Abels Immobilien | Premium-Makler in 7 deutschen Städten',
+    description: 'Diskrete Vermittlung von Luxusimmobilien. Kostenfreie Bewertung in 72 Stunden.',
+    images: ['/images/hero-luxury.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-snippet': -1, 'max-image-preview': 'large', 'max-video-preview': -1 },
+  },
+  alternates: {
+    canonical: 'https://abels-immobilien.de',
+  },
 }
 
 const organizationSchema = {
