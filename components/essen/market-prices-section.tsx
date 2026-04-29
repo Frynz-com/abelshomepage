@@ -162,7 +162,7 @@ export function EssenMarketPricesSection() {
           className='mb-12 lg:mb-16'
         >
           <p className='text-sm text-graphite/70 italic max-w-[900px]'>
-            Die genannten Werte dienen der groben Orientierung und ersetzen keine individuelle Wertermittlung. Der tatsächlich erzielbare Marktpreis hängt immer von Lage, Zustand, Ausstattung, Objektart und aktueller Nachfrage ab.
+            Alle Angaben sind ca.-Werte und dienen der groben Orientierung. Sie ersetzen keine individuelle Wertermittlung. Der tatsächlich erzielbare Marktpreis hängt immer von Lage, Zustand, Ausstattung, Objektart und aktueller Nachfrage ab.
           </p>
         </motion.div>
 

@@ -163,7 +163,7 @@ export function DuesseldorfMarketPricesSection() {
           className="flex flex-col sm:flex-row items-start sm:items-center gap-6 pt-8 border-t border-line"
         >
           <p className="text-graphite text-sm">
-            Möchten Sie den exakten Wert Ihrer Immobilie erfahren?
+            Alle Preisangaben sind ca.-Werte. Möchten Sie den exakten Wert Ihrer Immobilie erfahren?
           </p>
           <Link
             href="/bewertung"

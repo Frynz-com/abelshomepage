@@ -59,7 +59,7 @@ export function GruenwaldNeighborhoodsSection() {
             Wohnlagen
           </p>
           <h2 className="font-serif text-4xl lg:text-5xl text-ink leading-[1.08] mb-6">
-            Gefragte Wohnlagen in Grünwald
+            Wohnen in Grünwald
           </h2>
           <p className="text-graphite leading-relaxed max-w-[780px]">
             In Grünwald entscheidet die genaue Lage oft noch stärker über Nachfrage und Preisniveau als in größeren Städten. Deshalb betrachten wir jede Immobilie im Zusammenhang mit ihrem direkten Umfeld, ihrer Grundstücksqualität und ihrer Positionierung im lokalen Markt.

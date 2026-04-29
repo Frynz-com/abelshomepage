@@ -173,7 +173,7 @@ export function GruenwaldMarketPricesSection() {
           className="bg-bone p-10 lg:p-12 border border-line/30 mb-12"
         >
           <p className="text-graphite text-sm leading-relaxed max-w-[800px]">
-            Die genannten Werte dienen der groben Orientierung und ersetzen keine individuelle Wertermittlung. Der tatsächlich erzielbare Marktpreis hängt immer von Lage, Zustand, Architektur, Grundstück, Ausstattung und aktueller Nachfrage ab.
+            Alle Angaben sind ca.-Werte und dienen der groben Orientierung. Sie ersetzen keine individuelle Wertermittlung. Der tatsächlich erzielbare Marktpreis hängt immer von Lage, Zustand, Architektur, Grundstück, Ausstattung und aktueller Nachfrage ab.
           </p>
         </motion.div>
 

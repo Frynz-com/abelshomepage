@@ -452,7 +452,7 @@ export default function StuttgartPage() {
                 <span className="text-[11px] uppercase tracking-[0.24em] text-gold">Unsere Objekte</span>
               </div>
               <h2 className="font-serif text-[clamp(2rem,3.8vw,3.2rem)] text-ink leading-[1.06] tracking-[-0.01em]">
-                Welche Immobilien wir in Stuttgart begleiten
+                Welche Immobilien wir in Stuttgart suchen
               </h2>
             </div>
           </motion.div>

@@ -153,7 +153,7 @@ export function HamburgMarketPricesSection() {
 
         {/* Disclaimer */}
         <p className="mt-12 text-graphite text-xs text-center">
-          Durchschnittswerte basierend auf Abels-Vermittlungen und Marktanalysen. Individuelle Bewertung auf Anfrage.
+          Ca.-Werte basierend auf Abels-Vermittlungen und Marktanalysen. Individuelle Bewertung auf Anfrage.
         </p>
       </div>
     </section>

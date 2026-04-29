@@ -68,14 +68,6 @@ export function GruenwaldHeroSection() {
             className="lg:col-span-4 xl:col-span-5 lg:pl-12"
           >
             <div className="flex lg:flex-col gap-8 lg:gap-10 lg:items-end text-right">
-              <div>
-                <span className="block font-serif text-2xl lg:text-3xl text-white mb-1">Seit 1999</span>
-                <span className="text-white/60 text-sm uppercase tracking-[0.1em]">Inhabergefuhrt</span>
-              </div>
-              <div>
-                <span className="block font-serif text-2xl lg:text-3xl text-white mb-1">7 Standorte</span>
-                <span className="text-white/60 text-sm uppercase tracking-[0.1em]">In Deutschland</span>
-              </div>
             </div>
           </motion.div>
         </div>

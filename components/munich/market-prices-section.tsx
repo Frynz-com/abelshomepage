@@ -154,7 +154,7 @@ export function MunichMarketPricesSection() {
           className="bg-bone p-8 rounded-lg border border-gold/10 mb-12"
         >
           <p className="text-sm text-graphite/80 leading-relaxed">
-            Die genannten Werte dienen der groben Orientierung und ersetzen keine individuelle Wertermittlung. Der tatsächlich erzielbare Marktpreis hängt immer von Lage, Zustand, Ausstattung, Objektart und aktueller Nachfrage ab.
+            Alle Angaben sind ca.-Werte und dienen der groben Orientierung. Sie ersetzen keine individuelle Wertermittlung. Der tatsächlich erzielbare Marktpreis hängt immer von Lage, Zustand, Ausstattung, Objektart und aktueller Nachfrage ab.
           </p>
         </motion.div>
 

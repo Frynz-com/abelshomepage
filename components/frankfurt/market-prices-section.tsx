@@ -134,7 +134,7 @@ export function FrankfurtMarketPricesSection() {
           className="bg-stone/5 border border-line/20 rounded-sm p-8 mb-12"
         >
           <p className="text-graphite/70 text-sm leading-relaxed">
-            Die genannten Werte dienen der groben Orientierung und ersetzen keine individuelle Wertermittlung. Der tatsächlich erzielbare Marktpreis hängt immer von Lage, Zustand, Ausstattung, Objektart und aktueller Nachfrage ab.
+            Alle Angaben sind ca.-Werte und dienen der groben Orientierung. Sie ersetzen keine individuelle Wertermittlung. Der tatsächlich erzielbare Marktpreis hängt immer von Lage, Zustand, Ausstattung, Objektart und aktueller Nachfrage ab.
           </p>
         </motion.div>
 
