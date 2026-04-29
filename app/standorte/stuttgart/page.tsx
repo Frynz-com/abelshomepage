@@ -230,9 +230,8 @@ export default function StuttgartPage() {
                 transition={{ duration: 0.9, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
                 className="font-serif text-[clamp(2.6rem,5.5vw,5rem)] text-white leading-[0.97] tracking-[-0.01em] mb-8"
               >
-                Ihre Immobilie<br />
-                in Stuttgart.<br />
-                <span className="text-white/78">Professionell vermarktet.</span>
+                Immobilie verkaufen<br />
+                <span className="text-white/78">in Stuttgart.</span>
               </motion.h1>
 
               {/* Lead */}

@@ -37,8 +37,8 @@ export function GruenwaldHeroSection() {
           >
 
             <h1 className="font-serif text-[clamp(2.5rem,6vw,5.5rem)] text-white leading-[1.02] mb-10 text-balance">
-              Immobilienmakler Grünwald<br />
-              <span className="text-white/90">für hochwertige Immobilien</span>
+              Villa verkaufen<br />
+              <span className="text-white/90">in Grünwald.</span>
             </h1>
 
             <p className="text-white/80 text-lg lg:text-xl leading-relaxed max-w-[580px] mb-14">

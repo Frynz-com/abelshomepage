@@ -47,8 +47,8 @@ export function DuesseldorfHeroSection() {
                   transition={{ duration: 0.9, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
                   className="font-serif text-[clamp(2.8rem,6.5vw,6rem)] text-white leading-[0.96] tracking-[-0.01em] mb-8 lg:mb-10"
                 >
-                  Ihre Immobilie<br />
-                  <span className="text-white/82">in Düsseldorf verkaufen.</span>
+                  Immobilienverkauf<br />
+                  <span className="text-white/82">Düsseldorf.</span>
                 </motion.h1>
 
                 <motion.p
