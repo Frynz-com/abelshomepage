@@ -69,7 +69,7 @@ export function EssenServicesSection() {
               className='group'
             >
               <div>
-                <span className='text-gold text-sm tracking-[0.1em] mb-4 block font-medium'>
+                <span className='font-serif text-5xl lg:text-6xl text-gold/40 mb-5 block leading-none font-bold'>
                   0{service.number}
                 </span>
                 <h3 className='font-serif text-2xl lg:text-3xl text-ink mb-3 group-hover:text-gold transition-colors duration-300'>

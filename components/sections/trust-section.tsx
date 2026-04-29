@@ -59,10 +59,10 @@ export function TrustSection() {
               <span className="block font-serif text-[36px] lg:text-[50px] text-ink leading-none tracking-[-0.025em] mb-3">
                 <AnimatedNumber target={stat.target} suffix={stat.suffix} />
               </span>
-              <span className="block text-[9.5px] uppercase tracking-[0.28em] text-gold mb-1.5 font-medium">
+              <span className="block text-[11px] uppercase tracking-[0.22em] text-gold mb-1.5 font-medium">
                 {stat.label}
               </span>
-              <span className="block text-[12px] text-stone tracking-[0.04em]">
+              <span className="block text-[13px] text-stone tracking-[0.03em]">
                 {stat.detail}
               </span>
             </motion.div>

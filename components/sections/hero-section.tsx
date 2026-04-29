@@ -42,8 +42,8 @@ export function HeroSection() {
             transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             className="font-serif text-[clamp(3rem,7.5vw,7.5rem)] text-white leading-[0.93] tracking-[-0.02em] mb-10 lg:mb-14"
           >
-            Ihre Immobilie.<br />
-            <span className="text-white/75">Diskret verkauft.</span>
+            In Düsseldorf zuhause,<br />
+            <span className="text-white/75">bundesweit erfolgreich.</span>
           </motion.h1>
 
           {/* Bottom row: lead text + CTAs */}
@@ -57,8 +57,7 @@ export function HeroSection() {
               className="max-w-[420px]"
             >
               <p className="text-white/88 text-[16px] lg:text-[17px] leading-[1.8] mb-5">
-                Inhabergeführter Premium-Makler für den Verkauf hochwertiger Wohnimmobilien —
-                persönlich begleitet, diskret vermarktet, zum bestmöglichen Preis.
+                Unsere Immobilienmakler kennen ihre Standorte nicht aus Broschüren – sie sind vor Ort zuhause, vernetzt und jeden Tag im Markt aktiv.
               </p>
               <p className="text-white/65 text-[13px] tracking-[0.04em]">
                 Kostenfreie Erstberatung · Kein Risiko · Keine Vorauszahlung
