@@ -71,13 +71,15 @@ export function HeroSection() {
               transition={{ duration: 0.7, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
               className="flex flex-col sm:flex-row gap-3 shrink-0"
             >
-              <Link
-                href="/bewertung"
+              <a
+                href="https://immowert.lovable.app/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2.5 bg-gold text-ink px-8 py-4.5 text-[12px] uppercase tracking-[0.18em] font-semibold hover:bg-gold/90 transition-all duration-300 group whitespace-nowrap"
               >
                 Kostenlos bewerten lassen
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-              </Link>
+              </a>
               <button
                 onClick={() => setModalOpen(true)}
                 className="inline-flex items-center justify-center gap-2 border border-white/35 text-white px-8 py-4.5 text-[12px] uppercase tracking-[0.18em] font-medium hover:border-white/60 hover:bg-white/8 transition-all duration-300 backdrop-blur-sm whitespace-nowrap"

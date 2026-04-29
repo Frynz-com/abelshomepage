@@ -165,8 +165,10 @@ export function Header() {
               >
                 Kontakt
               </Link>
-              <Link
-                href="/bewertung"
+              <a
+                href="https://immowert.lovable.app/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`px-6 py-2.5 text-[10px] uppercase tracking-[0.18em] font-medium transition-all duration-300 ${
                   isScrolled
                     ? "bg-ink text-cream hover:bg-graphite"
@@ -174,7 +176,7 @@ export function Header() {
                 }`}
               >
                 Bewertung
-              </Link>
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -252,13 +254,15 @@ export function Header() {
           </nav>
 
           <div className="px-6 py-6 space-y-3">
-            <Link
-              href="/bewertung"
+            <a
+              href="https://immowert.lovable.app/"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block w-full bg-ink text-cream text-center py-4 text-[10px] uppercase tracking-[0.2em] font-medium hover:bg-graphite transition-colors"
             >
               Kostenlose Bewertung anfordern
-            </Link>
+            </a>
           </div>
         </div>
       </div>

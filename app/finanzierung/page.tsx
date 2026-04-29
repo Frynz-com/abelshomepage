@@ -6,6 +6,7 @@ import { useState } from "react"
 import { ArrowRight, Check, ChevronDown, Shield, BarChart2, Landmark, FileText } from "lucide-react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { FinanzierungModal } from "@/components/finanzierung-modal"
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -61,6 +62,8 @@ function FaqItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function FinanzierungPage() {
+  const [modalOpen, setModalOpen] = useState(false)
+
   return (
     <>
       <script
@@ -95,13 +98,13 @@ export default function FinanzierungPage() {
                   Abels Immobilien GmbH unterstützt Sie bei der Planung einer passenden Immobilienfinanzierung und begleitet Sie auf Wunsch bei allen wichtigen Schritten — transparent, unabhängig und in Ihrem Interesse.
                 </motion.p>
                 <motion.div variants={fadeUp}>
-                  <Link
-                    href="/kontakt"
+                  <button
+                    onClick={() => setModalOpen(true)}
                     className="inline-flex items-center gap-2 bg-ink text-cream text-xs uppercase tracking-[0.16em] px-8 py-4 hover:bg-graphite transition-colors"
                   >
-                    Beratung anfragen
+                    Finanzierung anfragen
                     <ArrowRight size={13} />
-                  </Link>
+                  </button>
                 </motion.div>
               </div>
 
@@ -288,13 +291,13 @@ export default function FinanzierungPage() {
                 </p>
               </div>
               <div className="lg:col-span-4 lg:col-start-9 flex flex-col gap-4">
-                <Link
-                  href="/kontakt"
+                <button
+                  onClick={() => setModalOpen(true)}
                   className="inline-flex items-center justify-center gap-2 bg-ink text-cream text-xs uppercase tracking-[0.16em] px-8 py-4 hover:bg-graphite transition-colors"
                 >
                   Jetzt unverbindlich anfragen
                   <ArrowRight size={13} />
-                </Link>
+                </button>
                 <ul className="space-y-2">
                   {["Kostenlos & unverbindlich", "Persönliche Beratung", "Unabhängig & transparent"].map((i) => (
                     <li key={i} className="flex items-center gap-2 text-xs text-graphite/60">
@@ -310,6 +313,8 @@ export default function FinanzierungPage() {
 
         <Footer />
       </main>
+
+      <FinanzierungModal open={modalOpen} onClose={() => setModalOpen(false)} />
     </>
   )
 }
