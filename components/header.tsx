@@ -7,18 +7,18 @@ import { Menu, X, ChevronDown, ArrowRight } from "lucide-react"
 const cities = [
   { name: "Düsseldorf & Umgebung", slug: "duesseldorf", tagline: "Oberkassel · Kaiserswerth · Rheinlage" },
   { name: "München & Umgebung", slug: "muenchen", tagline: "Bogenhausen · Schwabing · Lehel" },
-  { name: "Grünwald", slug: "gruenwald", tagline: "Diskret · Exklusiv · Villenlage" },
+  { name: "Stuttgart & Umgebung", slug: "stuttgart", tagline: "Killesberg · Halbhöhenlage · Degerloch" },
   { name: "Hamburg", slug: "hamburg", tagline: "Harvestehude · Blankenese · HafenCity" },
   { name: "Frankfurt", slug: "frankfurt", tagline: "Westend · Sachsenhausen · Diplomatenviertel" },
   { name: "Essen", slug: "essen", tagline: "Bredeney · Kettwig · Baldeneysee" },
-  { name: "Stuttgart & Umgebung", slug: "stuttgart", tagline: "Killesberg · Halbhöhenlage · Degerloch" },
+  { name: "Grünwald", slug: "gruenwald", tagline: "Diskret · Exklusiv · Villenlage" },
 ]
 
 const navItems = [
   { href: "/ueber-uns", label: "Über uns" },
   { href: "/verkaufen", label: "Verkaufen" },
   { href: "/kaufen", label: "Kaufen" },
-  { href: "/standorte", label: "Standorte", hasDropdown: true },
+  { href: "/standorte", label: "Regionen", hasDropdown: true },
   { href: "/investieren", label: "Investieren" },
 ]
 

@@ -8,6 +8,7 @@ import { CitiesSection } from "@/components/sections/cities-section"
 import { TestimonialsSection } from "@/components/sections/testimonials-section"
 import { ProcessSection } from "@/components/sections/process-section"
 import { FaqSection } from "@/components/sections/faq-section"
+import { PartnersSection } from "@/components/sections/partners-section"
 import { FinalCtaSection } from "@/components/sections/final-cta-section"
 import { Footer } from "@/components/footer"
 
@@ -47,6 +48,7 @@ export default function Home() {
       <TrustSection />
       <PositioningSection />
       <CitiesSection />
+      <PartnersSection />
       <ServicesSection />
       <MarketSection />
       <TestimonialsSection />
