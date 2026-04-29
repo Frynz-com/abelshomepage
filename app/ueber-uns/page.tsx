@@ -116,11 +116,11 @@ const sizeMap: Record<string, string> = {
 
 // SVG Donut Chart
 function DonutChart() {
-  // Wohnen 56%, Gewerbe 13%, Anlage 31%
+  // Wohnen 58%, Gewerbe 7%, Invest 35%
   const segments = [
-    { label: "WOHNEN", pct: 56, color: "#2C3A2E" },
-    { label: "GEWERBE", pct: 13, color: "#9B9B8E" },
-    { label: "ANLAGE", pct: 31, color: "#C8C4B8" },
+    { label: "WOHNEN", pct: 58, color: "#2C3A2E" },
+    { label: "GEWERBE", pct: 7, color: "#9B9B8E" },
+    { label: "INVEST", pct: 35, color: "#C8C4B8" },
   ]
 
   const cx = 100
@@ -245,26 +245,29 @@ export default function UeberUnsPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
               viewport={{ once: true }}
-              className="lg:col-span-6 space-y-5"
+              className="lg:col-span-6 space-y-8"
             >
-              <h2 className="font-serif text-[clamp(1.8rem,3vw,2.8rem)] text-ink leading-tight tracking-[-0.01em] mb-6">
+              <h2 className="font-serif text-[clamp(1.8rem,3vw,2.8rem)] text-ink leading-tight tracking-[-0.01em]">
                 ABELS Immobilien GmbH
               </h2>
-              <p className="text-graphite text-[15px] leading-[1.8]">
-                ABELS Immobilien GmbH ist seit 1999 ein unabhängiges und international tätiges Beratungs- und Maklerunternehmen mit Sitz in Düsseldorf.
-              </p>
-              <p className="text-graphite text-[15px] leading-[1.8]">
-                Wir sind spezialisiert auf die erfolgreiche Vermittlung von Wohn-, Gewerbe- und Investmentimmobilien — mit einem klaren Fokus auf diskrete Vermarktung, maximale Kaufpreise und geprüfte Käufer.
-              </p>
-              <p className="text-graphite text-[15px] leading-[1.8]">
-                Unser Leistungsspektrum umfasst die professionelle Immobilienvermarktung, strategisches Asset-Management sowie die fundierte Beratung bei Investments und Projektentwicklungen.
-              </p>
-              <p className="text-graphite text-[15px] leading-[1.8]">
-                Zu unseren Kunden zählen Privatpersonen, Bauträger, Family Offices, Stiftungen sowie institutionelle Investoren, die auf Verlässlichkeit, Marktkenntnis und Geschwindigkeit setzen.
-              </p>
-              <p className="text-graphite text-[15px] leading-[1.8]">
-                Mit über 1.800 erfolgreich vermittelten Immobilien und einem Transaktionsvolumen von mehr als 340 Mio. Euro stehen wir für messbare Ergebnisse — und für eine Zusammenarbeit, die sich für Eigentümer auszahlt.
-              </p>
+              <div className="space-y-2">
+                <p className="text-[10px] uppercase tracking-[0.22em] text-gold font-medium">Warum Abels Immobilien GmbH</p>
+                <p className="text-graphite text-[15px] leading-[1.8]">
+                  Weil wir den Markt nicht nur kennen, wir gestalten ihn aktiv mit. Als Family Office stehen wir für Vertrauen, Diskretion und nachhaltigen Erfolg.
+                </p>
+              </div>
+              <div className="space-y-2">
+                <p className="text-[10px] uppercase tracking-[0.22em] text-gold font-medium">Unsere besondere Stärke – Off-Market Deals</p>
+                <p className="text-graphite text-[15px] leading-[1.8]">
+                  Wir stehen für diskrete Immobilienvermittlungen, bei denen Vertrauen, Exklusivität und persönliche Betreuung im Mittelpunkt stehen. Unsere lokale und überregionale Marktkenntnis, persönliche Präsenz sowie unser feines Gespür für Immobilien mit Substanz und Charakter machen uns zu Ihrem idealen Partner.
+                </p>
+              </div>
+              <div className="space-y-2">
+                <p className="text-[10px] uppercase tracking-[0.22em] text-gold font-medium">Unser Anspruch – Höchste Diskretion</p>
+                <p className="text-graphite text-[15px] leading-[1.8]">
+                  Maximale Reichweite. Beste Ergebnisse. Absolute Vertraulichkeit.
+                </p>
+              </div>
             </motion.div>
 
             {/* Right: Donut + Stats */}
@@ -285,7 +288,7 @@ export default function UeberUnsPage() {
                   {[
                     { color: "#2C3A2E", label: "WOHNEN" },
                     { color: "#9B9B8E", label: "GEWERBE" },
-                    { color: "#C8C4B8", label: "ANLAGE" },
+                    { color: "#C8C4B8", label: "INVEST" },
                   ].map((item) => (
                     <div key={item.label} className="flex items-center gap-2">
                       <span className="w-3 h-3 shrink-0" style={{ background: item.color }} />
@@ -302,16 +305,16 @@ export default function UeberUnsPage() {
                   <p className="text-[10px] uppercase tracking-[0.22em] text-stone mt-2">Objekte vermittelt</p>
                 </div>
                 <div className="border-b border-line/50 pb-6">
-                  <p className="font-serif text-[2.4rem] text-ink leading-none font-bold">629 <span className="text-stone text-[1.2rem] font-normal">/ 56 %</span></p>
+                  <p className="font-serif text-[2.4rem] text-ink leading-none font-bold">1.044 <span className="text-stone text-[1.2rem] font-normal">/ 58 %</span></p>
                   <p className="text-[10px] uppercase tracking-[0.22em] text-stone mt-2">Wohnen</p>
                 </div>
                 <div className="border-b border-line/50 pb-6">
-                  <p className="font-serif text-[2.4rem] text-ink leading-none font-bold">145 <span className="text-stone text-[1.2rem] font-normal">/ 13 %</span></p>
+                  <p className="font-serif text-[2.4rem] text-ink leading-none font-bold">126 <span className="text-stone text-[1.2rem] font-normal">/ 7 %</span></p>
                   <p className="text-[10px] uppercase tracking-[0.22em] text-stone mt-2">Gewerbe</p>
                 </div>
                 <div>
-                  <p className="font-serif text-[2.4rem] text-ink leading-none font-bold">357 <span className="text-stone text-[1.2rem] font-normal">/ 31 %</span></p>
-                  <p className="text-[10px] uppercase tracking-[0.22em] text-stone mt-2">Anlage</p>
+                  <p className="font-serif text-[2.4rem] text-ink leading-none font-bold">630 <span className="text-stone text-[1.2rem] font-normal">/ 35 %</span></p>
+                  <p className="text-[10px] uppercase tracking-[0.22em] text-stone mt-2">Invest</p>
                 </div>
               </div>
             </motion.div>
@@ -320,49 +323,51 @@ export default function UeberUnsPage() {
         </div>
       </section>
 
-      {/* Geschichte / Timeline */}
-      <section className="py-24 lg:py-36 bg-bone border-b border-line/50">
+      {/* ── WEITERE UNTERNEHMENS-ABSCHNITTE ── */}
+      <section className="py-20 lg:py-28 bg-bone border-b border-line/50">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-20">
-          <div className="grid lg:grid-cols-12 gap-16">
-            <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-              className="lg:col-span-4 lg:sticky lg:top-32 lg:self-start"
-            >
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-6 h-px bg-gold/60" />
-                <span className="text-[11px] uppercase tracking-[0.24em] text-gold">Unsere Geschichte</span>
-              </div>
-              <h2 className="font-serif text-[clamp(2rem,3.5vw,3rem)] text-ink leading-[1.08] tracking-[-0.01em] mb-6">
-                25 Jahre.<br />Eine Linie.
-              </h2>
-              <p className="text-[15px] text-graphite leading-[1.75]">
-                Abels Immobilien ist gewachsen — aber nie von dem abgewichen, was 1999 den Anfang gemacht hat: Der persönliche Anspruch des Inhabers, der hinter jedem Mandat steht.
-              </p>
-            </motion.div>
-
-            <div className="lg:col-span-7 lg:col-start-6">
-              <div className="space-y-0">
-                {milestones.map((m, i) => (
-                  <motion.div
-                    key={m.year}
-                    initial={{ opacity: 0, x: 20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.5, delay: i * 0.08 }}
-                    viewport={{ once: true }}
-                    className="flex gap-10 py-8 border-b border-line/50 group"
-                  >
-                    <span className="font-serif text-[13px] text-gold shrink-0 w-12 pt-0.5">{m.year}</span>
-                    <p className="text-[15px] text-graphite leading-[1.7] group-hover:text-ink transition-colors duration-300">
-                      {m.text}
-                    </p>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-line/40 border border-line/40"
+          >
+            {[
+              {
+                label: "Ausgezeichnete Leistung – Mehrfach bestätigt",
+                text: "PLUS X AWARD 2024, 2025 — Aufnahme in die TOP 100 Immobilienmakler Deutschlands. Zahlreiche Top-Bewertungen auf unabhängigen Portalen. Diese Auszeichnungen belegen unsere konstant hohe Service- und Beratungsqualität.",
+              },
+              {
+                label: "Ihre Immobilie – In besten Händen",
+                text: "Sie möchten Ihre Immobilie verkaufen oder kostenfrei bewerten lassen? Dank unserer über 30 Jahre Erfahrung im Verkauf, Eigenankauf und Immobilienvertrieb wissen wir genau, wie Immobilien optimal positioniert und erfolgreich vermarktet werden – diskret, zielgerichtet und mit maximaler Reichweite.",
+              },
+              {
+                label: "Wir sind nicht nur Makler – Wir sind auch Investoren",
+                text: "Mit unserer langjährigen Expertise als Family Office erwerben wir selbst Immobilien und begleiten Eigentümer, Investoren, Aufteiler und Projektentwickler beim diskreten Verkauf von Wohnanlagen und Gewerbeimmobilien – ohne öffentliche Vermarktung.",
+              },
+              {
+                label: "Netzwerk",
+                text: "Unser nationales Netzwerk aus Family Offices eröffnet Zugang zu exklusiven Off-Market-Transaktionen. Durch langjährig gewachsene Partnerschaften agieren wir bundesweit als verlässlicher Ansprechpartner für anspruchsvolle Investoren. Real Estate · Investment Management · Asset Management · Family Offices · Portfolio Management. Mit dem Anspruch, nachhaltige Werte und erstklassige Ergebnisse zu schaffen.",
+              },
+              {
+                label: "Unsere Standorte – Ihre Vorteile vor Ort",
+                text: "Wir sind präsent in den erfolgreichsten Immobilienmärkten Deutschlands: Düsseldorf, Hamburg, Frankfurt, München, Grünwald und dem Fünf-Seen-Land. So garantieren wir persönliche Betreuung und exzellente Marktkenntnis.",
+              },
+            ].map((block, i) => (
+              <motion.div
+                key={block.label}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: i * 0.07 }}
+                viewport={{ once: true }}
+                className="bg-bone px-8 py-9 lg:px-10 lg:py-11 hover:bg-cream transition-colors duration-300"
+              >
+                <p className="text-[10px] uppercase tracking-[0.22em] text-gold font-medium mb-4">{block.label}</p>
+                <p className="text-[14px] text-graphite leading-[1.8]">{block.text}</p>
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
       </section>
 
