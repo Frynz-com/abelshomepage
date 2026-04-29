@@ -5,9 +5,9 @@ import { motion, useInView } from "framer-motion"
 
 const stats = [
   { target: 3736, suffix: "", label: "Zufriedene Eigentümer", detail: "Persönlich begleitet" },
-  { target: 25, suffix: "+", label: "Jahre Erfahrung", detail: "Inhabergeführt seit 1999" },
-  { target: 7, suffix: "", label: "Standorte", detail: "Deutschlandweit aktiv" },
-  { target: 500, suffix: "+", label: "Vermittlungen", detail: "Erfolgreich abgeschlossen" },
+  { target: 8472, suffix: "", label: "Interessenten suchen", detail: "Wohnungen" },
+  { target: 3882, suffix: "", label: "Interessenten suchen", detail: "Villen, Anwesen" },
+  { target: 4760, suffix: "", label: "Interessenten suchen", detail: "Mehrfamilienhäuser" },
   { target: 100, suffix: "%", label: "Erfolgsbasiert", detail: "Keine Vorauszahlung" },
 ]
 

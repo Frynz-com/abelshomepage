@@ -212,10 +212,10 @@ export default function UeberUnsPage() {
             className="flex flex-wrap items-center justify-center gap-12 lg:gap-20"
           >
             {[
-              { src: "/images/press/award-top-makler.jpg", alt: "Top Makler Auszeichnung" },
+              { src: "/images/press/award-top-makler.jpg", alt: "Jacasa Top Makler Auszeichnung" },
+              { src: "/images/press/award-top11.png",      alt: "Plus X Award 100" },
               { src: "/images/press/award-fokus.png",      alt: "Focus Top Immobilienmakler Düsseldorf" },
-              { src: "/images/press/award-immo-profi.png", alt: "Immo Profi Award 2021" },
-              { src: "/images/press/award-top11.png",      alt: "Top 11 Award" },
+              { src: "/images/press/award-immo-profi.png", alt: "Immo Scout Profi Award" },
             ].map((award, i) => (
               <div key={i} className="relative h-48 w-48">
                 <Image
