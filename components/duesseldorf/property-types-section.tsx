@@ -58,10 +58,10 @@ export function DuesseldorfPropertyTypesSection() {
           className="mb-16"
         >
           <p className="text-gold text-xs uppercase tracking-[0.25em] mb-4">
-            Immobilientypen
+            Unser Fokus
           </p>
           <h2 className="font-serif text-3xl lg:text-4xl xl:text-5xl text-ink leading-[1.1] mb-6 max-w-[700px]">
-            Für welche Immobilien wir tätig sind
+            Was wir in Düsseldorf vermarkten
           </h2>
           <p className="text-graphite leading-relaxed max-w-[600px]">
             Ob Wohnung, Haus oder Villa — wir bieten für jeden Immobilientyp die passende Vermarktungsstrategie.

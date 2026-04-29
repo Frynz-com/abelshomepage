@@ -52,12 +52,23 @@ export function MunichNeighborhoodsSection() {
           viewport={{ once: true }}
           className="mb-16 lg:mb-20"
         >
+          <div className="inline-flex items-center gap-2.5 mb-6 px-4 py-2 border border-gold/25 bg-gold/5">
+            <span className="relative flex h-2 w-2 shrink-0">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-60" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-gold" />
+            </span>
+            <span className="text-[11px] uppercase tracking-[0.22em] text-ink/80 font-medium">Aktuell verzeichnen wir eine starke Nachfrage</span>
+          </div>
           <h2 className="font-serif text-4xl lg:text-5xl xl:text-6xl text-ink leading-[1.08] mb-8">
             Gefragte Wohnlagen in München
           </h2>
           <p className="text-lg text-graphite leading-relaxed max-w-[900px]">
             In München entscheidet die Mikrolage oft stärker über Marktansprache und Preisniveau als der Stadtteilname allein. Deshalb betrachten wir jede Immobilie im Zusammenhang mit ihrem genauen Umfeld, ihrer Zielgruppe und ihrer Positionierung im lokalen Markt.
           </p>
+          <div className="flex flex-wrap items-center gap-x-2 gap-y-1 mt-5 pt-5 border-t border-line/40">
+            <span className="text-[11px] uppercase tracking-[0.22em] text-gold font-medium shrink-0">Wir suchen immer:</span>
+            <span className="text-[12px] text-graphite">Eigentumswohnungen · Einfamilienhäuser · Villen & Penthouse · Mehrfamilienhäuser · Off-Market-Objekte</span>
+          </div>
         </motion.div>
 
         {/* Neighborhoods Grid */}

@@ -58,10 +58,10 @@ export function HamburgPropertyTypesSection() {
           className="mb-16 lg:mb-20"
         >
           <p className="text-gold text-xs uppercase tracking-[0.25em] mb-4">
-            Immobilientypen
+            Unser Fokus
           </p>
           <h2 className="font-serif text-3xl lg:text-4xl xl:text-5xl text-ink leading-[1.1] max-w-[700px]">
-            Was wir in Hamburg vermitteln
+            Was wir in Hamburg vermarkten
           </h2>
         </motion.div>
 

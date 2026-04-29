@@ -45,7 +45,7 @@ export function MunichPropertyTypesSection() {
           className="mb-16 lg:mb-20"
         >
           <h2 className="font-serif text-4xl lg:text-5xl xl:text-6xl text-ink leading-[1.08] mb-8">
-            Für welche Immobilien wir in München tätig sind
+            Was wir in München vermarkten
           </h2>
           <p className="text-lg text-graphite leading-relaxed max-w-[900px]">
             Nicht jede Immobilie braucht dieselbe Vermarktungsstrategie. Je nach Lage, Objektart, Zielgruppe und Diskretionsbedarf entwickeln wir einen passenden Verkaufsansatz.

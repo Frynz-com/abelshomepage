@@ -43,7 +43,7 @@ export function FrankfurtPropertyTypesSection() {
           className="mb-16 lg:mb-20"
         >
           <h2 className="font-serif text-4xl lg:text-5xl text-ink mb-6">
-            Für welche Immobilien wir in Frankfurt tätig sind
+            Was wir in Frankfurt vermarkten
           </h2>
           <p className="text-graphite leading-relaxed max-w-[720px]">
             Nicht jede Immobilie braucht dieselbe Vermarktungsstrategie. Je nach Lage, Objektart, Zielgruppe und Diskretionsbedarf entwickeln wir einen passenden Verkaufsansatz.

@@ -48,6 +48,13 @@ export function GruenwaldNeighborhoodsSection() {
           viewport={{ once: true }}
           className="mb-20"
         >
+          <div className="inline-flex items-center gap-2.5 mb-6 px-4 py-2 border border-gold/25 bg-gold/5">
+            <span className="relative flex h-2 w-2 shrink-0">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-60" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-gold" />
+            </span>
+            <span className="text-[11px] uppercase tracking-[0.22em] text-ink/80 font-medium">Aktuell verzeichnen wir eine starke Nachfrage</span>
+          </div>
           <p className="text-gold text-xs uppercase tracking-[0.25em] mb-4">
             Wohnlagen
           </p>
@@ -57,6 +64,10 @@ export function GruenwaldNeighborhoodsSection() {
           <p className="text-graphite leading-relaxed max-w-[780px]">
             In Grünwald entscheidet die genaue Lage oft noch stärker über Nachfrage und Preisniveau als in größeren Städten. Deshalb betrachten wir jede Immobilie im Zusammenhang mit ihrem direkten Umfeld, ihrer Grundstücksqualität und ihrer Positionierung im lokalen Markt.
           </p>
+          <div className="flex flex-wrap items-center gap-x-2 gap-y-1 mt-5 pt-5 border-t border-line/40">
+            <span className="text-[11px] uppercase tracking-[0.22em] text-gold font-medium shrink-0">Wir suchen immer:</span>
+            <span className="text-[12px] text-graphite">Eigentumswohnungen · Einfamilienhäuser · Villen & Penthouse · Mehrfamilienhäuser · Off-Market-Objekte</span>
+          </div>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
@@ -101,7 +112,7 @@ export function GruenwaldPropertyTypesSection() {
             Objektarten
           </p>
           <h2 className="font-serif text-4xl lg:text-5xl text-ink leading-[1.08] mb-6">
-            Für welche Immobilien wir in Grünwald tätig sind
+            Was wir in Grünwald vermarkten
           </h2>
           <p className="text-graphite leading-relaxed max-w-[780px]">
             Nicht jede Immobilie braucht dieselbe Vermarktungsstrategie. Je nach Lage, Objektart, Zielgruppe und Diskretionsbedarf entwickeln wir einen passenden Verkaufsansatz.
