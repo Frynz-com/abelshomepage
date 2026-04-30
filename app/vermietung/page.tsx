@@ -77,7 +77,7 @@ export default function VermietungPage() {
       <section className="relative h-[92vh] min-h-[640px] overflow-hidden">
         <div className="absolute inset-0 hero-zoom">
           <Image
-            src="/images/cta-interior.jpg"
+            src="/images/vermieten bild.jpg"
             alt="Premium Vermietung Luxusimmobilien – Abels Immobilien"
             fill
             priority
