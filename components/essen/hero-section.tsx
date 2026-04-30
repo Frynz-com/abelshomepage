@@ -15,7 +15,7 @@ export function EssenHeroSection() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 hero-zoom">
         <Image
-          src="/images/cities/essen.jpg"
+          src="/images/stadt essen bild.jpg"
           alt="Immobilienmakler Essen – Abels Immobilien"
           fill
           priority

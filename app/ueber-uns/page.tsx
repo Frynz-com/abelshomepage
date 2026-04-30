@@ -634,8 +634,8 @@ export default function UeberUnsPage() {
                     />
                   </div>
                   <div className="px-4 py-3 border-t border-line/40">
-                    <p className="text-[10px] uppercase tracking-[0.18em] text-stone mb-0.5">{ref.ort}</p>
                     <p className="text-[13px] text-ink font-medium">{ref.typ}</p>
+                    <p className="text-[11px] text-stone mt-0.5">{ref.status}</p>
                   </div>
                 </div>
               </motion.div>
