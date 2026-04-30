@@ -17,9 +17,9 @@ const pressReleases = [
     excerpt: "Abels Immobilien veröffentlicht den Jahresmarktbericht 2025. Trotz veränderter Finanzierungsbedingungen zeigt das Premiumsegment in den Metropolen eine stabile Nachfrage.",
   },
   {
-    date: "Oktober 2025",
-    title: "Auszeichnung: Top-Immobilienmakler 2025 in Düsseldorf",
-    excerpt: "Abels Immobilien wurde erneut als einer der führenden Immobilienmakler in Düsseldorf ausgezeichnet — zum vierten Mal in Folge.",
+    date: "April 2026",
+    title: "Auszeichnung: Top-Immobilienmakler 2026 in Düsseldorf",
+    excerpt: "Abels Immobilien wurde erneut als einer der führenden Immobilienmakler in Düsseldorf ausgezeichnet.",
   },
   {
     date: "Juni 2025",
@@ -75,19 +75,19 @@ export default function PressePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           >
-            <p className="text-[10px] uppercase tracking-[0.24em] text-stone mb-12">Pressemitteilungen</p>
+            <p className="text-[12px] uppercase tracking-[0.22em] text-stone mb-12">Pressemitteilungen</p>
             <div className="space-y-px bg-line/30">
               {pressReleases.map((pr) => (
                 <article key={pr.title} className="bg-cream p-8 lg:p-10">
                   <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
                     <div className="flex-1">
-                      <p className="text-[10px] uppercase tracking-[0.2em] text-stone mb-3">{pr.date}</p>
-                      <h2 className="font-serif text-[1.3rem] text-ink mb-3 max-w-[640px]">{pr.title}</h2>
-                      <p className="text-graphite text-[14px] leading-relaxed max-w-[600px]">{pr.excerpt}</p>
+                      <p className="text-[12px] uppercase tracking-[0.18em] text-stone mb-3">{pr.date}</p>
+                      <h2 className="font-serif text-[1.5rem] lg:text-[1.7rem] text-ink mb-3 max-w-[640px]">{pr.title}</h2>
+                      <p className="text-graphite text-[15px] leading-relaxed max-w-[600px]">{pr.excerpt}</p>
                     </div>
                     <a
                       href="mailto:presse@abels-immobilien.de"
-                      className="shrink-0 inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.18em] text-stone hover:text-ink transition-colors self-start mt-1"
+                      className="shrink-0 inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-stone hover:text-ink transition-colors self-start mt-1"
                     >
                       Volltext anfordern
                       <ArrowRight className="w-3 h-3" />
@@ -110,7 +110,7 @@ export default function PressePage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
               >
-                <p className="text-[10px] uppercase tracking-[0.24em] text-stone mb-8">Pressekit</p>
+                <p className="text-[12px] uppercase tracking-[0.22em] text-stone mb-8">Pressekit</p>
                 <div className="space-y-4">
                   {[
                     { label: "Unternehmenslogo (SVG, PNG)", note: "Für Druckmedien und Online" },
@@ -120,12 +120,12 @@ export default function PressePage() {
                   ].map((item) => (
                     <div key={item.label} className="flex items-center justify-between p-5 bg-cream border border-line group">
                       <div>
-                        <p className="text-[14px] text-ink font-medium">{item.label}</p>
-                        <p className="text-[12px] text-stone mt-0.5">{item.note}</p>
+                        <p className="text-[15px] text-ink font-medium">{item.label}</p>
+                        <p className="text-[13px] text-stone mt-0.5">{item.note}</p>
                       </div>
                       <a
                         href="mailto:presse@abels-immobilien.de?subject=Pressekit-Anfrage"
-                        className="flex items-center gap-1.5 text-[10px] uppercase tracking-[0.16em] text-stone hover:text-gold transition-colors"
+                        className="flex items-center gap-1.5 text-[11px] uppercase tracking-[0.16em] text-stone hover:text-gold transition-colors"
                       >
                         <Download className="w-3.5 h-3.5" />
                         Anfragen
@@ -141,35 +141,35 @@ export default function PressePage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
               >
-                <p className="text-[10px] uppercase tracking-[0.24em] text-stone mb-8">Medienkontakte</p>
+                <p className="text-[12px] uppercase tracking-[0.22em] text-stone mb-8">Medienkontakte</p>
                 <div className="space-y-6">
                   {mediaContacts.map((mc) => (
                     <div key={mc.name} className="p-6 bg-cream border border-line">
-                      <p className="text-[10px] uppercase tracking-[0.2em] text-stone mb-2">{mc.name}</p>
+                      <p className="text-[12px] uppercase tracking-[0.18em] text-stone mb-2">{mc.name}</p>
                       <a
                         href={`mailto:${mc.contact}`}
                         className="text-[16px] text-ink hover:text-gold transition-colors font-medium block mb-1"
                       >
                         {mc.contact}
                       </a>
-                      <p className="text-[13px] text-graphite">{mc.note}</p>
+                      <p className="text-[14px] text-graphite">{mc.note}</p>
                     </div>
                   ))}
                   <div className="p-6 bg-cream border border-line">
-                    <p className="text-[10px] uppercase tracking-[0.2em] text-stone mb-2">Telefon</p>
+                    <p className="text-[12px] uppercase tracking-[0.18em] text-stone mb-2">Telefon</p>
                     <a
                       href="tel:+492115591751"
-                      className="text-[16px] text-ink hover:text-gold transition-colors font-medium block mb-1"
+                      className="text-[17px] text-ink hover:text-gold transition-colors font-medium block mb-1"
                     >
                       +49 211 5591751
                     </a>
-                    <p className="text-[13px] text-graphite">Mo – Fr: 9:00 – 18:00 Uhr</p>
+                    <p className="text-[14px] text-graphite">Mo – Fr: 9:00 – 18:00 Uhr</p>
                   </div>
                 </div>
 
                 <div className="mt-10 pt-8 border-t border-line/50">
-                  <p className="text-[10px] uppercase tracking-[0.24em] text-stone mb-4">Über uns</p>
-                  <p className="text-graphite text-[14px] leading-relaxed">
+                  <p className="text-[12px] uppercase tracking-[0.22em] text-stone mb-4">Über uns</p>
+                  <p className="text-graphite text-[15px] leading-relaxed">
                     Abels Immobilien GmbH wurde 1999 gegründet und gehört heute zu den führenden Adressen für Premium-Immobilien in Deutschland. Das Unternehmen vermittelt Wohnimmobilien in sieben Metropolen und betreut sowohl Käufer als auch Verkäufer mit einem persönlichen Beratungsansatz.
                   </p>
                 </div>
