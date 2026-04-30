@@ -97,9 +97,6 @@ export default function VermietungPage() {
               animate="visible"
               className="max-w-[780px]"
             >
-              <motion.p variants={fadeUp} className="text-gold text-[11px] uppercase tracking-[0.28em] mb-6">
-                Vermietung · Premium & Diskret
-              </motion.p>
               <motion.h1
                 variants={fadeUp}
                 className="font-serif text-[clamp(2.8rem,6vw,5.8rem)] text-white leading-[0.97] tracking-[-0.02em] mb-8"
@@ -123,12 +120,6 @@ export default function VermietungPage() {
           </div>
         </div>
 
-        {/* Floating cities strip */}
-        <div className="absolute bottom-0 right-0 hidden lg:flex flex-col gap-3 items-end pr-20 pb-20">
-          {cities.map((c) => (
-            <span key={c} className="text-[10px] uppercase tracking-[0.22em] text-white/40">{c}</span>
-          ))}
-        </div>
       </section>
 
       {/* ── INTRO STRIP ── */}
@@ -476,7 +467,7 @@ export default function VermietungPage() {
         </div>
       </section>
 
-      <FinanzierungModal open={modalOpen} onClose={() => setModalOpen(false)} />
+      <FinanzierungModal open={modalOpen} onClose={() => setModalOpen(false)} title="Vermietung" subtitle="Vermietung anfragen" />
       <Footer />
     </main>
   )

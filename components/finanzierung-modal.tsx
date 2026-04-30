@@ -7,9 +7,11 @@ import { motion, AnimatePresence } from "framer-motion"
 interface FinanzierungModalProps {
   open: boolean
   onClose: () => void
+  title?: string
+  subtitle?: string
 }
 
-export function FinanzierungModal({ open, onClose }: FinanzierungModalProps) {
+export function FinanzierungModal({ open, onClose, title = "Baufinanzierung", subtitle = "Finanzierung anfragen" }: FinanzierungModalProps) {
   const [sent, setSent] = useState(false)
   const [form, setForm] = useState({ name: "", email: "", phone: "", message: "", privacy: false })
 
@@ -71,9 +73,9 @@ export function FinanzierungModal({ open, onClose }: FinanzierungModalProps) {
                 <div>
                   <div className="flex items-center gap-2.5 mb-1">
                     <div className="w-5 h-px bg-gold/60" />
-                    <span className="text-[10px] uppercase tracking-[0.24em] text-stone">Baufinanzierung</span>
+                    <span className="text-[10px] uppercase tracking-[0.24em] text-stone">{title}</span>
                   </div>
-                  <h2 className="font-serif text-[22px] text-ink leading-tight">Finanzierung anfragen</h2>
+                  <h2 className="font-serif text-[22px] text-ink leading-tight">{subtitle}</h2>
                 </div>
                 <button
                   onClick={onClose}

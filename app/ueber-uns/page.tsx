@@ -326,12 +326,13 @@ export default function UeberUnsPage() {
       {/* ── WEITERE UNTERNEHMENS-ABSCHNITTE ── */}
       <section className="py-20 lg:py-28 bg-bone border-b border-line/50">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-20">
+          {/* Top row — 3 tiles */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-line/40 border border-line/40"
+            className="grid md:grid-cols-3 gap-px bg-line/40 border border-line/40 mb-px"
           >
             {[
               {
@@ -346,6 +347,30 @@ export default function UeberUnsPage() {
                 label: "Wir sind nicht nur Makler – Wir sind auch Investoren",
                 text: "Mit unserer langjährigen Expertise als Family Office erwerben wir selbst Immobilien und begleiten Eigentümer, Investoren, Aufteiler und Projektentwickler beim diskreten Verkauf von Wohnanlagen und Gewerbeimmobilien – ohne öffentliche Vermarktung.",
               },
+            ].map((block, i) => (
+              <motion.div
+                key={block.label}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: i * 0.07 }}
+                viewport={{ once: true }}
+                className="bg-bone px-8 py-9 lg:px-10 lg:py-11 hover:bg-cream transition-colors duration-300"
+              >
+                <p className="text-[13px] uppercase tracking-[0.16em] text-gold font-semibold mb-4 leading-snug">{block.label}</p>
+                <p className="text-[14px] text-graphite leading-[1.8]">{block.text}</p>
+              </motion.div>
+            ))}
+          </motion.div>
+
+          {/* Bottom row — 2 tiles, centered */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.15 }}
+            viewport={{ once: true }}
+            className="grid md:grid-cols-2 gap-px bg-line/40 border border-x border-b border-line/40"
+          >
+            {[
               {
                 label: "Netzwerk",
                 text: "Unser nationales Netzwerk aus Family Offices eröffnet Zugang zu exklusiven Off-Market-Transaktionen. Durch langjährig gewachsene Partnerschaften agieren wir bundesweit als verlässlicher Ansprechpartner für anspruchsvolle Investoren. Real Estate · Investment Management · Asset Management · Family Offices · Portfolio Management. Mit dem Anspruch, nachhaltige Werte und erstklassige Ergebnisse zu schaffen.",
@@ -359,11 +384,11 @@ export default function UeberUnsPage() {
                 key={block.label}
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: i * 0.07 }}
+                transition={{ duration: 0.5, delay: 0.21 + i * 0.07 }}
                 viewport={{ once: true }}
                 className="bg-bone px-8 py-9 lg:px-10 lg:py-11 hover:bg-cream transition-colors duration-300"
               >
-                <p className="text-[10px] uppercase tracking-[0.22em] text-gold font-medium mb-4">{block.label}</p>
+                <p className="text-[13px] uppercase tracking-[0.16em] text-gold font-semibold mb-4 leading-snug">{block.label}</p>
                 <p className="text-[14px] text-graphite leading-[1.8]">{block.text}</p>
               </motion.div>
             ))}
