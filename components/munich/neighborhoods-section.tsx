@@ -60,7 +60,7 @@ export function MunichNeighborhoodsSection() {
             <span className="text-[11px] uppercase tracking-[0.22em] text-ink/80 font-medium">Aktuell verzeichnen wir eine starke Nachfrage</span>
           </div>
           <h2 className="font-serif text-4xl lg:text-5xl xl:text-6xl text-ink leading-[1.08] mb-8">
-            Gefragte Wohnlagen in München
+            In und um München
           </h2>
           <p className="text-lg text-graphite leading-relaxed max-w-[900px]">
             In München entscheidet die Mikrolage oft stärker über Marktansprache und Preisniveau als der Stadtteilname allein. Deshalb betrachten wir jede Immobilie im Zusammenhang mit ihrem genauen Umfeld, ihrer Zielgruppe und ihrer Positionierung im lokalen Markt.

@@ -28,7 +28,6 @@ const ratgeber = [
   { label: "Immobilie verkaufen", href: "/immobilie-verkaufen" },
   { label: "Immobilienbewertung", href: "/immobilie-bewerten-duesseldorf" },
   { label: "Maklerkosten", href: "/ratgeber/maklerkosten" },
-  { label: "Off-Market Verkauf", href: "/off-market-immobilien-duesseldorf" },
   { label: "Energieausweis", href: "/ratgeber/energieausweis" },
   { label: "Notarkosten", href: "/ratgeber/notarkosten" },
   { label: "Erbimmobilie", href: "/ratgeber/erbimmobilie" },

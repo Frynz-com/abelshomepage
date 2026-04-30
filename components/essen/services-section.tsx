@@ -25,16 +25,11 @@ const services = [
   },
   {
     number: '5',
-    title: 'Interessentenprüfung',
-    description: 'Nicht jede Anfrage ist automatisch relevant. Wir achten auf eine qualifizierte Vorauswahl und strukturierte Kommunikation mit passenden Interessenten.',
-  },
-  {
-    number: '6',
     title: 'Besichtigungen und Verhandlungen',
     description: 'Besichtigungen und Preisverhandlungen sind sensible Phasen im Verkaufsprozess. Wir begleiten diese Schritte mit professioneller Vorbereitung und klarer Kommunikation.',
   },
   {
-    number: '7',
+    number: '6',
     title: 'Begleitung bis zum Notartermin',
     description: 'Auch in der Abschlussphase sorgen wir für Struktur, Verlässlichkeit und einen reibungslosen Prozess bis zur notariellen Beurkundung und Übergabe.',
   },

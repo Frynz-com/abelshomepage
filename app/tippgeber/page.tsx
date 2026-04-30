@@ -91,7 +91,7 @@ export default function TippgeberPage() {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-line/50">
             {[
-              { value: "500–2.000 €", label: "Provision pro Vermittlung", detail: "Je nach Objekttyp und Transaktionsgröße" },
+              { value: "15–20 %", label: "Provision vom Verkaufserlös", detail: "Ihrer vermittelten Transaktion" },
               { value: "Diskret", label: "Kein Aufwand für Sie", detail: "Abels Immobilien übernimmt alles" },
               { value: "30 Tage", label: "Auszahlung nach Notartermin", detail: "Transparent, pünktlich, garantiert" },
             ].map((item, i) => (

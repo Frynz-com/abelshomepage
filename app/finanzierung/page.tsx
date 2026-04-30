@@ -149,18 +149,6 @@ export default function FinanzierungPage() {
                 <p className="text-[16px] text-graphite leading-[1.8]">
                   Als unabhängiger und inhabergeführter Immobilienmakler handeln wir stets in Ihrem Interesse. Bei der Planung Ihres Immobilienkaufs weisen wir transparent auf alle anfallenden Kosten hin und unterstützen Sie dabei, eine sichere und fundierte Entscheidung zu treffen — ohne versteckte Gebühren, ohne einseitige Empfehlungen.
                 </p>
-                <div className="grid grid-cols-3 gap-6 mt-8 pt-8 border-t border-line/50">
-                  {[
-                    { val: "25+", label: "Jahre Erfahrung" },
-                    { val: "1.800+", label: "Transaktionen" },
-                    { val: "7", label: "Standorte" },
-                  ].map((s) => (
-                    <div key={s.label}>
-                      <p className="font-serif text-2xl lg:text-3xl text-ink font-bold">{s.val}</p>
-                      <p className="text-[11px] uppercase tracking-[0.18em] text-graphite/50 mt-1">{s.label}</p>
-                    </div>
-                  ))}
-                </div>
               </motion.div>
             </motion.div>
           </div>
