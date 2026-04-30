@@ -231,7 +231,7 @@ export function Footer() {
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
 
           <p className="text-[13px] text-stone tracking-[0.02em]">
-            © 2026 Abels Immobilien GmbH · IHK-Mitglied · §34c GewO
+            © 2026 Abels Immobilien GmbH
           </p>
 
           <div className="flex flex-wrap items-center gap-5">

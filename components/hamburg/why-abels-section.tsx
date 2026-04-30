@@ -25,7 +25,7 @@ const reasons = [
   },
   {
     title: "Langjährige Erfahrung",
-    description: "Seit 1999 inhabergefuhrt, IHK-zertifiziert und an 7 Standorten in Deutschland aktiv. Solide Erfahrung statt leerer Versprechen."
+    description: "Seit 1999 inhabergeführt und an 7 Standorten in Deutschland aktiv. Solide Erfahrung statt leerer Versprechen."
   }
 ]
 

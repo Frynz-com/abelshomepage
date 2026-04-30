@@ -21,7 +21,7 @@ const arguments_ = [
   },
   {
     title: "Langjährige Erfahrung",
-    description: "Seit 1999 inhabergefuhrt, IHK-zertifiziert nach Paragraph 34c GewO. Solide Erfahrung statt leerer Versprechen."
+    description: "Seit 1999 inhabergeführt und an 7 Standorten in Deutschland aktiv. Solide Erfahrung statt leerer Versprechen."
   },
   {
     title: "Diskretion garantiert",

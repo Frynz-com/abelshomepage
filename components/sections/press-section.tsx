@@ -4,7 +4,6 @@ export function PressSection() {
     "Handelsblatt",
     "Capital",
     "IVD",
-    "IHK",
     "ImmoScout24"
   ]
 

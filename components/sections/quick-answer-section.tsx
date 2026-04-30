@@ -10,7 +10,7 @@ export function QuickAnswerSection() {
         </h2>
         
         <p className="text-graphite text-lg leading-relaxed mb-16 max-w-[560px] mx-auto">
-          Abels Immobilien GmbH ist ein inhabergeführter Premium-Makler mit Sitz in Düsseldorf und Büros in München, Grünwald, Hamburg, Frankfurt, Essen und Stuttgart. Spezialisiert auf hochwertige Wohnimmobilien, Villen, Penthäuser und Kapitalanlagen ab 500.000 €. Kostenfreie Vor-Ort-Bewertung innerhalb 72 Stunden. Provision ausschließlich im Erfolgsfall. IHK-geprüft nach §34c GewO.
+          Abels Immobilien GmbH ist ein inhabergeführter Premium-Makler mit Sitz in Düsseldorf und Büros in München, Grünwald, Hamburg, Frankfurt, Essen und Stuttgart. Spezialisiert auf hochwertige Wohnimmobilien, Villen, Penthäuser und Kapitalanlagen ab 500.000 €. Kostenfreie Vor-Ort-Bewertung innerhalb 72 Stunden. Provision ausschließlich im Erfolgsfall.
         </p>
 
         {/* Credentials */}
@@ -23,11 +23,6 @@ export function QuickAnswerSection() {
           <div className="md:px-16">
             <span className="block font-serif text-3xl text-ink mb-2">7 Standorte</span>
             <span className="text-xs uppercase tracking-[0.2em] text-stone">In Deutschland</span>
-          </div>
-          <div className="hidden md:block w-px h-14 bg-line" />
-          <div className="md:px-16">
-            <span className="block font-serif text-3xl text-ink mb-2">IHK-zertifiziert</span>
-            <span className="text-xs uppercase tracking-[0.2em] text-stone">Paragraph 34c GewO</span>
           </div>
         </div>
       </div>
