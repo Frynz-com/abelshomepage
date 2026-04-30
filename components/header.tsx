@@ -19,7 +19,7 @@ const navItems = [
   { href: "/verkaufen", label: "Verkaufen" },
   { href: "/kaufen", label: "Kaufen" },
   { href: "/standorte", label: "Regionen", hasDropdown: true },
-  { href: "/investieren", label: "Investieren" },
+  { href: "/vermietung", label: "Vermietung" },
 ]
 
 export function Header() {
