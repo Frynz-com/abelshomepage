@@ -76,6 +76,13 @@ const testimonials = [
     type: "Wiederholungskunde",
     rating: 5,
   },
+  {
+    quote: "Ein Mehrfamilienhaus mit sieben Einheiten — diskret, zügig und zu einem Preis, der unsere Erwartungen übertroffen hat. Die Betreuung war zu jeder Zeit persönlich und professionell.",
+    author: "H. Bergmann",
+    location: "Bredeney, Essen",
+    type: "Verkauf Mehrfamilienhaus",
+    rating: 5,
+  },
 ]
 
 // Referenzen — editorial strip, no filters
