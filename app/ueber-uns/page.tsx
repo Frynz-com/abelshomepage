@@ -301,19 +301,15 @@ export default function UeberUnsPage() {
               {/* Numbers */}
               <div className="space-y-6">
                 <div className="border-b border-line/50 pb-6">
-                  <p className="font-serif text-[3.4rem] text-ink leading-none tracking-tight font-bold">1.800</p>
-                  <p className="text-[10px] uppercase tracking-[0.22em] text-stone mt-2">Objekte vermittelt</p>
-                </div>
-                <div className="border-b border-line/50 pb-6">
-                  <p className="font-serif text-[2.4rem] text-ink leading-none font-bold">1.044 <span className="text-stone text-[1.2rem] font-normal">/ 58 %</span></p>
+                  <p className="font-serif text-[2.8rem] text-ink leading-none font-bold">58 %</p>
                   <p className="text-[10px] uppercase tracking-[0.22em] text-stone mt-2">Wohnen</p>
                 </div>
                 <div className="border-b border-line/50 pb-6">
-                  <p className="font-serif text-[2.4rem] text-ink leading-none font-bold">126 <span className="text-stone text-[1.2rem] font-normal">/ 7 %</span></p>
+                  <p className="font-serif text-[2.8rem] text-ink leading-none font-bold">7 %</p>
                   <p className="text-[10px] uppercase tracking-[0.22em] text-stone mt-2">Gewerbe</p>
                 </div>
                 <div>
-                  <p className="font-serif text-[2.4rem] text-ink leading-none font-bold">630 <span className="text-stone text-[1.2rem] font-normal">/ 35 %</span></p>
+                  <p className="font-serif text-[2.8rem] text-ink leading-none font-bold">35 %</p>
                   <p className="text-[10px] uppercase tracking-[0.22em] text-stone mt-2">Invest</p>
                 </div>
               </div>
@@ -567,7 +563,7 @@ export default function UeberUnsPage() {
               <span className="text-[11px] uppercase tracking-[0.24em] text-gold">Referenzen</span>
             </div>
             <h2 className="font-serif text-[clamp(2rem,4vw,3.2rem)] text-ink leading-tight mb-12">
-              Ein Auszug aus über 1.800<br />
+              Ein kleiner Auszug von unseren<br />
               <span className="text-ink/50">vermittelten Objekten.</span>
             </h2>
 

@@ -39,7 +39,7 @@ const unternehmen = [
   { label: "Karriere", href: "/karriere" },
   { label: "Presse & Medien", href: "/presse" },
   { label: "Kontakt", href: "/kontakt" },
-  { label: "Immobilien Gesuche in Deutschland", href: "http://dringende-immobilien-gesuche.de" },
+  { label: "Dringende Immobilien Gesuche", href: "http://dringende-immobilien-gesuche.de" },
 ]
 
 function FooterCol({ title, links }: { title: string; links: { label: string; href: string }[] }) {
