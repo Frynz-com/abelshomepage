@@ -53,15 +53,12 @@ export function PositioningSection() {
               <p>
                 Abels Immobilien ist kein Franchise, kein Konzern. Wir sind ein inhabergeführtes Maklerunternehmen mit Hauptsitz in Düsseldorf — mit persönlicher Verantwortung für jeden Verkauf.
               </p>
-              <p>
-                Seit 1999 haben wir über 500 Immobilien erfolgreich vermittelt — für Eigentümer, die Diskretion, Marktkenntnis und einen nachweislich guten Preis erwarten.
-              </p>
             </div>
 
             <div className="mt-12 flex flex-col sm:flex-row gap-4">
               <Link
                 href="/bewertung"
-                className="inline-flex items-center gap-2.5 bg-gold text-ink px-7 py-3.5 text-[10px] uppercase tracking-[0.20em] font-semibold hover:bg-gold/90 transition-colors group"
+                className="inline-flex items-center gap-2.5 bg-gold text-ink px-7 py-3.5 text-[13px] uppercase tracking-[0.16em] font-semibold hover:bg-gold/90 transition-colors group"
               >
                 Kostenlose Bewertung starten
                 <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />

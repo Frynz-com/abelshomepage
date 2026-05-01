@@ -36,7 +36,7 @@ export function ContactModal({ open, onClose }: ContactModalProps) {
       })
     } catch {
       // Fallback: form submitted via mailto
-      window.location.href = `mailto:info@abels-immobilien.de?subject=Anfrage von ${encodeURIComponent(form.name)}&body=${encodeURIComponent(form.message)}`
+      window.location.href = `mailto:info@ebla-immobilien.com?subject=Anfrage von ${encodeURIComponent(form.name)}&body=${encodeURIComponent(form.message)}`
     } finally {
       setLoading(false)
       setSubmitted(true)

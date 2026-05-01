@@ -120,8 +120,8 @@ export function Footer() {
                   <a href="tel:+492115591751" className="text-[14px] text-graphite hover:text-ink transition-colors">
                     +49 211 5591751
                   </a>
-                  <a href="mailto:info@abels-immobilien.de" className="text-[14px] text-graphite hover:text-ink transition-colors">
-                    info@abels-immobilien.de
+                  <a href="mailto:info@ebla-immobilien.com" className="text-[14px] text-graphite hover:text-ink transition-colors">
+                    info@ebla-immobilien.com
                   </a>
                 </div>
               </address>
@@ -148,11 +148,11 @@ export function Footer() {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-20 py-12 lg:py-14">
           <div className="grid lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-5">
-              <p className="text-[9.5px] uppercase tracking-[0.26em] text-stone mb-3">Baufinanzierung</p>
-              <h3 className="font-serif text-[20px] lg:text-[22px] text-ink leading-snug mb-3">
+              <p className="text-[11px] uppercase tracking-[0.24em] text-stone mb-3">Baufinanzierung</p>
+              <h3 className="font-serif text-[24px] lg:text-[28px] text-ink leading-snug mb-4">
                 Immobilie sicher finanzieren
               </h3>
-              <p className="text-[13px] text-graphite/70 leading-relaxed max-w-[400px]">
+              <p className="text-[15px] text-graphite/70 leading-relaxed max-w-[400px]">
                 Abels Immobilien GmbH unterstützt Kaufinteressenten auf Wunsch auch bei der Planung einer passenden Baufinanzierung sowie bei der Vermittlung geeigneter Finanzierungspartner.
               </p>
             </div>
@@ -165,8 +165,8 @@ export function Footer() {
                   { icon: FileText, label: "Individuelle Konzepte" },
                 ].map(({ icon: Icon, label }) => (
                   <div key={label} className="flex items-center gap-2.5">
-                    <Icon size={13} className="text-gold shrink-0" />
-                    <span className="text-[12px] text-graphite/70">{label}</span>
+                    <Icon size={15} className="text-gold shrink-0" />
+                    <span className="text-[14px] text-graphite/70">{label}</span>
                   </div>
                 ))}
               </div>
@@ -174,7 +174,7 @@ export function Footer() {
             <div className="lg:col-span-3 lg:col-start-10 lg:text-right">
               <Link
                 href="/finanzierung"
-                className="inline-flex items-center gap-2 bg-ink text-cream text-[10px] uppercase tracking-[0.18em] px-6 py-3.5 hover:bg-graphite transition-colors"
+                className="inline-flex items-center gap-2 bg-ink text-cream text-[12px] uppercase tracking-[0.16em] px-7 py-4 hover:bg-graphite transition-colors"
               >
                 Finanzierungsberatung anfragen
                 <ArrowRight className="w-3 h-3" />

@@ -48,7 +48,7 @@ export default function KontaktPage() {
         body: new URLSearchParams(new FormData(formEl) as any).toString(),
       })
     } catch {
-      window.location.href = `mailto:info@abels-immobilien.de?subject=${encodeURIComponent("Kontaktanfrage: " + form.subject)}&body=${encodeURIComponent(form.message)}`
+      window.location.href = `mailto:info@ebla-immobilien.com?subject=${encodeURIComponent("Kontaktanfrage: " + form.subject)}&body=${encodeURIComponent(form.message)}`
     } finally {
       setLoading(false)
       setSubmitted(true)
@@ -137,10 +137,10 @@ export default function KontaktPage() {
                 <div>
                   <p className="text-[13px] font-medium text-ink mb-1">E-Mail</p>
                   <a
-                    href="mailto:info@abels-immobilien.de"
+                    href="mailto:info@ebla-immobilien.com"
                     className="text-[14px] text-graphite hover:text-ink transition-colors"
                   >
-                    info@abels-immobilien.de
+                    info@ebla-immobilien.com
                   </a>
                 </div>
               </div>

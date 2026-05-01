@@ -63,13 +63,13 @@ export function RatgeberVerkaufenClosingCtaSection() {
                   </div>
                 </a>
 
-                <a href="mailto:info@abels-immobilien.de" className="flex items-center gap-4 group">
+                <a href="mailto:info@ebla-immobilien.com" className="flex items-center gap-4 group">
                   <div className="w-12 h-12 border border-line/40 flex items-center justify-center group-hover:border-gold transition-colors">
                     <Mail className="w-5 h-5 text-gold" />
                   </div>
                   <div>
                     <span className="block text-xs text-graphite uppercase tracking-[0.1em] mb-1">E-Mail</span>
-                    <span className="block text-ink font-medium group-hover:text-gold transition-colors">info@abels-immobilien.de</span>
+                    <span className="block text-ink font-medium group-hover:text-gold transition-colors">info@ebla-immobilien.com</span>
                   </div>
                 </a>
 

@@ -39,7 +39,7 @@ export default function TippgeberPage() {
         body: new URLSearchParams(new FormData(e.target as HTMLFormElement) as unknown as Record<string, string>).toString(),
       })
     } catch {
-      window.location.href = `mailto:info@abels-immobilien.de?subject=${encodeURIComponent("Tippgeber-Hinweis")}&body=${encodeURIComponent("Name: " + form.name + "\nEmail: " + form.email + "\n\n" + form.details)}`
+      window.location.href = `mailto:info@ebla-immobilien.com?subject=${encodeURIComponent("Tippgeber-Hinweis")}&body=${encodeURIComponent("Name: " + form.name + "\nEmail: " + form.email + "\n\n" + form.details)}`
     }
     setSubmitted(true)
   }
