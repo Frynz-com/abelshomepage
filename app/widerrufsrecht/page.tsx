@@ -36,7 +36,7 @@ export default function WiderrufsrechtPage() {
               <p>Alt Niederkassel 124</p>
               <p>40547 Düsseldorf</p>
               <p>Tel.: +49 211 5591751</p>
-              <p>E-Mail: info@ebla-immobilien.com</p>
+              <p>E-Mail: info@abels-immobilien.com</p>
             </address>
           </section>
 
@@ -66,7 +66,7 @@ export default function WiderrufsrechtPage() {
             <div className="border border-line bg-bone p-8 space-y-6">
               <div>
                 <p className="text-sm text-stone mb-2">An: Abels Immobilien GmbH, Alt Niederkassel 124, 40547 Düsseldorf</p>
-                <p className="text-sm text-stone">oder per E-Mail: info@ebla-immobilien.com</p>
+                <p className="text-sm text-stone">oder per E-Mail: info@abels-immobilien.com</p>
               </div>
 
               <div className="space-y-4 text-graphite text-sm">

@@ -80,8 +80,8 @@ export function ClosingCtaSection() {
 
               <div>
                 <p className="text-graphite text-sm mb-1">E-Mail</p>
-                <a href="mailto:info@ebla-immobilien.com" className="text-lg text-ink hover:text-gold transition-colors">
-                  info@ebla-immobilien.com
+                <a href="mailto:info@abels-immobilien.com" className="text-lg text-ink hover:text-gold transition-colors">
+                  info@abels-immobilien.com
                 </a>
               </div>
 

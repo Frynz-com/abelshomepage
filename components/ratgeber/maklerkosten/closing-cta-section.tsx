@@ -73,10 +73,10 @@ export function MaklerkostenClosingCtaSection() {
                     E-Mail
                   </span>
                   <a 
-                    href="mailto:info@ebla-immobilien.com"
+                    href="mailto:info@abels-immobilien.com"
                     className="text-ink text-lg hover:text-gold transition-colors"
                   >
-                    info@ebla-immobilien.com
+                    info@abels-immobilien.com
                   </a>
                 </div>
                 

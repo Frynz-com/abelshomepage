@@ -81,13 +81,13 @@ export function HamburgClosingCtaSection() {
                   <span className="block text-[15px] text-ink group-hover:text-gold transition-colors">+49 211 5591751</span>
                 </div>
               </a>
-              <a href="mailto:info@ebla-immobilien.com" className="flex items-center gap-4 group">
+              <a href="mailto:info@abels-immobilien.com" className="flex items-center gap-4 group">
                 <div className="w-10 h-10 border border-line/40 flex items-center justify-center group-hover:border-gold/40 transition-colors shrink-0">
                   <Mail className="w-4 h-4 text-gold/70 group-hover:text-gold transition-colors" />
                 </div>
                 <div>
                   <span className="block text-[10px] uppercase tracking-[0.18em] text-graphite mb-0.5">E-Mail</span>
-                  <span className="block text-[15px] text-ink group-hover:text-gold transition-colors">info@ebla-immobilien.com</span>
+                  <span className="block text-[15px] text-ink group-hover:text-gold transition-colors">info@abels-immobilien.com</span>
                 </div>
               </a>
               <div className="flex items-center gap-4">

@@ -99,14 +99,14 @@ export function FinalCtaSection() {
                 </div>
               </a>
 
-              <a href="mailto:info@ebla-immobilien.com" className="flex items-center gap-5 group">
+              <a href="mailto:info@abels-immobilien.com" className="flex items-center gap-5 group">
                 <div className="w-10 h-10 border border-line/60 flex items-center justify-center group-hover:border-gold/50 transition-colors shrink-0">
                   <Mail className="w-4 h-4 text-gold/70 group-hover:text-gold transition-colors" />
                 </div>
                 <div>
                   <span className="block text-[9.5px] uppercase tracking-[0.22em] text-stone mb-1">E-Mail</span>
                   <span className="block text-[15px] text-graphite group-hover:text-ink transition-colors">
-                    info@ebla-immobilien.com
+                    info@abels-immobilien.com
                   </span>
                 </div>
               </a>

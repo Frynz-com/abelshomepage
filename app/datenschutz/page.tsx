@@ -63,7 +63,7 @@ export default function DatenschutzPage() {
               Alt Niederkassel 124<br />
               40547 Düsseldorf<br />
               Telefon: <a href="tel:+492115591751" className="text-gold hover:underline">+49 211 5591751</a><br />
-              E-Mail: <a href="mailto:info@ebla-immobilien.com" className="text-gold hover:underline">info@ebla-immobilien.com</a>
+              E-Mail: <a href="mailto:info@abels-immobilien.com" className="text-gold hover:underline">info@abels-immobilien.com</a>
             </p>
 
             <h3 className="font-semibold text-ink mb-2 mt-4">Widerruf Ihrer Einwilligung zur Datenverarbeitung</h3>
@@ -129,7 +129,7 @@ export default function DatenschutzPage() {
               Mit der Nutzung des Bewertungstools und der Eingabe Ihrer Daten willigen Sie gemäß Art. 6 Abs. 1 lit. a DSGVO in die Verarbeitung dieser Daten durch Abels Immobilien GmbH zum Zwecke der Erstellung einer Immobilienwerteinschätzung und der Kontaktaufnahme ein. Diese Einwilligung ist freiwillig und kann jederzeit mit Wirkung für die Zukunft widerrufen werden – ohne dass die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung berührt wird.
             </p>
             <p>
-              Für den Widerruf wenden Sie sich bitte per E-Mail an: <a href="mailto:info@ebla-immobilien.com" className="text-gold hover:underline">info@ebla-immobilien.com</a>
+              Für den Widerruf wenden Sie sich bitte per E-Mail an: <a href="mailto:info@abels-immobilien.com" className="text-gold hover:underline">info@abels-immobilien.com</a>
             </p>
 
             <h3 className="font-semibold text-ink mb-2 mt-4">Speicherdauer</h3>

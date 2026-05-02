@@ -63,8 +63,8 @@ export function NotarkostenClosingCtaSection() {
 
               <div>
                 <span className="text-graphite text-sm block mb-1">E-Mail</span>
-                <a href="mailto:info@ebla-immobilien.com" className="text-xl text-ink hover:text-gold transition-colors">
-                  info@ebla-immobilien.com
+                <a href="mailto:info@abels-immobilien.com" className="text-xl text-ink hover:text-gold transition-colors">
+                  info@abels-immobilien.com
                 </a>
               </div>
 

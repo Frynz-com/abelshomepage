@@ -36,7 +36,7 @@ const mediaContacts = [
   },
   {
     name: "Unternehmenskommunikation",
-    contact: "info@ebla-immobilien.com",
+    contact: "info@abels-immobilien.com",
     note: "Allgemeine Anfragen und Kooperationen",
   },
 ]

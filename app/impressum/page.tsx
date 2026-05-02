@@ -28,7 +28,7 @@ export default function ImpressumPage() {
             <h3 className="font-serif text-xl text-ink mb-3">Kontakt</h3>
             <p>
               Telefon: <a href="tel:+492115591751" className="text-gold hover:underline">+49 211 5591751</a><br />
-              E-Mail: <a href="mailto:info@ebla-immobilien.com" className="text-gold hover:underline">info@ebla-immobilien.com</a>
+              E-Mail: <a href="mailto:info@abels-immobilien.com" className="text-gold hover:underline">info@abels-immobilien.com</a>
             </p>
           </section>
 

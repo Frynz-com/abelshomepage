@@ -74,8 +74,8 @@ export function ContactSection() {
               </div>
               <div>
                 <p className="text-xs tracking-widest uppercase text-foreground/40 mb-1">E-Mail</p>
-                <a href="mailto:info@ebla-immobilien.com" className="text-foreground hover:text-foreground/70 transition-colors">
-                  info@ebla-immobilien.com
+                <a href="mailto:info@abels-immobilien.com" className="text-foreground hover:text-foreground/70 transition-colors">
+                  info@abels-immobilien.com
                 </a>
               </div>
             </div>

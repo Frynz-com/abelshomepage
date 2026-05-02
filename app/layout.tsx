@@ -60,7 +60,7 @@ const organizationSchema = {
   description: 'Inhabergeführter Premium-Immobilienmakler für den Verkauf hochwertiger Wohnimmobilien. Seit 1999. 7 Standorte.',
   foundingDate: '1999',
   telephone: '+49-211-5597510',
-  email: 'info@ebla-immobilien.com',
+  email: 'info@abels-immobilien.com',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Alt Niederkassel 124',

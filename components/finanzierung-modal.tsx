@@ -43,7 +43,7 @@ export function FinanzierungModal({ open, onClose, title = "Baufinanzierung", su
     } catch {
       const subject = encodeURIComponent("Finanzierungsanfrage über abels-immobilien.de")
       const body = encodeURIComponent(`Name: ${form.name}\nE-Mail: ${form.email}\nTelefon: ${form.phone || "–"}\n\nNachricht:\n${form.message || "–"}`)
-      window.location.href = `mailto:info@ebla-immobilien.com?subject=${subject}&body=${body}`
+      window.location.href = `mailto:info@abels-immobilien.com?subject=${subject}&body=${body}`
     }
     setSent(true)
   }

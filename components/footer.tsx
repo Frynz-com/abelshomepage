@@ -120,8 +120,8 @@ export function Footer() {
                   <a href="tel:+492115591751" className="text-[14px] text-graphite hover:text-ink transition-colors">
                     +49 211 5591751
                   </a>
-                  <a href="mailto:info@ebla-immobilien.com" className="text-[14px] text-graphite hover:text-ink transition-colors">
-                    info@ebla-immobilien.com
+                  <a href="mailto:info@abels-immobilien.com" className="text-[14px] text-graphite hover:text-ink transition-colors">
+                    info@abels-immobilien.com
                   </a>
                 </div>
               </address>

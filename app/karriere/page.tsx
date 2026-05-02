@@ -116,7 +116,7 @@ export default function KarrierePage() {
                         <p className="text-graphite text-[14px] leading-relaxed max-w-[560px]">{pos.description}</p>
                       </div>
                       <a
-                        href={`mailto:info@ebla-immobilien.com?subject=${encodeURIComponent("Bewerbung: " + pos.title)}`}
+                        href={`mailto:info@abels-immobilien.com?subject=${encodeURIComponent("Bewerbung: " + pos.title)}`}
                         className="shrink-0 inline-flex items-center gap-2 bg-ink text-cream px-7 py-3.5 text-[10px] uppercase tracking-[0.16em] hover:bg-graphite transition-colors self-start"
                       >
                         Bewerben
@@ -141,7 +141,7 @@ export default function KarrierePage() {
               Wir sind immer auf der Suche nach außergewöhnlichen Menschen. Schicken Sie uns Ihre Initiativbewerbung — wir melden uns persönlich.
             </p>
             <a
-              href="mailto:info@ebla-immobilien.com?subject=Initiativbewerbung"
+              href="mailto:info@abels-immobilien.com?subject=Initiativbewerbung"
               className="inline-flex items-center gap-2.5 bg-ink text-cream px-10 py-4 text-[11px] uppercase tracking-[0.16em] hover:bg-graphite transition-colors"
             >
               Initiativbewerbung senden

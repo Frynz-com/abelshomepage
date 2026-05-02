@@ -149,7 +149,7 @@ export default async function ObjectDetailPage({ params }: { params: Promise<{ i
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground mb-1">Email</p>
-                  <p className="font-semibold text-foreground">info@ebla-immobilien.com</p>
+                  <p className="font-semibold text-foreground">info@abels-immobilien.com</p>
                 </div>
               </div>
             </div>
