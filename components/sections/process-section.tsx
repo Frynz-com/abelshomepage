@@ -83,7 +83,7 @@ export function ProcessSection() {
             >
               <div className="flex gap-8 items-start">
                 {/* Number */}
-                <span className="font-serif text-[48px] lg:text-[56px] text-gold/18 leading-none tracking-[-0.02em] shrink-0 mt-[-4px]">
+                <span className="font-serif text-[48px] lg:text-[56px] text-gold/55 leading-none tracking-[-0.02em] font-bold shrink-0 mt-[-4px]">
                   {step.number}
                 </span>
                 {/* Content */}

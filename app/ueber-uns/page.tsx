@@ -428,7 +428,7 @@ export default function UeberUnsPage() {
                 viewport={{ once: true }}
                 className="grid lg:grid-cols-12 gap-8 py-10 border-b border-line/50 group hover:bg-bone/50 transition-colors duration-300 px-4 -mx-4"
               >
-                <span className="text-[11px] uppercase tracking-[0.2em] text-gold/70 lg:col-span-1 pt-1">{v.number}</span>
+                <span className="font-serif text-[42px] lg:text-[52px] text-gold font-bold leading-none lg:col-span-1 shrink-0">{v.number}</span>
                 <h3 className="font-serif text-[22px] lg:text-[26px] text-ink lg:col-span-3 group-hover:text-gold transition-colors duration-300 leading-tight">
                   {v.title}
                 </h3>
