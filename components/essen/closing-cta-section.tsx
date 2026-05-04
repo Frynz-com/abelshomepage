@@ -52,23 +52,23 @@ export function EssenClosingCtaSection() {
               <h3 className="font-serif text-2xl text-ink mb-8">Direkter Kontakt</h3>
 
               <div className="space-y-6">
-                <a href="tel:+492015551234" className="flex items-center gap-4 group">
+                <a href="tel:+492115591751" className="flex items-center gap-4 group">
                   <div className="w-12 h-12 border border-line/40 flex items-center justify-center group-hover:border-gold transition-colors">
                     <Phone className="w-5 h-5 text-gold" />
                   </div>
                   <div>
                     <span className="block text-xs text-graphite uppercase tracking-[0.1em] mb-1">Telefon</span>
-                    <span className="block text-ink font-medium group-hover:text-gold transition-colors">+49 201 555 1234</span>
+                    <span className="block text-ink font-medium group-hover:text-gold transition-colors">+49 211 5591751</span>
                   </div>
                 </a>
 
-                <a href="mailto:essen@abels-immobilien.de" className="flex items-center gap-4 group">
+                <a href="mailto:info@abels-immobilien.com" className="flex items-center gap-4 group">
                   <div className="w-12 h-12 border border-line/40 flex items-center justify-center group-hover:border-gold transition-colors">
                     <Mail className="w-5 h-5 text-gold" />
                   </div>
                   <div>
                     <span className="block text-xs text-graphite uppercase tracking-[0.1em] mb-1">E-Mail</span>
-                    <span className="block text-ink font-medium group-hover:text-gold transition-colors">essen@abels-immobilien.de</span>
+                    <span className="block text-ink font-medium group-hover:text-gold transition-colors">info@abels-immobilien.com</span>
                   </div>
                 </a>
 

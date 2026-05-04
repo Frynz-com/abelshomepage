@@ -1,5 +1,16 @@
 import { Metadata } from 'next'
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: 'Was kostet ein Immobilienmakler in München?', acceptedAnswer: { '@type': 'Answer', text: 'Die Maklerprovision in München beträgt üblicherweise 3,57 % inkl. MwSt., geteilt zwischen Käufer und Verkäufer. Bei Abels Immobilien zahlen Sie nur im Erfolgsfall.' } },
+    { '@type': 'Question', name: 'Wie hoch sind die Immobilienpreise in München?', acceptedAnswer: { '@type': 'Answer', text: 'In Toplagen wie Bogenhausen oder Lehel liegen Quadratmeterpreise bei 12.000–18.000 EUR. Schwabing und Harlaching bewegen sich zwischen 9.000 und 13.000 EUR/m².' } },
+    { '@type': 'Question', name: 'Kann ich meine Münchner Immobilie diskret verkaufen?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Abels Immobilien bietet Off-Market-Verkäufe ohne öffentliche Vermarktung. Über 70 % unserer Münchner Transaktionen erfolgen diskret über unser Netzwerk.' } },
+    { '@type': 'Question', name: 'Wie lange dauert ein Immobilienverkauf in München?', acceptedAnswer: { '@type': 'Answer', text: 'In gefragten Lagen Münchens vermitteln wir marktgerecht eingepreiste Immobilien oft in 4–8 Wochen, dank unseres vorgemerkten Käuferpools.' } },
+  ],
+}
+
 const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'RealEstateAgent',
@@ -33,6 +44,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {children}
     </>
   )

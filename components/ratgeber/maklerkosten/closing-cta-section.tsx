@@ -61,10 +61,10 @@ export function MaklerkostenClosingCtaSection() {
                     Telefon
                   </span>
                   <a 
-                    href="tel:+4921154068430"
+                    href="tel:+492115591751"
                     className="text-ink text-lg hover:text-gold transition-colors"
                   >
-                    +49 211 54 06 84 30
+                    +49 211 5591751
                   </a>
                 </div>
                 

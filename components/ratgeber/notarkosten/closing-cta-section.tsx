@@ -56,8 +56,8 @@ export function NotarkostenClosingCtaSection() {
             <div className="space-y-6">
               <div>
                 <span className="text-graphite text-sm block mb-1">Telefon</span>
-                <a href="tel:+4921154068030" className="text-xl text-ink hover:text-gold transition-colors">
-                  +49 211 540 680 30
+                <a href="tel:+492115591751" className="text-xl text-ink hover:text-gold transition-colors">
+                  +49 211 5591751
                 </a>
               </div>
 

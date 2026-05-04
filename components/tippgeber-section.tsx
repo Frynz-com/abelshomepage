@@ -65,7 +65,7 @@ export function TippgeberSection() {
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a 
-                href="tel:+4912345678900" 
+                href="tel:+492115591751" 
                 className="inline-flex items-center justify-center gap-2 border border-foreground/20 text-foreground px-6 py-3 text-sm tracking-wide hover:bg-foreground/5 transition-colors"
               >
                 Mehr erfahren

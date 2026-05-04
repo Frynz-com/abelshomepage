@@ -88,10 +88,10 @@ export default function RechnerPage() {
               Kostenlose Bewertung anfordern
             </a>
             <a
-              href="tel:+4921112345678"
+              href="tel:+492115591751"
               className="inline-block border border-line text-graphite px-8 py-4 text-xs uppercase tracking-[0.15em] hover:bg-cream transition-colors"
             >
-              0211 123 456 78
+              +49 211 5591751
             </a>
           </div>
         </div>

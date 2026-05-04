@@ -62,8 +62,8 @@ export function ContactSection() {
               </div>
               <div>
                 <p className="text-xs tracking-widest uppercase text-foreground/40 mb-1">Telefon</p>
-                <a href="tel:+4912345678900" className="text-foreground hover:text-foreground/70 transition-colors">
-                  +49 123 456 789 00
+                <a href="tel:+492115591751" className="text-foreground hover:text-foreground/70 transition-colors">
+                  +49 211 5591751
                 </a>
               </div>
             </div>

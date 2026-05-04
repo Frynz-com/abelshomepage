@@ -1,5 +1,15 @@
 import { Metadata } from 'next'
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: 'Was kostet ein Immobilienmakler in Essen?', acceptedAnswer: { '@type': 'Answer', text: 'Die Maklerprovision in Essen beträgt üblicherweise 3,57 % inkl. MwSt. Bei Abels Immobilien entstehen Ihnen Kosten ausschließlich im Erfolgsfall.' } },
+    { '@type': 'Question', name: 'Wie hoch sind die Immobilienpreise in Essen-Bredeney?', acceptedAnswer: { '@type': 'Answer', text: 'In Bredeney und am Baldeneysee liegen Quadratmeterpreise für Villen und gehobene Einfamilienhäuser bei 3.500–6.500 EUR. Kettwig und Heisingen bieten attraktive Lagen mit stabilem Preisniveau.' } },
+    { '@type': 'Question', name: 'Welche Immobilien vermittelt Abels in Essen?', acceptedAnswer: { '@type': 'Answer', text: 'Abels Immobilien ist auf hochwertige Wohnimmobilien in Bredeney, Kettwig und am Baldeneysee spezialisiert — Villen, Einfamilienhäuser, Eigentumswohnungen und Mehrfamilienhäuser.' } },
+  ],
+}
+
 const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'RealEstateAgent',
@@ -33,6 +43,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {children}
     </>
   )

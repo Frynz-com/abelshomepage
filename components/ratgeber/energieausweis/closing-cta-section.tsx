@@ -73,8 +73,8 @@ export function ClosingCtaSection() {
             <div className="space-y-6">
               <div>
                 <p className="text-graphite text-sm mb-1">Telefon</p>
-                <a href="tel:+4921112345678" className="text-lg text-ink hover:text-gold transition-colors">
-                  +49 211 123 456 78
+                <a href="tel:+492115591751" className="text-lg text-ink hover:text-gold transition-colors">
+                  +49 211 5591751
                 </a>
               </div>
 

@@ -1,5 +1,15 @@
 import { Metadata } from 'next'
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: 'Was kostet ein Immobilienmakler in Frankfurt?', acceptedAnswer: { '@type': 'Answer', text: 'Die Maklerprovision in Frankfurt beträgt üblicherweise 3,57 % inkl. MwSt. Abels Immobilien teilt die Provision nach dem seit 2020 geltenden Gesetz fair zwischen Käufer und Verkäufer auf.' } },
+    { '@type': 'Question', name: 'Wie hoch sind Immobilienpreise im Frankfurter Westend?', acceptedAnswer: { '@type': 'Answer', text: 'Im Westend und Sachsenhausen liegen Quadratmeterpreise für Eigentumswohnungen bei 7.500–11.000 EUR. Penthäuser und Villen erzielen im Diplomatenviertel deutlich höhere Preise.' } },
+    { '@type': 'Question', name: 'Kann ich meine Frankfurter Immobilie Off-Market verkaufen?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Abels Immobilien hat ein etabliertes Netzwerk aus Kapitalanlegern, Family Offices und Privatinteressenten für diskrete Transaktionen in Frankfurt.' } },
+  ],
+}
+
 const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'RealEstateAgent',
@@ -33,6 +43,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {children}
     </>
   )
