@@ -59,7 +59,7 @@ const organizationSchema = {
   logo: 'https://abels-immobilien.de/images/logo.png',
   description: 'Inhabergeführter Premium-Immobilienmakler für den Verkauf hochwertiger Wohnimmobilien. Seit 1999. 7 Standorte.',
   foundingDate: '1999',
-  telephone: '+49-211-5597510',
+  telephone: '+49-211-5591751',
   email: 'info@abels-immobilien.com',
   address: {
     '@type': 'PostalAddress',
@@ -70,7 +70,21 @@ const organizationSchema = {
   },
   areaServed: ['Düsseldorf', 'München', 'Grünwald', 'Hamburg', 'Frankfurt', 'Essen', 'Stuttgart'],
   priceRange: '€€€€',
-  sameAs: ['https://abels-immobilien.de'],
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.9',
+    reviewCount: '17',
+    bestRating: '5',
+    worstRating: '1',
+  },
+  sameAs: [
+    'https://abels-immobilien.de',
+    'https://www.linkedin.com/company/abels-immobilien',
+    'https://www.instagram.com/abelsimmobiliengmbhduesseldorf',
+    'https://www.provenexpert.com/de-de/abels-immobilien-gmbh/',
+    'https://www.jacasa.de/immobilienmakler/abels-immobilien-duesseldorf',
+    'https://www.immobilienscout24.de/anbieter/profil/abels-immobilien-gmbh-komfort-und-luxusobjekte',
+  ],
 }
 
 export default function RootLayout({

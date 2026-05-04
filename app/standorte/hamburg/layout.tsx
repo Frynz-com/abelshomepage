@@ -7,7 +7,7 @@ const localBusinessSchema = {
   url: 'https://abels-immobilien.de/standorte/hamburg',
   description: 'Premium-Immobilienmakler in Hamburg. Spezialisiert auf Harvestehude, Blankenese, HafenCity und alle A-Lagen der Hansestadt.',
   areaServed: { '@type': 'City', name: 'Hamburg' },
-  telephone: '+49-211-5597510',
+  telephone: '+49-211-5591751',
   parentOrganization: { '@type': 'Organization', name: 'Abels Immobilien GmbH' },
 }
 

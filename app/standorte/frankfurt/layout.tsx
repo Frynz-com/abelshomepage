@@ -7,7 +7,7 @@ const localBusinessSchema = {
   url: 'https://abels-immobilien.de/standorte/frankfurt',
   description: 'Premium-Immobilienmakler in Frankfurt am Main. Spezialisiert auf Westend, Sachsenhausen und Sachsenhausen Nord.',
   areaServed: { '@type': 'City', name: 'Frankfurt am Main' },
-  telephone: '+49-211-5597510',
+  telephone: '+49-211-5591751',
   parentOrganization: { '@type': 'Organization', name: 'Abels Immobilien GmbH' },
 }
 

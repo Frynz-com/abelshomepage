@@ -7,7 +7,7 @@ const localBusinessSchema = {
   url: 'https://abels-immobilien.de/standorte/gruenwald',
   description: 'Premium-Immobilienmakler in Grünwald bei München. 90% Off-Market. Villen und Luxusimmobilien in Deutschlands reichster Gemeinde.',
   areaServed: { '@type': 'City', name: 'Grünwald' },
-  telephone: '+49-211-5597510',
+  telephone: '+49-211-5591751',
   parentOrganization: { '@type': 'Organization', name: 'Abels Immobilien GmbH' },
 }
 

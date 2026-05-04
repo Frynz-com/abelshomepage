@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Kontakt | Abels Immobilien | 7 Standorte deutschlandweit',
-  description: 'Kontaktieren Sie Abels Immobilien. Persönliche Beratung in Düsseldorf, München, Hamburg, Frankfurt, Stuttgart, Essen und Grünwald. Tel: +49 211 5597510.',
+  description: 'Kontaktieren Sie Abels Immobilien. Persönliche Beratung in Düsseldorf, München, Hamburg, Frankfurt, Stuttgart, Essen und Grünwald. Tel: +49 211 5591751.',
   keywords: [
     'Kontakt Abels Immobilien', 'Immobilienmakler kontaktieren', 'Beratung Immobilien',
     'Telefon Immobilienmakler', 'Standorte Abels', 'Immobilien Erstgespräch'

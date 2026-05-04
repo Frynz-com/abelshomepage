@@ -7,7 +7,7 @@ const localBusinessSchema = {
   url: 'https://abels-immobilien.de/standorte/stuttgart',
   description: 'Premium-Immobilienmakler in Stuttgart. Diskrete Vermittlung hochwertiger Wohnimmobilien in Stuttgart und der Region.',
   areaServed: { '@type': 'City', name: 'Stuttgart' },
-  telephone: '+49-211-5597510',
+  telephone: '+49-211-5591751',
   parentOrganization: { '@type': 'Organization', name: 'Abels Immobilien GmbH' },
 }
 

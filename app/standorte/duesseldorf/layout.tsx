@@ -14,7 +14,7 @@ const localBusinessSchema = {
     postalCode: '40547',
     addressCountry: 'DE',
   },
-  telephone: '+49-211-5597510',
+  telephone: '+49-211-5591751',
   parentOrganization: { '@type': 'Organization', name: 'Abels Immobilien GmbH' },
 }
 

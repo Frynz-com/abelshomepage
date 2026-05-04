@@ -7,7 +7,7 @@ const localBusinessSchema = {
   url: 'https://abels-immobilien.de/standorte/essen',
   description: 'Premium-Immobilienmakler in Essen. Diskrete Vermittlung hochwertiger Wohnimmobilien im Ruhrgebiet.',
   areaServed: { '@type': 'City', name: 'Essen' },
-  telephone: '+49-211-5597510',
+  telephone: '+49-211-5591751',
   parentOrganization: { '@type': 'Organization', name: 'Abels Immobilien GmbH' },
 }
 
