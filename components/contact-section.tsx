@@ -17,11 +17,25 @@ export function ContactSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    await new Promise(resolve => setTimeout(resolve, 1000))
-    setIsSubmitting(false)
-    setIsSubmitted(true)
-    setFormData({ name: "", email: "", phone: "", subject: "", message: "" })
-    setTimeout(() => setIsSubmitted(false), 5000)
+    try {
+      const body = new URLSearchParams({
+        "form-name": "kontakt-allgemein",
+        ...formData,
+      })
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: body.toString(),
+      })
+      setIsSubmitted(true)
+      setFormData({ name: "", email: "", phone: "", subject: "", message: "" })
+      setTimeout(() => setIsSubmitted(false), 5000)
+    } catch {
+      // fallback: open mail client
+      window.location.href = `mailto:info@abels-immobilien.com?subject=${encodeURIComponent(formData.subject || "Kontaktanfrage")}&body=${encodeURIComponent(formData.message)}`
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -108,7 +122,15 @@ export function ContactSection() {
               </div>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form
+              name="kontakt-allgemein"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              onSubmit={handleSubmit}
+              className="space-y-6"
+            >
+              <input type="hidden" name="form-name" value="kontakt-allgemein" />
+              <input type="hidden" name="bot-field" />
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-xs tracking-widest uppercase text-foreground/40 mb-3">
