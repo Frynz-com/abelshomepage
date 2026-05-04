@@ -114,7 +114,7 @@ export function FinanzierungModal({ open, onClose, title = "Baufinanzierung", su
                         required
                         value={form.name}
                         onChange={e => setForm(f => ({ ...f, name: e.target.value }))}
-                        className="w-full border border-line/60 bg-bone/30 px-4 py-3 text-[14px] text-ink placeholder:text-stone/40 focus:outline-none focus:border-gold/50 transition-colors"
+                        className="w-full border border-line/60 bg-bone/30 px-4 py-3 text-[14px] text-ink placeholder:text-stone/65 focus:outline-none focus:border-gold/50 transition-colors"
                         placeholder="Ihr Name"
                       />
                     </div>
@@ -125,7 +125,7 @@ export function FinanzierungModal({ open, onClose, title = "Baufinanzierung", su
                         required
                         value={form.email}
                         onChange={e => setForm(f => ({ ...f, email: e.target.value }))}
-                        className="w-full border border-line/60 bg-bone/30 px-4 py-3 text-[14px] text-ink placeholder:text-stone/40 focus:outline-none focus:border-gold/50 transition-colors"
+                        className="w-full border border-line/60 bg-bone/30 px-4 py-3 text-[14px] text-ink placeholder:text-stone/65 focus:outline-none focus:border-gold/50 transition-colors"
                         placeholder="ihre@email.de"
                       />
                     </div>
@@ -137,7 +137,7 @@ export function FinanzierungModal({ open, onClose, title = "Baufinanzierung", su
                       type="tel"
                       value={form.phone}
                       onChange={e => setForm(f => ({ ...f, phone: e.target.value }))}
-                      className="w-full border border-line/60 bg-bone/30 px-4 py-3 text-[14px] text-ink placeholder:text-stone/40 focus:outline-none focus:border-gold/50 transition-colors"
+                      className="w-full border border-line/60 bg-bone/30 px-4 py-3 text-[14px] text-ink placeholder:text-stone/65 focus:outline-none focus:border-gold/50 transition-colors"
                       placeholder="+49 211 …"
                     />
                   </div>
@@ -148,7 +148,7 @@ export function FinanzierungModal({ open, onClose, title = "Baufinanzierung", su
                       rows={4}
                       value={form.message}
                       onChange={e => setForm(f => ({ ...f, message: e.target.value }))}
-                      className="w-full border border-line/60 bg-bone/30 px-4 py-3 text-[14px] text-ink placeholder:text-stone/40 focus:outline-none focus:border-gold/50 transition-colors resize-none"
+                      className="w-full border border-line/60 bg-bone/30 px-4 py-3 text-[14px] text-ink placeholder:text-stone/65 focus:outline-none focus:border-gold/50 transition-colors resize-none"
                       placeholder="Kaufpreis, Eigenkapital, gewünschter Standort …"
                     />
                   </div>
@@ -177,7 +177,7 @@ export function FinanzierungModal({ open, onClose, title = "Baufinanzierung", su
                     <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
                   </button>
 
-                  <p className="text-[11px] text-stone/50 text-center">
+                  <p className="text-[12px] text-stone/70 text-center">
                     Kostenlos · Unverbindlich · Persönliche Beratung
                   </p>
                 </form>

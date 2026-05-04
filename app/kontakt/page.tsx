@@ -234,7 +234,7 @@ export default function KontaktPage() {
                       value={form.name}
                       onChange={handleChange}
                       placeholder="Vor- und Nachname"
-                      className="w-full bg-transparent text-[15px] text-ink placeholder:text-stone/50 outline-none"
+                      className="w-full bg-transparent text-[15px] text-ink placeholder:text-stone/65 outline-none"
                     />
                   </div>
 
@@ -250,14 +250,14 @@ export default function KontaktPage() {
                       value={form.email}
                       onChange={handleChange}
                       placeholder="ihre@email.de"
-                      className="w-full bg-transparent text-[15px] text-ink placeholder:text-stone/50 outline-none"
+                      className="w-full bg-transparent text-[15px] text-ink placeholder:text-stone/65 outline-none"
                     />
                   </div>
 
                   {/* Phone */}
                   <div className="border-b border-r-0 sm:border-r border-line p-6 focus-within:bg-bone/40 transition-colors">
                     <label className="block text-[10px] uppercase tracking-[0.2em] text-stone mb-2">
-                      Telefon <span className="text-stone/40">(optional)</span>
+                      Telefon <span className="text-stone/65">(optional)</span>
                     </label>
                     <input
                       type="tel"
@@ -265,7 +265,7 @@ export default function KontaktPage() {
                       value={form.phone}
                       onChange={handleChange}
                       placeholder="+49 211 …"
-                      className="w-full bg-transparent text-[15px] text-ink placeholder:text-stone/50 outline-none"
+                      className="w-full bg-transparent text-[15px] text-ink placeholder:text-stone/65 outline-none"
                     />
                   </div>
 
@@ -301,7 +301,7 @@ export default function KontaktPage() {
                     onChange={handleChange}
                     rows={6}
                     placeholder="Beschreiben Sie Ihr Anliegen …"
-                    className="w-full bg-transparent text-[15px] text-ink placeholder:text-stone/50 outline-none resize-none leading-relaxed"
+                    className="w-full bg-transparent text-[15px] text-ink placeholder:text-stone/65 outline-none resize-none leading-relaxed"
                   />
                 </div>
 

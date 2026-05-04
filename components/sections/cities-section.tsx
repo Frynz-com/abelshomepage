@@ -94,7 +94,7 @@ function CityCard({
             {city.name}
           </h3>
           <div className="flex items-center gap-2 text-white/70 group-hover:text-white transition-colors duration-300">
-            <span className="text-[9.5px] uppercase tracking-[0.22em]">Standort ansehen</span>
+            <span className="text-[11px] uppercase tracking-[0.2em]">Standort ansehen</span>
             <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
           </div>
         </div>

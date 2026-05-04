@@ -82,7 +82,7 @@ export function FinalCtaSection() {
             viewport={{ once: true }}
             className="lg:col-span-5 lg:col-start-8 py-16 lg:py-24 lg:pl-16"
           >
-            <p className="text-[9.5px] uppercase tracking-[0.28em] text-stone mb-10">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-stone mb-10">
               Direkter Kontakt
             </p>
 
@@ -92,7 +92,7 @@ export function FinalCtaSection() {
                   <Phone className="w-4 h-4 text-gold/70 group-hover:text-gold transition-colors" />
                 </div>
                 <div>
-                  <span className="block text-[9.5px] uppercase tracking-[0.22em] text-stone mb-1">Telefon</span>
+                  <span className="block text-[11px] uppercase tracking-[0.22em] text-stone mb-1">Telefon</span>
                   <span className="block text-[15px] text-graphite group-hover:text-ink transition-colors">
                     +49 211 5591751
                   </span>
@@ -104,7 +104,7 @@ export function FinalCtaSection() {
                   <Mail className="w-4 h-4 text-gold/70 group-hover:text-gold transition-colors" />
                 </div>
                 <div>
-                  <span className="block text-[9.5px] uppercase tracking-[0.22em] text-stone mb-1">E-Mail</span>
+                  <span className="block text-[11px] uppercase tracking-[0.22em] text-stone mb-1">E-Mail</span>
                   <span className="block text-[15px] text-graphite group-hover:text-ink transition-colors">
                     info@abels-immobilien.com
                   </span>
@@ -116,7 +116,7 @@ export function FinalCtaSection() {
                   <MapPin className="w-4 h-4 text-gold/70" />
                 </div>
                 <div>
-                  <span className="block text-[9.5px] uppercase tracking-[0.22em] text-stone mb-1">Hauptsitz</span>
+                  <span className="block text-[11px] uppercase tracking-[0.22em] text-stone mb-1">Hauptsitz</span>
                   <span className="block text-[15px] text-graphite">
                     Alt Niederkassel 124, 40547 Düsseldorf
                   </span>
@@ -128,7 +128,7 @@ export function FinalCtaSection() {
                   <Clock className="w-4 h-4 text-gold/70" />
                 </div>
                 <div>
-                  <span className="block text-[9.5px] uppercase tracking-[0.22em] text-stone mb-1">Erreichbarkeit</span>
+                  <span className="block text-[11px] uppercase tracking-[0.22em] text-stone mb-1">Erreichbarkeit</span>
                   <span className="block text-[15px] text-graphite">Mo – Fr &nbsp;9:00 – 18:00 Uhr</span>
                   <span className="block text-[13px] text-stone mt-0.5">Sa nach Vereinbarung</span>
                 </div>

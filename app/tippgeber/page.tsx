@@ -147,7 +147,7 @@ export default function TippgeberPage() {
                 viewport={{ once: true }}
                 className="grid lg:grid-cols-12 gap-8 py-10 border-b border-line/50 group hover:bg-bone/50 transition-colors duration-300 px-4 -mx-4"
               >
-                <span className="text-[11px] uppercase tracking-[0.2em] text-gold/70 lg:col-span-1 pt-1">{step.number}</span>
+                <span className="font-serif text-[42px] lg:text-[52px] text-gold font-bold leading-none lg:col-span-1 shrink-0">{step.number}</span>
                 <h3 className="font-serif text-[22px] lg:text-[24px] text-ink lg:col-span-3 group-hover:text-gold transition-colors duration-300 leading-tight">
                   {step.title}
                 </h3>
@@ -215,7 +215,7 @@ export default function TippgeberPage() {
                         placeholder={field.placeholder}
                         value={form[field.id as keyof typeof form]}
                         onChange={e => setForm(f => ({ ...f, [field.id]: e.target.value }))}
-                        className="w-full bg-transparent text-[15px] text-ink placeholder:text-stone/50 focus:outline-none"
+                        className="w-full bg-transparent text-[15px] text-ink placeholder:text-stone/65 focus:outline-none"
                         required
                       />
                     </div>
@@ -229,7 +229,7 @@ export default function TippgeberPage() {
                       placeholder="Lage, Objekttyp, bekannte Details …"
                       value={form.details}
                       onChange={e => setForm(f => ({ ...f, details: e.target.value }))}
-                      className="w-full bg-transparent text-[15px] text-ink placeholder:text-stone/50 focus:outline-none resize-none"
+                      className="w-full bg-transparent text-[15px] text-ink placeholder:text-stone/65 focus:outline-none resize-none"
                     />
                   </div>
                   <div className="pt-8">

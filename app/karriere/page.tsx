@@ -104,7 +104,7 @@ export default function KarrierePage() {
                     <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
                       <div className="flex-1">
                         <div className="flex flex-wrap items-center gap-3 mb-3">
-                          <span className="text-[9px] uppercase tracking-[0.22em] text-stone bg-bone border border-line px-2.5 py-1">
+                          <span className="text-[11px] uppercase tracking-[0.18em] text-stone bg-bone border border-line px-2.5 py-1">
                             {pos.type}
                           </span>
                           <span className="flex items-center gap-1 text-[11px] text-stone">

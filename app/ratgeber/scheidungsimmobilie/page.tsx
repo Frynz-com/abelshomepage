@@ -124,7 +124,7 @@ export default function ScheidungsimmobiliePage() {
               <span className="text-[10px] uppercase tracking-[0.2em] text-gold border border-gold/40 px-3 py-1.5">
                 Scheidung & Trennung
               </span>
-              <span className="text-[10px] uppercase tracking-[0.15em] text-graphite/40">
+              <span className="text-[10px] uppercase tracking-[0.15em] text-graphite/70">
                 12 Min. Lesezeit
               </span>
             </div>
@@ -155,7 +155,7 @@ export default function ScheidungsimmobiliePage() {
                 variants={fadeUp}
                 className="border border-line/60 p-6 lg:p-8 mb-14"
               >
-                <p className="text-[10px] uppercase tracking-[0.2em] text-graphite/40 mb-5">Inhalt</p>
+                <p className="text-[10px] uppercase tracking-[0.2em] text-graphite/70 mb-5">Inhalt</p>
                 <div className="grid sm:grid-cols-3 gap-x-8 gap-y-3">
                   {[
                     ["01", "Die vier Optionen"],
@@ -233,7 +233,7 @@ export default function ScheidungsimmobiliePage() {
                           <span className="font-serif text-2xl text-gold/40">{opt.icon}</span>
                           <h3 className="font-serif text-lg text-ink">{opt.title}</h3>
                         </div>
-                        <span className={`text-[9px] uppercase tracking-[0.15em] px-2 py-1 shrink-0 ${opt.warning ? "bg-red-100 text-red-600" : "bg-gold/10 text-gold"}`}>
+                        <span className={`text-[11px] uppercase tracking-[0.15em] px-2 py-1 shrink-0 ${opt.warning ? "bg-red-100 text-red-600" : "bg-gold/10 text-gold"}`}>
                           {opt.tag}
                         </span>
                       </div>
@@ -335,7 +335,7 @@ export default function ScheidungsimmobiliePage() {
                 </p>
 
                 <div className="bg-bone/50 border border-line/60 p-6 lg:p-8 mb-8">
-                  <p className="text-[10px] uppercase tracking-[0.2em] text-graphite/40 mb-5">Berechnungsbeispiel</p>
+                  <p className="text-[10px] uppercase tracking-[0.2em] text-graphite/70 mb-5">Berechnungsbeispiel</p>
                   <div className="grid sm:grid-cols-2 gap-6 text-sm">
                     <div>
                       <p className="font-serif text-base text-ink mb-3">Bei Eheschließung</p>
@@ -376,7 +376,7 @@ export default function ScheidungsimmobiliePage() {
                       </table>
                     </div>
                   </div>
-                  <p className="text-[11px] text-graphite/40 mt-4">
+                  <p className="text-[11px] text-graphite/70 mt-4">
                     Im Beispiel zahlt der übernehmende Partner zusätzlich zu seinem Hälfteanteil (260.000 €) noch 70.000 € Zugewinnausgleich.
                   </p>
                 </div>
@@ -457,7 +457,7 @@ export default function ScheidungsimmobiliePage() {
                     },
                   ].map((s) => (
                     <div key={s.title} className="border border-line/60 p-5">
-                      <span className="text-[9px] uppercase tracking-[0.2em] text-gold/60">{s.scenario}</span>
+                      <span className="text-[11px] uppercase tracking-[0.2em] text-gold/60">{s.scenario}</span>
                       <h3 className="font-serif text-base text-ink mt-1 mb-4">{s.title}</h3>
                       <ol className="space-y-2">
                         {s.steps.map((step, i) => (
@@ -670,7 +670,7 @@ export default function ScheidungsimmobiliePage() {
                 variants={fadeUp}
                 className="border border-line/60 p-6"
               >
-                <p className="text-[10px] uppercase tracking-[0.2em] text-graphite/40 mb-5">
+                <p className="text-[10px] uppercase tracking-[0.2em] text-graphite/70 mb-5">
                   Ihre erste Checkliste
                 </p>
                 <ul className="space-y-3">
@@ -701,7 +701,7 @@ export default function ScheidungsimmobiliePage() {
                 variants={fadeUp}
                 className="border border-line/60 p-6"
               >
-                <p className="text-[10px] uppercase tracking-[0.2em] text-graphite/40 mb-5">
+                <p className="text-[10px] uppercase tracking-[0.2em] text-graphite/70 mb-5">
                   Weitere Ratgeber
                 </p>
                 <div className="space-y-3">

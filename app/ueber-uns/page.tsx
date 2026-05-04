@@ -629,7 +629,7 @@ export default function UeberUnsPage() {
               ].map((cat) => (
                 <div key={cat.label} className="flex flex-col items-center gap-3 select-none">
                   {cat.icon}
-                  <span className="text-[9px] uppercase tracking-[0.22em] text-stone">{cat.label}</span>
+                  <span className="text-[11px] uppercase tracking-[0.18em] text-stone">{cat.label}</span>
                 </div>
               ))}
             </div>
@@ -823,7 +823,7 @@ export default function UeberUnsPage() {
                 <div className="border-t border-line/50 pt-6">
                   <span className="block text-[13px] text-ink font-medium mb-0.5">{t.author}</span>
                   <span className="block text-[11px] text-stone uppercase tracking-[0.14em]">{t.location}</span>
-                  <span className="block text-[11px] text-gold/60 uppercase tracking-[0.12em] mt-1">{t.type}</span>
+                  <span className="block text-[12px] text-gold/80 uppercase tracking-[0.12em] mt-1">{t.type}</span>
                 </div>
               </motion.div>
             ))}

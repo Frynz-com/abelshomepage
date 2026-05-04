@@ -134,7 +134,7 @@ export function MarketSection() {
                     }`}>
                       {market.name}
                     </span>
-                    <span className="block text-[9.5px] uppercase tracking-[0.2em] text-stone/60 mt-0.5">
+                    <span className="block text-[11px] uppercase tracking-[0.2em] text-stone/80 mt-0.5">
                       {market.city}
                     </span>
                   </div>
@@ -157,7 +157,7 @@ export function MarketSection() {
               transition={{ duration: 0.38, ease: [0.22, 1, 0.36, 1] }}
               className="w-full"
             >
-              <span className="block text-[9.5px] uppercase tracking-[0.3em] text-gold mb-5">
+              <span className="block text-[11px] uppercase tracking-[0.28em] text-gold mb-5">
                 {active.city}
               </span>
               <h3 className="font-serif text-[44px] lg:text-[56px] text-ink leading-none tracking-[-0.025em] mb-7">
@@ -171,7 +171,7 @@ export function MarketSection() {
 
               <div className="space-y-7 mb-12">
                 <div>
-                  <span className="block text-[9px] uppercase tracking-[0.28em] text-stone mb-2.5">
+                  <span className="block text-[11px] uppercase tracking-[0.28em] text-stone mb-2.5">
                     Lagen &amp; Adressen
                   </span>
                   <span className="block text-[14px] text-graphite leading-relaxed">
@@ -179,7 +179,7 @@ export function MarketSection() {
                   </span>
                 </div>
                 <div>
-                  <span className="block text-[9px] uppercase tracking-[0.28em] text-stone mb-2.5">
+                  <span className="block text-[11px] uppercase tracking-[0.28em] text-stone mb-2.5">
                     Marktcharakter
                   </span>
                   <span className="block text-[14px] text-graphite">
