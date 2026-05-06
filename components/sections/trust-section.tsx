@@ -5,9 +5,9 @@ import { motion, useInView } from "framer-motion"
 
 const stats = [
   { target: 3736, suffix: "", label: "Zufriedene Eigentümer", detail: "Persönlich begleitet" },
-  { target: 8472, suffix: "", label: "Interessenten suchen", detail: "Eigentumswohnungen · 300k – 1 Mio. €" },
-  { target: 3882, suffix: "", label: "Interessenten suchen", detail: "Villen & Häuser · 800k – 15 Mio. €" },
-  { target: 4760, suffix: "", label: "Interessenten suchen", detail: "Mehrfamilienhaus / Renditeobjekt · 650k – 25 Mio. €" },
+  { target: 3697, suffix: "", label: "Interessenten suchen", detail: "Eigentumswohnungen · 300k – 1 Mio. €" },
+  { target: 5882, suffix: "", label: "Interessenten suchen", detail: "Villen & Häuser · 800k – 15 Mio. €" },
+  { target: 4250, suffix: "", label: "Interessenten suchen", detail: "Mehrfamilienhaus / Renditeobjekt · 650k – 25 Mio. €" },
   { target: 100, suffix: "%", label: "Erfolgsbasiert", detail: "Keine Vorauszahlung" },
 ]
 

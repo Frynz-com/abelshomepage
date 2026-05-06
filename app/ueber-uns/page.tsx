@@ -534,7 +534,7 @@ export default function UeberUnsPage() {
                   <p className="text-[11px] uppercase tracking-[0.2em] text-stone">Inhaber & Gründer</p>
                 </div>
                 <p className="mt-4 text-[14px] text-graphite leading-[1.75]">
-                  Seit 1999 führt Peter Abels das Unternehmen inhabergeführt und persönlich. Mit über 25 Jahren Markterfahrung begleitet er anspruchsvolle Verkaufsmandate von der Bewertung bis zur Beurkundung.
+                  Peter Abels führt das Unternehmen mit persönlichem Engagement und echter Leidenschaft. Seit über 38 Jahren bringt er nicht nur fundierte Markterfahrung mit, sondern begleitet seine Kunden auch mit viel Einfühlungsvermögen und Vertrauen. Besonders im Bereich von Investitionen und Anlageimmobilien steht er ihnen als verlässlicher Partner zur Seite – mit dem Ziel, für jede Situation die bestmögliche Lösung zu finden und nachhaltige Werte zu schaffen.
                 </p>
               </motion.div>
 

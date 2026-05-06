@@ -8,7 +8,7 @@ const leistungen = [
   { label: "Immobilie verkaufen", href: "/verkaufen" },
   { label: "Immobilie kaufen", href: "/kaufen" },
   { label: "Bewertung", href: "/bewertung" },
-  { label: "Investieren", href: "/investieren" },
+  { label: "Vermietung", href: "/vermietung" },
   { label: "Baufinanzierung", href: "/finanzierung" },
   { label: "Off-Market Verkauf", href: "/off-market-immobilien-duesseldorf" },
   { label: "Tippgeber", href: "/tippgeber" },
