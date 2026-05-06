@@ -214,7 +214,7 @@ export function ContactSection() {
               
               <div className="flex items-center justify-between pt-4">
                 <p className="text-xs text-foreground/40">* Pflichtfelder</p>
-                <button 
+                <button
                   type="submit"
                   disabled={isSubmitting}
                   className="h-12 px-10 bg-foreground text-white text-xs tracking-widest uppercase hover:bg-foreground/90 transition-colors disabled:opacity-50"
@@ -222,6 +222,9 @@ export function ContactSection() {
                   {isSubmitting ? "Senden..." : "Absenden"}
                 </button>
               </div>
+              <p className="text-xs text-foreground/60 text-center pt-1">
+                Kostenfrei · Unverbindlich · Antwort innerhalb 30 Minuten
+              </p>
             </form>
           )}
         </div>

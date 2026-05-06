@@ -207,7 +207,10 @@ export function ContactModal({ open, onClose }: ContactModalProps) {
                       {loading ? "Wird gesendet ..." : "Anfrage absenden"}
                     </button>
 
-                    <p className="text-cream/60 text-xs text-center">
+                    <p className="text-cream/70 text-xs text-center">
+                      Kostenfrei · Unverbindlich · Antwort innerhalb 30 Minuten
+                    </p>
+                    <p className="text-cream/40 text-[11px] text-center">
                       Mit der Anfrage stimmen Sie unserer{" "}
                       <a href="/datenschutz" className="underline hover:text-cream transition-colors">
                         Datenschutzerklärung

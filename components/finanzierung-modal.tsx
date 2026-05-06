@@ -178,7 +178,7 @@ export function FinanzierungModal({ open, onClose, title = "Baufinanzierung", su
                   </button>
 
                   <p className="text-[12px] text-stone/70 text-center">
-                    Kostenlos · Unverbindlich · Persönliche Beratung
+                    Kostenfrei · Unverbindlich · Antwort innerhalb 30 Minuten
                   </p>
                 </form>
               )}
