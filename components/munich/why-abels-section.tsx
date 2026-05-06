@@ -48,7 +48,8 @@ export function MunichWhyAbelsSection() {
             Warum Eigentümer in München mit Abels Immobilien arbeiten
           </h2>
           <p className="text-lg text-graphite leading-relaxed max-w-[900px]">
-            Der Verkauf einer Immobilie ist kein Standardprozess. Entscheidend ist, wie präzise Lage, Zielgruppe, Marktumfeld und Vermarktung zusammengeführt werden.
+            Wir sind bekannt und werden regelmäßig weiterempfohlen. Wir kennen den Immobilienmarkt genau und sind vor Ort.<br /><br />
+            Mit klarer Strategie und präziser Positionierung erreichen wir die richtigen Käufer – und erzielen so den bestmöglichen Preis.
           </p>
         </motion.div>
 

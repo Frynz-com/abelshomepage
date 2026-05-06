@@ -88,7 +88,7 @@ export function GruenwaldWhyAbelsSection() {
             Warum Eigentümer in Grünwald mit Abels Immobilien arbeiten
           </h2>
           <p className="text-graphite leading-relaxed max-w-[780px]">
-            Der Verkauf einer Immobilie ist kein Standardprozess. Entscheidend ist, wie präzise Lage, Zielgruppe, Marktumfeld und Vermarktung zusammengeführt werden.
+            Wir sind bekannt und werden oft empfohlen. Der Verkauf einer Immobilie ist kein Standardprozess. Entscheidend ist, wie präzise Lage, Zielgruppe, Marktumfeld und Vermarktung zusammengeführt werden.
           </p>
         </motion.div>
 

@@ -47,7 +47,8 @@ export function EssenWhyAbelsSection() {
             Warum Eigentümer in Essen mit Abels Immobilien arbeiten
           </h2>
           <p className='text-lg text-graphite max-w-[800px] leading-relaxed'>
-            Der Verkauf einer Immobilie ist kein Standardprozess. Entscheidend ist, wie präzise Lage, Zielgruppe, Marktumfeld und Vermarktung zusammengeführt werden.
+            Mit klarer Strategie und präziser Positionierung erreichen wir die richtigen Käufer – und erzielen so den bestmöglichen Preis.<br /><br />
+            Wir kennen den Markt genau und sind vor Ort.
           </p>
         </motion.div>
 
