@@ -26,7 +26,7 @@ const faq = [
   },
   {
     q: "Wie lange dauert ein Immobilienverkauf?",
-    a: "Realistisch 3–6 Monate von der Beauftragung bis zur Beurkundung. Bei Off-Market-Verkäufen oder vorgemerkten Käufern kann es deutlich schneller gehen. Verzögerungen entstehen oft bei der Beschaffung fehlender Unterlagen.",
+    a: "Bei marktgerecht eingepreisten Immobilien in guten Lagen sind im Schnitt 8–12 Wochen realistisch. Off-Market-Verkäufe an vorgemerkte Käufer können deutlich schneller ablaufen. Verzögerungen entstehen oft bei der Beschaffung fehlender Unterlagen.",
   },
   {
     q: "Welche Kosten entstehen beim Immobilienverkauf?",

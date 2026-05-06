@@ -88,10 +88,10 @@ const testimonials = [
 // Referenzen — editorial strip, no filters
 // Bilder unter /public/images/referenzen/ ablegen (ref-01.jpg … ref-20.jpg)
 const referenzen = [
-  { id: 1,  ort: "Düsseldorf",   typ: "Wohnanlage",            status: "Vermittelt",           image: "/images/referenzen/ref-01.jpg", pos: "center", size: "wide" },
-  { id: 2,  ort: "Essen",        typ: "Doppelhaus",             status: "Verkauft",             image: "/images/referenzen/ref-02.jpg", pos: "center", size: "tall" },
-  { id: 3,  ort: "Hamburg",      typ: "Mehrfamilienhaus",       status: "Vermittelt",           image: "/images/referenzen/ref-03.jpg", pos: "top",    size: "square" },
-  { id: 4,  ort: "Bergisches Land", typ: "Fachwerkhaus",        status: "Off-Market vermittelt",image: "/images/referenzen/ref-04.jpg", pos: "center", size: "wide" },
+  { id: 1,  ort: "Düsseldorf",   typ: "Altbau Villa",           status: "Verkauft",             image: "/images/referenzen/ref-01.jpg", pos: "center", size: "wide" },
+  { id: 2,  ort: "Düsseldorf",   typ: "Anlageimmobilie",        status: "Diskret vermittelt",   image: "/images/referenzen/ref-02.jpg", pos: "center", size: "tall" },
+  { id: 3,  ort: "Düsseldorf",   typ: "Mehrfamilienhaus",       status: "Vermittelt",           image: "/images/referenzen/ref-03.jpg", pos: "top",    size: "square" },
+  { id: 4,  ort: "Düsseldorf",   typ: "Mehrfamilienhaus",       status: "Verkauft",             image: "/images/referenzen/ref-04.jpg", pos: "center", size: "wide" },
   { id: 5,  ort: "Düsseldorf",   typ: "Bungalow",               status: "Verkauft",             image: "/images/referenzen/ref-05.jpg", pos: "top",    size: "tall" },
   { id: 6,  ort: "Frankfurt",    typ: "Klassische Villa",        status: "Diskret vermittelt",  image: "/images/referenzen/ref-06.jpg", pos: "center", size: "square" },
   { id: 7,  ort: "Bergisches Land", typ: "Fachwerkensemble",    status: "Vermittelt",           image: "/images/referenzen/ref-07.jpg", pos: "center", size: "wide" },

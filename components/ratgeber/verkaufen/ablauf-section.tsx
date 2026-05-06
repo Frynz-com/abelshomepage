@@ -42,7 +42,7 @@ const steps = [
   {
     number: "06",
     title: "Notartermin & Übergabe",
-    duration: "4–8 Wochen",
+    duration: "2–4 Wochen",
     description: "Beurkundung beim Notar, Kaufpreiszahlung nach Fälligkeitsmitteilung, Schlüsselübergabe. Mit der Übergabe ist der Verkauf abgeschlossen — und Sie können aufatmen.",
     tasks: ["Notartermin wahrnehmen", "Kaufpreis empfangen", "Immobilie übergeben"]
   }
@@ -67,7 +67,7 @@ export function RatgeberVerkaufenAblaufSection() {
             Immobilie verkaufen: Der komplette Ablauf in 6 Schritten
           </h2>
           <p className="text-graphite text-lg max-w-[600px]">
-            Von der ersten Überlegung bis zur Schlüsselübergabe vergehen typischerweise 3–6 Monate. So läuft der Prozess ab.
+            Bei marktgerecht eingepreisten Immobilien sind im Schnitt 8–12 Wochen realistisch. So läuft der Prozess ab.
           </p>
         </motion.div>
 

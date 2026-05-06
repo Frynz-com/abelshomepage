@@ -6,36 +6,44 @@ import { ChevronDown } from "lucide-react"
 
 const faqs = [
   {
-    question: "Wie lange dauert ein Immobilienverkauf?",
-    answer: "Von der Entscheidung bis zur Schlüsselübergabe vergehen typischerweise 3–6 Monate. Die Vermarktungsphase dauert bei marktgerechtem Preis oft nur 4–8 Wochen. Nach Einigung mit dem Käufer folgen Kaufvertragserstellung und Notartermin (2–4 Wochen), dann die Wartezeit bis zur Kaufpreisfälligkeit (4–8 Wochen)."
+    question: "Wie lange dauert es, mein Haus oder meine Wohnung zu verkaufen?",
+    answer: "Die Verkaufsdauer hängt von Lage, Preis und Immobilientyp ab. Bei marktgerecht eingepreisten Immobilien in guten Lagen sind im Schnitt 8–12 Wochen realistisch. Off-Market-Verkäufe an vorgemerkte Käufer können deutlich schneller ablaufen."
+  },
+  {
+    question: "Was ist meine Immobilie wert — wie wird sie bewertet?",
+    answer: "Eine seriöse Bewertung basiert auf Vergleichsdaten ähnlicher Objekte, Lage, Zustand, Ausstattung und aktueller Marktlage. Wir führen eine kostenfreie Bewertung vor Ort durch und analysieren Preis pro m², Käufergruppen und Vermarktungszeiten. Innerhalb weniger Stunden erhalten Sie eine fundierte Einschätzung."
   },
   {
     question: "Was kostet ein Immobilienmakler?",
-    answer: "Die Maklerprovision liegt je nach Bundesland zwischen 3 % und 7,14 % des Kaufpreises (inkl. MwSt.). Seit 2020 gilt das Bestellerprinzip: Käufer und Verkäufer teilen sich die Provision in der Regel hälftig. Bei Abels Immobilien zahlen Verkäufer maximal 3,57 % inkl. MwSt."
+    answer: "Die Maklerprovision liegt je nach Bundesland zwischen 3 % und 7,14 % des Kaufpreises (inkl. MwSt.). Seit 2020 gilt das Bestellerprinzip: Käufer und Verkäufer teilen sich die Provision in der Regel hälftig. Bei Abels Immobilien zahlen Verkäufer maximal 3,57 % inkl. MwSt. — und nur im Erfolgsfall."
   },
   {
     question: "Welche Steuern fallen beim Immobilienverkauf an?",
     answer: "Bei selbstgenutzten Immobilien ist der Verkauf nach 3 Jahren Eigennutzung steuerfrei. Bei vermieteten Objekten gilt die 10-Jahres-Frist: Nach 10 Jahren Haltedauer ist der Gewinn steuerfrei. Innerhalb dieser Frist fällt Spekulationssteuer an (Ihr persönlicher Einkommensteuersatz auf den Gewinn)."
   },
   {
+    question: "Welche Unterlagen brauche ich für den Verkauf?",
+    answer: "Grundbuchauszug, Lageplan, Grundrisse, Wohnflächenberechnung, Energieausweis, ggf. Teilungserklärung (bei Eigentumswohnungen) sowie aktuelle Betriebskostenabrechnungen. Wir begleiten Sie bei der vollständigen Unterlagenbeschaffung und koordinieren alle notwendigen Dokumente."
+  },
+  {
     question: "Brauche ich einen Energieausweis?",
-    answer: "Ja, der Energieausweis ist seit 2014 Pflicht beim Verkauf. Er muss spätestens bei der Besichtigung vorliegen und relevante Daten müssen bereits in der Immobilienanzeige genannt werden. Bei Verstoß drohen Bußgelder bis 15.000 €."
-  },
-  {
-    question: "Was ist der Unterschied zwischen Angebotspreis und Verkaufspreis?",
-    answer: "Der Angebotspreis ist der in der Anzeige genannte Preis. Der Verkaufspreis ist der tatsächlich erzielte Betrag nach Verhandlung. Im Durchschnitt liegt der Verkaufspreis 5–15 % unter dem ursprünglichen Angebotspreis — je nach Marktlage und Preisgestaltung."
-  },
-  {
-    question: "Kann ich während des Verkaufs in der Immobilie wohnen bleiben?",
-    answer: "Ja, das ist üblich. Die Übergabe erfolgt in der Regel erst nach Kaufpreiszahlung. Im Kaufvertrag wird ein konkretes Übergabedatum vereinbart. Falls Sie früher ausziehen müssen, können Sie eine Zwischenfinanzierung oder vorübergehende Mietlösung in Betracht ziehen."
+    answer: "Ja, der Energieausweis ist seit 2014 Pflicht beim Verkauf. Er muss spätestens bei der Besichtigung vorliegen und relevante Daten müssen bereits in der Immobilienanzeige genannt werden. Bei Verstoß drohen Bußgelder bis 15.000 €. Wir übernehmen die Koordination für Sie."
   },
   {
     question: "Was ist ein Off-Market-Verkauf?",
-    answer: "Beim Off-Market-Verkauf wird die Immobilie nicht öffentlich angeboten, sondern diskret an vorgeprüfte Interessenten aus dem Netzwerk des Maklers vermittelt. Vorteile: maximale Diskretion, keine öffentlichen Anzeigen, oft schnellere Abwicklung. Geeignet für Eigentümer, die Privatsphäre schätzen."
+    answer: "Beim Off-Market-Verkauf wird die Immobilie nicht öffentlich angeboten, sondern diskret an vorgeprüfte Interessenten aus dem Netzwerk des Maklers vermittelt. Vorteile: maximale Diskretion, keine öffentlichen Anzeigen, oft schnellere Abwicklung. Über 70 % unserer Mandate werden diskret vermittelt."
+  },
+  {
+    question: "Kann ich während des Verkaufs in der Immobilie wohnen bleiben?",
+    answer: "Ja, das ist üblich. Die Übergabe erfolgt in der Regel erst nach Kaufpreiszahlung. Im Kaufvertrag wird ein konkretes Übergabedatum vereinbart. Falls Sie früher ausziehen müssen, können wir eine überbrückende Lösung in Betracht ziehen."
   },
   {
     question: "Wann ist der beste Zeitpunkt zum Verkaufen?",
     answer: "Frühling (März–Juni) und Herbst (September–November) gelten traditionell als beste Verkaufszeiten. Aber: Der lokale Markt und Ihre persönliche Situation sind wichtiger als saisonale Trends. Ein marktgerechter Preis ist entscheidender als perfektes Timing."
+  },
+  {
+    question: "Was passiert, wenn meine Immobilie nicht verkauft wird?",
+    answer: "Bei Abels Immobilien zahlen Sie ausschließlich im Erfolgsfall. Keine Provision, keine Vorabkosten. Wird Ihre Immobilie nicht verkauft, entstehen Ihnen keinerlei Kosten. Unser Interesse ist daher vollständig auf Ihren Verkaufserfolg ausgerichtet."
   }
 ]
 

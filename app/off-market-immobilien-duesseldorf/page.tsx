@@ -146,7 +146,7 @@ export default function OffMarketDuesseldorf() {
             </div>
             <div>
               <p className="font-serif text-ink mb-2">Dauert Off-Market länger?</p>
-              <p className="text-graphite text-sm">Nein, oft sogar schneller. Mit gezieltem Netzwerk und hochwertigen Interessenten sind Verkäufe mitunter in 4–8 Wochen abgeschlossen.</p>
+              <p className="text-graphite text-sm">Nein, oft sogar schneller. Bei marktgerecht eingepreisten Immobilien sind im Schnitt 8–12 Wochen realistisch. Mit gezieltem Netzwerk und vorgemerkten Käufern kann es deutlich schneller gehen.</p>
             </div>
           </div>
         </div>

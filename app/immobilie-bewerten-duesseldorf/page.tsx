@@ -17,9 +17,25 @@ export default function ImmobilieBewertung() {
         <h1 className="font-serif text-5xl lg:text-6xl text-ink tracking-[-0.02em] leading-[1.05] mb-8">
           Ihre Immobilie in Düsseldorf bewerten lassen
         </h1>
-        <p className="text-graphite text-xl leading-relaxed mb-16 max-w-3xl">
+        <p className="text-graphite text-xl leading-relaxed mb-8 max-w-3xl">
           Sie möchten wissen, was Ihre Wohnung, Ihr Haus oder Ihre Villa aktuell wert ist? Die kostenfreie Bewertung von Abels Immobilien ist der erste Schritt — ob Sie verkaufen, neu refinanzieren oder einfach Ihren Vermögensstand klären möchten.
         </p>
+
+        {/* Trust badge */}
+        <div className="flex flex-wrap gap-4 mb-16">
+          <div className="inline-flex items-center gap-2.5 bg-[#c0392b] px-5 py-3">
+            <span className="w-2 h-2 rounded-full bg-white shrink-0" />
+            <span className="text-white text-[13px] font-semibold tracking-wide">Kostenfrei</span>
+          </div>
+          <div className="inline-flex items-center gap-2.5 bg-[#c0392b] px-5 py-3">
+            <span className="w-2 h-2 rounded-full bg-white shrink-0" />
+            <span className="text-white text-[13px] font-semibold tracking-wide">Innerhalb weniger Stunden</span>
+          </div>
+          <div className="inline-flex items-center gap-2.5 bg-[#c0392b] px-5 py-3">
+            <span className="w-2 h-2 rounded-full bg-white shrink-0" />
+            <span className="text-white text-[13px] font-semibold tracking-wide">Unverbindlich</span>
+          </div>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-24">
           <div>
