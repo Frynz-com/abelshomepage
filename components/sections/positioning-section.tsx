@@ -41,16 +41,16 @@ export function PositioningSection() {
             </div>
 
             <h2 className="font-serif text-[clamp(2.4rem,4.5vw,4rem)] text-ink leading-[1.04] tracking-[-0.015em] mb-10">
-              Family office,<br />
-              in dritter<br />
-              Generation.
+              Persönlich.<br />
+              Professionell.<br />
+              Präsent.
             </h2>
 
             <div className="w-10 h-px bg-gold/40 mb-10" />
 
             <div className="space-y-6 text-[15px] text-graphite leading-[1.8] max-w-[380px]">
               <p>
-                Abels Immobilien ist kein Franchise-Unternehmen und kein Massenanbieter. Wir sind ein inhabergeführtes Maklerhaus mit dem Anspruch, jeden Verkauf so zu begleiten, als wäre es der einzige.
+                ABELS Immobilien ist eines der führenden Maklerunternehmen in Deutschland. Wir haben uns auf den Verkauf von Einfamilienhäusern und Mehrfamilienhäusern spezialisiert. (Unser Firmensitz liegt in Alt-Niederkassel 124 in 40547 Düsseldorf – einer der gefragtesten Immobilienlagen der Region.)
               </p>
             </div>
 

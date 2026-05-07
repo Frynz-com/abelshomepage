@@ -197,8 +197,8 @@ export default function UeberUnsPage() {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
             <h1 className="font-serif text-[clamp(2.8rem,6vw,5.5rem)] text-white leading-[0.96] tracking-[-0.02em] max-w-[820px] mb-8">
-              Inhabergeführt.<br />
-              <span className="text-white/60">Seit 1999.</span>
+              Family Office,<br />
+              <span className="text-white/60">in dritter Generation.</span>
             </h1>
             <p className="text-[17px] text-white/75 leading-[1.75] max-w-[560px]">
               Abels Immobilien ist kein Franchise-Unternehmen und kein Massenanbieter. Wir sind ein inhabergeführtes Maklerhaus mit dem Anspruch, jeden Verkauf so zu begleiten, als wäre es der einzige.
