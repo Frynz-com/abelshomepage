@@ -97,9 +97,6 @@ export function ContactModal({ open, onClose }: ContactModalProps) {
                   <h2 className="font-serif text-3xl text-cream mb-2 leading-tight">
                     Sprechen wir über Ihre Immobilie.
                   </h2>
-                  <p className="text-cream/70 text-sm mb-8">
-                    Kostenfrei &middot; Unverbindlich &middot; Rückmeldung innerhalb 72 Stunden
-                  </p>
 
                   <form
                     onSubmit={handleSubmit}
