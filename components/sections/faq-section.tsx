@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react"
 const faqs = [
   {
     question: "Wie finde ich einen seriösen Immobilienmakler?",
-    answer: "Achten Sie auf IHK-Registrierung (§34c GewO), Transparenz bei Provisionen und ehrliche Preisangaben. Abels Immobilien ist seit 1999 IHK-zertifiziert und inhabergeführt — Vertrauen durch bewährte Erfahrung und persönliche Betreuung.",
+    answer: "Achten Sie auf IHK-Registrierung (§34c GewO), Transparenz bei Provisionen und ehrliche Preisangaben. Abels Immobilien ist seit 1995 IHK-zertifiziert und inhabergeführt — Vertrauen durch bewährte Erfahrung und persönliche Betreuung.",
   },
   {
     question: "Was ist meine Immobilie wert — wie wird sie bewertet?",

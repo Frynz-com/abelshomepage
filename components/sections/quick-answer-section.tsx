@@ -16,7 +16,7 @@ export function QuickAnswerSection() {
         {/* Credentials */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-0">
           <div className="md:px-16">
-            <span className="block font-serif text-3xl text-ink mb-2">Seit 1999</span>
+            <span className="block font-serif text-3xl text-ink mb-2">Seit 1995</span>
             <span className="text-xs uppercase tracking-[0.2em] text-stone">Inhabergefuhrt</span>
           </div>
           <div className="hidden md:block w-px h-14 bg-line" />

@@ -103,7 +103,7 @@ export function AboutSection() {
               />
             </div>
             <div className="absolute -bottom-5 -left-5 bg-foreground text-white px-6 py-4">
-              <p className="text-xs tracking-widest uppercase">Seit 1999</p>
+              <p className="text-xs tracking-widest uppercase">Seit 1995</p>
             </div>
           </div>
         </div>

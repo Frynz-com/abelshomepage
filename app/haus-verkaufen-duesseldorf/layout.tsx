@@ -16,7 +16,7 @@ const jsonLd = {
 
 export const metadata: Metadata = {
   title: 'Haus verkaufen Düsseldorf | Einfamilienhaus',
-  description: 'Einfamilienhaus in Düsseldorf verkaufen — professionell, diskret und zum Bestpreis. Kostenfreie Bewertung in 72 Stunden. Inhabergeführter Premium-Makler seit 1999.',
+  description: 'Einfamilienhaus in Düsseldorf verkaufen — professionell, diskret und zum Bestpreis. Kostenfreie Bewertung in 72 Stunden. Inhabergeführter Premium-Makler seit 1995.',
   keywords: [
     'Haus verkaufen Düsseldorf', 'Einfamilienhaus Düsseldorf verkaufen', 'Hausverkauf Düsseldorf',
     'Immobilienmakler Düsseldorf Haus', 'Haus Bewertung Düsseldorf', 'Makler Düsseldorf Haus'

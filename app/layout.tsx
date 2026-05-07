@@ -58,8 +58,8 @@ const organizationSchema = {
   name: 'Abels Immobilien GmbH',
   url: 'https://abels-immobilien.de',
   logo: 'https://abels-immobilien.de/images/logo.png',
-  description: 'Inhabergeführter Premium-Immobilienmakler für den Verkauf hochwertiger Wohnimmobilien. Seit 1999. 7 Standorte.',
-  foundingDate: '1999',
+  description: 'Inhabergeführter Premium-Immobilienmakler für den Verkauf hochwertiger Wohnimmobilien. Seit 1995. 7 Standorte.',
+  foundingDate: '1995',
   telephone: '+49-211-5591751',
   email: 'info@abels-immobilien.com',
   address: {

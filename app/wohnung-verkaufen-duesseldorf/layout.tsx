@@ -15,7 +15,7 @@ const jsonLd = {
 
 export const metadata: Metadata = {
   title: 'Wohnung verkaufen Düsseldorf | Eigentumswohnung',
-  description: 'Eigentumswohnung in Düsseldorf verkaufen — kostenfreie Bewertung, hochwertige Vermarktung, nur qualifizierte Käufer. Abels Immobilien, inhabergeführt seit 1999.',
+  description: 'Eigentumswohnung in Düsseldorf verkaufen — kostenfreie Bewertung, hochwertige Vermarktung, nur qualifizierte Käufer. Abels Immobilien, inhabergeführt seit 1995.',
   keywords: [
     'Wohnung verkaufen Düsseldorf', 'Eigentumswohnung Düsseldorf verkaufen', 'Wohnungsverkauf Düsseldorf',
     'Immobilienmakler Düsseldorf Wohnung', 'ETW verkaufen Düsseldorf', 'Makler Oberkassel Wohnung'

@@ -273,7 +273,7 @@ export default function StuttgartPage() {
                 transition={{ delay: 0.8, duration: 0.6 }}
                 className="flex items-center gap-6 flex-wrap"
               >
-                {["Seit 1999", "Inhabergeführt", "7 Standorte"].map((tag, i) => (
+                {["Seit 1995", "Inhabergeführt", "7 Standorte"].map((tag, i) => (
                   <span key={i} className="text-[11px] uppercase tracking-[0.16em] text-white/40">{tag}</span>
                 ))}
               </motion.div>

@@ -21,7 +21,7 @@ const arguments_ = [
   },
   {
     title: "Langjährige Erfahrung",
-    description: "Seit 1999 inhabergeführt und an 7 Standorten in Deutschland aktiv. Solide Erfahrung statt leerer Versprechen."
+    description: "Seit 1995 inhabergeführt und an 7 Standorten in Deutschland aktiv. Solide Erfahrung statt leerer Versprechen."
   },
   {
     title: "Diskretion garantiert",

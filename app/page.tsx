@@ -29,7 +29,7 @@ export const metadata = {
   ],
   openGraph: {
     title: "Immobilienmakler Düsseldorf | Abels Immobilien",
-    description: "Verkaufen Sie Ihre hochwertige Immobilie mit einem erfahrenen Makler. Seit 1999 inhabergeführt. Diskret. Persönlich. Professionell.",
+    description: "Verkaufen Sie Ihre hochwertige Immobilie mit einem erfahrenen Makler. Seit 1995 inhabergeführt. Diskret. Persönlich. Professionell.",
     url: "https://abels-immobilien.de",
     type: "website",
     locale: "de_DE",

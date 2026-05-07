@@ -110,7 +110,7 @@ export function FrankfurtClosingCtaSection() {
                 <div>
                   <span className="block text-[10px] uppercase tracking-[0.18em] text-graphite mb-0.5">Erreichbarkeit</span>
                   <span className="block text-[15px] text-graphite">Mo–Fr 9:00–18:00 Uhr</span>
-                  <span className="block text-[13px] text-graphite">Sa nach Vereinbarung</span>
+                  <span className="block text-[13px] text-graphite">Sa 09:00 – 14:00</span>
                 </div>
               </div>
             </div>

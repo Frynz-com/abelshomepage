@@ -43,7 +43,7 @@ const steps = [
 ]
 
 const advantages = [
-  "Keine Massenanbieter — inhabergeführt seit 1999",
+  "Keine Massenanbieter — inhabergeführt seit 1995",
   "Lokale Marktkenntnis an 7 Standorten",
   "Diskrete Vermarktung auf ausdrücklichen Wunsch",
   "Vorgemerkter Käuferpool",

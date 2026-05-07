@@ -104,7 +104,7 @@ export function Footer() {
                 </div>
               </div>
               <p className="font-serif text-[clamp(1.4rem,2.5vw,2rem)] text-graphite leading-[1.3] tracking-[-0.01em] max-w-[460px]">
-                Diskretion, Marktkenntnis und persönliche Verantwortung — seit 1999.
+                Diskretion, Marktkenntnis und persönliche Verantwortung — seit 1995.
               </p>
             </div>
 

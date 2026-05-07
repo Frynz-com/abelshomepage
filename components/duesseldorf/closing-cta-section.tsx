@@ -91,7 +91,7 @@ export function DuesseldorfClosingCtaSection() {
                   Standort Düsseldorf: Alt Niederkassel 124, 40547 Düsseldorf
                 </p>
                 <p className="text-sm text-stone mt-2">
-                  Mo–Fr 9:00–18:00 Uhr, Sa nach Vereinbarung
+                  Mo–Fr 9:00–18:00 Uhr, Sa 9:00–14:00 Uhr
                 </p>
               </div>
             </div>

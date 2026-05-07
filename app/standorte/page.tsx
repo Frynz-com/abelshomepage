@@ -134,7 +134,7 @@ export default function StandortePage() {
               </div>
               <div className="lg:col-span-5 lg:col-start-8">
                 <p className="text-[16px] text-graphite leading-[1.75]">
-                  Abels Immobilien ist in den sieben bedeutendsten Metropolregionen Deutschlands präsent — mit lokaler Marktkenntnis, persönlicher Betreuung und dem Qualitätsanspruch eines inhabergeführten Hauses seit 1999.
+                  Abels Immobilien ist in den sieben bedeutendsten Metropolregionen Deutschlands präsent — mit lokaler Marktkenntnis, persönlicher Betreuung und dem Qualitätsanspruch eines inhabergeführten Hauses seit 1995.
                 </p>
               </div>
             </div>

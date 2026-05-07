@@ -404,7 +404,7 @@ export default function OffMarketVerkaufPage() {
                   Sie möchten Ihre Immobilie diskret verkaufen?
                 </h2>
                 <p className="text-graphite text-[15px] mt-4 max-w-[480px] leading-relaxed">
-                  Wir begleiten Off-Market-Verkäufe im Premium-Segment seit 1999. Sprechen Sie vertraulich mit uns.
+                  Wir begleiten Off-Market-Verkäufe im Premium-Segment seit 1995. Sprechen Sie vertraulich mit uns.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 shrink-0">

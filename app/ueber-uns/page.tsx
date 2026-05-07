@@ -26,7 +26,7 @@ const values = [
 ]
 
 const milestones = [
-  { year: "1999", text: "Gründung in Düsseldorf durch Michael Abels mit dem Fokus auf hochwertige Wohnimmobilien." },
+  { year: "1995", text: "Gründung in Düsseldorf durch Michael Abels mit dem Fokus auf hochwertige Wohnimmobilien." },
   { year: "2007", text: "Expansion nach München — Eintritt in einen der anspruchsvollsten Immobilienmärkte Deutschlands." },
   { year: "2012", text: "Eröffnung der Standorte Hamburg und Frankfurt. Wachstum durch Empfehlung statt durch Werbung." },
   { year: "2018", text: "Stuttgart, Essen und Grünwald komplettieren das Netzwerk. Sieben Standorte, ein Anspruch." },

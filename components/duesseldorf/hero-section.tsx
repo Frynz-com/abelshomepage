@@ -57,7 +57,7 @@ export function DuesseldorfHeroSection() {
                   transition={{ duration: 0.7, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
                   className="text-white/68 text-[16px] lg:text-[17px] leading-[1.7] max-w-[480px] mb-10 lg:mb-12"
                 >
-                  Abels Immobilien begleitet anspruchsvolle Eigentümer beim Verkauf von Wohnungen, Häusern und Villen in Oberkassel, Kaiserswerth und den besten Lagen Düsseldorfs. Seit 1999.
+                  Abels Immobilien begleitet anspruchsvolle Eigentümer beim Verkauf von Wohnungen, Häusern und Villen in Oberkassel, Kaiserswerth und den besten Lagen Düsseldorfs. Seit 1995.
                 </motion.p>
 
                 <motion.div

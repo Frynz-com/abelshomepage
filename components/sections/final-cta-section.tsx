@@ -130,7 +130,7 @@ export function FinalCtaSection() {
                 <div>
                   <span className="block text-[11px] uppercase tracking-[0.22em] text-stone mb-1">Erreichbarkeit</span>
                   <span className="block text-[15px] text-graphite">Mo – Fr &nbsp;9:00 – 18:00 Uhr</span>
-                  <span className="block text-[13px] text-stone mt-0.5">Sa nach Vereinbarung</span>
+                  <span className="block text-[13px] text-stone mt-0.5">Sa 09:00 – 14:00</span>
                 </div>
               </div>
             </div>

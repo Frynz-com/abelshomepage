@@ -170,7 +170,7 @@ export default function PressePage() {
                 <div className="mt-10 pt-8 border-t border-line/50">
                   <p className="text-[12px] uppercase tracking-[0.22em] text-stone mb-4">Über uns</p>
                   <p className="text-graphite text-[15px] leading-relaxed">
-                    Abels Immobilien GmbH wurde 1999 gegründet und gehört heute zu den führenden Adressen für Premium-Immobilien in Deutschland. Das Unternehmen vermittelt Wohnimmobilien in sieben Metropolen und betreut sowohl Käufer als auch Verkäufer mit einem persönlichen Beratungsansatz.
+                    Abels Immobilien GmbH wurde 1995 gegründet und gehört heute zu den führenden Adressen für Premium-Immobilien in Deutschland. Das Unternehmen vermittelt Wohnimmobilien in sieben Metropolen und betreut sowohl Käufer als auch Verkäufer mit einem persönlichen Beratungsansatz.
                   </p>
                 </div>
               </motion.div>

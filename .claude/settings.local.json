@@ -81,7 +81,11 @@
       "Bash(sed -n '38,52p' components/essen/hero-section.tsx)",
       "Bash(npx tsc *)",
       "Bash(sed -i '' 's/In gefragten Lagen Münchens vermitteln wir marktgerecht eingepreiste Immobilien oft in 4–8 Wochen, dank unseres vorgemerkten Käuferpools\\\\./Bei marktgerecht eingepreisten Immobilien in gefragten Lagen Münchens sind im Schnitt 8–12 Wochen realistisch. Off-Market-Verkäufe über unseren vorgemerkten Käuferpool können deutlich schneller ablaufen./g' \"/Users/kaiazlack/Desktop/v0-abels-immobilien-clone-main/app/standorte/muenchen/layout.tsx\")",
-      "Bash(sed -i '' 's/Nein, oft sogar schneller. Mit gezieltem Netzwerk und hochwertigen Interessenten sind Verkäufe mitunter in 4–8 Wochen abgeschlossen\\\\./Nein, oft sogar schneller. Bei marktgerecht eingepreisten Immobilien sind im Schnitt 8–12 Wochen realistisch. Mit gezieltem Netzwerk und vorgemerkten Käufern kann es deutlich schneller gehen./g' \"/Users/kaiazlack/Desktop/v0-abels-immobilien-clone-main/app/off-market-immobilien-duesseldorf/page.tsx\")"
+      "Bash(sed -i '' 's/Nein, oft sogar schneller. Mit gezieltem Netzwerk und hochwertigen Interessenten sind Verkäufe mitunter in 4–8 Wochen abgeschlossen\\\\./Nein, oft sogar schneller. Bei marktgerecht eingepreisten Immobilien sind im Schnitt 8–12 Wochen realistisch. Mit gezieltem Netzwerk und vorgemerkten Käufern kann es deutlich schneller gehen./g' \"/Users/kaiazlack/Desktop/v0-abels-immobilien-clone-main/app/off-market-immobilien-duesseldorf/page.tsx\")",
+      "Bash(xargs sed -i '' 's/1999/1995/g')",
+      "Bash(sed -i '' 's/Sa: nach Vereinbarung/Sa: 09:00 – 14:00/g' app/kontakt/page.tsx)",
+      "Bash(sed -i '' 's/Mo–Fr 9:00–18:00 Uhr, Sa nach Vereinbarung/Mo–Fr 9:00–18:00 Uhr, Sa 9:00–14:00 Uhr/g' components/essen/closing-cta-section.tsx components/duesseldorf/closing-cta-section.tsx)",
+      "Bash(sed -i '' 's/Sa nach Vereinbarung/Sa 09:00 – 14:00/g' components/sections/final-cta-section.tsx components/hamburg/closing-cta-section.tsx components/frankfurt/closing-cta-section.tsx)"
     ]
   }
 }

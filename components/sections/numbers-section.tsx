@@ -39,7 +39,7 @@ function AnimatedNumber({ value, suffix = "", prefix = "", duration = 2000 }: { 
 }
 
 const stats = [
-  { value: 1999, suffix: "", label: "Inhabergefuhrt seit", isStatic: true, staticText: "Seit 1999" },
+  { value: 1995, suffix: "", label: "Inhabergefuhrt seit", isStatic: true, staticText: "Seit 1995" },
   { value: 7, suffix: "", label: "Standorte in Deutschland" },
   { value: 25, suffix: "+", label: "Jahre Erfahrung am Markt" },
   { value: 100, suffix: "%", label: "Erfolgsbasierte Provision" }

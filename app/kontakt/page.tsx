@@ -153,7 +153,7 @@ export default function KontaktPage() {
                   <p className="text-[13px] font-medium text-ink mb-1">Erreichbarkeit</p>
                   <p className="text-[14px] text-graphite leading-relaxed">
                     Mo – Fr: 9:00 – 18:00 Uhr<br />
-                    Sa: nach Vereinbarung
+                    Sa: 09:00 – 14:00
                   </p>
                 </div>
               </div>

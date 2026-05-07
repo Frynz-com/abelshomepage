@@ -404,7 +404,7 @@ export default function ImmobilienbewertungPage() {
                   Was ist Ihre Immobilie heute wert?
                 </h2>
                 <p className="text-graphite text-[15px] mt-4 max-w-[480px] leading-relaxed">
-                  Wir ermitteln den Marktwert Ihrer Immobilie kostenlos und unverbindlich — auf Basis aktueller Transaktionsdaten und lokaler Marktkenntnis seit 1999.
+                  Wir ermitteln den Marktwert Ihrer Immobilie kostenlos und unverbindlich — auf Basis aktueller Transaktionsdaten und lokaler Marktkenntnis seit 1995.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 shrink-0">

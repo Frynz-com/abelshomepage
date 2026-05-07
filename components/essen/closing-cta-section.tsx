@@ -85,7 +85,7 @@ export function EssenClosingCtaSection() {
 
               <div className="mt-10 pt-8 border-t border-line/40">
                 <p className="text-sm text-graphite">
-                  Mo–Fr 9:00–18:00 Uhr, Sa nach Vereinbarung
+                  Mo–Fr 9:00–18:00 Uhr, Sa 9:00–14:00 Uhr
                 </p>
               </div>
             </div>
