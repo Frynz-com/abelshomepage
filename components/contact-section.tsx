@@ -223,7 +223,7 @@ export function ContactSection() {
                 </button>
               </div>
               <p className="text-xs text-foreground/60 text-center pt-1">
-                Kostenfrei · Unverbindlich · Antwort innerhalb 30 Minuten
+                Kostenfrei · Unverbindlich · Rückmeldung innerhalb 72 Stunden
               </p>
             </form>
           )}
