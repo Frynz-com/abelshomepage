@@ -555,7 +555,7 @@ export default function UeberUnsPage() {
       </section>
 
       {/* ── REFERENZEN: Bildergalerie ── */}
-      <section className="bg-bone border-b border-line/40 py-20 lg:py-28">
+      <section id="referenzen" className="bg-bone border-b border-line/40 py-20 lg:py-28">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-20">
 
           <motion.div

@@ -36,6 +36,7 @@ const ratgeber = [
 
 const unternehmen = [
   { label: "Über uns", href: "/ueber-uns" },
+  { label: "Referenzen", href: "/ueber-uns#referenzen" },
   { label: "Karriere", href: "/karriere" },
   { label: "Presse & Medien", href: "/presse" },
   { label: "Kontakt", href: "/kontakt" },

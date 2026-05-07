@@ -222,9 +222,6 @@ export function ContactSection() {
                   {isSubmitting ? "Senden..." : "Absenden"}
                 </button>
               </div>
-              <p className="text-xs text-foreground/60 text-center pt-1">
-                Kostenfrei · Unverbindlich · Rückmeldung innerhalb 72 Stunden
-              </p>
             </form>
           )}
         </div>

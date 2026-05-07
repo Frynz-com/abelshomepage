@@ -157,26 +157,26 @@ export function Header() {
 
             {/* Right: CTA */}
             <div className="hidden lg:flex items-center gap-7 shrink-0">
-              <a
-                href="https://immowert.lovable.app/"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/kontakt"
                 className={`text-[12.5px] font-medium tracking-[0.06em] transition-colors duration-200 relative after:absolute after:bottom-[-3px] after:left-0 after:w-0 after:h-px after:bg-gold after:transition-all after:duration-300 hover:after:w-full ${
                   isScrolled ? "text-graphite hover:text-ink" : "text-white/75 hover:text-white"
                 }`}
               >
-                Bewertung
-              </a>
-              <Link
-                href="/kontakt"
+                Kontakt
+              </Link>
+              <a
+                href="https://immowert.lovable.app/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`px-6 py-2.5 text-[10px] uppercase tracking-[0.18em] font-medium transition-all duration-300 ${
                   isScrolled
                     ? "bg-ink text-cream hover:bg-graphite"
                     : "bg-white/10 text-white border border-white/22 hover:bg-white hover:text-ink backdrop-blur-sm"
                 }`}
               >
-                Kontakt
-              </Link>
+                Bewertung
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
