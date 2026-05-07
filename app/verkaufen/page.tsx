@@ -229,6 +229,9 @@ export default function VerkaufenPage() {
               >
                 Persönliche Beratung anfragen
               </button>
+              <p className="text-[12px] text-graphite/60 text-center pt-1">
+                Kostenfrei · Unverbindlich · Rückmeldung innerhalb 20 Minuten
+              </p>
             </div>
           </div>
         </div>

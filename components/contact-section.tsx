@@ -100,8 +100,8 @@ export function ContactSection() {
               </div>
               <div>
                 <p className="text-xs tracking-widest uppercase text-foreground/40 mb-1">Öffnungszeiten</p>
-                <p className="text-foreground">Mo - Fr: 09:00 - 18:00</p>
-                <p className="text-foreground/60">Sa: nach Vereinbarung</p>
+                <p className="text-foreground">Mo – Fr: 09:00 – 18:00</p>
+                <p className="text-foreground">Sa: 09:00 – 14:00</p>
               </div>
             </div>
           </div>
