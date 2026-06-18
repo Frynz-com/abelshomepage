@@ -6,6 +6,7 @@ import { motion } from "framer-motion"
 import { MapPin, Mail, Clock, Phone, ArrowRight, CheckCircle } from "lucide-react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { WiderrufConsent } from "@/components/widerruf-consent"
 
 const subjects = [
   "Immobilie verkaufen",
@@ -198,7 +199,7 @@ export default function KontaktPage() {
                   Vielen Dank für Ihre Anfrage.
                 </h2>
                 <p className="text-graphite text-[15px] leading-relaxed max-w-[420px] mb-10">
-                  Wir haben Ihre Nachricht erhalten und melden uns innerhalb von 24 Stunden bei Ihnen.
+                  Wir haben Ihre Nachricht erhalten und melden uns innerhalb der nächsten 30 Minuten bei Ihnen.
                 </p>
                 <Link
                   href="/"
@@ -311,44 +312,47 @@ export default function KontaktPage() {
                 {/* GDPR + Submit */}
                 <div className="pt-7 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
 
-                  {/* Datenschutz checkbox */}
-                  <label className="flex items-start gap-3 cursor-pointer group">
-                    <div className="relative mt-0.5 shrink-0">
-                      <input
-                        type="checkbox"
-                        name="datenschutz"
-                        required
-                        checked={form.datenschutz}
-                        onChange={handleChange}
-                        className="sr-only peer"
-                      />
-                      <div className="w-5 h-5 border border-line bg-white peer-checked:bg-ink peer-checked:border-ink transition-colors group-hover:border-graphite" />
-                      <svg
-                        className="absolute inset-0 w-5 h-5 text-white opacity-0 peer-checked:opacity-100 transition-opacity pointer-events-none"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                      >
-                        <path
-                          d="M5 10l3.5 3.5L15 7"
-                          stroke="currentColor"
-                          strokeWidth="1.8"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
+                  <div className="space-y-3">
+                    {/* Datenschutz checkbox */}
+                    <label className="flex items-start gap-3 cursor-pointer group">
+                      <div className="relative mt-0.5 shrink-0">
+                        <input
+                          type="checkbox"
+                          name="datenschutz"
+                          required
+                          checked={form.datenschutz}
+                          onChange={handleChange}
+                          className="sr-only peer"
                         />
-                      </svg>
-                    </div>
-                    <span className="text-[13px] text-graphite leading-relaxed">
-                      Ich habe die{" "}
-                      <Link
-                        href="/datenschutz"
-                        className="text-ink underline underline-offset-2 hover:text-gold transition-colors"
-                      >
-                        Datenschutzerklärung
-                      </Link>{" "}
-                      gelesen und stimme der Verarbeitung meiner Daten zu.{" "}
-                      <span className="text-gold">*</span>
-                    </span>
-                  </label>
+                        <div className="w-5 h-5 border border-line bg-white peer-checked:bg-ink peer-checked:border-ink transition-colors group-hover:border-graphite" />
+                        <svg
+                          className="absolute inset-0 w-5 h-5 text-white opacity-0 peer-checked:opacity-100 transition-opacity pointer-events-none"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                        >
+                          <path
+                            d="M5 10l3.5 3.5L15 7"
+                            stroke="currentColor"
+                            strokeWidth="1.8"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <span className="text-[13px] text-graphite leading-relaxed">
+                        Ich habe die{" "}
+                        <Link
+                          href="/datenschutz"
+                          className="text-ink underline underline-offset-2 hover:text-gold transition-colors"
+                        >
+                          Datenschutzerklärung
+                        </Link>{" "}
+                        gelesen und stimme der Verarbeitung meiner Daten zu.{" "}
+                        <span className="text-gold">*</span>
+                      </span>
+                    </label>
+                    <WiderrufConsent />
+                  </div>
 
                   {/* Submit */}
                   <button

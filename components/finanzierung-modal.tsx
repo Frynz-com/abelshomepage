@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { X, Check, ArrowRight } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
+import { WiderrufConsent } from "@/components/widerruf-consent"
 
 interface FinanzierungModalProps {
   open: boolean
@@ -93,7 +94,7 @@ export function FinanzierungModal({ open, onClose, title = "Baufinanzierung", su
                   </div>
                   <h3 className="font-serif text-[20px] text-ink mb-3">Anfrage gesendet</h3>
                   <p className="text-[14px] text-graphite/70 leading-relaxed mb-6">
-                    Vielen Dank. Wir melden uns in Kürze bei Ihnen.
+                    Vielen Dank. Wir melden uns innerhalb der nächsten 30 Minuten bei Ihnen.
                   </p>
                   <button
                     onClick={onClose}
@@ -168,6 +169,8 @@ export function FinanzierungModal({ open, onClose, title = "Baufinanzierung", su
                       zu.
                     </label>
                   </div>
+
+                  <WiderrufConsent />
 
                   <button
                     type="submit"

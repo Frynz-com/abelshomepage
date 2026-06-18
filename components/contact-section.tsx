@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { MapPin, Phone, Mail, Clock } from "lucide-react"
+import { WiderrufConsent } from "@/components/widerruf-consent"
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -117,7 +118,7 @@ export function ContactSection() {
                 </div>
                 <p className="text-foreground font-serif text-2xl mb-3">Vielen Dank!</p>
                 <p className="text-foreground/60">
-                  Wir werden uns schnellstmöglich bei Ihnen melden.
+                  Wir melden uns innerhalb der nächsten 30 Minuten bei Ihnen.
                 </p>
               </div>
             </div>
@@ -211,6 +212,8 @@ export function ContactSection() {
                   className="w-full px-4 py-3 bg-transparent border border-border/50 focus:border-foreground outline-none transition-colors resize-none text-foreground"
                 />
               </div>
+
+              <WiderrufConsent />
               
               <div className="flex items-center justify-between pt-4">
                 <p className="text-xs text-foreground/40">* Pflichtfelder</p>

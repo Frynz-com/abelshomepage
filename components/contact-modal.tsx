@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { X, CheckCircle } from "lucide-react"
+import { WiderrufConsent } from "@/components/widerruf-consent"
 
 interface ContactModalProps {
   open: boolean
@@ -195,6 +196,8 @@ export function ContactModal({ open, onClose }: ContactModalProps) {
                       />
                     </div>
 
+                    <WiderrufConsent tone="dark" />
+
                     {/* Submit */}
                     <button
                       type="submit"
@@ -223,7 +226,7 @@ export function ContactModal({ open, onClose }: ContactModalProps) {
                     Vielen Dank, {form.name.split(" ")[0]}.
                   </h3>
                   <p className="text-cream/70 leading-relaxed mb-8">
-                    Ihre Anfrage ist bei uns eingegangen. Wir melden uns innerhalb von 72 Stunden persönlich bei Ihnen.
+                    Ihre Anfrage ist bei uns eingegangen. Wir melden uns innerhalb der nächsten 30 Minuten bei Ihnen.
                   </p>
                   <button
                     onClick={handleClose}

@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { useState } from "react"
 import { Linkedin, Instagram, ArrowRight, Shield, BarChart2, Landmark, FileText } from "lucide-react"
+import { WiderrufConsent } from "@/components/widerruf-consent"
 
 const leistungen = [
   { label: "Immobilie verkaufen", href: "/verkaufen" },
@@ -197,29 +198,32 @@ export function Footer() {
             </div>
             <div className="lg:col-span-5 lg:col-start-6">
               {!submitted ? (
-                <form onSubmit={handleSubmit} name="newsletter" data-netlify="true" netlify-honeypot="bot-field" className="flex gap-0 border-b border-line/50 focus-within:border-gold/60 transition-colors">
-                  <input type="hidden" name="form-name" value="newsletter" />
-                  <input type="hidden" name="bot-field" />
-                  <input
-                    type="email"
-                    name="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Ihre E-Mail-Adresse"
-                    className="flex-1 bg-transparent pb-3 pt-1 text-[14px] text-ink placeholder:text-stone/60 focus:outline-none"
-                    required
-                  />
-                  <button
-                    type="submit"
-                    className="pb-3 pt-1 text-[9.5px] uppercase tracking-[0.22em] text-stone hover:text-gold transition-colors flex items-center gap-1.5 shrink-0"
-                  >
-                    Anmelden
-                    <ArrowRight className="w-3 h-3" />
-                  </button>
+                <form onSubmit={handleSubmit} name="newsletter" data-netlify="true" netlify-honeypot="bot-field" className="space-y-3">
+                  <div className="flex gap-0 border-b border-line/50 focus-within:border-gold/60 transition-colors">
+                    <input type="hidden" name="form-name" value="newsletter" />
+                    <input type="hidden" name="bot-field" />
+                    <input
+                      type="email"
+                      name="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="Ihre E-Mail-Adresse"
+                      className="flex-1 bg-transparent pb-3 pt-1 text-[14px] text-ink placeholder:text-stone/60 focus:outline-none"
+                      required
+                    />
+                    <button
+                      type="submit"
+                      className="pb-3 pt-1 text-[9.5px] uppercase tracking-[0.22em] text-stone hover:text-gold transition-colors flex items-center gap-1.5 shrink-0"
+                    >
+                      Anmelden
+                      <ArrowRight className="w-3 h-3" />
+                    </button>
+                  </div>
+                  <WiderrufConsent />
                 </form>
               ) : (
                 <p className="text-[13px] text-gold pb-3 border-b border-gold/30">
-                  Danke — Sie erhalten in Kürze eine Bestätigung.
+                  Danke, wir melden uns innerhalb der nächsten 30 Minuten bei Ihnen.
                 </p>
               )}
             </div>

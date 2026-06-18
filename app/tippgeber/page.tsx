@@ -7,6 +7,7 @@ import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { WiderrufConsent } from "@/components/widerruf-consent"
 
 const steps = [
   {
@@ -194,7 +195,7 @@ export default function TippgeberPage() {
                 <div className="border border-gold/30 bg-cream p-10 lg:p-12">
                   <p className="font-serif text-[24px] text-ink mb-3">Vielen Dank für Ihren Hinweis.</p>
                   <p className="text-[15px] text-graphite leading-[1.75]">
-                    Wir werden uns innerhalb von 48 Stunden bei Ihnen melden und die Situation diskret prüfen.
+                    Wir melden uns innerhalb der nächsten 30 Minuten bei Ihnen und prüfen die Situation diskret.
                   </p>
                 </div>
               ) : (
@@ -231,6 +232,9 @@ export default function TippgeberPage() {
                       onChange={e => setForm(f => ({ ...f, details: e.target.value }))}
                       className="w-full bg-transparent text-[15px] text-ink placeholder:text-stone/65 focus:outline-none resize-none"
                     />
+                  </div>
+                  <div className="border-b border-line/50 py-6">
+                    <WiderrufConsent />
                   </div>
                   <div className="pt-8">
                     <button
