@@ -157,7 +157,7 @@ export default function HausVerkaufenDuesseldorf() {
               onClick={() => setModalOpen(true)}
               className="inline-flex items-center justify-center bg-ink text-cream px-8 py-4 text-xs uppercase tracking-[0.15em] hover:bg-graphite transition-colors font-medium"
             >
-              Kostenfreie Bewertung anfragen
+              Kostenlose Bewertung unverbindlich anfragen
             </button>
             <Link 
               href="/standorte/duesseldorf"
@@ -169,7 +169,7 @@ export default function HausVerkaufenDuesseldorf() {
         </div>
       </section>
       <Footer />
-      <ContactModal open={modalOpen} onClose={() => setModalOpen(false)} />
+      <ContactModal open={modalOpen} onClose={() => setModalOpen(false)} variant="valuation" />
     </main>
   )
 }

@@ -254,15 +254,13 @@ export function Header() {
           </nav>
 
           <div className="px-6 py-6 space-y-3">
-            <a
-              href="https://immowert.lovable.app/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/bewertung"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block w-full bg-ink text-cream text-center py-4 text-[10px] uppercase tracking-[0.2em] font-medium hover:bg-graphite transition-colors"
             >
-              Kostenlose Bewertung anfordern
-            </a>
+              Kostenlose Bewertung unverbindlich anfragen
+            </Link>
           </div>
         </div>
       </div>

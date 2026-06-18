@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { X, Check, ArrowRight } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
-import { WiderrufConsent } from "@/components/widerruf-consent"
+import { INQUIRY_SUCCESS_MESSAGE, LegalFormNotice } from "@/components/legal-form-notice"
 
 interface FinanzierungModalProps {
   open: boolean
@@ -12,9 +12,14 @@ interface FinanzierungModalProps {
   subtitle?: string
 }
 
-export function FinanzierungModal({ open, onClose, title = "Baufinanzierung", subtitle = "Finanzierung anfragen" }: FinanzierungModalProps) {
+export function FinanzierungModal({ open, onClose, title = "Baufinanzierung", subtitle = "Finanzierungsberatung unverbindlich anfragen" }: FinanzierungModalProps) {
   const [sent, setSent] = useState(false)
   const [form, setForm] = useState({ name: "", email: "", phone: "", message: "", privacy: false })
+  const formName = title === "Baufinanzierung" ? "financing_inquiry" : "contact_request"
+  const submitLabel =
+    title === "Baufinanzierung"
+      ? "Finanzierungsberatung unverbindlich anfragen"
+      : "Unverbindliche Anfrage senden"
 
   useEffect(() => {
     if (open) {
@@ -34,7 +39,7 @@ export function FinanzierungModal({ open, onClose, title = "Baufinanzierung", su
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams({
-          "form-name": "finanzierung",
+          "form-name": formName,
           name: form.name,
           email: form.email,
           phone: form.phone,
@@ -42,7 +47,7 @@ export function FinanzierungModal({ open, onClose, title = "Baufinanzierung", su
         }).toString(),
       })
     } catch {
-      const subject = encodeURIComponent("Finanzierungsanfrage über abels-immobilien.de")
+      const subject = encodeURIComponent("Eingang Ihrer unverbindlichen Anfrage bei Abels Immobilien")
       const body = encodeURIComponent(`Name: ${form.name}\nE-Mail: ${form.email}\nTelefon: ${form.phone || "–"}\n\nNachricht:\n${form.message || "–"}`)
       window.location.href = `mailto:info@abels-immobilien.com?subject=${subject}&body=${body}`
     }
@@ -94,7 +99,7 @@ export function FinanzierungModal({ open, onClose, title = "Baufinanzierung", su
                   </div>
                   <h3 className="font-serif text-[20px] text-ink mb-3">Anfrage gesendet</h3>
                   <p className="text-[14px] text-graphite/70 leading-relaxed mb-6">
-                    Vielen Dank. Wir melden uns innerhalb der nächsten 30 Minuten bei Ihnen.
+                    {INQUIRY_SUCCESS_MESSAGE}
                   </p>
                   <button
                     onClick={onClose}
@@ -104,8 +109,8 @@ export function FinanzierungModal({ open, onClose, title = "Baufinanzierung", su
                   </button>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} name="finanzierung" data-netlify="true" netlify-honeypot="bot-field" className="px-8 py-7 space-y-5">
-                  <input type="hidden" name="form-name" value="finanzierung" />
+                <form onSubmit={handleSubmit} name={formName} data-netlify="true" netlify-honeypot="bot-field" className="px-8 py-7 space-y-5">
+                  <input type="hidden" name="form-name" value={formName} />
                   <input type="hidden" name="bot-field" />
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
@@ -170,13 +175,13 @@ export function FinanzierungModal({ open, onClose, title = "Baufinanzierung", su
                     </label>
                   </div>
 
-                  <WiderrufConsent />
+                  <LegalFormNotice />
 
                   <button
                     type="submit"
                     className="w-full bg-ink text-cream py-4 text-[11px] uppercase tracking-[0.18em] font-medium hover:bg-graphite transition-colors flex items-center justify-center gap-2.5 group"
                   >
-                    Anfrage absenden
+                    {submitLabel}
                     <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
                   </button>
 

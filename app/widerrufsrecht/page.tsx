@@ -3,7 +3,11 @@ import { Footer } from "@/components/footer"
 
 export const metadata = {
   title: "Widerrufsrecht | Abels Immobilien",
-  description: "Widerrufsrecht und Muster-Widerrufsformular der Abels Immobilien GmbH"
+  description: "Widerrufsrecht und Muster-Widerrufsformular der Abels Immobilien GmbH",
+  robots: {
+    index: false,
+    follow: false,
+  },
 }
 
 export default function WiderrufsrechtPage() {

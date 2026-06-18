@@ -102,7 +102,7 @@ export default function FinanzierungPage() {
                     onClick={() => setModalOpen(true)}
                     className="inline-flex items-center gap-2 bg-ink text-cream text-xs uppercase tracking-[0.16em] px-8 py-4 hover:bg-graphite transition-colors"
                   >
-                    Finanzierung anfragen
+                    Finanzierungsberatung unverbindlich anfragen
                     <ArrowRight size={13} />
                   </button>
                 </motion.div>
@@ -283,7 +283,7 @@ export default function FinanzierungPage() {
                   onClick={() => setModalOpen(true)}
                   className="inline-flex items-center justify-center gap-2 bg-ink text-cream text-xs uppercase tracking-[0.16em] px-8 py-4 hover:bg-graphite transition-colors"
                 >
-                  Jetzt unverbindlich anfragen
+                  Finanzierungsberatung unverbindlich anfragen
                   <ArrowRight size={13} />
                 </button>
                 <ul className="space-y-2">

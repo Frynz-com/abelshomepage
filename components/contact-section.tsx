@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { MapPin, Phone, Mail, Clock } from "lucide-react"
-import { WiderrufConsent } from "@/components/widerruf-consent"
+import { INQUIRY_SUCCESS_MESSAGE, LegalFormNotice } from "@/components/legal-form-notice"
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -20,7 +20,7 @@ export function ContactSection() {
     setIsSubmitting(true)
     try {
       const body = new URLSearchParams({
-        "form-name": "kontakt-allgemein",
+        "form-name": "contact_request",
         ...formData,
       })
       await fetch("/", {
@@ -33,7 +33,7 @@ export function ContactSection() {
       setTimeout(() => setIsSubmitted(false), 5000)
     } catch {
       // fallback: open mail client
-      window.location.href = `mailto:info@abels-immobilien.com?subject=${encodeURIComponent(formData.subject || "Kontaktanfrage")}&body=${encodeURIComponent(formData.message)}`
+      window.location.href = `mailto:info@abels-immobilien.com?subject=${encodeURIComponent("Eingang Ihrer unverbindlichen Anfrage bei Abels Immobilien")}&body=${encodeURIComponent(formData.message)}`
     } finally {
       setIsSubmitting(false)
     }
@@ -118,19 +118,19 @@ export function ContactSection() {
                 </div>
                 <p className="text-foreground font-serif text-2xl mb-3">Vielen Dank!</p>
                 <p className="text-foreground/60">
-                  Wir melden uns innerhalb der nächsten 30 Minuten bei Ihnen.
+                  {INQUIRY_SUCCESS_MESSAGE}
                 </p>
               </div>
             </div>
           ) : (
             <form
-              name="kontakt-allgemein"
+              name="contact_request"
               data-netlify="true"
               netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
               className="space-y-6"
             >
-              <input type="hidden" name="form-name" value="kontakt-allgemein" />
+              <input type="hidden" name="form-name" value="contact_request" />
               <input type="hidden" name="bot-field" />
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
@@ -213,7 +213,7 @@ export function ContactSection() {
                 />
               </div>
 
-              <WiderrufConsent />
+              <LegalFormNotice />
               
               <div className="flex items-center justify-between pt-4">
                 <p className="text-xs text-foreground/40">* Pflichtfelder</p>
@@ -222,7 +222,7 @@ export function ContactSection() {
                   disabled={isSubmitting}
                   className="h-12 px-10 bg-foreground text-white text-xs tracking-widest uppercase hover:bg-foreground/90 transition-colors disabled:opacity-50"
                 >
-                  {isSubmitting ? "Senden..." : "Absenden"}
+                  {isSubmitting ? "Senden..." : "Unverbindliche Anfrage senden"}
                 </button>
               </div>
             </form>

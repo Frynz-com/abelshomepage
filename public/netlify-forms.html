@@ -4,57 +4,56 @@
 <body>
   <!-- Static form definitions so Netlify detects them at build time -->
 
-  <form name="finanzierung" netlify netlify-honeypot="bot-field" hidden>
+  <form name="financing_inquiry" netlify netlify-honeypot="bot-field" hidden>
     <input name="bot-field" />
     <input name="name" />
     <input name="email" />
     <input name="phone" />
     <textarea name="message"></textarea>
-    <input name="widerrufsbelehrung" type="checkbox" />
   </form>
 
-  <form name="kontakt" netlify netlify-honeypot="bot-field" hidden>
+  <form name="contact_request" netlify netlify-honeypot="bot-field" hidden>
     <input name="bot-field" />
     <input name="name" />
     <input name="email" />
     <input name="phone" />
+    <input name="interest" />
     <input name="subject" />
     <textarea name="message"></textarea>
-    <input name="widerrufsbelehrung" type="checkbox" />
+    <input name="datenschutz" type="checkbox" />
   </form>
 
-  <form name="tippgeber" netlify netlify-honeypot="bot-field" hidden>
+  <form name="valuation_request" netlify netlify-honeypot="bot-field" hidden>
+    <input name="bot-field" />
+    <input name="name" />
+    <input name="email" />
+    <input name="phone" />
+    <input name="interest" />
+    <textarea name="message"></textarea>
+  </form>
+
+  <form name="buyer_search_request" netlify netlify-honeypot="bot-field" hidden>
+    <input name="bot-field" />
+    <input name="name" />
+    <input name="email" />
+    <input name="phone" />
+    <input name="interest" />
+    <textarea name="message"></textarea>
+  </form>
+
+  <form name="referral_request" netlify netlify-honeypot="bot-field" hidden>
     <input name="bot-field" />
     <input name="name" />
     <input name="email" />
     <input name="telefon" />
     <textarea name="details"></textarea>
-    <input name="widerrufsbelehrung" type="checkbox" />
   </form>
 
-  <form name="newsletter" netlify netlify-honeypot="bot-field" hidden>
+  <form name="newsletter_subscription" netlify netlify-honeypot="bot-field" hidden>
     <input name="bot-field" />
     <input name="email" type="email" />
-    <input name="widerrufsbelehrung" type="checkbox" />
-  </form>
-
-  <form name="kontakt-modal" netlify netlify-honeypot="bot-field" hidden>
-    <input name="bot-field" />
-    <input name="name" />
-    <input name="email" />
-    <input name="phone" />
-    <textarea name="message"></textarea>
-    <input name="widerrufsbelehrung" type="checkbox" />
-  </form>
-
-  <form name="kontakt-allgemein" netlify netlify-honeypot="bot-field" hidden>
-    <input name="bot-field" />
-    <input name="name" />
-    <input name="email" />
-    <input name="phone" />
-    <input name="subject" />
-    <textarea name="message"></textarea>
-    <input name="widerrufsbelehrung" type="checkbox" />
+    <input name="newsletter_consent" type="checkbox" />
+    <input name="double_opt_in" />
   </form>
 </body>
 </html>

@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { WiderrufConsent } from "@/components/widerruf-consent"
+import { INQUIRY_SUCCESS_MESSAGE, LegalFormNotice } from "@/components/legal-form-notice"
 
 const steps = [
   {
@@ -40,7 +40,7 @@ export default function TippgeberPage() {
         body: new URLSearchParams(new FormData(e.target as HTMLFormElement) as unknown as Record<string, string>).toString(),
       })
     } catch {
-      window.location.href = `mailto:info@abels-immobilien.com?subject=${encodeURIComponent("Tippgeber-Hinweis")}&body=${encodeURIComponent("Name: " + form.name + "\nEmail: " + form.email + "\n\n" + form.details)}`
+      window.location.href = `mailto:info@abels-immobilien.com?subject=${encodeURIComponent("Eingang Ihrer unverbindlichen Anfrage bei Abels Immobilien")}&body=${encodeURIComponent("Name: " + form.name + "\nEmail: " + form.email + "\n\n" + form.details)}`
     }
     setSubmitted(true)
   }
@@ -195,12 +195,12 @@ export default function TippgeberPage() {
                 <div className="border border-gold/30 bg-cream p-10 lg:p-12">
                   <p className="font-serif text-[24px] text-ink mb-3">Vielen Dank für Ihren Hinweis.</p>
                   <p className="text-[15px] text-graphite leading-[1.75]">
-                    Wir melden uns innerhalb der nächsten 30 Minuten bei Ihnen und prüfen die Situation diskret.
+                    {INQUIRY_SUCCESS_MESSAGE}
                   </p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} name="tippgeber" data-netlify="true" netlify-honeypot="bot-field" className="space-y-0 border-t border-line/50">
-                  <input type="hidden" name="form-name" value="tippgeber" />
+                <form onSubmit={handleSubmit} name="referral_request" data-netlify="true" netlify-honeypot="bot-field" className="space-y-0 border-t border-line/50">
+                  <input type="hidden" name="form-name" value="referral_request" />
                   <input type="hidden" name="bot-field" />
                   {[
                     { id: "name", label: "Ihr Name", type: "text", placeholder: "Max Mustermann" },
@@ -233,15 +233,13 @@ export default function TippgeberPage() {
                       className="w-full bg-transparent text-[15px] text-ink placeholder:text-stone/65 focus:outline-none resize-none"
                     />
                   </div>
-                  <div className="border-b border-line/50 py-6">
-                    <WiderrufConsent />
-                  </div>
                   <div className="pt-8">
+                    <LegalFormNotice className="mb-5" />
                     <button
                       type="submit"
                       className="inline-flex items-center justify-center gap-2 bg-gold text-ink px-8 py-4 text-[11px] uppercase tracking-[0.16em] font-semibold hover:bg-gold-soft transition-colors group"
                     >
-                      Hinweis senden
+                      Unverbindliche Anfrage senden
                       <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
                     </button>
                   </div>

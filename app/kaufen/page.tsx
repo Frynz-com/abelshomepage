@@ -88,7 +88,7 @@ export default function KaufenPage() {
                 onClick={() => setModalOpen(true)}
                 className="inline-flex items-center justify-center gap-2 bg-gold text-ink px-8 py-4 text-[11px] uppercase tracking-[0.16em] font-semibold hover:bg-gold-soft transition-colors group"
               >
-                Suchanfrage stellen
+                Suchwunsch unverbindlich übermitteln
                 <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
               </button>
               <span className="inline-flex items-center justify-center gap-2 border border-white/25 text-white/60 px-8 py-4 text-[11px] uppercase tracking-[0.16em] font-medium cursor-default select-none">
@@ -206,7 +206,7 @@ export default function KaufenPage() {
                 onClick={() => setModalOpen(true)}
                 className="inline-flex items-center justify-center gap-2 bg-gold text-ink px-8 py-4 text-[11px] uppercase tracking-[0.16em] font-semibold hover:bg-gold-soft transition-colors group"
               >
-                Kaufprofil anlegen
+                Suchwunsch unverbindlich übermitteln
                 <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
               </button>
               <span className="inline-flex items-center justify-center gap-2 border border-line text-ink/40 px-8 py-4 text-[11px] uppercase tracking-[0.16em] font-medium cursor-default select-none">
@@ -218,7 +218,7 @@ export default function KaufenPage() {
       </section>
 
       <Footer />
-      <ContactModal open={modalOpen} onClose={() => setModalOpen(false)} />
+      <ContactModal open={modalOpen} onClose={() => setModalOpen(false)} variant="search" />
     </main>
   )
 }

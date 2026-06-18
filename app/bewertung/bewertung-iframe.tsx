@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import Link from "next/link"
+import { LegalFormNotice } from "@/components/legal-form-notice"
 
 export function BewertungIframe() {
   const [loaded, setLoaded] = useState(false)
@@ -13,6 +13,7 @@ export function BewertungIframe() {
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-bone gap-6 px-8 text-center">
           <div className="w-8 h-8 border-2 border-gold/30 border-t-gold rounded-full animate-spin" />
           <p className="text-graphite text-sm">Bewertungstool wird geladen …</p>
+          <LegalFormNotice variant="valuation" className="max-w-[560px]" />
           <a
             href="https://immowert.lovable.app"
             target="_blank"
@@ -30,6 +31,7 @@ export function BewertungIframe() {
           <p className="text-graphite text-[15px] max-w-[440px] leading-relaxed">
             Das Bewertungstool lässt sich hier direkt nutzen — klicken Sie einfach auf den Button.
           </p>
+          <LegalFormNotice variant="valuation" className="max-w-[560px]" />
           <a
             href="https://immowert.lovable.app"
             target="_blank"

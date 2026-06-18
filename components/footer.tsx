@@ -3,7 +3,6 @@
 import Link from "next/link"
 import { useState } from "react"
 import { Linkedin, Instagram, ArrowRight, Shield, BarChart2, Landmark, FileText } from "lucide-react"
-import { WiderrufConsent } from "@/components/widerruf-consent"
 
 const leistungen = [
   { label: "Immobilie verkaufen", href: "/verkaufen" },
@@ -68,20 +67,27 @@ function FooterCol({ title, links }: { title: string; links: { label: string; hr
 
 export function Footer() {
   const [email, setEmail] = useState("")
+  const [newsletterConsent, setNewsletterConsent] = useState(false)
   const [submitted, setSubmitted] = useState(false)
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    if (!email) return
+    if (!email || !newsletterConsent) return
     try {
       await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams({ "form-name": "newsletter", email }).toString(),
+        body: new URLSearchParams({
+          "form-name": "newsletter_subscription",
+          email,
+          newsletter_consent: "yes",
+          double_opt_in: "requested",
+        }).toString(),
       })
     } catch { /* fails silently on local dev */ }
     setSubmitted(true)
     setEmail("")
+    setNewsletterConsent(false)
   }
 
   return (
@@ -178,7 +184,7 @@ export function Footer() {
                 href="/finanzierung"
                 className="inline-flex items-center gap-2 bg-ink text-cream text-[12px] uppercase tracking-[0.16em] px-7 py-4 hover:bg-graphite transition-colors"
               >
-                Finanzierungsberatung anfragen
+                Finanzierungsberatung unverbindlich anfragen
                 <ArrowRight className="w-3 h-3" />
               </Link>
             </div>
@@ -198,9 +204,9 @@ export function Footer() {
             </div>
             <div className="lg:col-span-5 lg:col-start-6">
               {!submitted ? (
-                <form onSubmit={handleSubmit} name="newsletter" data-netlify="true" netlify-honeypot="bot-field" className="space-y-3">
+                <form onSubmit={handleSubmit} name="newsletter_subscription" data-netlify="true" netlify-honeypot="bot-field" className="space-y-3">
                   <div className="flex gap-0 border-b border-line/50 focus-within:border-gold/60 transition-colors">
-                    <input type="hidden" name="form-name" value="newsletter" />
+                    <input type="hidden" name="form-name" value="newsletter_subscription" />
                     <input type="hidden" name="bot-field" />
                     <input
                       type="email"
@@ -219,11 +225,27 @@ export function Footer() {
                       <ArrowRight className="w-3 h-3" />
                     </button>
                   </div>
-                  <WiderrufConsent />
+                  <label className="flex items-start gap-3 text-[12px] text-stone/70 leading-relaxed">
+                    <input
+                      type="checkbox"
+                      name="newsletter_consent"
+                      required
+                      checked={newsletterConsent}
+                      onChange={(e) => setNewsletterConsent(e.target.checked)}
+                      className="mt-0.5 accent-gold shrink-0"
+                    />
+                    <span>
+                      Ich möchte den Newsletter erhalten und willige ein, dass Abels Immobilien mir Informationen per E-Mail zusendet. Die Anmeldung erfolgt per Double-Opt-in; erst nach Bestätigung des Links ist die Anmeldung aktiv. Hinweise finden Sie in der{" "}
+                      <Link href="/datenschutz" className="underline hover:text-ink transition-colors">
+                        Datenschutzerklärung
+                      </Link>
+                      .
+                    </span>
+                  </label>
                 </form>
               ) : (
                 <p className="text-[13px] text-gold pb-3 border-b border-gold/30">
-                  Danke, wir melden uns innerhalb der nächsten 30 Minuten bei Ihnen.
+                  Danke. Bitte bestätigen Sie Ihre Anmeldung über den Link in der Double-Opt-in-E-Mail.
                 </p>
               )}
             </div>
@@ -244,7 +266,6 @@ export function Footer() {
               { label: "Impressum", href: "/impressum" },
               { label: "Datenschutz", href: "/datenschutz" },
               { label: "AGB", href: "/agb" },
-              { label: "Widerrufsrecht", href: "/widerrufsrecht" },
             ].map((item) => (
               <Link
                 key={item.href}

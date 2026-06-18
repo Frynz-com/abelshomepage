@@ -586,7 +586,7 @@ export default function StuttgartPage() {
                   href="/bewertung"
                   className="inline-flex items-center gap-2 bg-ink text-cream px-8 py-4 text-[11px] uppercase tracking-[0.16em] font-semibold hover:bg-graphite transition-colors group"
                 >
-                  Kostenfreie Bewertung anfordern
+                  Kostenlose Bewertung unverbindlich anfragen
                   <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
                 </Link>
               </div>
@@ -764,7 +764,7 @@ export default function StuttgartPage() {
       </section>
 
       <Footer />
-      <ContactModal open={modalOpen} onClose={() => setModalOpen(false)} />
+      <ContactModal open={modalOpen} onClose={() => setModalOpen(false)} variant="valuation" />
     </main>
   )
 }

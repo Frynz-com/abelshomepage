@@ -3,16 +3,25 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { X, CheckCircle } from "lucide-react"
-import { WiderrufConsent } from "@/components/widerruf-consent"
+import {
+  getInquiryButtonLabel,
+  getInquiryFormName,
+  INQUIRY_SUCCESS_MESSAGE,
+  InquiryNoticeVariant,
+  LegalFormNotice,
+} from "@/components/legal-form-notice"
 
 interface ContactModalProps {
   open: boolean
   onClose: () => void
+  variant?: InquiryNoticeVariant
 }
 
-export function ContactModal({ open, onClose }: ContactModalProps) {
+export function ContactModal({ open, onClose, variant = "general" }: ContactModalProps) {
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
+  const formName = getInquiryFormName(variant)
+  const buttonLabel = getInquiryButtonLabel(variant)
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -37,7 +46,7 @@ export function ContactModal({ open, onClose }: ContactModalProps) {
       })
     } catch {
       // Fallback: form submitted via mailto
-      window.location.href = `mailto:info@abels-immobilien.com?subject=Anfrage von ${encodeURIComponent(form.name)}&body=${encodeURIComponent(form.message)}`
+      window.location.href = `mailto:info@abels-immobilien.com?subject=${encodeURIComponent("Eingang Ihrer unverbindlichen Anfrage bei Abels Immobilien")}&body=${encodeURIComponent(form.message)}`
     } finally {
       setLoading(false)
       setSubmitted(true)
@@ -102,12 +111,12 @@ export function ContactModal({ open, onClose }: ContactModalProps) {
                   <form
                     onSubmit={handleSubmit}
                     className="space-y-5"
-                    name="kontakt-modal"
+                    name={formName}
                     method="POST"
                     data-netlify="true"
                     netlify-honeypot="bot-field"
                   >
-                    <input type="hidden" name="form-name" value="kontakt-modal" />
+                    <input type="hidden" name="form-name" value={formName} />
                     <input type="hidden" name="bot-field" className="hidden" />
                     {/* Name */}
                     <div>
@@ -196,7 +205,7 @@ export function ContactModal({ open, onClose }: ContactModalProps) {
                       />
                     </div>
 
-                    <WiderrufConsent tone="dark" />
+                    <LegalFormNotice variant={variant} tone="dark" />
 
                     {/* Submit */}
                     <button
@@ -204,7 +213,7 @@ export function ContactModal({ open, onClose }: ContactModalProps) {
                       disabled={loading}
                       className="w-full bg-gold text-ink py-4 text-xs uppercase tracking-[0.15em] hover:bg-cream transition-colors disabled:opacity-60 font-medium"
                     >
-                      {loading ? "Wird gesendet ..." : "Anfrage absenden"}
+                      {loading ? "Wird gesendet ..." : buttonLabel}
                     </button>
 
                     <p className="text-cream/70 text-xs text-center">
@@ -226,7 +235,7 @@ export function ContactModal({ open, onClose }: ContactModalProps) {
                     Vielen Dank, {form.name.split(" ")[0]}.
                   </h3>
                   <p className="text-cream/70 leading-relaxed mb-8">
-                    Ihre Anfrage ist bei uns eingegangen. Wir melden uns innerhalb der nächsten 30 Minuten bei Ihnen.
+                    {INQUIRY_SUCCESS_MESSAGE}
                   </p>
                   <button
                     onClick={handleClose}

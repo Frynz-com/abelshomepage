@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 import { MapPin, Mail, Clock, Phone, ArrowRight, CheckCircle } from "lucide-react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { WiderrufConsent } from "@/components/widerruf-consent"
+import { INQUIRY_SUCCESS_MESSAGE, LegalFormNotice } from "@/components/legal-form-notice"
 
 const subjects = [
   "Immobilie verkaufen",
@@ -49,7 +49,7 @@ export default function KontaktPage() {
         body: new URLSearchParams(new FormData(formEl) as any).toString(),
       })
     } catch {
-      window.location.href = `mailto:info@abels-immobilien.com?subject=${encodeURIComponent("Kontaktanfrage: " + form.subject)}&body=${encodeURIComponent(form.message)}`
+      window.location.href = `mailto:info@abels-immobilien.com?subject=${encodeURIComponent("Eingang Ihrer unverbindlichen Anfrage bei Abels Immobilien")}&body=${encodeURIComponent(form.message)}`
     } finally {
       setLoading(false)
       setSubmitted(true)
@@ -199,7 +199,7 @@ export default function KontaktPage() {
                   Vielen Dank für Ihre Anfrage.
                 </h2>
                 <p className="text-graphite text-[15px] leading-relaxed max-w-[420px] mb-10">
-                  Wir haben Ihre Nachricht erhalten und melden uns innerhalb der nächsten 30 Minuten bei Ihnen.
+                  {INQUIRY_SUCCESS_MESSAGE}
                 </p>
                 <Link
                   href="/"
@@ -213,12 +213,12 @@ export default function KontaktPage() {
               <form
                 onSubmit={handleSubmit}
                 className="space-y-0"
-                name="kontakt"
+                name="contact_request"
                 method="POST"
                 data-netlify="true"
                 netlify-honeypot="bot-field"
               >
-                <input type="hidden" name="form-name" value="kontakt" />
+                <input type="hidden" name="form-name" value="contact_request" />
                 <input type="hidden" name="bot-field" className="hidden" />
 
                 <div className="grid sm:grid-cols-2 gap-0 border border-line">
@@ -351,10 +351,12 @@ export default function KontaktPage() {
                         <span className="text-gold">*</span>
                       </span>
                     </label>
-                    <WiderrufConsent />
                   </div>
 
                   {/* Submit */}
+                  <div className="w-full sm:max-w-[360px]">
+                    <LegalFormNotice />
+                  </div>
                   <button
                     type="submit"
                     disabled={loading}
@@ -367,7 +369,7 @@ export default function KontaktPage() {
                       </>
                     ) : (
                       <>
-                        Anfrage senden
+                        Unverbindliche Anfrage senden
                         <ArrowRight className="w-3.5 h-3.5" />
                       </>
                     )}
