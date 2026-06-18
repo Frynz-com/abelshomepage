@@ -109,6 +109,9 @@ export function Footer() {
                   <span className="block text-[9px] uppercase tracking-[0.24em] text-stone mt-[5px] leading-none">
                     Immobilien
                   </span>
+                  <span className="block text-[7.5px] uppercase tracking-[0.18em] text-stone/70 mt-[4px] leading-none">
+                    GmbH Düsseldorf
+                  </span>
                 </div>
               </div>
               <p className="font-serif text-[clamp(1.4rem,2.5vw,2rem)] text-graphite leading-[1.3] tracking-[-0.01em] max-w-[460px]">

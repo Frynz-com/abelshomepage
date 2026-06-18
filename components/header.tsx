@@ -59,6 +59,11 @@ export function Header() {
                 }`}>
                   Immobilien
                 </span>
+                <span className={`block text-[7.5px] uppercase tracking-[0.18em] leading-none mt-[4px] transition-colors duration-500 ${
+                  isScrolled ? "text-stone/70" : "text-white/40"
+                }`}>
+                  GmbH Düsseldorf
+                </span>
               </div>
             </Link>
 
