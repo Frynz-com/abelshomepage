@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { MapPin, Phone, Mail, Clock } from "lucide-react"
 import { INQUIRY_SUCCESS_MESSAGE, LegalFormNotice } from "@/components/legal-form-notice"
+import { WiderrufConsent } from "@/components/widerruf-consent"
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -214,6 +215,7 @@ export function ContactSection() {
               </div>
 
               <LegalFormNotice />
+              <WiderrufConsent />
               
               <div className="flex items-center justify-between pt-4">
                 <p className="text-xs text-foreground/40">* Pflichtfelder</p>

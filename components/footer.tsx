@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { useState } from "react"
 import { Linkedin, Instagram, ArrowRight, Shield, BarChart2, Landmark, FileText } from "lucide-react"
+import { WiderrufConsent } from "@/components/widerruf-consent"
 
 const leistungen = [
   { label: "Immobilie verkaufen", href: "/verkaufen" },
@@ -245,6 +246,7 @@ export function Footer() {
                       .
                     </span>
                   </label>
+                  <WiderrufConsent />
                 </form>
               ) : (
                 <p className="text-[13px] text-gold pb-3 border-b border-gold/30">
@@ -269,6 +271,7 @@ export function Footer() {
               { label: "Impressum", href: "/impressum" },
               { label: "Datenschutz", href: "/datenschutz" },
               { label: "AGB", href: "/agb" },
+              { label: "Widerrufsbelehrung", href: "/widerrufsrecht" },
             ].map((item) => (
               <Link
                 key={item.href}

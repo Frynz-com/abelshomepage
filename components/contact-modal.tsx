@@ -10,6 +10,7 @@ import {
   InquiryNoticeVariant,
   LegalFormNotice,
 } from "@/components/legal-form-notice"
+import { WiderrufConsent } from "@/components/widerruf-consent"
 
 interface ContactModalProps {
   open: boolean
@@ -206,6 +207,7 @@ export function ContactModal({ open, onClose, variant = "general" }: ContactModa
                     </div>
 
                     <LegalFormNotice variant={variant} tone="dark" />
+                    <WiderrufConsent tone="dark" />
 
                     {/* Submit */}
                     <button

@@ -7,6 +7,7 @@ import { MapPin, Mail, Clock, Phone, ArrowRight, CheckCircle } from "lucide-reac
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { INQUIRY_SUCCESS_MESSAGE, LegalFormNotice } from "@/components/legal-form-notice"
+import { WiderrufConsent } from "@/components/widerruf-consent"
 
 const subjects = [
   "Immobilie verkaufen",
@@ -356,6 +357,7 @@ export default function KontaktPage() {
                   {/* Submit */}
                   <div className="w-full sm:max-w-[360px]">
                     <LegalFormNotice />
+                    <WiderrufConsent className="mt-3" />
                   </div>
                   <button
                     type="submit"

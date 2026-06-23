@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { Menu, X, ChevronDown, ArrowRight } from "lucide-react"
 
 const cities = [
@@ -26,6 +27,8 @@ export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isStandorteOpen, setIsStandorteOpen] = useState(false)
+  const pathname = usePathname()
+  const isSolid = isScrolled || pathname === "/kontakt"
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 60)
@@ -37,7 +40,7 @@ export function Header() {
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          isScrolled
+          isSolid
             ? "bg-cream/97 backdrop-blur-sm border-b border-line/50 shadow-[0_1px_24px_rgba(0,0,0,0.05)]"
             : "bg-transparent"
         }`}
@@ -47,20 +50,20 @@ export function Header() {
 
             {/* Logo */}
             <Link href="/" className="relative z-10 shrink-0 flex items-center gap-3.5">
-              <div className={`w-px h-6 transition-colors duration-500 ${isScrolled ? "bg-gold/50" : "bg-gold/65"}`} />
+              <div className={`w-px h-6 transition-colors duration-500 ${isSolid ? "bg-gold/50" : "bg-gold/65"}`} />
               <div>
                 <span className={`block font-serif text-[24px] lg:text-[27px] tracking-[0.08em] leading-none transition-colors duration-500 ${
-                  isScrolled ? "text-ink" : "text-white"
+                  isSolid ? "text-ink" : "text-white"
                 }`}>
                   ABELS
                 </span>
                 <span className={`block text-[9.5px] uppercase tracking-[0.26em] leading-none mt-[5px] transition-colors duration-500 ${
-                  isScrolled ? "text-stone" : "text-white/50"
+                  isSolid ? "text-stone" : "text-white/50"
                 }`}>
                   Immobilien
                 </span>
                 <span className={`block text-[7.5px] uppercase tracking-[0.18em] leading-none mt-[4px] transition-colors duration-500 ${
-                  isScrolled ? "text-stone/70" : "text-white/40"
+                  isSolid ? "text-stone/70" : "text-white/40"
                 }`}>
                   GmbH Düsseldorf
                 </span>
@@ -74,7 +77,7 @@ export function Header() {
                   {item.hasDropdown ? (
                     <button
                       className={`flex items-center gap-1.5 text-[12.5px] font-medium tracking-[0.06em] transition-colors duration-200 ${
-                        isScrolled
+                        isSolid
                           ? "text-graphite hover:text-ink"
                           : "text-white/75 hover:text-white"
                       }`}
@@ -88,7 +91,7 @@ export function Header() {
                     <Link
                       href={item.href}
                       className={`text-[12.5px] font-medium tracking-[0.06em] transition-colors duration-200 relative after:absolute after:bottom-[-3px] after:left-0 after:w-0 after:h-px after:bg-gold after:transition-all after:duration-300 hover:after:w-full ${
-                        isScrolled
+                        isSolid
                           ? "text-graphite hover:text-ink"
                           : "text-white/75 hover:text-white"
                       }`}
@@ -167,7 +170,7 @@ export function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`text-[12.5px] font-medium tracking-[0.06em] transition-colors duration-200 relative after:absolute after:bottom-[-3px] after:left-0 after:w-0 after:h-px after:bg-gold after:transition-all after:duration-300 hover:after:w-full ${
-                  isScrolled ? "text-graphite hover:text-ink" : "text-white/75 hover:text-white"
+                  isSolid ? "text-graphite hover:text-ink" : "text-white/75 hover:text-white"
                 }`}
               >
                 Bewertung
@@ -175,7 +178,7 @@ export function Header() {
               <Link
                 href="/kontakt"
                 className={`px-6 py-2.5 text-[10px] uppercase tracking-[0.18em] font-medium transition-all duration-300 ${
-                  isScrolled
+                  isSolid
                     ? "bg-ink text-cream hover:bg-graphite"
                     : "bg-white/10 text-white border border-white/22 hover:bg-white hover:text-ink backdrop-blur-sm"
                 }`}
@@ -188,7 +191,7 @@ export function Header() {
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className={`lg:hidden p-2 -mr-2 transition-colors ${
-                isScrolled ? "text-ink" : "text-white"
+                isSolid ? "text-ink" : "text-white"
               }`}
               aria-label={isMobileMenuOpen ? "Menü schließen" : "Menü öffnen"}
             >
@@ -259,6 +262,13 @@ export function Header() {
           </nav>
 
           <div className="px-6 py-6 space-y-3">
+            <Link
+              href="/kontakt"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block w-full bg-gold text-ink text-center py-4 text-[10px] uppercase tracking-[0.2em] font-semibold hover:bg-gold-soft transition-colors"
+            >
+              Kontakt aufnehmen
+            </Link>
             <Link
               href="/bewertung"
               onClick={() => setIsMobileMenuOpen(false)}

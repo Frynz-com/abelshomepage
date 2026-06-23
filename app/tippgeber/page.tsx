@@ -8,6 +8,7 @@ import { ArrowRight } from "lucide-react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { INQUIRY_SUCCESS_MESSAGE, LegalFormNotice } from "@/components/legal-form-notice"
+import { WiderrufConsent } from "@/components/widerruf-consent"
 
 const steps = [
   {
@@ -235,6 +236,7 @@ export default function TippgeberPage() {
                   </div>
                   <div className="pt-8">
                     <LegalFormNotice className="mb-5" />
+                    <WiderrufConsent className="mb-5" />
                     <button
                       type="submit"
                       className="inline-flex items-center justify-center gap-2 bg-gold text-ink px-8 py-4 text-[11px] uppercase tracking-[0.16em] font-semibold hover:bg-gold-soft transition-colors group"

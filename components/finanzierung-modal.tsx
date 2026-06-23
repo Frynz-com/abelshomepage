@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { X, Check, ArrowRight } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { INQUIRY_SUCCESS_MESSAGE, LegalFormNotice } from "@/components/legal-form-notice"
+import { WiderrufConsent } from "@/components/widerruf-consent"
 
 interface FinanzierungModalProps {
   open: boolean
@@ -176,6 +177,7 @@ export function FinanzierungModal({ open, onClose, title = "Baufinanzierung", su
                   </div>
 
                   <LegalFormNotice />
+                  <WiderrufConsent />
 
                   <button
                     type="submit"
