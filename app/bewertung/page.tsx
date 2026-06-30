@@ -21,7 +21,7 @@ export default function BewertungRedirect() {
           </p>
           <LegalFormNotice variant="valuation" className="mb-8" />
           <a
-            href="https://immowert.lovable.app/"
+            href="https://immo-bewertungsrechner.de/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-ink px-8 py-4 text-[11px] font-medium uppercase tracking-[0.16em] text-cream transition-colors hover:bg-graphite"

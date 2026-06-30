@@ -72,7 +72,7 @@ export function HeroSection() {
               className="flex flex-col sm:flex-row gap-3 shrink-0"
             >
               <a
-                href="https://immowert.lovable.app/"
+                href="https://immo-bewertungsrechner.de/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2.5 bg-gold text-ink px-8 py-4.5 text-[12px] uppercase tracking-[0.18em] font-semibold hover:bg-gold/90 transition-all duration-300 group whitespace-nowrap"

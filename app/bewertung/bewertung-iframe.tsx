@@ -15,7 +15,7 @@ export function BewertungIframe() {
           <p className="text-graphite text-sm">Bewertungstool wird geladen …</p>
           <LegalFormNotice variant="valuation" className="max-w-[560px]" />
           <a
-            href="https://immowert.lovable.app"
+            href="https://immo-bewertungsrechner.de/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-ink text-cream px-8 py-4 text-xs uppercase tracking-[0.16em] hover:bg-graphite transition-colors mt-2"
@@ -33,7 +33,7 @@ export function BewertungIframe() {
           </p>
           <LegalFormNotice variant="valuation" className="max-w-[560px]" />
           <a
-            href="https://immowert.lovable.app"
+            href="https://immo-bewertungsrechner.de/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-gold text-white px-8 py-4 text-xs uppercase tracking-[0.16em] hover:bg-gold/90 transition-colors"
@@ -44,7 +44,7 @@ export function BewertungIframe() {
       )}
 
       <iframe
-        src="https://immowert.lovable.app"
+        src="https://immo-bewertungsrechner.de/"
         title="Immobilienbewertung Tool"
         className="w-full"
         style={{ height: "900px", border: "none", display: loaded ? "block" : "none" }}

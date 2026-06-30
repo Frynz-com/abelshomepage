@@ -166,7 +166,7 @@ export function Header() {
             {/* Right: CTA */}
             <div className="hidden lg:flex items-center gap-7 shrink-0">
               <a
-                href="https://immowert.lovable.app/"
+                href="https://immo-bewertungsrechner.de/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`text-[12.5px] font-medium tracking-[0.06em] transition-colors duration-200 relative after:absolute after:bottom-[-3px] after:left-0 after:w-0 after:h-px after:bg-gold after:transition-all after:duration-300 hover:after:w-full ${
